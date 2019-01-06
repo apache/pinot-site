@@ -28,8 +28,89 @@
     =================================================-->
     <link rel="stylesheet" href="assets/css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/pinot.css">
 </head>
 <body>
+<!--===============================================
+      Pinot Navigation Space <start>
+    =================================================-->
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!--===============================================
+          Pinot Navigation Bar Header <start>
+        =================================================-->
+        <div class="navbar-header">
+            <img class="navbar-left" src="assets/images/pinot_logo.jpg" height="50">
+            <a href="/" class="navbar-brand">&emsp;</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!--===============================================
+          Pinot Navigation Bar Header <end>
+        =================================================-->
+        <!--===============================================
+          Pinot Navigation Bar Options <start>
+        =================================================-->
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Download</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Releases <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Apache Releases</li>
+                        <!-- Release Step 1: Add a new li tag for new release -->
+                        <!-- hint: copy and replicate the line below for subsequent releases -->
+                        <!-- eg. <li><a href="https://www.apache.org/dyn/closer.lua/incubator/pinot/apache-pinot-incubating-0.XY.0/">0.XY.0 <i class="fa fa-external-link"></i></a></li> -->
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Documentation <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://cwiki.apache.org/confluence/display/PINOT" target="_blank">Apache Wiki <i class="fa fa-external-link"></i></a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">ReadTheDocs</li>
+                        <li><a href="http://pinot.readthedocs.io/en/latest/" target="_blank">Latest <i class="fa fa-external-link"></i></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Community <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Issue / Feature Tracking</li>
+                        <li><a href="https://issues.apache.org/jira/projects/PINOT/issues" target="_blank">Apache JIRA <i class="fa fa-external-link"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">Apache Software Foundation<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.apache.org" target="_blank">Apache Homepage <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">License <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://www.apache.org/security" target="_blank">Security <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://www.apache.org/foundation/thanks" target="_blank">Thanks <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://www.apache.org/foundation/policies/conduct" target="_blank">Code of Conduct <i class="fa fa-external-link"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <!--===============================================
+          Pinot Navigation Bar Options <end>
+        =================================================-->
+    </div>
+</div>
+
+<!--===============================================
+  Pinot Navigation Space <end>
+=================================================-->
 
 <!--===============================================
   Pinot Center Space <start>
@@ -37,6 +118,16 @@
 <div class="container">
 
     <div class="page-header" id="primary-content">
+        <!--===============================================
+       ROW 0 <start>
+     =================================================-->
+        <div class="row">
+                <br>
+                <br>
+        </div>
+        <!--===============================================
+          ROW 0 <end>
+        =================================================-->
         <!--===============================================
           ROW 1 <start>
         =================================================-->
@@ -50,8 +141,8 @@
                     It can ingest data from offline data sources (such as Apache Hadoop and flat files) as well as online sources (such as Apache Kafka).
                     Pinot is designed to scale horizontally.</p>
                 <p class="lead">
-                    <a class="btn btn-primary btn-animated btn-outline" href="http://github.com/linkedin/pinot">Download</a>
-                    <a class="btn btn-primary btn-animated btn-outline" href="https://pinot.readthedocs.io/" target="_blank">Try Pinot</a>
+                    <a class="btn btn-default btn-animated btn-outline" >Download</a>
+                    <a class="btn btn-default btn-animated btn-outline" href="https://pinot.readthedocs.io/" target="_blank">Try Pinot</a>
                 </p>
             </div>
             <!--===============================================
