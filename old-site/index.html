@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157446650-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-157446650-1');
+    </script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+    <meta charset="utf-8">
+    <title>Apache Pinot™ (Incubating)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--===============================================
+      CSS files
+    =================================================-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/pinot.css">
+</head>
+<body>
+<!--===============================================
+      Pinot Navigation Space <start>
+    =================================================-->
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!--===============================================
+          Pinot Navigation Bar Header <start>
+        =================================================-->
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand">Apache Pinot</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!--===============================================
+          Pinot Navigation Bar Header <end>
+        =================================================-->
+        <!--===============================================
+          Pinot Navigation Bar Options <start>
+        =================================================-->
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Releases <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Apache Releases</li>
+                        <!-- Release Step 1: Add a new li tag for new release -->
+                        <!-- hint: copy and replicate the line below for subsequent releases -->
+                        <!-- eg. <li><a href="https://www.apache.org/dyn/closer.lua/incubator/pinot/apache-pinot-incubating-0.XY.0/">0.XY.0 <i class="fa fa-external-link"></i></a></li> -->
+                        <li><a href="https://www.apache.org/dyn/closer.lua/incubator/pinot/apache-pinot-incubating-0.1.0">0.1.0 <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://www.apache.org/dyn/closer.lua/incubator/pinot/apache-pinot-incubating-0.2.0">0.2.0 <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://www.apache.org/dyn/closer.lua/incubator/pinot/apache-pinot-incubating-0.3.0">0.3.0 <i class="fa fa-external-link"></i></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Project Info <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://github.com/apache/incubator-pinot/" target="_blank">Source Code <i class="fa fa-external-link"></i></a></li>
+                        <li class="divider"></li>
+                        <li><a href="https://cwiki.apache.org/confluence/display/PINOT" target="_blank">Wiki <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://cwiki.apache.org/confluence/display/PINOT/Blogs+and+Talks" target="_blank">Blogs and Talks <i class="fa fa-external-link"></i></a></li>
+                        <li class="dropdown-header">Issue / Feature Tracking</li>
+                        <li><a href="https://issues.apache.org/jira/projects/PINOT/issues" target="_blank">Apache JIRA <i class="fa fa-external-link"></i></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Documentation <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">ReadTheDocs</li>
+                        <li><a href="https://apache-pinot.gitbook.io/apache-pinot-cookbook/" target="_blank">Introduction <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://apache-pinot.gitbook.io/apache-pinot-cookbook/concepts/concepts" target="_blank">Concepts <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://apache-pinot.gitbook.io/apache-pinot-cookbook/concepts/architecture" target="_blank">Architecture <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://apache-pinot.gitbook.io/apache-pinot-cookbook/getting-started" target="_blank">Getting Started <i class="fa fa-external-link"></i></a></li>
+                        <li class="divider"></li>
+                        <li><a href="https://cwiki.apache.org/confluence/display/PINOT/Design+Documents" target="_blank">Design Documents <i class="fa fa-external-link"></i></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Community <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://cwiki.apache.org/confluence/display/PINOT/Get+Involved" target="_blank">Get Involved <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://apache-pinot.gitbook.io/apache-pinot-cookbook/developers-and-contributors" target="_blank">Developer Guide <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://cwiki.apache.org/confluence/display/PINOT/Committers" target="_blank">People <i class="fa fa-external-link"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">Apache Software Foundation<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.apache.org" target="_blank">Apache Homepage <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">License <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://www.apache.org/security" target="_blank">Security <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://www.apache.org/foundation/thanks" target="_blank">Thanks <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="https://www.apache.org/foundation/policies/conduct" target="_blank">Code of Conduct <i class="fa fa-external-link"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <!--===============================================
+          Pinot Navigation Bar Options <end>
+        =================================================-->
+    </div>
+</div>
+
+<!--===============================================
+  Pinot Navigation Space <end>
+=================================================-->
+
+<!--===============================================
+  Pinot Center Space <start>
+=================================================-->
+<div class="container">
+
+    <div class="page-header" id="primary-content">
+        <!--===============================================
+       ROW 0 <start>
+     =================================================-->
+        <div class="row">
+                <br>
+                <br>
+        </div>
+        <!--===============================================
+          ROW 0 <end>
+        =================================================-->
+        <!--===============================================
+          ROW 1 <start>
+        =================================================-->
+        <div class="row">
+            <!--===============================================
+               Pinot Primary Content <start>
+            =================================================-->
+            <div class="row text-center" class="primary-container-header">
+                <h1 style="margin-top: 0px">Apache Pinot™ (Incubating)</h1>
+                <img src="assets/images/pinot_logo.jpg" height="150">
+                <p class="lead">Pinot is a realtime distributed OLAP datastore, which is used at LinkedIn to deliver scalable real time analytics with low latency.
+                    It can ingest data from offline data sources (such as Apache Hadoop and flat files) as well as online sources (such as Apache Kafka).
+                    Pinot is designed to scale horizontally.</p>
+                <p class="lead">
+                    <a class="btn btn-default btn-animated btn-outline" href="https://apache-pinot.gitbook.io/apache-pinot-cookbook/" target="_blank">Learn More</a>
+                    <a class="btn btn-default btn-animated btn-outline" href="/download">Download</a>
+                    <a class="btn white btn-default btn-animated btn-outline" href="https://communityinviter.com/apps/apache-pinot/apache-pinot">
+                        <object class="icon" data="assets/images/slack.svg" type="image/svg+xml" height="25"></object> Join our Slack
+                    </a>
+                </p>
+                <h3 style="margin-top: 0px; "><a href="https://cwiki.apache.org/confluence/display/PINOT/Announcements" target="_blank"><strong>See Latest News</strong></a></h3>
+            </div>
+            <!--===============================================
+               Pinot Primary Content <end>
+            =================================================-->
+
+        </div>
+        <!--===============================================
+          ROW 1 <end>
+        =================================================-->
+        <!--===============================================
+          ROW 2 <start>
+        =================================================-->
+        <div class="row">
+          <div class="row text-center" class="primary-container-header">
+              <a href="https://twitter.com/ApachePinot?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ApachePinot</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8" height="50"></script>
+              <a class="twitter-timeline" data-height="800" href="https://twitter.com/ApachePinot?ref_src=twsrc%5Etfw">Tweets by ApachePinot</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+        <!--===============================================
+          ROW 2 <end>
+        =================================================-->
+        <!--===============================================
+          ROW 3 <start>
+        =================================================-->
+        <div class="row" style="background-color: #e8e8e8; padding-bottom: 10px; margin-top: 15px;">
+            <div class="col-sm-12">
+                <h2 class="sectiontile" style="text-align: center">Powered By Pinot</h2>
+                <div class="row">
+                    <a href="http://www.linkedin.com/" style="margin-left: 100px;" target="_blank"><img style="width: 125px" src="assets/images/Logo-2C-128px-R.png"></a>
+                    <a href="http://www.slack.com/" style="margin-left: 100px;" target="_blank"><img style="width: 145px" src="assets/images/Slack_RGB.png"></a>
+                    <a href="http://www.uber.com/" style="margin-left: 100px;" target="_blank"><img style="width: 125px" src="assets/images/Uber_Logo_Black.png"></a>
+                    <a href="https://products.office.com/en-IN/microsoft-teams/group-chat-software/" style="margin-left: 100px;" target="_blank"><img style="width: 50px" src="assets/images/Teams_Logo_Only_Blurple.svg"></a>
+                    <a href="https://weibo.com/" style="margin-left: 100px;" target="_blank"><img style="width: 140px" src="assets/images/Weibo_Logo.png"></a>
+                </div>
+            </div>
+        </div>
+        <!--===============================================
+          ROW 3 <end>
+        =================================================-->
+        <hr>
+        <footer style="margin-bottom: 0em; margin-top: 0em;">
+            <div id="footer">
+                <img src="assets/images/incubator_feather_egg_logo.png" height="60">
+                <br>
+                <br>
+                <p style="font-size: 12px; line-height: 1.5em;">
+                    Apache Pinot (incubating) is an effort undergoing incubation at the Apache Software Foundation (ASF), sponsored by the Apache Incubator PMC. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.
+                </p>
+                <p style="font-size: 12px; line-height: 1.5em; margin-top: 2em; margin-bottom: 2em;">
+                    Copyright © 2018 <a href="http://www.apache.org/" target="_blank">The Apache Software Foundation</a>
+                    <br>
+                    Apache, Apache Pinot (incubating), the Apache feather and the Pinot logo are either registered trademarks or trademarks of The Apache Software Foundation in the United States and other countries.
+                </p>
+            </div>
+        </footer>
+
+    </div>
+    <!--===============================================
+      Pinot Center Space <end>
+    =================================================-->
+</div>
+
+<!--===============================================
+  Javascript files
+=================================================-->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Twitter universal website tag code -->
+<script>
+  !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+  },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+  a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+  // Insert Twitter Pixel ID and Standard Event data below
+  twq('init','o32bu');
+  twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+
+</body>
+</html>
