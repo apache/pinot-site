@@ -10,12 +10,31 @@ This repo hosts the source code of [Apache Pinot Official Website](https://pinot
 Update Website Content
 ======================
 
-Source code is generated from [Pinot Github Repo](https://github.com/apache/incubator-pinot/tree/master/website).
+Build from source
+```bash
+$ website-builder/scripts/build-site.sh
+```
 
 Maintainer
 ==========
 
-Please contact:
+Apache Pinot Community
+
+Additional Resources
+====================
+
 Mailing list: dev@pinot.apache.org
+
 Slack: https://communityinviter.com/apps/apache-pinot/apache-pinot
 
+Project website: https://pinot.apache.org
+
+Getting started: https://docs.pinot.apache.org/getting-started
+
+Pinot developer blogs: https://medium.com/apache-pinot-developer-blog
+
+Intro to Pinot Video: https://www.youtube.com/watch?v=T70jTTYhYyM
+
+Twitter: https://twitter.com/ApachePinot
+
+Meetup: https://www.meetup.com/apache-pinot
