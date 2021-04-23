@@ -10,10 +10,12 @@ This repo hosts the source code of [Apache Pinot Official Website](https://pinot
 Update Website Content
 ======================
 
-Build from source
-```bash
-$ website/scripts/build-site.sh
-```
+Please don't submit PR against this branch.
+
+All development should go under the [`dev`](https://github.com/apache/incubator-pinot-site/tree/dev) branch.
+
+This [`asf-site`](https://github.com/apache/incubator-pinot-site/tree/asf-site) branch will be automatically updated once a new commit pushed to the [`dev`](https://github.com/apache/incubator-pinot-site/tree/dev) branch.
+
 
 Maintainer
 ==========
