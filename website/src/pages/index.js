@@ -172,7 +172,7 @@ function WhoUses() {
                 <AnchoredH2 id="who-uses">Who Uses?</AnchoredH2>
                 <div className="sub-title">
                     Pinot powers several big players, including LinkedIn, Uber,
-                    Microsoft, Factual, Weibo, Slack and more
+                    Microsoft, Walmart, WePay, Factual, Weibo, Slack and more
                 </div>
 
                 <div className={styles.installationPlatforms}>
@@ -183,7 +183,7 @@ function WhoUses() {
                         <SVG src="/img/companies/uber.svg" />
                     </Link>
                     <Link to="https://teams.microsoft.com">
-                        <SVG src="/img/companies/microsoft-teams.svg" />
+                        <SVG src="/img/companies/MicrosoftTeamPost2018.svg" />
                     </Link>
                     <Link to="https://slack.com">
                         <SVG src="/img/companies/slack.svg" />
@@ -193,6 +193,42 @@ function WhoUses() {
                     </Link>
                     <Link to="https://www.weibo.com">
                         <SVG src="/img/companies/weibo.svg" />
+                    </Link>
+                    <Link to="https://eero.com/">
+                        <SVG src="/img/companies/eero.svg" />
+                    </Link>
+                    <Link to="https://www.7-eleven.com/">
+                        <SVG src="/img/companies/7_eleven_logo.svg" />
+                    </Link>
+                    <Link to="https://www.confluera.com/">
+                        <SVG src="/img/companies/confluera.svg" />
+                    </Link>
+                    <Link to="https://stripe.com">
+                        <SVG src="/img/companies/stripe.svg" />
+                    </Link>
+                    <Link to="https://www.target.com/">
+                        <SVG src="/img/companies/target_logo.svg" />
+                    </Link>
+                    <Link to="https://www.walmart.com/">
+                        <SVG src="/img/companies/walmart_logo.svg" />
+                    </Link>
+                    <Link to="https://cloudkitchens.com/">
+                        <SVG src="/img/companies/cloudkitchens.svg" />
+                    </Link>
+                    <Link to="https://www.guitarcenter.com/">
+                        <SVG src="/img/companies/guitarcenter_logo.svg" />
+                    </Link>
+                    <Link to="https://www.publicissapient.com/">
+                        <SVG src="/img/companies/ps_logo.svg" />
+                    </Link>
+                    <Link to="https://www.asurion.com/">
+                        <SVG src="/img/companies/asurion.svg" />
+                    </Link>
+                    <Link to="https://go.wepay.com/">
+                        <SVG src="/img/companies/wepay_logo.svg" />
+                    </Link>
+                    <Link to="https://www.traceable.ai">
+                        <SVG src="/img/companies/traceableai.svg" />
                     </Link>
                 </div>
             </div>

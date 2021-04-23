@@ -23,7 +23,7 @@ module.exports = {
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'apache',
-  projectName: 'pinot', 
+  projectName: 'pinot',
   onBrokenLinks: 'ignore',
   themeConfig: {
     navbar: {
@@ -42,6 +42,14 @@ module.exports = {
           position: 'right',
         },
       ],
+    },
+    announcementBar: {
+      id: 'supportus',
+      content:
+        '⭐️ If you love <b>Apache Pinot</b>, please give it a star on <a target="_blank" href="https://github.com/apache/incubator-pinot"><b>GitHub</b></a>! ⭐️',
+      backgroundColor: '#252532', // Defaults to `#fff`.
+      textColor: '#fff', // Defaults to `#000`.
+      isCloseable: true, // Defaults to `true`.
     },
     colorMode: {
       defaultMode: "dark",
@@ -165,6 +173,7 @@ module.exports = {
   plugins: [
     [
       '@docusaurus/plugin-ideal-image',
+      // '@docusaurus/plugin-content-blog',
       {
         quality: 70,
         max: 1030, // max resized image's size.
@@ -176,6 +185,7 @@ module.exports = {
   presets: [
     [
       '@docusaurus/preset-classic',
+      // '@docusaurus/preset-bootstrap', //TODO
       {
         docs: {
           editUrl: 'https://github.com/apache/incubator-pinot/edit/master/website/',
