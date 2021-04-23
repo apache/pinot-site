@@ -197,9 +197,6 @@ function WhoUses() {
                     <Link to="https://eero.com/">
                         <SVG src="/img/companies/eero.svg" />
                     </Link>
-                    <Link to="https://www.7-eleven.com/">
-                        <SVG src="/img/companies/7_eleven_logo.svg" />
-                    </Link>
                     <Link to="https://www.confluera.com/">
                         <SVG src="/img/companies/confluera.svg" />
                     </Link>
