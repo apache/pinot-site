@@ -7,13 +7,15 @@ Apache Pinot Site
 
 This repo hosts the source code of [Apache Pinot Official Website](https://pinot.apache.org/).
 
-Update Website Content
+Test Website
 ======================
 
 Build from source
 ```bash
 $ website/scripts/build-site.sh
 ```
+
+The results are moved to directory: `content`
 
 Maintainer
 ==========
