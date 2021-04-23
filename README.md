@@ -12,7 +12,7 @@ Update Website Content
 
 Build from source
 ```bash
-$ website-builder/scripts/build-site.sh
+$ website/scripts/build-site.sh
 ```
 
 Maintainer
