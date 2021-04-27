@@ -12,7 +12,7 @@ Update Website Content
 
 Build from source
 ```bash
-$ website-builder/scripts/build-site.sh
+$ website/scripts/build-site.sh
 ```
 
 Maintainer
@@ -39,7 +39,6 @@ Twitter: https://twitter.com/ApachePinot
 
 Meetup: https://www.meetup.com/apache-pinot
 
+### NOTE
 
-## NOTE
-
-- To convert PNG to SVG use this site: https://www.pngtosvg.com/
+To convert PNG to SVG use this site: https://www.pngtosvg.com/
