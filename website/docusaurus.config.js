@@ -153,13 +153,42 @@ module.exports = {
             },
           ],
         },
+        {
+          title: 'Apache',
+          items: [
+            {
+              label: 'Events',
+              to: 'https://www.apache.org/events/current-event',
+            },
+            {
+              label: 'Thanks',
+              to: 'https://www.apache.org/foundation/thanks.html',
+            },
+            {
+              label: 'License',
+              to: 'https://www.apache.org/licenses',
+            },
+            {
+              label: 'Security',
+              to: 'https://www.apache.org/security',
+            },
+            {
+              label: 'Sponsorship',
+              to: 'https://www.apache.org/foundation/sponsorship.html',
+            },
+            {
+              label: 'Foundation',
+              to: 'https://www.apache.org',
+            },
+          ],
+        },
       ],
       logo: {
         alt: 'Apache Pinot™ - Incubating',
         src: 'img/logo.svg',
         href: 'https://pinot.apache.org/',
       },
-      copyright: `Copyright © ${new Date().getFullYear()} The Apache Software Foundation.`,
+      copyright: `Disclaimer: Apache Pinot is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by the Apache Incubator. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.<br><br>Copyright © ${new Date().getFullYear()} Apache Pinot, Pinot, Apache, the Apache feather logo, and the Apache Pinot project logo are either registered trademarks or trademarks of The Apache Software Foundation in the United States and other countries.`,
     },
     googleAnalytics: {
       trackingID: 'UA-157446650-1',
