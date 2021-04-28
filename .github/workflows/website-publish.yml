@@ -1,4 +1,3 @@
-#!/bin/bash
 #
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
@@ -18,34 +17,18 @@
 # under the License.
 #
 
-set -e
-
-ROOT_DIR=$(git rev-parse --show-toplevel)
-WORK_DIR=${ROOT_DIR}/build
-ME=`basename $0`
-echo "Basename $ME"
-
-# ORIGIN_REPO=$(git remote show origin | grep 'Push  URL' | awk -F// '{print $NF}')
-ORIGIN_REPO="https://github.com/apache/incubator-pinot-site"
-echo "ORIGIN_REPO: $ORIGIN_REPO"
-
-SITE_TMP=/tmp/pinot-site 
-(
-
-  cd $ROOT_DIR
-  rm -rf $SITE_TMP
-  mkdir $SITE_TMP
-  cd $SITE_TMP
-
-  git clone "https://$GH_TOKEN@$ORIGIN_REPO" .
-  git config user.name "Pinot Site Updater"
-  git config user.email "dev@pinot.apache.org"
-  git checkout asf-master
-
-  # Clean content directory
-  rm -rf $SITE_TMP/content/
-  mkdir $SITE_TMP/content
-
-  # Copy the generated directory to asf folder
-  cp -r $WORK_DIR/* $SITE_TMP/content
-)
+name: Publish Website
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  publish-website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: 'asf-site'
+      - name: Website build
+        run: |
+          .github/workflows/scripts/publish-site.sh

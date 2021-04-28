@@ -115,7 +115,7 @@ function Footer(): JSX.Element | null {
             )}
             {copyright ? (
               <div
-                className="footer__copyright"
+                className={styles.footerCopyright}
                 // Developer provided the HTML, so assume it's safe.
                 // eslint-disable-next-line react/no-danger
                 dangerouslySetInnerHTML={{

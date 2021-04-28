@@ -18,7 +18,8 @@ import Tabs from "@theme/Tabs";
 
 import classnames from "classnames";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-// import PinotOverview from '@site/static/img/pinot-overview.svg';
+import PinotOverview from '@site/static/img/pinot-overview.svg';
+import PinotQuery from '@site/static/img/ingest-query.svg';
 
 import styles from "./index.module.css";
 import "./index.css";
@@ -197,9 +198,6 @@ function WhoUses() {
                     <Link class="grid-item" to="https://eero.com/">
                         <SVG src="/img/companies/eero.svg" />
                     </Link>
-                    <Link class="grid-item" to="https://www.7-eleven.com/">
-                        <SVG src="/img/companies/7_eleven_logo.svg" />
-                    </Link>
                     <Link class="grid-item" to="https://www.confluera.com/">
                         <SVG src="/img/companies/confluera.svg" />
                     </Link>
@@ -255,10 +253,11 @@ function Usage() {
                     Presto(supports Joins)
                 </div>
 
-                <SVG
+                <PinotQuery title="PinotOverview" className="svg image-overview figure" />
+                {/* <SVG
                     src="/img/ingest-query.svg"
                     className="svg image-overview figure"
-                />
+                /> */}
             </div>
         </section>
     );
@@ -400,12 +399,12 @@ function Home() {
                     <p className="hero__subtitle">
                         {siteConfig.tagline}, designed to answer OLAP queries
                         with low latency
-                        {/* <Diagram className={styles.indexHeroDiagram} width="100%" /> */}
-                        {/* <PinotOverview title="PinotOverview" className="svg image-overview figure" /> */}
-                        <SVG
+                        <PinotOverview title="PinotOverview" className="svg image-overview figure" />
+                        {/* <SVG
                             src="/img/pinot-overview.svg"
+                            fill="#fff"
                             className="svg image-overview figure"
-                        />
+                        /> */}
                     </p>
                     <div className="hero--buttons">
                         <Link

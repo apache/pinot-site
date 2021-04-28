@@ -13,3 +13,7 @@
 .footerLogoLink:hover {
   opacity: 1;
 }
+
+.footerCopyright {
+  font-size: 12px;
+}
