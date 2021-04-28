@@ -177,56 +177,59 @@ function WhoUses() {
                 </div>
 
                 <div className={styles.installationPlatforms}>
-                    <Link to="https://www.linkedin.com">
+                    <Link class="grid-item" to="https://www.linkedin.com">
                         <SVG src="/img/companies/linkedin.svg" />
                     </Link>
-                    <Link to="https://www.ubereats.com">
+                    <Link class="grid-item" to="https://www.ubereats.com">
                         <SVG src="/img/companies/uber.svg" />
                     </Link>
-                    <Link to="https://teams.microsoft.com">
+                    <Link class="grid-item" to="https://teams.microsoft.com">
                         <SVG src="/img/companies/MicrosoftTeamPost2018.svg" />
                     </Link>
-                    <Link to="https://slack.com">
+                    <Link class="grid-item" to="https://slack.com">
                         <SVG src="/img/companies/slack.svg" />
                     </Link>
-                    <Link to="https://www.factual.com">
+                    <Link class="grid-item" to="https://www.factual.com">
                         <SVG src="/img/companies/factual.svg" />
                     </Link>
-                    <Link to="https://www.weibo.com">
-                        <SVG src="/img/companies/weibo.svg" />
+                    <Link class="grid-item" to="https://www.weibo.com">
+                        <SVG src="/img/companies/sina-weibo.svg" />
                     </Link>
-                    <Link to="https://eero.com/">
+                    <Link class="grid-item" to="https://eero.com/">
                         <SVG src="/img/companies/eero.svg" />
                     </Link>
-                    <Link to="https://www.confluera.com/">
+                    <Link class="grid-item" to="https://www.confluera.com/">
                         <SVG src="/img/companies/confluera.svg" />
                     </Link>
-                    <Link to="https://stripe.com">
+                    <Link class="grid-item" to="https://stripe.com">
                         <SVG src="/img/companies/stripe.svg" />
                     </Link>
-                    <Link to="https://www.target.com/">
+                    <Link class="grid-item" to="https://www.target.com/">
                         <SVG src="/img/companies/target_logo.svg" />
                     </Link>
-                    <Link to="https://www.walmart.com/">
+                    <Link class="grid-item" to="https://www.walmart.com/">
                         <SVG src="/img/companies/walmart_logo.svg" />
                     </Link>
-                    <Link to="https://cloudkitchens.com/">
+                    <Link class="grid-item" to="https://cloudkitchens.com/">
                         <SVG src="/img/companies/cloudkitchens.svg" />
                     </Link>
-                    <Link to="https://www.guitarcenter.com/">
+                    <Link class="grid-item" to="https://www.guitarcenter.com/">
                         <SVG src="/img/companies/guitarcenter_logo.svg" />
                     </Link>
-                    <Link to="https://www.publicissapient.com/">
+                    <Link class="grid-item" to="https://www.publicissapient.com/">
                         <SVG src="/img/companies/ps_logo.svg" />
                     </Link>
-                    <Link to="https://www.asurion.com/">
+                    <Link class="grid-item" to="https://www.asurion.com/">
                         <SVG src="/img/companies/asurion.svg" />
                     </Link>
-                    <Link to="https://go.wepay.com/">
+                    <Link class="grid-item" to="https://go.wepay.com/">
                         <SVG src="/img/companies/wepay_logo.svg" />
                     </Link>
-                    <Link to="https://www.traceable.ai">
+                    <Link class="grid-item" to="https://www.traceable.ai">
                         <SVG src="/img/companies/traceableai.svg" />
+                    </Link>
+                    <Link class="grid-item" to="https://www.adbeat.com">
+                        <SVG src="/img/companies/adbeat.svg" />
                     </Link>
                 </div>
             </div>
@@ -259,7 +262,6 @@ function Usage() {
         </section>
     );
 }
-// // <SVG src="/img/topologies-distributed.svg" className={styles.topologyDiagram} />
 
 function Installation() {
     return (
