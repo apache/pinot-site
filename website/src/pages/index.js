@@ -166,6 +166,43 @@ function Feature({ icon, title, description }) {
     );
 }
 
+function UserFacingAnalytics() {
+    return (
+        <section className="topologies">
+            <div className="container">
+                <AnchoredH2 id="ingest-query">
+                    User-Facing Analytics
+                </AnchoredH2>
+                <p align="center">
+                    <h3 className={styles.installSubTitle}>Building Latency Sensitive User Facing Analytics via Apache Pinot</h3>
+                    <div>
+                        <iframe className={styles.youtubePlayer}
+                            title="Building Latency Sensitive User Facing Analytics via Apache Pinot"
+                            src="https://www.youtube.com/embed/JV0WxBwJqKE">
+                        </iframe>
+                    </div>
+
+                    <h3 className={styles.installSubTitle}>Using Apache Kafka and Apache Pinot for User-Facing Analytics</h3>
+                    <div>
+                        <iframe className={styles.youtubePlayer}
+                            title="Using Apache Kafka and Apache Pinot for User-Facing, Real-Time Analytics"
+                            src="https://www.youtube.com/embed/L5b_OJVOJKo">
+                        </iframe>
+                    </div>
+                    <div className="hero--buttons">
+                        <Link
+                            to="https://docs.pinot.apache.org/community-1/videos"
+                            className="button button--primary button--highlight"
+                        >
+                            More Videos
+                        </Link>
+                    </div>
+                </p>
+            </div>
+        </section>
+    );
+}
+
 function WhoUses() {
     return (
         <section className="topologies">
@@ -431,6 +468,7 @@ function Home() {
                 {features && features.length && (
                     <Features features={features} />
                 )}
+                <UserFacingAnalytics />
                 <Usage />
                 <WhoUses />
                 <Installation />
