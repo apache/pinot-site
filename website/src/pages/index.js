@@ -18,7 +18,7 @@ import Tabs from "@theme/Tabs";
 
 import classnames from "classnames";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import PinotOverview from '@site/static/img/pinot-overview.svg';
+import PinotOverview from '@site/static/img/pinot-overview-user.svg';
 import PinotQuery from '@site/static/img/ingest-query.svg';
 
 import styles from "./index.module.css";
@@ -468,9 +468,9 @@ function Home() {
                 {features && features.length && (
                     <Features features={features} />
                 )}
-                <UserFacingAnalytics />
                 <Usage />
                 <WhoUses />
+                <UserFacingAnalytics />
                 <Installation />
             </main>
         </Layout>
