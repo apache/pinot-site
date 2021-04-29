@@ -26,6 +26,10 @@ module.exports = {
   projectName: 'pinot',
   onBrokenLinks: 'ignore',
   themeConfig: {
+    metadatas: [
+      {name: 'description', content: 'user-facing analytics'},
+      {name: 'description', content: 'user facing analytics'}
+    ],
     navbar: {
       hideOnScroll: true,
       logo: {
