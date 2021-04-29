@@ -281,6 +281,13 @@
     margin-top: var(--ifm-heading-margin-bottom);
 }
 
+.youtubePlayer {
+    margin: 15px 10px 15px 15px;
+    position: relative;
+    height: 400px;
+    width: 600px;
+}
+
 .installationPlatforms {
     margin: calc(var(--ifm-spacing-vertical) * 4) 0
         calc(var(--ifm-spacing-vertical) * 1) 0;
