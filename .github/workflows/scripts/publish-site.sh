@@ -55,6 +55,8 @@ git status
 
 git config user.name "Pinot Site Updater"
 git config user.email "dev@pinot.apache.org"
-git commit -m "Update Pinot Site"
+COMMIT_ID=`git rev-parse HEAD`
+GIT_MSG=`git rev-list --format=%B --max-count=1 ${COMMIT_ID}`
+git commit -m "Update Pinot Site from dev branch" -m  "$GIT_MSG"
 git log -2
 git push origin asf-site
