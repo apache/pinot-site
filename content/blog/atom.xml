@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://pinot.apache.org/blog</id>
-    <title>Apache Pinot™ (Incubating) Blog</title>
-    <updated>2015-10-25T23:29:00.000Z</updated>
+    <title>Apache Pinot: User-Face Analytics</title>
+    <updated>2015-06-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://pinot.apache.org/blog"/>
     <subtitle>Apache Pinot™ (Incubating) Blog</subtitle>
     <icon>https://pinot.apache.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Open Sourcing Pinot - Scaling the Wall of Real-Time Analytics]]></title>
+        <id>Open Sourcing Pinot - Scaling the Wall of Real-Time Analytics</id>
+        <link href="https://pinot.apache.org/blog/2015/06/10/Open-Sourcing-Pinot"/>
+        <updated>2015-06-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introducing Pinot which allow to slice and dice across billions of rows in real-time across a wide variety of products]]></summary>
+    </entry>
 </feed>

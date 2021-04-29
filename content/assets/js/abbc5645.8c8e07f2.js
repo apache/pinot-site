@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[39],{115:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"user-facing-analytics","name":"user-facing analytics","count":1,"permalink":"/blog/tags/user-facing-analytics"}')}}]);
