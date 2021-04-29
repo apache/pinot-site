@@ -24,23 +24,24 @@ ROOT_DIR=$(git rev-parse --show-toplevel)
 SITE_DIR=${ROOT_DIR}/content
 git branch
 
-# ORIGIN_REPO=$(git remote show origin | grep 'Push  URL' | awk -F// '{print $NF}')
+# Build website
 ORIGIN_REPO="https://github.com/apache/incubator-pinot-site"
 echo "ORIGIN_REPO: $ORIGIN_REPO"
 
 DEV_TMP=/tmp/pinot-site-dev
-(
-  rm -rf $DEV_TMP
-  mkdir $DEV_TMP
-  cd $DEV_TMP
+rm -rf $DEV_TMP
+mkdir $DEV_TMP
+cd $DEV_TMP
 
-  git clone "$ORIGIN_REPO" .
-  git checkout dev
-  cd ${DEV_TMP}/website
-  npm install yarn
-  yarn install
-  yarn run build
-)
+git clone "$ORIGIN_REPO" .
+git checkout dev
+COMMIT_ID=`git rev-parse HEAD`
+GIT_MSG=`git rev-list --pretty --max-count=2 ${COMMIT_ID}`
+cd ${DEV_TMP}/website
+npm install yarn
+yarn install
+yarn run build
+
 cd ${ROOT_DIR}
 
 git status
@@ -55,8 +56,6 @@ git status
 
 git config user.name "Pinot Site Updater"
 git config user.email "dev@pinot.apache.org"
-COMMIT_ID=`git rev-parse HEAD`
-GIT_MSG=`git rev-list --pretty --max-count=1 ${COMMIT_ID}`
 git commit -m "Update Pinot Site from dev branch ${COMMIT_ID}" -m "$GIT_MSG"
 git log -2
 git push origin asf-site
