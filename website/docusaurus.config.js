@@ -39,6 +39,7 @@ module.exports = {
       items: [
         {to: 'https://docs.pinot.apache.org/', label: 'Docs', position: 'right'},
         {to: '/download', label: 'Download', position: 'right'},
+        // {to: '/blog', label: 'Blog', position: 'right'},
         {to: 'https://docs.pinot.apache.org/community-1/blogs', label: 'Blog', position: 'right'},
         {
           href: 'https://github.com/apache/incubator-pinot',
@@ -218,7 +219,6 @@ module.exports = {
   presets: [
     [
       '@docusaurus/preset-classic',
-      // '@docusaurus/preset-bootstrap', //TODO
       {
         docs: {
           editUrl: 'https://github.com/apache/incubator-pinot/edit/master/website/',
@@ -227,6 +227,34 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        blog: {
+        path: 'blog',
+        editUrl: 'https://github.com/apache/incubator-pinot-site/edit/dev/website/',
+        blogTitle: 'Blog - Apache Pinot: User-Face Analytics',
+        blogSidebarCount: 10,
+        blogSidebarTitle: 'All our posts',
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: 'blog',
+        include: ['*.md', '*.mdx'],
+        postsPerPage: 10,
+        /**
+         * Theme components used by the blog pages.
+         */
+        blogListComponent: '@theme/BlogListPage',
+        blogPostComponent: '@theme/BlogPostPage',
+        blogTagsListComponent: '@theme/BlogTagsListPage',
+        blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
+          // remarkPlugins: [variable],
+          feedOptions: {
+            type: "all",
+            title: 'Apache Pinot: User-Face Analytics',
+            // copyright: customFields.copyright,
+          },
+          showReadingTime: true,
         },
       },
     ],
