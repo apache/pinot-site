@@ -18,6 +18,7 @@ import Tabs from "@theme/Tabs";
 
 import classnames from "classnames";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useThemeContext from "@theme/hooks/useThemeContext";
 import PinotOverview from '@site/static/img/pinot-overview.svg';
 import PinotQuery from '@site/static/img/ingest-query.svg';
 
@@ -193,13 +194,13 @@ function WhoUses() {
                         <SVG src="/img/companies/factual.svg" />
                     </Link>
                     <Link to="https://www.weibo.com">
-                        <SVG src="/img/companies/weibo.svg" />
+                        <CompanyLogo srcLight="/img/companies/weibo_light.svg" srcDark="/img/companies/weibo_dark.svg" />
                     </Link>
                     <Link to="https://eero.com/">
-                        <SVG src="/img/companies/eero.svg" />
+                        <CompanyLogo srcLight="/img/companies/eero_light.svg" srcDark="/img/companies/eero_dark.svg" />
                     </Link>
                     <Link to="https://www.confluera.com/">
-                        <SVG src="/img/companies/confluera.svg" />
+                        <CompanyLogo srcLight="/img/companies/confluera_light.svg" srcDark="/img/companies/confluera_dark.svg" />
                     </Link>
                     <Link to="https://stripe.com">
                         <SVG src="/img/companies/stripe.svg" />
@@ -228,10 +229,21 @@ function WhoUses() {
                     <Link to="https://www.traceable.ai">
                         <SVG src="/img/companies/traceableai.svg" />
                     </Link>
+                    <Link to="https://razorpay.com/">
+                        <CompanyLogo srcLight="/img/companies/razorpay_light.svg" srcDark="/img/companies/razorpay_dark.svg" />
+                    </Link>
                 </div>
             </div>
         </section>
     );
+}
+
+const CompanyLogo = ({srcLight, srcDark}) => {
+    const { isDarkTheme } = useThemeContext();
+
+    return (
+        <SVG src={isDarkTheme ? srcDark : srcLight} />
+    )
 }
 
 function Usage() {
