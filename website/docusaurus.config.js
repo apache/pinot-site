@@ -33,7 +33,7 @@ module.exports = {
       {name: 'description', content: 'user facing analytics'},
       {name: 'description', content: 'Olap'},
       {name: 'description', content: 'Consumer-facing facing analytics'},
-      {name: 'description', content: 'Fast'}
+      {name: 'description', content: 'Fast Analytics'}
     ],
     navbar: {
       hideOnScroll: true,
