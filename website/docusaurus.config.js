@@ -27,8 +27,13 @@ module.exports = {
   onBrokenLinks: 'ignore',
   themeConfig: {
     metadatas: [
-      {name: 'description', content: 'user-facing analytics'},
-      {name: 'description', content: 'user facing analytics'}
+      {name: 'description', content: 'Apache Pinot'},
+      {name: 'description', content: 'Real-time Analytics'},
+      {name: 'description', content: 'User-facing Analytics'},
+      {name: 'description', content: 'user facing analytics'},
+      {name: 'description', content: 'Olap'},
+      {name: 'description', content: 'Consumer-facing facing analytics'},
+      {name: 'description', content: 'Fast'}
     ],
     navbar: {
       hideOnScroll: true,
