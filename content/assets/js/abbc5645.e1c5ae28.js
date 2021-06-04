@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[6258],{8530:function(a){"use strict";a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"user-facing-analytics","name":"user-facing analytics","count":14,"permalink":"/blog/tags/user-facing-analytics"}')}}]);

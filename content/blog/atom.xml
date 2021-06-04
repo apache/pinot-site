@@ -2,11 +2,102 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://pinot.apache.org/blog</id>
     <title>Apache Pinot: User-Face Analytics</title>
-    <updated>2015-06-10T00:00:00.000Z</updated>
+    <updated>2021-04-29T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://pinot.apache.org/blog"/>
     <subtitle>Apache Pinot™ (Incubating) Blog</subtitle>
     <icon>https://pinot.apache.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Automating Merchant Live Monitoring with Real-Time Analytics - Charon]]></title>
+        <id>Automating Merchant Live Monitoring with Real-Time Analytics - Charon</id>
+        <link href="https://pinot.apache.org/blog/2021/04/29/Uber-Charon"/>
+        <updated>2021-04-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Focus on Uber’s real-time data platform components to build a tool called Charon to reduce impact of poor marketplace reliability on the merchants.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Auto-tuning Pinot real-time consumption]]></title>
+        <id>Auto-tuning Pinot real-time consumption</id>
+        <link href="https://pinot.apache.org/blog/2020/12/01/LinkedIn-AutoTune"/>
+        <updated>2020-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bridging batch and stream processing for the Recruiter usage statistics dashboard]]></title>
+        <id>Bridging batch and stream processing for the Recruiter usage statistics dashboard</id>
+        <link href="https://pinot.apache.org/blog/2020/12/01/LinkedIn-BatchRealtime"/>
+        <updated>2020-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing ThirdEye - LinkedIn’s Business-Wide Monitoring Platform]]></title>
+        <id>Introducing ThirdEye - LinkedIn’s Business-Wide Monitoring Platform</id>
+        <link href="https://pinot.apache.org/blog/2020/12/01/LinkedIn-IntroThirdEye"/>
+        <updated>2020-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ThirdEye is a comprehensive platform for real-time monitoring of metrics that covers a wide variety of use-cases.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From Lambda to Lambda-less Lessons learned]]></title>
+        <id>From Lambda to Lambda-less Lessons learned</id>
+        <link href="https://pinot.apache.org/blog/2020/12/01/LinkedIn-Lamda"/>
+        <updated>2020-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Lambda architecture has become a popular architectural style that promises both speed and accuracy in data processing by using a hybrid approach of both batch processing and stream processing methods.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Monitoring business performance data with ThirdEye smart alerts]]></title>
+        <id>Monitoring business performance data with ThirdEye smart alerts</id>
+        <link href="https://pinot.apache.org/blog/2020/12/01/LinkedIn-SmartAlerts"/>
+        <updated>2020-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Star-tree index - Powering fast aggregations on Pinot]]></title>
+        <id>Star-tree index - Powering fast aggregations on Pinot</id>
+        <link href="https://pinot.apache.org/blog/2020/12/01/LinkedIn-StarTree"/>
+        <updated>2020-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduced Star-Tree index to utilize the pre-aggregated documents in a smart way that achieves low query latencies, while using the storage space efficiently.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building LinkedIn Talent Insights to democratize data-driven decision making]]></title>
+        <id>Building LinkedIn Talent Insights to democratize data-driven decision making</id>
+        <link href="https://pinot.apache.org/blog/2020/12/01/LinkedIn-TalentInsight"/>
+        <updated>2020-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Solving for the cardinality of set intersection at scale with Pinot and Theta Sketches]]></title>
+        <id>Solving for the cardinality of set intersection at scale with Pinot and Theta Sketches</id>
+        <link href="https://pinot.apache.org/blog/2020/12/01/LinkedIn-Theta"/>
+        <updated>2020-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Analyzing anomalies with ThirdEye]]></title>
+        <id>Analyzing anomalies with ThirdEye</id>
+        <link href="https://pinot.apache.org/blog/2020/12/01/LinkedIn-Thirdeye"/>
+        <updated>2020-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Operating Apache Pinot at Uber Scale]]></title>
+        <id>Operating Apache Pinot at Uber Scale</id>
+        <link href="https://pinot.apache.org/blog/2020/10/20/Uber-Operating"/>
+        <updated>2020-10-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Present details of this platform and how it fits in Uber’s ecosystem. Explain how uber scaled from a few use cases to a multi-cluster powering hundreds of use cases for querying terabyte-scale data with millisecond latencies.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Engineering SQL Support on Apache Pinot at Uber]]></title>
+        <id>Engineering SQL Support on Apache Pinot at Uber</id>
+        <link href="https://pinot.apache.org/blog/2020/01/15/Pinot-Presto-SQL"/>
+        <updated>2020-01-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Talks about solution that linked Presto, a query engine that supports full ANSI SQL, and Pinot, a real-time OLAP (online analytical processing) datastore.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Engineering Restaurant Manager - UberEATS Analytics Dashboard]]></title>
+        <id>Engineering Restaurant Manager - UberEATS Analytics Dashboard</id>
+        <link href="https://pinot.apache.org/blog/2017/09/17/Restaurant-Manager"/>
+        <updated>2017-09-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Restaurant Manager is a comprehensive analytics dashboard and pipeline for our restaurant partners. In this article, we discuss how we architected this analytics platform and its robust data pipeline.]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Open Sourcing Pinot - Scaling the Wall of Real-Time Analytics]]></title>
         <id>Open Sourcing Pinot - Scaling the Wall of Real-Time Analytics</id>

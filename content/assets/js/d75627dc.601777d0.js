@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[4638],{1688:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"third-eye","name":"thirdeye","count":1,"permalink":"/blog/tags/third-eye"}')}}]);
