@@ -46,3 +46,14 @@ $ GIT_USER=[USER_ID] USE_SSH=true yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## Add Blogs
+
+To add new blogs to site, just create new MD file in `website/blog/`
+
+Follow the format `YYYY-MM-DD-Company-Name`
+Example:  `website/blog/2017-09-17-Restaurant-Manager.md`
+
+Then fill in all the sections titles, author, etc..
+
+Example: https://raw.githubusercontent.com/apache/incubator-pinot-site/ff73eceb6fa5f8128d9332bf95f92eab2d9c5b6a/website/blog/2017-09-17-Restaurant-Manager.md

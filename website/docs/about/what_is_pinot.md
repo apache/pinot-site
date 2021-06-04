@@ -2,6 +2,7 @@
 id: what_is_pinot
 title: What is Pinot
 sidebar_label: What is Pinot
+draft: true
 ---
 
 Apache Pinot is a realtime distributed OLAP datastore, which is used to deliver scalable real time analytics with low latency. It can ingest data from batch data sources (such as HDFS, S3, Azure Data Lake, Google Cloud Storage) as well as streaming sources (such as Kafka). Pinot is designed to scale horizontally, so that it can scale to larger data sets and higher query rates as needed.

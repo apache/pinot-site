@@ -3,7 +3,7 @@ title: Running Pinot in Docker
 sidebar_label: Docker
 description: Using Pinot on Docker
 source_url: https://github.com/
-
+draft: true
 ---
 
 Apache Pinot started maintaing the [`apachepinot/pinot`](https://hub.docker.com/r/apachepinot/pinot) Docker images
@@ -23,7 +23,7 @@ We'll be running a docker image apachepinot/pinot:latest to run a quick start, w
 
 - Sets up the Pinot cluster QuickStartCluster
 - Creates a sample table and loads sample data
-  
+
 There's 3 types of quick start
 
 import Tabs from '@theme/Tabs';
@@ -79,7 +79,7 @@ Streaming:
    - Pinot Controller
    - Pinot Broker
    - Pinot Server
-  
+
 1. Creates a demo table: **meetupRsvp**
 
 1. Launches a **meetup** stream and publish data to a Kafka: **meetupRSVPEvents** to be subscribed by Pinot

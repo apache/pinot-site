@@ -2,6 +2,7 @@
 title: Azure Quickstart
 sidebar_label: Azure
 description: Run Pinot on Azure
+draft: true
 ---
 
 import Tabs from '@theme/Tabs';

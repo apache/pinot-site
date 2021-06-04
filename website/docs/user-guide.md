@@ -3,6 +3,7 @@ title: User Guide
 description: "User Guide"
 sidebar_label: hidden
 hide_pagination: true
+draft: true
 ---
 
 Provide basic foundation of Pinot.

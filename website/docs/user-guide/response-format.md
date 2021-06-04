@@ -2,6 +2,7 @@
 title: Response Format
 sidebar_label: rest
 description: REST Response Format
+draft: true
 ---
 
 import Alert from '@site/src/components/Alert';
@@ -25,67 +26,67 @@ $ curl -H "Content-Type: application/json" -X POST \
    -d '{"sql":"SELECT moo, bar, foo FROM myTable ORDER BY foo DESC"}' \
    http://localhost:8099/query/sql
 {
-  "exceptions": [], 
-  "minConsumingFreshnessTimeMs": 0, 
-  "numConsumingSegmentsQueried": 0, 
-  "numDocsScanned": 6, 
-  "numEntriesScannedInFilter": 0, 
-  "numEntriesScannedPostFilter": 18, 
-  "numGroupsLimitReached": false, 
-  "numSegmentsMatched": 2, 
-  "numSegmentsProcessed": 2, 
-  "numSegmentsQueried": 2, 
-  "numServersQueried": 1, 
-  "numServersResponded": 1, 
+  "exceptions": [],
+  "minConsumingFreshnessTimeMs": 0,
+  "numConsumingSegmentsQueried": 0,
+  "numDocsScanned": 6,
+  "numEntriesScannedInFilter": 0,
+  "numEntriesScannedPostFilter": 18,
+  "numGroupsLimitReached": false,
+  "numSegmentsMatched": 2,
+  "numSegmentsProcessed": 2,
+  "numSegmentsQueried": 2,
+  "numServersQueried": 1,
+  "numServersResponded": 1,
   "resultTable": {
     "dataSchema": {
       "columnDataTypes": [
         "LONG",
         "INT",
         "STRING"
-      ], 
+      ],
       "columnNames": [
-        "moo", 
+        "moo",
         "bar",
         "foo"
       ]
-    }, 
+    },
     "rows": [
-      [ 
-        40015, 
+      [
+        40015,
         2019,
         "xyz"
-      ], 
+      ],
       [
         1002,
         2001,
         "pqr"
-      ], 
+      ],
       [
         20555,
         1988,
         "pqr"
       ],
-      [ 
+      [
         203,
         2010,
         "pqr"
-      ], 
+      ],
       [
         500,
         2008,
         "abc"
-      ], 
+      ],
       [
-        60, 
+        60,
         2003,
         "abc"
       ]
     ]
-  }, 
-  "segmentStatistics": [], 
-  "timeUsedMs": 4, 
-  "totalDocs": 6, 
+  },
+  "segmentStatistics": [],
+  "timeUsedMs": 4,
+  "totalDocs": 6,
   "traceInfo": {}
 }
 ```
@@ -97,44 +98,44 @@ $ curl -H "Content-Type: application/json" -X POST \
 ```sql
 $ curl -X POST \
   -d '{"sql":"SELECT SUM(moo), MAX(bar), COUNT(*) FROM myTable"}' \
-  localhost:8099/query/sql -H "Content-Type: application/json" 
+  localhost:8099/query/sql -H "Content-Type: application/json"
 {
-  "exceptions": [], 
-  "minConsumingFreshnessTimeMs": 0, 
-  "numConsumingSegmentsQueried": 0, 
-  "numDocsScanned": 6, 
-  "numEntriesScannedInFilter": 0, 
-  "numEntriesScannedPostFilter": 12, 
-  "numGroupsLimitReached": false, 
-  "numSegmentsMatched": 2, 
-  "numSegmentsProcessed": 2, 
-  "numSegmentsQueried": 2, 
-  "numServersQueried": 1, 
-  "numServersResponded": 1, 
+  "exceptions": [],
+  "minConsumingFreshnessTimeMs": 0,
+  "numConsumingSegmentsQueried": 0,
+  "numDocsScanned": 6,
+  "numEntriesScannedInFilter": 0,
+  "numEntriesScannedPostFilter": 12,
+  "numGroupsLimitReached": false,
+  "numSegmentsMatched": 2,
+  "numSegmentsProcessed": 2,
+  "numSegmentsQueried": 2,
+  "numServersQueried": 1,
+  "numServersResponded": 1,
   "resultTable": {
     "dataSchema": {
       "columnDataTypes": [
-        "DOUBLE", 
-        "DOUBLE", 
+        "DOUBLE",
+        "DOUBLE",
         "LONG"
-      ], 
+      ],
       "columnNames": [
-        "sum(moo)", 
-        "max(bar)", 
+        "sum(moo)",
+        "max(bar)",
         "count(*)"
       ]
-    }, 
+    },
     "rows": [
       [
-        62335, 
-        2019.0, 
+        62335,
+        2019.0,
         6
       ]
     ]
-  }, 
-  "segmentStatistics": [], 
-  "timeUsedMs": 87, 
-  "totalDocs": 6, 
+  },
+  "segmentStatistics": [],
+  "timeUsedMs": 87,
+  "totalDocs": 6,
   "traceInfo": {}
 }
 ```
@@ -146,54 +147,54 @@ $ curl -X POST \
 ```sql
 $ curl -X POST \
   -d '{"sql":"SELECT SUM(moo), MAX(bar) FROM myTable GROUP BY foo ORDER BY foo"}' \
-  localhost:8099/query/sql -H "Content-Type: application/json" 
+  localhost:8099/query/sql -H "Content-Type: application/json"
 {
-  "exceptions": [], 
-  "minConsumingFreshnessTimeMs": 0, 
-  "numConsumingSegmentsQueried": 0, 
-  "numDocsScanned": 6, 
-  "numEntriesScannedInFilter": 0, 
-  "numEntriesScannedPostFilter": 18, 
-  "numGroupsLimitReached": false, 
-  "numSegmentsMatched": 2, 
-  "numSegmentsProcessed": 2, 
-  "numSegmentsQueried": 2, 
-  "numServersQueried": 1, 
-  "numServersResponded": 1, 
+  "exceptions": [],
+  "minConsumingFreshnessTimeMs": 0,
+  "numConsumingSegmentsQueried": 0,
+  "numDocsScanned": 6,
+  "numEntriesScannedInFilter": 0,
+  "numEntriesScannedPostFilter": 18,
+  "numGroupsLimitReached": false,
+  "numSegmentsMatched": 2,
+  "numSegmentsProcessed": 2,
+  "numSegmentsQueried": 2,
+  "numServersQueried": 1,
+  "numServersResponded": 1,
   "resultTable": {
     "dataSchema": {
       "columnDataTypes": [
-        "STRING", 
-        "DOUBLE", 
+        "STRING",
+        "DOUBLE",
         "DOUBLE"
-      ], 
+      ],
       "columnNames": [
-        "foo", 
-        "sum(moo)", 
+        "foo",
+        "sum(moo)",
         "max(bar)"
       ]
-    }, 
+    },
     "rows": [
       [
-        "abc", 
-        560.0, 
+        "abc",
+        560.0,
         2008.0
-      ], 
+      ],
       [
-        "pqr", 
-        21760.0, 
+        "pqr",
+        21760.0,
         2010.0
-      ], 
+      ],
       [
-        "xyz", 
-        40015.0, 
+        "xyz",
+        40015.0,
         2019.0
       ]
     ]
-  }, 
-  "segmentStatistics": [], 
-  "timeUsedMs": 15, 
-  "totalDocs": 6, 
+  },
+  "segmentStatistics": [],
+  "timeUsedMs": 15,
+  "totalDocs": 6,
   "traceInfo": {}
 }
 ```
@@ -209,7 +210,7 @@ where:
 | resultTable | This contains everything needed to process the response |
 | resultTable.dataSchema | This describes schema of the response (columnNames and their dataTypes) |
 | resultTable.dataSchema.columnNames |  columnNames in the response. |
-| resultTable.dataSchema.columnDataTypes | DataTypes for each column | 
+| resultTable.dataSchema.columnDataTypes | DataTypes for each column |
 | resultTable.rows | Actual content with values. This is an array of arrays. number of rows depends on the limit value in the query. The number of columns in each row is equal to the length of (resultTable.dataSchema.columnNames) |
 | timeUsedms | Total time taken as seen by the broker before sending the response back to the client |
 | totalDocs | This is number of documents/records in the table |
@@ -231,7 +232,7 @@ where:
 <Alert type="info"> PQL endpoint is deprecated, and will soon be removed. The standard sql endpoint is the recommended endpoint..
 </Alert>
 
-The response received from PQL endpoint is different depending on the type of the query. 
+The response received from PQL endpoint is different depending on the type of the query.
 
 <Tabs
   block={true}

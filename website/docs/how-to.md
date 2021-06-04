@@ -3,6 +3,7 @@ title: How To
 description: "how to guides"
 sidebar_label: hidden
 hide_pagination: true
+draft: true
 ---
 
 Provide basic foundation of Pinot.

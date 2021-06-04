@@ -13,7 +13,6 @@
       items: [
         "about/what_is_pinot",
         "about/features_of_pinot",
-        "about/who_use_pinot"
       ],
     },
     {
@@ -60,13 +59,7 @@
       items: [
         "components/broker",
         "components/cluster",
-        "components/controller",
-        "components/minion",
-        "components/schema",
-        "components/segments",
-        "components/server",
-        "components/tables",
-        "components/tenants",
+        "components/controller"
       ],
     }
   ]

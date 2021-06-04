@@ -2,6 +2,7 @@
 id: features_of_pinot
 title: Features of Pinot
 sidebar_label: Features of Pinot
+draft: true
 ---
 
 # Features of Pinot
@@ -18,7 +19,7 @@ Because of the design choices we made to achieve these goals, there are certain 
 
 Pinot is not a replacement for database i.e it cannot be used as source of truth store, cannot mutate data
 Not a replacement for search engine i.e Full text search, relevance not supported
-Query cannot span across multiple tables. 
+Query cannot span across multiple tables.
 Pinot works very well for querying time series data with lots of Dimensions and Metrics. <br />
 
 For example:
@@ -29,7 +30,7 @@ SELECT sum(clicks), sum(impressions) FROM AdAnalyticsTable
   GROUP BY daysSinceEpoch TOP 100
 ```
 
-```SQL  
+```SQL
 SELECT sum(impressions) FROM AdAnalyticsTable
   WHERE (daysSinceEpoch >= 17824 and daysSinceEpoch <= 17854) AND adveriserId = '1234356789'
   GROUP BY daysSinceEpoch,advertiserId TOP 100

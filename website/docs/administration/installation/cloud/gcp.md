@@ -2,6 +2,7 @@
 title: GCP Quickstart
 sidebar_label: GCP
 description: Run Pinot on GCP
+draft: true
 ---
 
 import Alert from '@site/src/components/Alert';

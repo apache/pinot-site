@@ -2,6 +2,7 @@
 title: AWS Quickstart
 sidebar_label: AWS
 description: Run Pinot on AWS
+draft: true
 ---
 
 This document provides the basic instruction to set up a Kubernetes Cluster on [Amazon Elastic Kubernetes Service (Amazon EKS)](https://aws.amazon.com/eks/)
@@ -36,7 +37,7 @@ delayed. Generally new Pinot releases are made available within a few days.</Ale
 1. Install Helm
 
   Please follow this link (https://helm.sh/docs/using_helm/#installing-helm) to install helm.
-  
+
   For Mac User
 
   ```bash

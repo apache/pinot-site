@@ -2,6 +2,7 @@
 title: Querying Pinot
 sidebar_label: query-pinot
 description: Ways to query Pinot
+draft: true
 ---
 
 import Alert from '@site/src/components/Alert';
@@ -58,7 +59,7 @@ Query Console can be used for running ad-hoc queries (checkbox available to quer
 You can also query using the pinot-admin scripts. Make sure you follow instructions in Getting Pinot to get Pinot locally, and then
 
 ```bash
-cd incubator-pinot/pinot-tools/target/pinot-tools-pkg 
+cd incubator-pinot/pinot-tools/target/pinot-tools-pkg
 bin/pinot-admin.sh PostQuery \
   -queryType sql \
   -brokerPort 8000 \
