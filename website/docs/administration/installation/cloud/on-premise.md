@@ -2,12 +2,13 @@
 title: Running Pinot in Kubernetes
 sidebar_label: Kubernetes
 description: Running Pinot in Kubernetes
+draft: true
 ---
 
 This QuickStart assumes the existence of Kubernetes Cluster. Please follow below links to setup your Kubernetes cluster in local or major cloud vendors.
 
-> <b>Prerequisites:</b> <br/> 
-> <p>&nbsp; <a href="https://docs.docker.com/docker-for-mac/kubernetes/" target="_blank">Enable Kubernetes on Docker-Desktop</a><br/> 
+> <b>Prerequisites:</b> <br/>
+> <p>&nbsp; <a href="https://docs.docker.com/docker-for-mac/kubernetes/" target="_blank">Enable Kubernetes on Docker-Desktop</a><br/>
 > &nbsp; <a href="https://kubernetes.io/docs/tasks/tools/install-minikube/" target="_blank">Setup a Kubernetes Cluster using Amazon Elastic Kubernetes Service (Amazon EKS)</a> <br/>
 > &nbsp; <a href="https://kubernetes.io/docs/tasks/tools/install-minikube/" target="_blank">Setup a Kubernetes Cluster using Google Kubernetes Engine(GKE)</a> <br/>
 > &nbsp; <a href="https://kubernetes.io/docs/tasks/tools/install-minikube/" target="_blank">Setup a Kubernetes Cluster using Azure Kubernetes Service (AKS)</a> <br/> </p>
@@ -225,7 +226,7 @@ Splits: 19 total, 19 done (100.00%)
 
 ```SQL
 presto:default> show tables;
-```  
+```
 
 ```bash
     Table

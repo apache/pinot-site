@@ -3,6 +3,7 @@ title: Components
 description: "Components"
 sidebar_label: hidden
 hide_pagination: true
+draft: true
 ---
 
 Provide basic foundation of Pinot.

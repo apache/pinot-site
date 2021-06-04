@@ -2,6 +2,7 @@
 title: Build Docker Images
 sidebar_label: build-docker
 description: Build Docker Images
+draft: true
 ---
 
 The scripts to build Pinot related docker images is located at [here](https://github.com/apache/incubator-pinot/tree/master/docker/images)
@@ -168,7 +169,7 @@ make push
 
 Follow the [instructions](https://superset.incubator.apache.org/installation.html#configuration) provided by Apache Superset for writing your own superset_config.py.
 
-Place this file in a local directory and mount this directory to /etc/superset inside the container. This location 
+Place this file in a local directory and mount this directory to /etc/superset inside the container. This location
 is included in the image's `PYTHONPATH`. Mounting this file to a different location is possible, but it will need to be in the PYTHONPATH.
 
 ### Volumes

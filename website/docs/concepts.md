@@ -3,6 +3,7 @@ title: Concepts
 description: "Concepts"
 sidebar_label: hidden
 hide_pagination: true
+draft: true
 ---
 
 Provide basic foundation of Pinot.

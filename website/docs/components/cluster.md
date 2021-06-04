@@ -2,6 +2,7 @@
 title: Cluster
 sidebar_label: cluster
 description: Cluster
+draft: true
 ---
 
 import Alert from '@site/src/components/Alert';
@@ -90,7 +91,7 @@ docker run \
     -d qnib/plain-zkui:latest
 ```
 
-4. 
+4.
 
 </TabItem>
 
@@ -112,7 +113,7 @@ Install [zooinspector](https://github.com/jfim/zooinspector) to view the data in
 
 </Tabs>
 
-Once we've started Zookeeper, we can start other components to join this cluster. If you're using docker, pull the latest `apachepinot/pinot` image. 
+Once we've started Zookeeper, we can start other components to join this cluster. If you're using docker, pull the latest `apachepinot/pinot` image.
 
 ### Using docker images
 

@@ -146,3 +146,67 @@
     -webkit-font-feature-settings: "liga";
     -webkit-font-smoothing: antialiased;
 }
+
+.container1 {
+    margin: 0 auto;
+    padding: 40px;
+    width: 80%;
+    color: #333;
+    background: #419be0;
+  }
+
+.awssld__wrapper {
+max-height: 600px;
+min-height: 500px;
+position: relative;
+}
+.slide-show img {
+max-height: 600px;
+min-height: 500px;
+position: relative;
+}
+.slide-img::before {
+content: "";
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 50;
+background: rgba(0, 0, 0, 0.505);
+}
+
+.slide-caption {
+position: absolute;
+z-index: 100;
+color: #ddd;
+width: 50%;
+left: 20px;
+padding: 20px;
+background: rgba(34, 34, 34, 0.61);
+z-index: 900;
+}
+
+.slide-caption > h1 {
+margin-bottom: 10px;
+animation: fadeIn 2s ease-in;
+}
+
+.slide-caption > p {
+font-size: 0.95rem;
+line-height: 2em;
+margin-top: 10px;
+animation: fadeIn 3s ease-in;
+}
+
+
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  }
+
+.react-player {
+position: absolute;
+top: 0;
+left: 0;
+}

@@ -2,6 +2,7 @@
 title: Java
 sidebar_label: java
 description: Pinot Java Client
+draft: true
 ---
 
 import Alert from '@site/src/components/Alert';
@@ -26,7 +27,7 @@ public class PinotClientExample {
     String zkUrl = "localhost:2181";
     String pinotClusterName = "PinotCluster";
     Connection pinotConnection = ConnectionFactory.fromZookeeper(zkUrl + "/" + pinotClusterName);
-  
+
     String query = "SELECT COUNT(*) FROM myTable GROUP BY foo";
 
     // set queryType=sql for querying the sql endpoint

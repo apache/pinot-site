@@ -3,6 +3,7 @@ title: About
 description: "About Pinot"
 sidebar_label: hidden
 hide_pagination: true
+draft: true
 ---
 
 Provide basic foundation of Pinot.

@@ -2,6 +2,7 @@
 id: running_locally
 title: Running Pinot locally
 sidebar_label: Running Pinot locally
+draft: true
 ---
 
 ## Running Pinot locally
@@ -17,7 +18,7 @@ First, let's get Pinot. You can either build it, or download it
 ### Build
 
 Follow these steps to checkout code from [Github](https://github.com/apache/incubator-pinot) and build Pinot locally
- 
+
 > <b>Prerequisites:</b> <br/> <p>&nbsp; Install <a href="https://maven.apache.org/install.html" target="_blank">Apache Maven</a>  3.6 or higher. </p>
 
 ```bash

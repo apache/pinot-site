@@ -2,6 +2,7 @@
 title: GoLang
 sidebar_label: golang
 description: Pinot Client for Golang
+draft: true
 ---
 
 import Alert from '@site/src/components/Alert';

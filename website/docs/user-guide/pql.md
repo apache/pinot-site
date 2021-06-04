@@ -2,6 +2,7 @@
 title: PQL
 sidebar_label: PQL
 description: Pinot Query Language
+draft: true
 ---
 
 import Alert from '@site/src/components/Alert';
@@ -40,7 +41,7 @@ SELECT MIN(foo), MAX(foo), SUM(foo), AVG(foo) FROM myTable
 
 ```sql
 SELECT MIN(foo), MAX(foo), SUM(foo), AVG(foo) FROM myTable
-  GROUP BY bar, baz 
+  GROUP BY bar, baz
   ORDER BY bar, MAX(foo) DESC LIMIT 50
 ```
 

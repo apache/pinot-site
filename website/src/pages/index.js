@@ -25,6 +25,16 @@ import PinotQuery from '@site/static/img/ingest-query.svg';
 import styles from "./index.module.css";
 import "./index.css";
 
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
+import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
+import SwiftSlider from 'react-swift-slider'
+import withAutoplay from 'react-awesome-slider/dist/autoplay'
+import ReactPlayer from "react-player/youtube";
+import styled from 'styled-components'
+
+const AutoplaySlider = withAutoplay(AwesomeSlider);
+
 const AnchoredH2 = Heading("h2");
 
 const features = [
@@ -171,30 +181,47 @@ function UserFacingAnalytics() {
     return (
         <section className="topologies">
             <div className="container">
-                <AnchoredH2 id="ingest-query">
+                <AnchoredH2 id="user-facing-analytics">
                     User-Facing Analytics
                 </AnchoredH2>
                 <p align="center">
                     <h3 className={styles.installSubTitle}>Building Latency Sensitive User Facing Analytics via Apache Pinot</h3>
                     <div>
-                        <iframe className={styles.youtubePlayer}
-                            title="Building Latency Sensitive User Facing Analytics via Apache Pinot"
-                            src="https://www.youtube.com/embed/JV0WxBwJqKE">
-                        </iframe>
+                        <ReactPlayer
+                            url={"https://www.youtube.com/embed/JV0WxBwJqKE&hd=1"}
+                            light={true}
+                            width={"720px"}
+                            height={"480px"}
+                            style={{ border: "1px solid white" }}
+                            playing={true}
+                            volume={1}
+                            pip={true}
+                            controls={true}
+                            loop={false}
+                            stopOnUnmount={true}
+                        />
                     </div>
 
                     <h3 className={styles.installSubTitle}>Using Apache Kafka and Apache Pinot for User-Facing Analytics</h3>
                     <div>
-                        <iframe className={styles.youtubePlayer}
-                            title="Using Apache Kafka and Apache Pinot for User-Facing, Real-Time Analytics"
-                            src="https://www.youtube.com/embed/L5b_OJVOJKo">
-                        </iframe>
+                        <ReactPlayer
+                            url={"https://www.youtube.com/watch?v=qL_t19QfrpY"}
+                            light={true}
+                            width={"720px"}
+                            height={"480px"}
+                            style={{ border: "1px solid white" }}
+                            playing={true}
+                            volume={1}
+                            pip={true}
+                            controls={true}
+                            loop={false}
+                            stopOnUnmount={true}
+                        />
                     </div>
                     <div className="hero--buttons">
                         <Link
                             to="https://docs.pinot.apache.org/community-1/videos"
-                            className="button button--primary button--highlight"
-                        >
+                            className="button button--primary button--highlight">
                             More Videos
                         </Link>
                     </div>
@@ -203,6 +230,8 @@ function UserFacingAnalytics() {
         </section>
     );
 }
+
+
 
 function WhoUses() {
     return (
@@ -484,6 +513,7 @@ function Home() {
                 <WhoUses />
                 <UserFacingAnalytics />
                 <Installation />
+
             </main>
         </Layout>
     );

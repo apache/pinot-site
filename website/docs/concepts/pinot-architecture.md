@@ -2,16 +2,17 @@
 id: pinot-architecture
 title: Pinot Architecture
 sidebar_label: Pinot Architecture
+draft: true
 ---
 
 ![Arch](../../static/img/pinot-architecture.png)
 
-- Terminology: 
+- Terminology:
 First, a bit of naming notions. Pinot has has different components, and different ways of representing the data. In particular, data is represented by:
 
-- Table: 
+- Table:
 A table is a logical abstraction to refer to a collection of related data. It consists of columns and rows (documents).
 
-- Segment: 
+- Segment:
 Data in table is divided into (horizontal) shards referred to as segments.
 
