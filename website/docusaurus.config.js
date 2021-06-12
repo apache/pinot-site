@@ -33,7 +33,8 @@ module.exports = {
       {name: 'description', content: 'user facing analytics'},
       {name: 'description', content: 'Olap'},
       {name: 'description', content: 'Consumer-facing facing analytics'},
-      {name: 'description', content: 'Fast Analytics'}
+      {name: 'description', content: 'Fast Analytics'},
+      {name: 'description', content: 'Who uses Apache Pinot?'}
     ],
     navbar: {
       hideOnScroll: true,
@@ -236,7 +237,7 @@ module.exports = {
         blog: {
         path: 'blog',
         editUrl: 'https://github.com/apache/incubator-pinot-site/edit/dev/website/',
-        blogTitle: 'Blog - Apache Pinot: User-Face Analytics',
+        blogTitle: 'Blog - Apache Pinot: User-Facing Analytics',
         blogSidebarCount: 10,
         blogSidebarTitle: 'All our posts',
         /**
@@ -256,7 +257,7 @@ module.exports = {
           // remarkPlugins: [variable],
           feedOptions: {
             type: "all",
-            title: 'Apache Pinot: User-Face Analytics',
+            title: 'Apache Pinot: User-Facing Analytics',
             // copyright: customFields.copyright,
           },
           showReadingTime: true,

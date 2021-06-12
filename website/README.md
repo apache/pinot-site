@@ -57,3 +57,32 @@ Example:  `website/blog/2017-09-17-Restaurant-Manager.md`
 Then fill in all the sections titles, author, etc..
 
 Example: https://raw.githubusercontent.com/apache/incubator-pinot-site/ff73eceb6fa5f8128d9332bf95f92eab2d9c5b6a/website/blog/2017-09-17-Restaurant-Manager.md
+
+## Adding new Companies
+
+To add new companies who are using Apache Pinot, just add new blog in [website/src/data/companies-data.js](./src/data/companies-data.js)
+
+Example of Company with both Light and Dark mode Logo:
+
+```json
+  {
+    name: 'Confluera',
+    website: 'https://www.confluera.com/',
+    logo: '/img/companies/confluera_light.svg',
+    darkLogo: '/img/companies/confluera_dark.svg',
+    enable_dark_logo: true
+  }
+```
+
+Example of Company with just one logo:
+
+```json
+  {
+    name: 'Microsoft',
+    website: 'https://teams.microsoft.com',
+    logo: '/img/companies/MicrosoftTeamPost2018.svg',
+    enable_dark_logo: false
+  },
+```
+
+Note: logo can just be any public svg link or add new svg file in [website/static/img/companies](./static/img/companies) folder
