@@ -23,5 +23,3 @@ draft: true
 ### Uber
 
 - Pinot powers both internal and external site facing analytics applications like Uber Eats Restaurant Analytics.
-
-## Companies using Thirdeye
