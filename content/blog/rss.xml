@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Apache Pinot: User-Face Analytics</title>
+        <title>Apache Pinot: User-Facing Analytics</title>
         <link>https://pinot.apache.org/blog</link>
         <description>Apache Pinot™ (Incubating) Blog</description>
         <lastBuildDate>Thu, 29 Apr 2021 00:00:00 GMT</lastBuildDate>
