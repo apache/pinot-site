@@ -105,7 +105,7 @@ module.exports = {
           ],
         },
         {
-          title: 'Components',
+          title: 'Integrations',
           items: [
             {
               label: 'Presto',
