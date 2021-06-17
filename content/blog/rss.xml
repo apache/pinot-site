@@ -15,16 +15,16 @@
             <description><![CDATA[Focus on Uber’s real-time data platform components to build a tool called Charon to reduce impact of poor marketplace reliability on the merchants.]]></description>
         </item>
         <item>
-            <title><![CDATA[Auto-tuning Pinot real-time consumption]]></title>
-            <link>https://pinot.apache.org/blog/2020/12/01/LinkedIn-AutoTune</link>
-            <guid>Auto-tuning Pinot real-time consumption</guid>
+            <title><![CDATA[Bridging batch and stream processing for the Recruiter usage statistics dashboard]]></title>
+            <link>https://pinot.apache.org/blog/2020/12/01/LinkedIn-BatchRealtime</link>
+            <guid>Bridging batch and stream processing for the Recruiter usage statistics dashboard</guid>
             <pubDate>Tue, 01 Dec 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></description>
         </item>
         <item>
-            <title><![CDATA[Bridging batch and stream processing for the Recruiter usage statistics dashboard]]></title>
-            <link>https://pinot.apache.org/blog/2020/12/01/LinkedIn-BatchRealtime</link>
-            <guid>Bridging batch and stream processing for the Recruiter usage statistics dashboard</guid>
+            <title><![CDATA[Auto-tuning Pinot real-time consumption]]></title>
+            <link>https://pinot.apache.org/blog/2020/12/01/LinkedIn-AutoTune</link>
+            <guid>Auto-tuning Pinot real-time consumption</guid>
             <pubDate>Tue, 01 Dec 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></description>
         </item>
