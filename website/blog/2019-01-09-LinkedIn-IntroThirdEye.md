@@ -8,9 +8,9 @@ description:
   ThirdEye is a comprehensive platform for real-time monitoring of metrics that covers a wide variety of use-cases.
 keywords:
   - Pinot
-  - Uber Data
   - User-Facing Analytics
   - Real-time data platform
+  - ThirdEye
 tags: [Pinot, LinkedIn, real-time data platform, Realtime, ThirdEye, Analytics, User-Facing Analytics]
 ---
 

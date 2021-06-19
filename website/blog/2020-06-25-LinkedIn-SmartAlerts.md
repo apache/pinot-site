@@ -9,8 +9,10 @@ description:
   which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.
 keywords:
   - Pinot
-  - Uber Data
+  - LinkedIn
   - User-Facing Analytics
+  - Smart alerts
+  - Automated User facing dashboards
   - Real-time data platform
 tags: [Pinot, LinkedIn, real-time data platform, Realtime, Analytics, User-Facing Analytics]
 ---

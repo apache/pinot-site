@@ -10,6 +10,7 @@ description:
 keywords:
   - Pinot
   - Uber Data
+  - User Analytics Dashboard
   - User-Facing Analytics
   - Real-time data platform
 tags: [Pinot, Uber Data, real-time data platform, Realtime, Analytics, User-Facing Analytics, financial intelligence]

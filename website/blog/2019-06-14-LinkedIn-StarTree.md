@@ -9,7 +9,8 @@ description:
   while using the storage space efficiently.
 keywords:
   - Pinot
-  - Uber Data
+  - LinkedIn
+  - Star-Tree
   - User-Facing Analytics
   - Real-time data platform
 tags: [Pinot, LinkedIn, real-time data platform, Realtime, Analytics, User-Facing Analytics]

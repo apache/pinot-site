@@ -10,6 +10,7 @@ description:
 keywords:
   - Pinot
   - Uber Data
+  - Auto Tuning
   - User-Facing Analytics
   - Real-time data platform
 tags: [Pinot, LinkedIn, real-time data platform, Realtime, Analytics, User-Facing Analytics]
