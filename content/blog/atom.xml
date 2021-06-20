@@ -15,16 +15,16 @@
         <summary type="html"><![CDATA[Focus on Uber’s real-time data platform components to build a tool called Charon to reduce impact of poor marketplace reliability on the merchants.]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Bridging batch and stream processing for the Recruiter usage statistics dashboard]]></title>
-        <id>Bridging batch and stream processing for the Recruiter usage statistics dashboard</id>
-        <link href="https://pinot.apache.org/blog/2020/12/01/LinkedIn-BatchRealtime"/>
+        <title type="html"><![CDATA[Auto-tuning Pinot real-time consumption]]></title>
+        <id>Auto-tuning Pinot real-time consumption</id>
+        <link href="https://pinot.apache.org/blog/2020/12/01/LinkedIn-AutoTune"/>
         <updated>2020-12-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Auto-tuning Pinot real-time consumption]]></title>
-        <id>Auto-tuning Pinot real-time consumption</id>
-        <link href="https://pinot.apache.org/blog/2020/12/01/LinkedIn-AutoTune"/>
+        <title type="html"><![CDATA[Bridging batch and stream processing for the Recruiter usage statistics dashboard]]></title>
+        <id>Bridging batch and stream processing for the Recruiter usage statistics dashboard</id>
+        <link href="https://pinot.apache.org/blog/2020/12/01/LinkedIn-BatchRealtime"/>
         <updated>2020-12-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></summary>
     </entry>
