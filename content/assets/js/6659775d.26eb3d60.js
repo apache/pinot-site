@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[4386],{6696:function(a){"use strict";a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"real-time-data-platform","name":"real-time data platform","count":28,"permalink":"/blog/tags/real-time-data-platform"}')}}]);

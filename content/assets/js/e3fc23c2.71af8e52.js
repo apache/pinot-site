@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[8138],{9372:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"presto-sql","name":"prestosql","count":1,"permalink":"/blog/tags/presto-sql"}')}}]);
