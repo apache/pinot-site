@@ -83,12 +83,6 @@ const getCompaniesList = () => {
       enable_dark_logo: false
     },
     {
-      name: 'Asurion',
-      website: 'https://www.asurion.com/',
-      logo: '/img/companies/asurion.svg',
-      enable_dark_logo: false
-    },
-    {
       name: 'CloudKitchens',
       website: 'https://cloudkitchens.com/',
       logo: '/img/companies/cloudkitchens.svg',
