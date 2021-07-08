@@ -59,6 +59,13 @@ const getCompaniesList = () => {
       enable_dark_logo: true
     },
     {
+      name: 'StarTree',
+      website: 'https://startree.ai',
+      logo: '/img/companies/startree_light.svg',
+      darkLogo: '/img/companies/startree_dark.svg',
+      enable_dark_logo: true
+    },
+    {
       name: 'Stripe',
       website: 'https://stripe.com',
       logo: '/img/companies/stripe.svg',
