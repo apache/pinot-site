@@ -9,11 +9,11 @@ draft: true
 
 | Company        | Notes           |
 | ------------- |:-------------:|
-| LinkedIn      | LinkedIn uses Pinot for delivering fast analytics. |
-| Uber      | Uber uses Apache Pinot (incubating)      |
-| Microsoft | Microsoft uses Apache Pinot (incubating)      |
-| Weibo     | Weibo uses Apache Pinot (incubating)              |
-| Factual   | Factual uses Apache Pinot (incubating)              |
+| LinkedIn      | LinkedIn uses Pinot for delivering fast analytics |
+| Uber      | Uber uses Apache Pinot |
+| Microsoft | Microsoft uses Apache Pinot |
+| Weibo     | Weibo uses Apache Pinot |
+| Factual   | Factual uses Apache Pinot |
 
 ### LinkedIn
 

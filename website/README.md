@@ -56,7 +56,7 @@ Example:  `website/blog/2017-09-17-Restaurant-Manager.md`
 
 Then fill in all the sections titles, author, etc..
 
-Example: https://raw.githubusercontent.com/apache/incubator-pinot-site/ff73eceb6fa5f8128d9332bf95f92eab2d9c5b6a/website/blog/2017-09-17-Restaurant-Manager.md
+Example: https://raw.githubusercontent.com/apache/pinot-site/ff73eceb6fa5f8128d9332bf95f92eab2d9c5b6a/website/blog/2017-09-17-Restaurant-Manager.md
 
 ## Adding new Companies
 
