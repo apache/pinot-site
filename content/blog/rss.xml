@@ -3,7 +3,7 @@
     <channel>
         <title>Apache Pinot: User-Facing Analytics</title>
         <link>https://pinot.apache.org/blog</link>
-        <description>Apache Pinot™ (Incubating) Blog</description>
+        <description>Apache Pinot™ Blog</description>
         <lastBuildDate>Wed, 16 Jun 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
