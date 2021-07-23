@@ -5,12 +5,12 @@ description: Build Docker Images
 draft: true
 ---
 
-The scripts to build Pinot related docker images is located at [here](https://github.com/apache/incubator-pinot/tree/master/docker/images)
+The scripts to build Pinot related docker images is located at [here](https://github.com/apache/pinot/tree/master/docker/images)
 
 You can access those scripts by running below command to checkout Pinot repo:
 
 ```bash
-git clone git@github.com:apache/incubator-pinot.git pinot
+git clone git@github.com:apache/pinot.git pinot
 cd pinot/docker/images
 ```
 
@@ -22,7 +22,7 @@ You can find current supported 3 images in this directory:
 
 ## Pinot
 
-This is a docker image of [Apache Pinot](https://github.com/apache/incubator-pinot)
+This is a docker image of [Apache Pinot](https://github.com/apache/pinot)
 
 ### How to build a docker image
 
@@ -40,7 +40,7 @@ Docker Tag: Name and tag your docker image. Default is `pinot:latest`. <br />
 Git Branch: The Pinot branch to build. Default is master. <br />
 Pinot Git URL: The Pinot Git Repo to build, users can set it to their own fork. <br />
 Please note that, the URL is `https://` based, not `git://`. <br />
-Default is the [Apache Repo: https://github.com/apache/incubator-pinot.git](https://github.com/apache/incubator-pinot.git). <br />
+Default is the [Apache Repo: https://github.com/apache/pinot.git](https://github.com/apache/pinot.git). <br />
 
 - Example of building and tagging a snapshot on your own fork:
 
@@ -51,7 +51,7 @@ Default is the [Apache Repo: https://github.com/apache/incubator-pinot.git](http
 - Example of building a release version:
 
 ```bash
-./docker-build.sh pinot:release-0.1.0 release-0.1.0 https://github.com/apache/incubator-pinot.git
+./docker-build.sh pinot:release-0.1.0 release-0.1.0 https://github.com/apache/pinot.git
 ```
 
 - Example of building current master branch as a snapshot:
@@ -83,7 +83,7 @@ docker push apachepinot/pinot:release-0.1.0
 - Example of building and publishing an image to `[apachepinot/pinot](https://hub.docker.com/u/apachepinot/repository/docker/apachepinot/pinot)` dockerHub repo.
 
 ```bash
-./docker-build-and-push.sh apachepinot/pinot:latest master https://github.com/apache/incubator-pinot.git
+./docker-build-and-push.sh apachepinot/pinot:latest master https://github.com/apache/pinot.git
 ```
 
 ## Kubernetes Examples
@@ -112,7 +112,7 @@ Docker Tag: Name and tag your docker image. Default is `pinot:latest`. <br />
 Git Branch: The Pinot branch to build. Default is master. <br />
 Pinot Git URL: The Pinot Git Repo to build, users can set it to their own fork. <br />
 Please note that, the URL is `https://` based, not `git://`. <br />
-Default is the [Apache Repo: https://github.com/apache/incubator-pinot.git](https://github.com/apache/incubator-pinot.git). <br />
+Default is the [Apache Repo: https://github.com/apache/pinot.git](https://github.com/apache/pinot.git). <br />
 
 ### How to push
 
@@ -167,7 +167,7 @@ make push
 
 ### Configuration
 
-Follow the [instructions](https://superset.incubator.apache.org/installation.html#configuration) provided by Apache Superset for writing your own superset_config.py.
+Follow the [instructions](https://superset.apache.org/installation.html#configuration) provided by Apache Superset for writing your own superset_config.py.
 
 Place this file in a local directory and mount this directory to /etc/superset inside the container. This location
 is included in the image's `PYTHONPATH`. Mounting this file to a different location is possible, but it will need to be in the PYTHONPATH.

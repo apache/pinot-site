@@ -17,14 +17,14 @@ First, let's get Pinot. You can either build it, or download it
 
 ### Build
 
-Follow these steps to checkout code from [Github](https://github.com/apache/incubator-pinot) and build Pinot locally
+Follow these steps to checkout code from [Github](https://github.com/apache/pinot) and build Pinot locally
 
 > <b>Prerequisites:</b> <br/> <p>&nbsp; Install <a href="https://maven.apache.org/install.html" target="_blank">Apache Maven</a>  3.6 or higher. </p>
 
 ```bash
 # checkout pinot
-git clone https://github.com/apache/incubator-pinot.git
-cd incubator-pinot
+git clone https://github.com/apache/pinot.git
+cd pinot
 
 # build pinot
 mvn install package -DskipTests -Pbin-dist
@@ -38,7 +38,7 @@ cd pinot-distribution/target/apache-pinot-incubating-${pinot.version}-bin/apache
 Download the latest binary release from Apache Pinot, or use this command
 
 ```bash
-wget https://downloads.apache.org/incubator/pinot/apache-pinot-incubating-${pinot.version}/apache-pinot-incubating-${pinot.version}-bin.tar.gz
+wget https://downloads.apache.org/pinot/apache-pinot-incubating-${pinot.version}/apache-pinot-incubating-${pinot.version}-bin.tar.gz
 ```
 
 Once you have the tar file,

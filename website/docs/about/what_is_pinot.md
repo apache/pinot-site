@@ -17,7 +17,7 @@ Pinot is designed to answer OLAP queries with low latency. It is suited in conte
 
 Pinot is not a replacement for your database, nor a search engine. It addresses fast analytics on immutable data and it is not thought by design, to handle data updates or deletions. Joins are currently not supported, but this problem can be overcome by using [PrestoDB]((https://prestodb.io/)) for querying Pinot.
 
-For more information about PrestoDB connector for Pinot see the [Helm Chart of Pinot with Presto](https://github.com/apache/incubator-pinot/tree/master/kubernetes/examples/helm#access-pinot-using-presto)
+For more information about PrestoDB connector for Pinot see the [Helm Chart of Pinot with Presto](https://github.com/apache/pinot/tree/master/kubernetes/examples/helm#access-pinot-using-presto)
 Pinot-Presto connector is avilable with version [0.229](https://github.com/prestodb/presto/pull/13504)
 
 ## Quick example

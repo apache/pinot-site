@@ -44,7 +44,7 @@ function Commit({ commit, setSearchTerm }) {
                         style={{ minWidth: "65px", textAlign: "center" }}
                     >
                         <a
-                            href={`https://github.com/apache/incubator-pinot/pull/${commit.pr_number}`}
+                            href={`https://github.com/apache/pinot/pull/${commit.pr_number}`}
                             target="_blank"
                         >
                             <i className="feather icon-git-pull-request"></i>{" "}
@@ -58,7 +58,7 @@ function Commit({ commit, setSearchTerm }) {
                         style={{ minWidth: "65px", textAlign: "center" }}
                     >
                         <a
-                            href={`https://github.com/apache/incubator-pinot/commit/${commit.sha}`}
+                            href={`https://github.com/apache/pinot/commit/${commit.sha}`}
                             target="_blank"
                         >
                             <i className="feather icon-git-commit"></i>{" "}

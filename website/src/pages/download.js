@@ -38,7 +38,7 @@ function Download() {
                             procedures
                         </a>{" "}
                         using these{" "}
-                        <a href="https://downloads.apache.org/incubator/pinot/KEYS">
+                        <a href="https://downloads.apache.org/pinot/KEYS">
                             KEYS
                         </a>{" "}
                         for any Apache release.
@@ -51,7 +51,7 @@ function Download() {
                         <div className="row">
                             <div className="col">
                                 <a
-                                    href="https://www.apache.org/dyn/closer.lua/incubator/pinot/apache-pinot-incubating-0.7.1/apache-pinot-incubating-0.7.1-bin.tar.gz"
+                                    href="https://downloads.apache.org/pinot/apache-pinot-incubating-0.7.1/apache-pinot-incubating-0.7.1-bin.tar.gz"
                                     className="panel panel--link text--center"
                                 >
                                     <div className="panel--icon">
@@ -60,33 +60,33 @@ function Download() {
 
                                     <div className="panel--title">0.7.1</div>
 
-                                    <a href="https://www.apache.org/dyn/closer.lua/incubator/pinot/apache-pinot-incubating-0.7.1/apache-pinot-incubating-0.7.1-src.tar.gz">
+                                    <a href="https://downloads.apache.org/pinot/apache-pinot-incubating-0.7.1/apache-pinot-incubating-0.7.1-src.tar.gz">
                                         <div className="panel--title">
                                             Official source release
                                         </div>
                                     </a>
-                                    <a href="https://downloads.apache.org/incubator/pinot/apache-pinot-incubating-0.7.1/apache-pinot-incubating-0.7.1-src.tar.gz.sha512">
+                                    <a href="https://downloads.apache.org/pinot/apache-pinot-incubating-0.7.1/apache-pinot-incubating-0.7.1-src.tar.gz.sha512">
                                         <div className="panel--subtitle">
                                             SHA512
                                         </div>
                                     </a>
-                                    <a href="https://downloads.apache.org/incubator/pinot/apache-pinot-incubating-0.7.1/apache-pinot-incubating-0.7.1-src.tar.gz.asc">
+                                    <a href="https://downloads.apache.org/pinot/apache-pinot-incubating-0.7.1/apache-pinot-incubating-0.7.1-src.tar.gz.asc">
                                         <div className="panel--subtitle">
                                             ASC
                                         </div>
                                     </a>
 
-                                    <a href="https://www.apache.org/dyn/closer.lua/incubator/pinot/apache-pinot-incubating-0.7.1/apache-pinot-incubating-0.7.1-bin.tar.gz">
+                                    <a href="https://downloads.apache.org/pinot/apache-pinot-incubating-0.7.1/apache-pinot-incubating-0.7.1-bin.tar.gz">
                                         <div className="panel--title">
                                             Binary download
                                         </div>
                                     </a>
-                                    <a href="https://downloads.apache.org/incubator/pinot/apache-pinot-incubating-0.7.1/apache-pinot-incubating-0.7.1-bin.tar.gz.sha512">
+                                    <a href="https://downloads.apache.org/pinot/apache-pinot-incubating-0.7.1/apache-pinot-incubating-0.7.1-bin.tar.gz.sha512">
                                         <div className="panel--subtitle">
                                             SHA512
                                         </div>
                                     </a>
-                                    <a href="https://downloads.apache.org/incubator/pinot/apache-pinot-incubating-0.7.1/apache-pinot-incubating-0.7.1-bin.tar.gz.asc">
+                                    <a href="https://downloads.apache.org/pinot/apache-pinot-incubating-0.7.1/apache-pinot-incubating-0.7.1-bin.tar.gz.asc">
                                         <div className="panel--subtitle">
                                             ASC{" "}
                                         </div>
