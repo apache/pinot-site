@@ -17,7 +17,7 @@
  * under the License.
  */
 module.exports = {
-  title: 'Apache Pinot™ (Incubating)',
+  title: 'Apache Pinot™',
   tagline: 'Realtime distributed OLAP datastore',
   url: 'https://pinot.apache.org',
   baseUrl: '/',
@@ -195,7 +195,7 @@ module.exports = {
         },
       ],
       logo: {
-        alt: 'Apache Pinot™ - Incubating',
+        alt: 'Apache Pinot™',
         src: 'img/logo.svg',
         href: 'https://pinot.apache.org/',
       },
