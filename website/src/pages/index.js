@@ -476,7 +476,7 @@ function Home() {
                             Getting Started
                         </Link>
                         <Link
-                            to="https://communityinviter.com/apps/apache-pinot/apache-pinot"
+                            to="https://join.slack.com/t/apache-pinot/shared_invite/zt-5z7pav2f-yYtjZdVA~EDmrGkho87Vzw"
                             className="button button--primary button--highlight"
                         >
                             Join our Slack

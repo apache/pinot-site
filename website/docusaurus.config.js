@@ -148,7 +148,7 @@ module.exports = {
           items: [
             {
               label: 'Slack',
-              to: 'https://communityinviter.com/apps/apache-pinot/apache-pinot',
+              to: 'https://join.slack.com/t/apache-pinot/shared_invite/zt-5z7pav2f-yYtjZdVA~EDmrGkho87Vzw',
             },
             {
               label: 'Github',
