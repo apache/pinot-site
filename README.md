@@ -1,7 +1,7 @@
 Apache Pinot Site
 =================
 
-[![Join the chat at https://communityinviter.com/apps/apache-pinot/apache-pinot](https://img.shields.io/badge/slack-apache--pinot-brightgreen?logo=slack)](https://communityinviter.com/apps/apache-pinot/apache-pinot)
+[![Join the chat at https://join.slack.com/t/apache-pinot/shared_invite/zt-5z7pav2f-yYtjZdVA~EDmrGkho87Vzw](https://img.shields.io/badge/slack-apache--pinot-brightgreen?logo=slack)](https://join.slack.com/t/apache-pinot/shared_invite/zt-5z7pav2f-yYtjZdVA~EDmrGkho87Vzw)
 [![Twitter Follow](https://img.shields.io/twitter/follow/apachepinot.svg?label=Follow&style=social)](https://twitter.com/intent/follow?screen_name=apachepinot)
 [![license](https://img.shields.io/github/license/apache/pinot.svg)](LICENSE)
 
@@ -27,7 +27,7 @@ Additional Resources
 
 Mailing list: dev@pinot.apache.org
 
-Slack: https://communityinviter.com/apps/apache-pinot/apache-pinot
+Slack: https://join.slack.com/t/apache-pinot/shared_invite/zt-5z7pav2f-yYtjZdVA~EDmrGkho87Vzw
 
 Project website: https://pinot.apache.org
 
