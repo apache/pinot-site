@@ -1,1 +1,0 @@
-(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[4313],{1565:function(a){"use strict";a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"uber-data","name":"uber data","count":1,"permalink":"/blog/tags/uber-data"}')}}]);

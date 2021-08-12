@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[7501],{2799:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"trino","name":"trino","count":1,"permalink":"/blog/tags/trino"}')}}]);
