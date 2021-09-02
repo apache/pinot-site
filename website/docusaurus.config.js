@@ -88,8 +88,12 @@ module.exports = {
           title: 'About',
           items: [
             {
-              label: 'What is Pinot?',
+              label: 'What is Apache Pinot?',
               to: 'https://docs.pinot.apache.org/',
+            },
+            {
+              label: 'Who uses Apache Pinot?',
+              to: '/who_uses',
             },
             {
               label: 'Components',

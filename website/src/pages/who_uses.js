@@ -56,10 +56,6 @@ function WhoUsesPinot() {
     return (
         <section className="topologies">
             <div className="container">
-                <AnchoredH2 id="who-uses">Who Uses Apache Pinot?</AnchoredH2>
-                <div className="sub-title">
-                    Pinot powers several big players, including LinkedIn, Uber, Microsoft, Walmart, WePay, Factual, Weibo, Slack and more
-                </div>
 
                 <div className={styles.installationPlatforms}>
                     {
@@ -103,19 +99,20 @@ function WhoUses() {
 
     return (
         <Layout title="Who Uses Apache Pinot" description="Collection of Companies using Apache Pinot">
-            <header className="hero">
-                <div className="container container--fluid">
-                    <AnchoredH1>Who Uses Apache Pinot</AnchoredH1>
-                    <div className="hero--subtitle">
-                    Collection of stories from Companies using Apache Pinot
-                    </div>
+            <header
+                className={"hero"}
+            >
+                <div className="container">
+                    <h1 className="hero__title">Who Uses Apache Pinot</h1>
+                    <p className="hero__subtitle">
+                        Apache Pinot powers a wide variety of real time analytical use cases across several big players, including LinkedIn, Uber, Walmart, WePay, Factual, Weibo and more.
+                    </p>
                 </div>
             </header>
             <main>
-            <WhoUsesPinot />
+                <WhoUsesPinot />
 
-            {/* TODO Add Company quotes */}
-
+                {/* TODO add Company quotes */}
             </main>
         </Layout>
     );

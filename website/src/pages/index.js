@@ -378,53 +378,6 @@ function Installation() {
     );
 }
 
-function WhoUsesPinot() {
-    return (
-        <section className="topologies">
-            <div className="container">
-                <AnchoredH2 id="who-uses">Who Uses Apache Pinot?</AnchoredH2>
-                <div className="sub-title">
-                    Pinot powers several big players, including LinkedIn, Uber, Microsoft, Walmart, WePay, Factual, Weibo, Slack and more
-                </div>
-
-                <div className={styles.installationPlatforms}>
-                    {
-                        companiesList.map(
-                            company => (
-                                (() => {
-                                    if (company['enable_dark_logo'] == true) {
-                                        var title = `apache_pinot_user_${company.name}`
-                                        var altText = `Apache Pinot used by ${company.name}`
-                                        return <Link class="grid-item" to={company.website} alt={altText} title={title}>
-                                                    <CompanyLogo srcLight={company.logo} srcDark={company.darkLogo} title={title} description={altText} />
-                                                </Link>
-                                    } else {
-                                        var title = `apache_pinot_user_${company.name}`
-                                        var altText = `Apache Pinot used by ${company.name}`
-                                        return <Link class="grid-item" to={company.website} alt={altText} title={title}>
-                                                    <SVG src={company.logo} title={title} description={altText} />
-                                                </Link>
-                                    }
-                                })()
-                            )
-                        )
-                    }
-                </div>
-            </div>
-            <p align="center">
-            <div className="hero--buttons">
-                <Link
-                    to="/who_uses"
-                    className="button button--primary button--highlight">
-                    Read More on use cases..
-                </Link>
-            </div>
-            </p>
-
-        </section>
-    );
-}
-
 const CompanyLogo = ({srcLight, srcDark, title, description}) => {
     const { isDarkTheme } = useThemeContext();
 
@@ -494,7 +447,6 @@ function Home() {
                     <Features features={features} />
                 )}
                 <Usage />
-                <WhoUsesPinot />
                 <UserFacingAnalytics />
                 <Installation />
 
