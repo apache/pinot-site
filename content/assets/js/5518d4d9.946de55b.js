@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[4676],{7081:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/monitoring","name":"Monitoring","count":1,"permalink":"/blog/tags/monitoring"}')}}]);
