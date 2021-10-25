@@ -51,10 +51,10 @@ To setup a Pinot cluster, we need to first start Zookeeper:
 
 <Tabs
   className="Install"
-  defaultValue="Using launcher scripts"
+  defaultValue="launcher"
   values={[
     { label: <><i className="Using docker images"></i> Using docker images</>, value: 'docker', },
-    { label: <><i className="Using launcher scripts"></i> Using launcher scripts</>, value: 'launcer', },
+    { label: <><i className="Using launcher scripts"></i> Using launcher scripts</>, value: 'launcher', },
   ]
 }>
 

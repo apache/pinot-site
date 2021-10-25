@@ -89,12 +89,13 @@ const features = [
         description: <>Horizontally scalable and fault tolerant</>,
     },
     {
-        title: "Joins using PrestoDB",
+        title: "Joins using Trino or PrestoDB",
         icon: "shuffle",
         description: (
             <>
                 Joins are currently not supported, but this problem can be
                 overcome by using{" "}
+                <Link to="https://trino.io/">Trino</Link> or{" "}
                 <Link to="https://prestodb.io/">PrestoDB</Link> for querying
             </>
         ),
@@ -257,7 +258,7 @@ function Usage() {
                 </div>
                 <div className="sub-title">
                     Query using PQL(Pinot Query Language ), SQL or
-                    Presto(supports Joins)
+                    Trino/Presto(supports Joins)
                 </div>
 
                 <PinotQuery title="PinotOverview" className="svg image-overview figure" />
@@ -276,7 +277,7 @@ function Installation() {
             <div className="container">
                 <AnchoredH2 id="installation">Installs Everywhere</AnchoredH2>
                 <div className="sub-title">
-                    Pinot can be installed using docker with presto
+                    Pinot can be installed using docker with Trino/Presto
                 </div>
 
                 <div className={styles.installationChecks}>
