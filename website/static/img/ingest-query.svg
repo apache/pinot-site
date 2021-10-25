@@ -133,9 +133,9 @@
         <text id="PQL" font-family="DINAlternate-Bold, DIN Alternate" font-size="16" font-weight="bold" fill="#8D8D8D">
             <tspan x="658" y="165">PQL</tspan>
         </text>
-        <text id="Joins-in-Presto" font-family="DINAlternate-Bold, DIN Alternate" font-size="16" font-weight="bold" fill="#8D8D8D">
+        <text id="Joins-in-Trino-or-Presto" font-family="DINAlternate-Bold, DIN Alternate" font-size="16" font-weight="bold" fill="#8D8D8D">
             <tspan x="658" y="314">Joins in</tspan>
-            <tspan x="658" y="333"> Presto</tspan>
+            <tspan x="658" y="333">Trino or Presto</tspan>
         </text>
         <text id="Sources-Copy" opacity="0.904203869" font-family="DINAlternate-Bold, DIN Alternate" font-size="20" font-weight="bold" fill="#838383">
             <tspan x="84.40625" y="81">SOURCES</tspan>
