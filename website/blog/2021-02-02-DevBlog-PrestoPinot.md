@@ -3,7 +3,7 @@ title: Real-time Analytics with Presto and Apache Pinot
 author: PinotDev
 author_title: Pinot Editorial Team
 author_url: https://medium.com/apache-pinot-developer-blog
-author_image_url: https://pbs.twimg.com/profile_images/1400521020973400069/5y2UMi4r_400x400.jpg
+author_image_url: https://www.startree.ai/wp-content/uploads/2021/05/team-xiang-150x150.jpg
 description:
   Blog gives an overview of our use of Apache Pinot to solve some of biggest challenges around Data Analytics in Large Retail Chain
 keywords:
