@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[3157],{7764:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/debezium","name":"Debezium","count":1,"permalink":"/blog/tags/debezium"}')}}]);
