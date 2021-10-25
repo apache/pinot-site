@@ -113,6 +113,10 @@ module.exports = {
           title: 'Integrations',
           items: [
             {
+              label: 'Trino',
+              to: 'https://docs.pinot.apache.org/integrations/trino',
+            },
+            {
               label: 'Presto',
               to: 'https://docs.pinot.apache.org/integrations/presto',
             },

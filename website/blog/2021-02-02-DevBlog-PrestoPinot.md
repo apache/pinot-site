@@ -18,8 +18,8 @@ tags: [Pinot, Presto, Trino, PrestoSQL, DevBlog, ThirdEye, real-time data platfo
 
 In this world, most analytics products either focus on ad-hoc analytics, which requires query flexibility without guaranteed latency, or low latency analytics with limited query capability. In this blog, we will explore how to get the best of both worlds using Apache Pinot and Presto.
 
-[Read Part 1 at https://medium.com/apache-pinot-developer-blog/real-time-analytics-with-presto-and-apache-pinot-part-i-cc672caea307](https://medium.com/apache-pinot-developer-blog/real-time-analytics-with-presto-and-apache-pinot-part-i-cc672caea307)
+[Read Part 1 at https://www.startree.ai/blogs/real-time-analytics-with-presto-and-apache-pinot-part-i/](https://www.startree.ai/blogs/real-time-analytics-with-presto-and-apache-pinot-part-i/)
 
-[Read Part 2 at https://medium.com/apache-pinot-developer-blog/real-time-analytics-with-presto-and-apache-pinot-part-ii-3d09ff937713](https://medium.com/apache-pinot-developer-blog/real-time-analytics-with-presto-and-apache-pinot-part-ii-3d09ff937713)
+[Read Part 2 at https://www.startree.ai/blogs/real-time-analytics-with-presto-and-apache-pinot-part-ii/](https://www.startree.ai/blogs/real-time-analytics-with-presto-and-apache-pinot-part-ii/)
 
 ![Real-time Analytics with Presto and Apache Pinot](https://miro.medium.com/max/1400/0*hJc6aV9aBJaKyXcx)

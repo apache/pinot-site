@@ -186,7 +186,7 @@ You can open the imported dashboard by click Dashboards banner then click on Air
 
 ## Access Pinot Using Presto
 
-### Deploy Presto with Pinot Plugin
+### Deploy Presto with Pinot connector
 
 You can run below command to deploy a customized Presto with Pinot plugin.
 

@@ -14,7 +14,7 @@ PQL is a derivative of SQL derivative that supports selection, projection, aggre
 
 ## PQL Limitations
 
-PQL is only a derivative of SQL, and it does not support Joins nor Subqueries. In order to support them, we suggest to rely on [PrestoDB](https://prestodb.io/), although Subqueries are not completely supported by PrestoDB at the moment of writing.
+PQL is only a derivative of SQL, and it does not support Joins nor Subqueries. In order to support them, we suggest to rely on [Trino](https://trino.io/) or [PrestoDB](https://prestodb.io/), although Subqueries are not completely supported by PrestoDB at the moment of writing.
 
 ## PQL Examples
 
