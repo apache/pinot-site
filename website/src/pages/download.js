@@ -51,6 +51,50 @@ function Download() {
                         <div className="row">
                             <div className="col">
                                 <a
+                                    href="https://downloads.apache.org/pinot/apache-pinot-0.9.0/apache-pinot-0.9.0-bin.tar.gz"
+                                    className="panel panel--link text--center"
+                                >
+                                    <div className="panel--icon">
+                                        <i className="feather icon-download"></i>
+                                    </div>
+
+                                    <div className="panel--title">0.9.0</div>
+
+                                    <a href="https://downloads.apache.org/pinot/apache-pinot-0.9.0/apache-pinot-0.9.0-src.tar.gz">
+                                        <div className="panel--title">
+                                            Official source release
+                                        </div>
+                                    </a>
+                                    <a href="https://downloads.apache.org/pinot/apache-pinot-0.9.0/apache-pinot-0.9.0-src.tar.gz.sha512">
+                                        <div className="panel--subtitle">
+                                            SHA512
+                                        </div>
+                                    </a>
+                                    <a href="https://downloads.apache.org/pinot/apache-pinot-0.9.0/apache-pinot-0.9.0-src.tar.gz.asc">
+                                        <div className="panel--subtitle">
+                                            ASC
+                                        </div>
+                                    </a>
+
+                                    <a href="https://downloads.apache.org/pinot/apache-pinot-0.9.0/apache-pinot-0.9.0-bin.tar.gz">
+                                        <div className="panel--title">
+                                            Binary download
+                                        </div>
+                                    </a>
+                                    <a href="https://downloads.apache.org/pinot/apache-pinot-0.9.0/apache-pinot-0.9.0-bin.tar.gz.sha512">
+                                        <div className="panel--subtitle">
+                                            SHA512
+                                        </div>
+                                    </a>
+                                    <a href="https://downloads.apache.org/pinot/apache-pinot-0.9.0/apache-pinot-0.9.0-bin.tar.gz.asc">
+                                        <div className="panel--subtitle">
+                                            ASC{" "}
+                                        </div>
+                                    </a>
+                                </a>
+                            </div>
+                            <div className="col">
+                                <a
                                     href="https://downloads.apache.org/pinot/apache-pinot-0.8.0/apache-pinot-0.8.0-bin.tar.gz"
                                     className="panel panel--link text--center"
                                 >
