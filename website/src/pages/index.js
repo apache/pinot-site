@@ -57,7 +57,7 @@ const features = [
         description: (
             <>
                 Pinot is designed to answer OLAP queries with low latency on
-                immutable data
+                immutable data and mutable data(Upsert Support)
             </>
         ),
     },
@@ -77,10 +77,14 @@ const features = [
         icon: "rss",
         description: (
             <>
-                Near Realtime ingestion with{" "}
-                <Link to="https://kafka.apache.org/">Apache Kafka</Link>{" "}
-                supports StringSerializer or{" "}
-                <Link to="https://avro.apache.org/">Avro</Link> formats
+                Near Realtime ingestion with
+                {" "}<Link to="https://kafka.apache.org/">Apache Kafka</Link>,
+                {" "}<Link to="https://pulsar.apache.org/">Apache Pulsar</Link>,
+                {" "}<Link to="https://aws.amazon.com/kinesis/">Kinesis</Link>
+                supports {" "}<Link to="https://www.json.org/">JSON</Link>,
+                {" "}<Link to="https://avro.apache.org/">Avro</Link>,
+                {" "}<Link to="https://developers.google.com/protocol-buffers/">ProtoBuf</Link>,
+                {" "}<Link to="https://thrift.apache.org/">Thrift</Link> formats
             </>
         ),
     },
