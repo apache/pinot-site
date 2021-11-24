@@ -67,7 +67,8 @@ const features = [
         description: (
             <>
                 Pluggable indexing technologies - Sorted Index, Bitmap Index,
-                Inverted Index
+                Inverted Index, StarTree Index, Bloom Filter, Range Index,
+                Text Search Index(Lucence/FST), Json Index, Geospatial Index
             </>
         ),
     },
