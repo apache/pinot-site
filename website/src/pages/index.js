@@ -224,7 +224,7 @@ function UserFacingAnalytics() {
                     <h3 className={styles.installSubTitle}>Using Apache Kafka and Apache Pinot for User-Facing Analytics</h3>
                     <div>
                         <ReactPlayer
-                            url={"https://www.youtube.com/watch?v=qL_t19QfrpY"}
+                            url={"https://www.youtube.com/watch?v=L5b_OJVOJKo&t=575s"}
                             light={true}
                             width={"720px"}
                             height={"480px"}
