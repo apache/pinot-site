@@ -26,7 +26,7 @@ module.exports = {
   projectName: 'pinot',
   onBrokenLinks: 'ignore',
   themeConfig: {
-    metadatas: [
+    metadata: [
       {name: 'description', content: 'Apache Pinot'},
       {name: 'description', content: 'Real-time Analytics'},
       {name: 'description', content: 'User-facing Analytics'},
