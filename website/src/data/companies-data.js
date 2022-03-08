@@ -222,6 +222,12 @@ const getCompaniesList = () => {
       logo: '/img/companies/razorpay_light.svg',
       darkLogo: '/img/companies/razorpay_dark.svg',
       enable_dark_logo: true
+    },
+    {
+      name: 'MyCujoo',
+      website: 'https://elevensports.com',
+      logo: '/img/companies/my-cujoo.svg',
+      enable_dark_logo: false
     }
   ];
   return companiesList;
