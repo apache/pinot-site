@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[4638],{5708:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/third-eye","name":"ThirdEye","count":12,"permalink":"/blog/tags/third-eye"}')}}]);

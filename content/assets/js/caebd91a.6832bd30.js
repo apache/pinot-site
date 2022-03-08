@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5162],{1545:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/financial-intelligence","name":"financial intelligence","count":2,"permalink":"/blog/tags/financial-intelligence"}')}}]);

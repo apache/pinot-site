@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5485],{8238:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/grafana","name":"Grafana","count":1,"permalink":"/blog/tags/grafana"}')}}]);
