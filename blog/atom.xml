@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://pinot.apache.org/blog</id>
+    <title>Apache Pinot: User-Facing Analytics</title>
+    <updated>2021-06-16T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://pinot.apache.org/blog"/>
+    <subtitle>Apache Pinot™ Blog</subtitle>
+    <icon>https://pinot.apache.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Text analytics on LinkedIn Talent Insights using Apache Pinot]]></title>
+        <id>Text analytics on LinkedIn Talent Insights using Apache Pinot</id>
+        <link href="https://pinot.apache.org/blog/2021/06/16/LinkedIn-TextAnalytics"/>
+        <updated>2021-06-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction LinkedIn Talent Insights (LTI) is a platform that helps organizations understand the external labor market and their internal workforce, and enables the long term success of their employees]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introduction to Geospatial Queries in Apache Pinot]]></title>
+        <id>Introduction to Geospatial Queries in Apache Pinot</id>
+        <link href="https://pinot.apache.org/blog/2021/06/13/DevBlog-Geospatial"/>
+        <updated>2021-06-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Discuss the challenges of analyzing geospatial at scale and propose the geospatial support in Pinot.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Automating Merchant Live Monitoring with Real-Time Analytics - Charon]]></title>
+        <id>Automating Merchant Live Monitoring with Real-Time Analytics - Charon</id>
+        <link href="https://pinot.apache.org/blog/2021/04/29/Uber-Charon"/>
+        <updated>2021-04-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Focus on Uber’s real-time data platform components to build a tool called Charon to reduce impact of poor marketplace reliability on the merchants.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Deploying Apache Pinot at a Large Retail Chain]]></title>
+        <id>Deploying Apache Pinot at a Large Retail Chain</id>
+        <link href="https://pinot.apache.org/blog/2021/04/27/DevBlog-PinotInRetailChain"/>
+        <updated>2021-04-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Blog gives an overview of our use of Apache Pinot to solve some of biggest challenges around Data Analytics in Large Retail Chain]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Solving for the cardinality of set intersection at scale with Pinot and Theta Sketches]]></title>
+        <id>Solving for the cardinality of set intersection at scale with Pinot and Theta Sketches</id>
+        <link href="https://pinot.apache.org/blog/2021/04/16/LinkedIn-Theta"/>
+        <updated>2021-04-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introduction to Upserts in Apache Pinot]]></title>
+        <id>Introduction to Upserts in Apache Pinot</id>
+        <link href="https://pinot.apache.org/blog/2021/04/08/DevBlog-UpsertsIntro"/>
+        <updated>2021-04-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduction to Pinot Upsert and explain why it’s exciting and how you can start using it.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Real-time Analytics with Presto and Apache Pinot]]></title>
+        <id>Real-time Analytics with Presto and Apache Pinot</id>
+        <link href="https://pinot.apache.org/blog/2021/02/02/DevBlog-PrestoPinot"/>
+        <updated>2021-02-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Blog gives an overview of our use of Apache Pinot to solve some of biggest challenges around Data Analytics in Large Retail Chain]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Change Data Analysis with Debezium and Apache Pinot]]></title>
+        <id>Change Data Analysis with Debezium and Apache Pinot</id>
+        <link href="https://pinot.apache.org/blog/2021/01/08/DevBlog-DebeziumCDC"/>
+        <updated>2021-01-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pinot enters into a storied legacy of innovations that have emerged from one of the world’s largest online social networks. Over a few decades, the Silicon Valley tech giant has helped hundreds of millions of people around the world navigate their careers.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From Lambda to Lambda-less Lessons learned]]></title>
+        <id>From Lambda to Lambda-less Lessons learned</id>
+        <link href="https://pinot.apache.org/blog/2020/12/01/LinkedIn-Lamda"/>
+        <updated>2020-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Lambda architecture has become a popular architectural style that promises both speed and accuracy in data processing by using a hybrid approach of both batch processing and stream processing methods.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Operating Apache Pinot at Uber Scale]]></title>
+        <id>Operating Apache Pinot at Uber Scale</id>
+        <link href="https://pinot.apache.org/blog/2020/10/20/Uber-Operating"/>
+        <updated>2020-10-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Present details of this platform and how it fits in Uber’s ecosystem. Explain how uber scaled from a few use cases to a multi-cluster powering hundreds of use cases for querying terabyte-scale data with millisecond latencies.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Deep Analysis of Russian Twitter Trolls]]></title>
+        <id>Deep Analysis of Russian Twitter Trolls</id>
+        <link href="https://pinot.apache.org/blog/2020/10/16/DevBlog-TwitterTrollAnalysis"/>
+        <updated>2020-10-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Show you how to use Apache Pinot and Superset to analyze 3 million tweets by the Internet Research Agency (IRA) open-sourced by FiveThirtyEight.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Leverage Plugins to Ingest Parquet Files from S3 in Pinot]]></title>
+        <id>Leverage Plugins to Ingest Parquet Files from S3 in Pinot</id>
+        <link href="https://pinot.apache.org/blog/2020/08/08/DevBlog-IngestPlugins"/>
+        <updated>2020-08-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pinot is its pluggable architecture. The plugins make it easy to add support for any third-party system which can be an execution framework, a filesystem, or input format.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Monitoring Apache Pinot with JMX, Prometheus and Grafana]]></title>
+        <id>Monitoring Apache Pinot with JMX, Prometheus and Grafana</id>
+        <link href="https://pinot.apache.org/blog/2020/08/08/DevBlog-PinotMonitoring"/>
+        <updated>2020-08-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Blog gives an overview of our use of Apache Pinot to solve some of biggest challenges around Data Analytics in Large Retail Chain]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Achieving 99th percentile latency SLA using Apache Pinot]]></title>
+        <id>Achieving 99th percentile latency SLA using Apache Pinot</id>
+        <link href="https://pinot.apache.org/blog/2020/08/08/DevBlog-SLAApps"/>
+        <updated>2020-08-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How users can build critical site-facing analytical applications requiring high throughput and strict p99th query latency SLA]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Utilize UDFs to Supercharge Queries in Apache Pinot]]></title>
+        <id>Utilize UDFs to Supercharge Queries in Apache Pinot</id>
+        <link href="https://pinot.apache.org/blog/2020/08/08/DevBlog-ScalarUDFs"/>
+        <updated>2020-08-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Scalar Functions that allow users to write and add their functions as a plugin.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building a culture around metrics and anomaly detection]]></title>
+        <id>Building a culture around metrics and anomaly detection</id>
+        <link href="https://pinot.apache.org/blog/2020/07/28/DevBlog-AnomalyDetection"/>
+        <updated>2020-07-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ThirdEye as a system is a platform that allows you to integrate your metrics (quantitative information) with events (knowledge or qualitative information) and combine the two so you can distinguish between meaningless anomalies and those ones that matter.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Moving developers up the stack with Apache Pinot]]></title>
+        <id>Moving developers up the stack with Apache Pinot</id>
+        <link href="https://pinot.apache.org/blog/2020/07/28/DevBlog-DevUpStack"/>
+        <updated>2020-07-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pinot enters into a storied legacy of innovations that have emerged from one of the world’s largest online social networks. Over a few decades, the Silicon Valley tech giant has helped hundreds of millions of people around the world navigate their careers.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bridging batch and stream processing for the Recruiter usage statistics dashboard]]></title>
+        <id>Bridging batch and stream processing for the Recruiter usage statistics dashboard</id>
+        <link href="https://pinot.apache.org/blog/2020/07/14/LinkedIn-BatchRealtime"/>
+        <updated>2020-07-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building LinkedIn Talent Insights to democratize data-driven decision making]]></title>
+        <id>Building LinkedIn Talent Insights to democratize data-driven decision making</id>
+        <link href="https://pinot.apache.org/blog/2020/06/29/LinkedIn-TalentInsight"/>
+        <updated>2020-06-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Monitoring business performance data with ThirdEye smart alerts]]></title>
+        <id>Monitoring business performance data with ThirdEye smart alerts</id>
+        <link href="https://pinot.apache.org/blog/2020/06/25/LinkedIn-SmartAlerts"/>
+        <updated>2020-06-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Using Apache Pinot and Kafka to Analyze GitHub Events]]></title>
+        <id>Using Apache Pinot and Kafka to Analyze GitHub Events</id>
+        <link href="https://pinot.apache.org/blog/2020/04/10/DevBlog-AnalyzeGitEvents"/>
+        <updated>2020-04-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Show you how Pinot and Kafka can be used together to ingest, query, and visualize event streams sourced from the public GitHub API.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Analyzing anomalies with ThirdEye]]></title>
+        <id>Analyzing anomalies with ThirdEye</id>
+        <link href="https://pinot.apache.org/blog/2020/02/20/LinkedIn-Thirdeye"/>
+        <updated>2020-02-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Engineering SQL Support on Apache Pinot at Uber]]></title>
+        <id>Engineering SQL Support on Apache Pinot at Uber</id>
+        <link href="https://pinot.apache.org/blog/2020/01/15/Pinot-Presto-SQL"/>
+        <updated>2020-01-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Talks about solution that linked Presto, a query engine that supports full ANSI SQL, and Pinot, a real-time OLAP (online analytical processing) datastore.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Auto-tuning Pinot real-time consumption]]></title>
+        <id>Auto-tuning Pinot real-time consumption</id>
+        <link href="https://pinot.apache.org/blog/2019/07/11/LinkedIn-AutoTune"/>
+        <updated>2019-07-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Focus on using large set intersection cardinality approximations with Apache Pinot and Theta Sketches, which allow us to efficiently figure out the unique size of a targeted audience when factoring in multiple criteria of an advertising campaign.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Star-tree index - Powering fast aggregations on Pinot]]></title>
+        <id>Star-tree index - Powering fast aggregations on Pinot</id>
+        <link href="https://pinot.apache.org/blog/2019/06/14/LinkedIn-StarTree"/>
+        <updated>2019-06-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introduced Star-Tree index to utilize the pre-aggregated documents in a smart way that achieves low query latencies, while using the storage space efficiently.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing ThirdEye - LinkedIn’s Business-Wide Monitoring Platform]]></title>
+        <id>Introducing ThirdEye - LinkedIn’s Business-Wide Monitoring Platform</id>
+        <link href="https://pinot.apache.org/blog/2019/01/09/LinkedIn-IntroThirdEye"/>
+        <updated>2019-01-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ThirdEye is a comprehensive platform for real-time monitoring of metrics that covers a wide variety of use-cases.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Engineering Restaurant Manager - UberEATS Analytics Dashboard]]></title>
+        <id>Engineering Restaurant Manager - UberEATS Analytics Dashboard</id>
+        <link href="https://pinot.apache.org/blog/2017/09/17/Restaurant-Manager"/>
+        <updated>2017-09-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Restaurant Manager is a comprehensive analytics dashboard and pipeline for our restaurant partners. In this article, we discuss how we architected this analytics platform and its robust data pipeline.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Open Sourcing Pinot - Scaling the Wall of Real-Time Analytics]]></title>
+        <id>Open Sourcing Pinot - Scaling the Wall of Real-Time Analytics</id>
+        <link href="https://pinot.apache.org/blog/2015/06/10/Open-Sourcing-Pinot"/>
+        <updated>2015-06-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introducing Pinot which allow to slice and dice across billions of rows in real-time across a wide variety of products]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Brief History of Scaling LinkedIn]]></title>
+        <id>A Brief History of Scaling LinkedIn</id>
+        <link href="https://pinot.apache.org/blog/2015/05/16/LinkedIn-Scaling"/>
+        <updated>2015-05-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LinkedIn started in 2003 with the goal of connecting to your network for better job opportunities. It had only 2,700 members the first week. Fast forward many years, and LinkedIn’s product portfolio, member base, and server load has grown tremendously.]]></summary>
+    </entry>
+</feed>
