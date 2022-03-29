@@ -21,7 +21,7 @@
 set -x -e
 ls -lrth
 ROOT_DIR=$(git rev-parse --show-toplevel)
-SITE_DIR=${ROOT_DIR}/content
+SITE_DIR=${ROOT_DIR}
 git branch
 
 # Build website
@@ -46,9 +46,9 @@ cd ${ROOT_DIR}
 
 git status
 
-rm -rf ${SITE_DIR}
+rm -rf ${SITE_DIR}/assets
 ## copy generated site
-mv ${DEV_TMP}/website/build ${SITE_DIR}
+mv ${DEV_TMP}/website/build/* ${SITE_DIR}/
 
 git status
 git add .
