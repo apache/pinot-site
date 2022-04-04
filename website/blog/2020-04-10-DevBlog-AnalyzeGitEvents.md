@@ -3,7 +3,7 @@ title: Using Apache Pinot and Kafka to Analyze GitHub Events
 author: Kenny Bastani
 author_title: Kenny Bastani
 author_url: https://medium.com/apache-pinot-developer-blog
-author_image_url: https://pbs.twimg.com/profile_images/1400521020973400069/5y2UMi4r_400x400.jpg
+author_image_url: https://pinot.apache.org/authors/pinot_team.jpg
 description:
   Show you how Pinot and Kafka can be used together to ingest, query, and visualize event streams sourced from the public GitHub API.
 keywords:

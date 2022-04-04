@@ -3,7 +3,7 @@ title: Change Data Analysis with Debezium and Apache Pinot
 author: Kenny Bastani
 author_title: Kenny Bastani
 author_url: https://medium.com/apache-pinot-developer-blog
-author_image_url: https://pbs.twimg.com/profile_images/1400521020973400069/5y2UMi4r_400x400.jpg
+author_image_url: https://pinot.apache.org/authors/kenny.jpeg
 description:
   Pinot enters into a storied legacy of innovations that have emerged from one of the world’s largest online social networks. Over a few decades, the Silicon Valley tech giant has helped hundreds of millions of people around the world navigate their careers.
 keywords:

@@ -3,7 +3,7 @@ title: Deploying Apache Pinot at a Large Retail Chain
 author: PinotDev
 author_title: Pinot Editorial Team
 author_url: https://medium.com/apache-pinot-developer-blog
-author_image_url: https://pbs.twimg.com/profile_images/1400521020973400069/5y2UMi4r_400x400.jpg
+author_image_url: https://pinot.apache.org/authors/pinot_team.jpg
 description:
   Blog gives an overview of our use of Apache Pinot to solve some of biggest challenges around Data Analytics in Large Retail Chain
 keywords:

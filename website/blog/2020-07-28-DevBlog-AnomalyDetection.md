@@ -3,7 +3,7 @@ title: Building a culture around metrics and anomaly detection
 author: Kenny Bastani
 author_title: Kenny Bastani
 author_url: https://medium.com/apache-pinot-developer-blog
-author_image_url: https://pbs.twimg.com/profile_images/1400521020973400069/5y2UMi4r_400x400.jpg
+author_image_url: https://pinot.apache.org/authors/pinot_team.jpg
 description:
   ThirdEye as a system is a platform that allows you to integrate your metrics (quantitative information) with events (knowledge or qualitative information) and combine the two so you can distinguish between meaningless anomalies and those ones that matter.
 keywords:
