@@ -3,7 +3,7 @@ title: Deep Analysis of Russian Twitter Trolls
 author: Kenny Bastani
 author_title: Kenny Bastani
 author_url: https://medium.com/apache-pinot-developer-blog
-author_image_url: https://pbs.twimg.com/profile_images/1400521020973400069/5y2UMi4r_400x400.jpg
+author_image_url: https://pinot.apache.org/authors/kenny.jpeg
 description:
   Show you how to use Apache Pinot and Superset to analyze 3 million tweets by the Internet Research Agency (IRA) open-sourced by FiveThirtyEight.
 keywords:

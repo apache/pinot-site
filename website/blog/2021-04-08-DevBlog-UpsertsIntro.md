@@ -3,7 +3,7 @@ title: Introduction to Upserts in Apache Pinot
 author: Kenny Bastani
 author_title: Kenny Bastani
 author_url: https://medium.com/apache-pinot-developer-blog
-author_image_url: https://pbs.twimg.com/profile_images/1400521020973400069/5y2UMi4r_400x400.jpg
+author_image_url: https://pinot.apache.org/authors/kenny.jpeg
 description:
   Introduction to Pinot Upsert and explain why it’s exciting and how you can start using it.
 keywords:
