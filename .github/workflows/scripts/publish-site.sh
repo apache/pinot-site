@@ -48,7 +48,7 @@ git status
 
 rm -rf ${SITE_DIR}/assets
 ## copy generated site
-mv ${DEV_TMP}/website/build/* ${SITE_DIR}/
+cp -r ${DEV_TMP}/website/build/* ${SITE_DIR}/
 
 git status
 git add .
