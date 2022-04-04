@@ -152,7 +152,7 @@ You can then ingest your own dataset without needing to worry about spinning up 
 ## Other changes
 
 * Richard Startin set LZ4 compression as the default for all metrics fields.
-* I added the `ST_Within` geospatial function.
+* Mark Needham added the `ST_Within` geospatial function.
 * Rong Rong fixed a bug where query stats wouldn't show if there was an error processing the query (e.g. if the query timed out).
 * Prashant Pandey fixed the query engine to handle extra columns added to a `SELECT *` statement.
 * Richard Startin added support for forward indexes on JSON columns.
