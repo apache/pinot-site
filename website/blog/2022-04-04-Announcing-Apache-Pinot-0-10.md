@@ -1,12 +1,16 @@
 ---
-title: 'Announcing Apache Pinot 0.10'
-excerpt: 'Learn more about the release of Apache Pinot 0.10 and all of new features that have been included in this version of the product.'
-date: '2022-04-01'
-authors:
-    - name: Mark Needham
-      picture: '/assets/authors/markneedham.png'
-tags:
-    - apache-pinot
+title: Announcing Apache Pinot 0.10
+author: Apache Pinot Engineering Team
+author_title: Apache Pinot Engineering Team
+author_url: https://twitter.com/ApachePinot
+author_image_url: https://pinot.apache.org/authors/pinot_team.jpg
+description:
+  Learn more about the release of Apache Pinot 0.10 and all of new features that have been included in this version of the product.
+keywords:
+    - Apache Pinot
+    - Apache Pinot Releases
+    - Apache Pinot 0.10.0
+tags: [Pinot, Data, Analytics, User-Facing Analytics, Releases]
 ---
 
 We are excited to announce the release this week of Apache Pinot 0.10.
@@ -102,13 +106,13 @@ There were also a bunch of updates to the Pinot Data Explorer, by Sanket Shah an
 
 The display of reported size and estimated size is now in a human readable format:
 
-![Human readable sizes](/assets/blogs/announcing-apache-pinot-0-10/human-readable-sizes.png)
+![Human readable sizes](/blogs/announcing-apache-pinot-0-10/human-readable-sizes.png)
 
 Fixes for the following issues:
 
 * Error messages weren't showing on the UI when an invalid operation is attempted:
 
-![A backwards incompatible attempted schema change](/assets/blogs/announcing-apache-pinot-0-10/backwards-incompatible.png)
+![A backwards incompatible attempted schema change](/blogs/announcing-apache-pinot-0-10/backwards-incompatible.png)
 
 * Query console goes blank on syntax error.
 * Query console cannot show query result when multiple columns have the same name.
