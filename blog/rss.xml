@@ -4,9 +4,16 @@
         <title>Apache Pinot: User-Facing Analytics</title>
         <link>https://pinot.apache.org/blog</link>
         <description>Apache Pinot™ Blog</description>
-        <lastBuildDate>Wed, 16 Jun 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 04 Apr 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Announcing Apache Pinot 0.10]]></title>
+            <link>https://pinot.apache.org/blog/2022/04/04/Announcing-Apache-Pinot-0-10</link>
+            <guid>Announcing Apache Pinot 0.10</guid>
+            <pubDate>Mon, 04 Apr 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Learn more about the release of Apache Pinot 0.10 and all of new features that have been included in this version of the product.]]></description>
+        </item>
         <item>
             <title><![CDATA[Text analytics on LinkedIn Talent Insights using Apache Pinot]]></title>
             <link>https://pinot.apache.org/blog/2021/06/16/LinkedIn-TextAnalytics</link>
