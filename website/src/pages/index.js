@@ -446,6 +446,26 @@ function Home() {
                         powers 50+ user-facing apps and serving{" "}
                         <strong>100k+ queries</strong>
                     </p>
+                    <div className="container">
+                        <p align="center">
+                            <h3 className={styles.installSubTitle}>What is Apache Pinot?</h3>
+                            <div>
+                                <ReactPlayer
+                                    url={"https://www.youtube.com/embed/_lqdfq2c9cQ"}
+                                    light={true}
+                                    width={"720px"}
+                                    height={"480px"}
+                                    style={{ border: "1px solid white" }}
+                                    playing={true}
+                                    volume={1}
+                                    pip={true}
+                                    controls={true}
+                                    loop={false}
+                                    stopOnUnmount={true}
+                                />
+                            </div>
+                        </p>
+                    </div>
                 </div>
             </header>
             <main>
