@@ -98,10 +98,11 @@ const features = [
         icon: "shuffle",
         description: (
             <>
-                Joins are currently not supported, but this problem can be
-                overcome by using{" "}
+                Apache Pinot supports dimension{" "}
+                <Link to="https://docs.pinot.apache.org/users/user-guide-query/lookup-udf-join">lookup joins</Link> currently.{" "}
+                Full SQL joins can be performed querying Pinot via the{" "}
                 <Link to="https://trino.io/">Trino</Link> or{" "}
-                <Link to="https://prestodb.io/">PrestoDB</Link> for querying
+                <Link to="https://prestodb.io/">PrestoDB</Link> connector.
             </>
         ),
     },
