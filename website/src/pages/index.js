@@ -100,7 +100,9 @@ const features = [
             <>
                 Apache Pinot supports dimension{" "}
                 <Link to="https://docs.pinot.apache.org/users/user-guide-query/lookup-udf-join">lookup joins</Link> currently.{" "}
-                Full SQL join support in Apache Pinot is coming soon. In the interim, full SQL joins can be performed by querying Pinot via the{" "}
+                <Link to="https://github.com/apache/pinot/issues/8260">Full SQL join</Link> support in Apache Pinot is{" "}
+                <Link to="https://startree.ai/blog/apache-pinot-native-join-support">coming soon.</Link>{" "}
+                In the interim, full SQL joins can be performed by querying Pinot via the{" "}
                 <Link to="https://trino.io/">Trino</Link> or{" "}
                 <Link to="https://prestodb.io/">PrestoDB</Link> connector.
             </>
