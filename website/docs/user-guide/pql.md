@@ -7,14 +7,14 @@ draft: true
 
 import Alert from '@site/src/components/Alert';
 
-PQL is a derivative of SQL derivative that supports selection, projection, aggregation, grouping aggregation. There is no support for Joins or Subqueries. Specifically, for Pinot:
+PQL is a derivative of SQL derivative that supports selection, projection, aggregation, grouping aggregation. There is no support for Subqueries. Specifically, for Pinot:
 
 - Aggregations are computed in parallel
 - Results of aggregations with large amounts of group keys (>1M) are approximated
 
 ## PQL Limitations
 
-PQL is only a derivative of SQL and Apache Pinot supports dimension [lookup joins](https://docs.pinot.apache.org/users/user-guide-query/lookup-udf-join) currently. Full SQL joins can be performed by querying Pinot via the [Trino](https://trino.io/) or [PrestoDB](https://prestodb.io/) connector.
+PQL is only a derivative of SQL and Apache Pinot supports dimension [lookup joins](https://docs.pinot.apache.org/users/user-guide-query/lookup-udf-join) currently. Full SQL join support in Apache Pinot is coming soon. In the interim, full SQL joins can be performed by querying Pinot via the [Trino](https://trino.io/) or [PrestoDB](https://prestodb.io/) connector.
 
 ## PQL Examples
 
