@@ -15,7 +15,7 @@ Pinot is designed to answer OLAP queries with low latency. It is suited in conte
 
 ## When should I not use it?
 
-Pinot is not a replacement for your database, nor a search engine. It addresses fast analytics on immutable data and it is not thought by design, to handle data updates or deletions. Joins are currently not supported, but this problem can be overcome by using [Trino](<(https://trino.io/)>) or [PrestoDB](<(https://prestodb.io/)>) for querying Pinot.
+Pinot is not a replacement for your database, nor a search engine. It addresses fast analytics on immutable data and it is not thought by design, to handle data updates or deletions. Apache Pinot supports dimension [lookup joins](https://docs.pinot.apache.org/users/user-guide-query/lookup-udf-join) currently. [Full SQL join](https://github.com/apache/pinot/issues/8260) support in Apache Pinot is [coming soon](https://startree.ai/blog/apache-pinot-native-join-support). In the interim, full SQL joins can be performed by querying Pinot via the [Trino](https://trino.io/) or [PrestoDB](https://prestodb.io/) connector.
 
 For more information about [Trino Pinot Connector](https://trino.io/docs/current/connector/pinot.html), see [Trino Pinot Integration](https://docs.pinot.apache.org/integrations/trino).
 

@@ -94,14 +94,17 @@ const features = [
         description: <>Horizontally scalable and fault tolerant</>,
     },
     {
-        title: "Joins using Trino or PrestoDB",
+        title: "JOINS in Pinot",
         icon: "shuffle",
         description: (
             <>
-                Joins are currently not supported, but this problem can be
-                overcome by using{" "}
+                Apache Pinot supports dimension{" "}
+                <Link to="https://docs.pinot.apache.org/users/user-guide-query/lookup-udf-join">lookup joins</Link> currently.{" "}
+                <Link to="https://github.com/apache/pinot/issues/8260">Full SQL join</Link> support in Apache Pinot is{" "}
+                <Link to="https://startree.ai/blog/apache-pinot-native-join-support">coming soon.</Link>{" "}
+                In the interim, full SQL joins can be performed by querying Pinot via the{" "}
                 <Link to="https://trino.io/">Trino</Link> or{" "}
-                <Link to="https://prestodb.io/">PrestoDB</Link> for querying
+                <Link to="https://prestodb.io/">PrestoDB</Link> connector.
             </>
         ),
     },
