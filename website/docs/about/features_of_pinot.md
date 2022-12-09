@@ -11,7 +11,7 @@ draft: true
 -   Pluggable indexing technologies - Sorted Index, Bitmap Index, Inverted Index
 -   Ability to optimize query/execution plan based on query and segment metadata .
 -   Near real time ingestion from streams and batch ingestion from Hadoop
--   SQL like language that supports selection, aggregation, filtering, group by, order by, distinct queries on data.
+-   Apache Pinot provides SQL interface for querying interactively, as well as programmatically via rest-api.
 -   Support for multivalued fields
 -   Horizontally scalable and fault tolerant
 
