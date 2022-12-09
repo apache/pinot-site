@@ -109,12 +109,11 @@ const features = [
         ),
     },
     {
-        title: "SQL-like Query Interface (PQL)",
+        title: "SQL Query Interface",
         icon: "search",
         description: (
             <>
-                SQL like language that supports selection, aggregation,
-                filtering, group by, order by, distinct queries on data
+                Apache Pinot provides <Link to="https://docs.pinot.apache.org/users/user-guide-query/querying-pinot">SQL interface</Link> for querying interactively, as well as programmatically via <Link to="https://docs.pinot.apache.org/users/api/querying-pinot-using-standard-sql">rest-api</Link>.
             </>
         ),
     },
