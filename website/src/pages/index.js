@@ -345,7 +345,7 @@ function Installation() {
                     </TabItem>
                     <TabItem value="binary">
                         <CodeBlock className="language-bash">
-                            {`VERSION=0.12.0\nwget https://downloads.apache.org/pinot/apache-pinot-$VERSION/apache-pinot-$VERSION-bin.tar.gz\ntar vxf apache-pinot-*-bin.tar.gz\ncd apache-pinot-*-bin\nbin/quick-start-batch.sh`}
+                            {`VERSION=0.12.1\nwget https://downloads.apache.org/pinot/apache-pinot-$VERSION/apache-pinot-$VERSION-bin.tar.gz\ntar vxf apache-pinot-*-bin.tar.gz\ncd apache-pinot-*-bin\nbin/quick-start-batch.sh`}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="github">
@@ -412,11 +412,11 @@ function Home() {
             >
                 <div className="container">
                     <Link
-                        to="https://docs.pinot.apache.org/basics/releases/0.12.0"
+                        to="https://docs.pinot.apache.org/basics/releases/0.12.1"
                         className={styles.indexAnnouncement}
                     >
                         <span className="badge badge-primary">release</span>
-                        v0.12.0 has been released! Check the release notes
+                        v0.12.1 has been released! Check the release notes
                     </Link>
                     <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">
