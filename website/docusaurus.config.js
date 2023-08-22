@@ -18,7 +18,7 @@
  */
 module.exports = {
   title: 'Apache Pinot™',
-  tagline: 'Realtime distributed OLAP datastore',
+  tagline: 'Real-time distributed OLAP database',
   url: 'https://pinot.apache.org',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -28,11 +28,11 @@ module.exports = {
   themeConfig: {
     metadata: [
       {name: 'description', content: 'Apache Pinot'},
-      {name: 'description', content: 'Real-time Analytics'},
-      {name: 'description', content: 'User-facing Analytics'},
+      {name: 'description', content: 'real-time Analytics'},
+      {name: 'description', content: 'user-facing Analytics'},
       {name: 'description', content: 'user facing analytics'},
-      {name: 'description', content: 'Olap'},
-      {name: 'description', content: 'Consumer-facing facing analytics'},
+      {name: 'description', content: 'OLAP'},
+      {name: 'description', content: 'Consumer-facing analytics'},
       {name: 'description', content: 'Fast Analytics'},
       {name: 'description', content: 'Who uses Apache Pinot?'}
     ],

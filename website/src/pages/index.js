@@ -73,18 +73,14 @@ const features = [
         ),
     },
     {
-        title: "Near Real time ingestion",
+        title: "Real-time ingestion",
         icon: "rss",
         description: (
             <>
-                Near Realtime ingestion with
+                Real-time ingestion from
                 {" "}<Link to="https://kafka.apache.org/">Apache Kafka</Link>,
                 {" "}<Link to="https://pulsar.apache.org/">Apache Pulsar</Link>,
-                {" "}<Link to="https://aws.amazon.com/kinesis/">Kinesis</Link>
-                supports {" "}<Link to="https://www.json.org/">JSON</Link>,
-                {" "}<Link to="https://avro.apache.org/">Avro</Link>,
-                {" "}<Link to="https://developers.google.com/protocol-buffers/">ProtoBuf</Link>,
-                {" "}<Link to="https://thrift.apache.org/">Thrift</Link> formats
+                {" "}<Link to="https://aws.amazon.com/kinesis/">Kinesis</Link> in JSON, Avro, ProtoBuf, and even Thrift formats
             </>
         ),
     },
@@ -128,30 +124,6 @@ const features = [
                 </Link>
                 . Use realtime table only to cover segments for which offline
                 data may not be available yet
-            </>
-        ),
-    },
-    {
-        title: "Anomaly Detection",
-        icon: "bar-chart",
-        description: (
-            <>
-                Run ML Algorithms to detect Anomalies on the data stored in
-                Pinot. Use{" "}
-                <Link to="https://docs.pinot.apache.org/integrations/thirdeye">
-                    ThirdEye
-                </Link>{" "}
-                with Pinot for Anomaly Detection and Root Cause Analysis
-            </>
-        ),
-    },
-    {
-        title: "Smart Alerts in ThirdEye",
-        icon: "bell",
-        description: (
-            <>
-                Detect the right anomalies by customizing anomaly detect flow
-                and notification flow
             </>
         ),
     },
