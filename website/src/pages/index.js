@@ -52,78 +52,90 @@ const WhoUsesPinotSEO = () => (
 
 const features = [
     {
-        title: "Blazing Fast",
+        title: "Fast queries",
         icon: "zap",
         description: (
             <>
-                Pinot is designed to answer OLAP queries with low latency on
-                immutable data and mutable data(Upsert Support)
+                Pinot can filter and aggregate petabyte data sets with P90 latencies in the tens of milliseconds. 
+                It's fast enough to return live results interactively in the UI.
             </>
         ),
     },
     {
-        title: "Pluggable indexing",
-        icon: "unlock",
+        title: "High concurrency",
+        icon: "zap",
         description: (
             <>
-                Pluggable indexing technologies - Sorted Index, Bitmap Index,
-                Inverted Index, StarTree Index, Bloom Filter, Range Index,
-                Text Search Index(Lucence/FST), Json Index, Geospatial Index
+                With user-facing applications querying Pinot directly, 
+                it can serve 100,000s of concurrent queries per second.
             </>
         ),
     },
     {
-        title: "Real-time ingestion",
+        title: "Batch and streaming ingest",
         icon: "rss",
         description: (
             <>
-                Real-time ingestion from
+                Real-time ingest from
                 {" "}<Link to="https://kafka.apache.org/">Apache Kafka</Link>,
                 {" "}<Link to="https://pulsar.apache.org/">Apache Pulsar</Link>,
-                {" "}<Link to="https://aws.amazon.com/kinesis/">Kinesis</Link> in JSON, Avro, ProtoBuf, and even Thrift formats
+                {" "}<Link to="https://aws.amazon.com/kinesis/">AWS Kinesis</Link>. 
+                Batch ingest from Hadoop, Spark, AWS S3, and more. 
+                Combine batch and streaming sources into a single table for querying.
             </>
         ),
     },
     {
-        title: "Horizontally scalable",
-        icon: "code",
-        description: <>Horizontally scalable and fault tolerant</>,
+        title: "Upserts",
+        icon: "rss",
+        description: (
+            <>
+                Ingest the same record many times, but see only the latest value at query time.
+                Built-in and production-tested since version 0.6.
+            </>
+        ),
     },
+
     {
-        title: "JOINS in Pinot",
+        title: "Versatile Joins",
         icon: "shuffle",
         description: (
             <>
-                Apache Pinot supports dimension{" "}
-                <Link to="https://docs.pinot.apache.org/users/user-guide-query/lookup-udf-join">lookup joins</Link> currently.{" "}
-                <Link to="https://github.com/apache/pinot/issues/8260">Full SQL join</Link> support in Apache Pinot is{" "}
-                <Link to="https://startree.ai/blog/apache-pinot-native-join-support">coming soon.</Link>{" "}
-                In the interim, full SQL joins can be performed by querying Pinot via the{" "}
-                <Link to="https://trino.io/">Trino</Link> or{" "}
-                <Link to="https://prestodb.io/">PrestoDB</Link> connector.
+                Arbitrary fact/dimension and fact/fact joins on petabyte data sets.
             </>
         ),
     },
+
+    {
+        title: "Rich indexing options",
+        icon: "unlock",
+        description: (
+            <>
+                Pluggable indexes including 
+                <Link to="https://docs.pinot.apache.org/basics/indexing/timestamp-index">Timestamp</Link>,
+                <Link to="https://docs.pinot.apache.org/basics/indexing/inverted-index">Inverted</Link>,
+                <Link to="https://docs.pinot.apache.org/basics/indexing/star-tree-index">Star-Tree</Link>,
+                <Link to="https://docs.pinot.apache.org/basics/indexing/bloom-filter">Bloom Filter</Link>,
+                <Link to="https://docs.pinot.apache.org/basics/indexing/range-index">Range</Link>,
+                <Link to="https://docs.pinot.apache.org/basics/indexing/text-search-support">Text</Link>,
+                <Link to="https://docs.pinot.apache.org/basics/indexing/json-index">JSON</Link>, and
+                <Link to="https://docs.pinot.apache.org/basics/indexing/geospatial-support">Geospatial</Link> options
+            </>
+        ),
+    },
+
+    {
+        title: "Horizontally scalable",
+        icon: "code",
+        description: <>Horizontally scalable with built-in cluster management</>,
+    },
+
     {
         title: "SQL Query Interface",
         icon: "search",
         description: (
             <>
-                Apache Pinot provides <Link to="https://docs.pinot.apache.org/users/user-guide-query/querying-pinot">SQL interface</Link> for querying interactively, as well as programmatically via <Link to="https://docs.pinot.apache.org/users/api/querying-pinot-using-standard-sql">rest-api</Link>.
-            </>
-        ),
-    },
-    {
-        title: "Hybrid tables",
-        icon: "list",
-        description: (
-            <>
-                Consist of of{" "}
-                <Link to="http://pinot.apache.org/img/dynamic-table.png">
-                    both offline and realtime table
-                </Link>
-                . Use realtime table only to cover segments for which offline
-                data may not be available yet
+                A highly standard SQL query interface accessible through a built-in query editor and a REST API.
             </>
         ),
     },
