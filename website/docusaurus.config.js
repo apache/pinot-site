@@ -147,7 +147,7 @@ module.exports = {
             },
             {
               label: 'Administration',
-              to: 'https://docs.pinot.apache.org/operating-pinot',
+              to: 'https://docs.pinot.apache.org/operators/operating-pinot',
             },
           ],
         },
