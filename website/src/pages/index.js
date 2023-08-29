@@ -50,7 +50,7 @@ const features = [
         icon: "corner-down-right",
         description: (
             <>
-                Real-time ingest from <Link to="https://kafka.apache.org/">Apache Kafka</Link>, <Link to="https://pulsar.apache.org/">Apache Pulsar</Link>, <Link to="https://aws.amazon.com/kinesis/">AWS Kinesis</Link>. Batch ingest from Hadoop, Spark, AWS S3, and more. Combine batch and streaming sources into a single table for querying.
+                Ingest from <Link to="https://kafka.apache.org/">Apache Kafka</Link>, <Link to="https://pulsar.apache.org/">Apache Pulsar</Link>, and <Link to="https://aws.amazon.com/kinesis/">AWS Kinesis</Link> in real time. Batch ingest from Hadoop, Spark, AWS S3, and more. Combine batch and streaming sources into a single table for querying.
             </>
         ),
     },
@@ -59,7 +59,7 @@ const features = [
         icon: "arrow-up",
         description: (
             <>
-                Ingest the same record many times, but see only the latest value at query time. Built-in and production-tested since version 0.6.
+                Ingest the same record many times, but see only the latest value at query time. Upserts are built-in and production-tested since version 0.6.
             </>
         ),
     },
@@ -69,7 +69,7 @@ const features = [
         icon: "shuffle",
         description: (
             <>
-                Arbitrary fact/dimension and fact/fact joins on petabyte data sets.
+                Perform arbitrary fact/dimension and fact/fact joins on petabyte data sets.
             </>
         ),
     },
@@ -79,7 +79,7 @@ const features = [
         icon: "layers",
         description: (
             <>
-                Pluggable indexes including <Link to="https://docs.pinot.apache.org/basics/indexing/timestamp-index">Timestamp</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/inverted-index">Inverted</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/star-tree-index">Star-Tree</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/bloom-filter">Bloom Filter</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/range-index">Range</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/text-search-support">Text</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/json-index">JSON</Link>, and <Link to="https://docs.pinot.apache.org/basics/indexing/geospatial-support">Geospatial</Link> options.
+                Choose from pluggable indexes including <Link to="https://docs.pinot.apache.org/basics/indexing/timestamp-index">Timestamp</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/inverted-index">Inverted</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/star-tree-index">Star-Tree</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/bloom-filter">Bloom Filter</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/range-index">Range</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/text-search-support">Text</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/json-index">JSON</Link>, and <Link to="https://docs.pinot.apache.org/basics/indexing/geospatial-support">Geospatial</Link> options.
             </>
         ),
     },
@@ -88,7 +88,7 @@ const features = [
         title: "Built for scale",
         icon: "cloud",
         description: <>
-            Horizontally scalable and fault-tolerant, adaptable to workloads across the storage and throughput spectrum.
+            Pinot is horizontally scalable and fault-tolerant, adaptable to workloads across the storage and throughput spectrum.
         </>,
     },
 
@@ -97,7 +97,7 @@ const features = [
         icon: "database",
         description: (
             <>
-                A highly standard SQL query interface accessible through a built-in query editor and a REST API.
+                The highly standard SQL query interface is accessible through a built-in query editor and a REST API.
             </>
         ),
     },
