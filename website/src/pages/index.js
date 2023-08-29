@@ -79,7 +79,7 @@ const features = [
         icon: "layers",
         description: (
             <>
-                Choose from pluggable indexes including <Link to="https://docs.pinot.apache.org/basics/indexing/timestamp-index">Timestamp</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/inverted-index">Inverted</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/star-tree-index">Star-Tree</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/bloom-filter">Bloom Filter</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/range-index">Range</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/text-search-support">Text</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/json-index">JSON</Link>, and <Link to="https://docs.pinot.apache.org/basics/indexing/geospatial-support">Geospatial</Link> options.
+                Choose from pluggable indexes including <Link to="https://docs.pinot.apache.org/basics/indexing/timestamp-index">timestamp</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/inverted-index">inverted</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/star-tree-index">star-tree</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/bloom-filter">Bloom filter</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/range-index">range</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/text-search-support">text</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/json-index">JSON</Link>, and <Link to="https://docs.pinot.apache.org/basics/indexing/geospatial-support">geospatial</Link> options.
             </>
         ),
     },
