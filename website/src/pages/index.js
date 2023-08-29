@@ -56,24 +56,22 @@ const features = [
         icon: "zap",
         description: (
             <>
-                Pinot can filter and aggregate petabyte data sets with P90 latencies in the tens of milliseconds. 
-                It's fast enough to return live results interactively in the UI.
+                Pinot can filter and aggregate petabyte data sets with P90 latencies in the tens of milliseconds—fast enough to return live results interactively in the UI.
             </>
         ),
     },
     {
         title: "High concurrency",
-        icon: "zap",
+        icon: "cpu",
         description: (
             <>
-                With user-facing applications querying Pinot directly, 
-                it can serve 100,000s of concurrent queries per second.
+                With user-facing applications querying Pinot directly, it can serve 100,000s of concurrent queries per second.
             </>
         ),
     },
     {
         title: "Batch and streaming ingest",
-        icon: "rss",
+        icon: "corner-down-right",
         description: (
             <>
                 Real-time ingest from
@@ -87,7 +85,7 @@ const features = [
     },
     {
         title: "Upserts",
-        icon: "rss",
+        icon: "arrow-up",
         description: (
             <>
                 Ingest the same record many times, but see only the latest value at query time.
@@ -97,7 +95,7 @@ const features = [
     },
 
     {
-        title: "Versatile Joins",
+        title: "Versatile joins",
         icon: "shuffle",
         description: (
             <>
@@ -108,31 +106,23 @@ const features = [
 
     {
         title: "Rich indexing options",
-        icon: "unlock",
+        icon: "layers",
         description: (
             <>
-                Pluggable indexes including 
-                <Link to="https://docs.pinot.apache.org/basics/indexing/timestamp-index">Timestamp</Link>,
-                <Link to="https://docs.pinot.apache.org/basics/indexing/inverted-index">Inverted</Link>,
-                <Link to="https://docs.pinot.apache.org/basics/indexing/star-tree-index">Star-Tree</Link>,
-                <Link to="https://docs.pinot.apache.org/basics/indexing/bloom-filter">Bloom Filter</Link>,
-                <Link to="https://docs.pinot.apache.org/basics/indexing/range-index">Range</Link>,
-                <Link to="https://docs.pinot.apache.org/basics/indexing/text-search-support">Text</Link>,
-                <Link to="https://docs.pinot.apache.org/basics/indexing/json-index">JSON</Link>, and
-                <Link to="https://docs.pinot.apache.org/basics/indexing/geospatial-support">Geospatial</Link> options
+                Pluggable indexes including <Link to="https://docs.pinot.apache.org/basics/indexing/timestamp-index">Timestamp</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/inverted-index">Inverted</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/star-tree-index">Star-Tree</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/bloom-filter">Bloom Filter</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/range-index">Range</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/text-search-support">Text</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/json-index">JSON</Link>, and <Link to="https://docs.pinot.apache.org/basics/indexing/geospatial-support">Geospatial</Link> options.
             </>
         ),
     },
 
     {
-        title: "Horizontally scalable",
-        icon: "code",
-        description: <>Horizontally scalable with built-in cluster management</>,
+        title: "Built for scale",
+        icon: "cloud",
+        description: <>Horizontally scalable and fault-tolerant with built-in cluster management.</>,
     },
 
     {
-        title: "SQL Query Interface",
-        icon: "search",
+        title: "SQL query interface",
+        icon: "database",
         description: (
             <>
                 A highly standard SQL query interface accessible through a built-in query editor and a REST API.
