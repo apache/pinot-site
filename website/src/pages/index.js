@@ -1,10 +1,3 @@
-// /**
-//  * Copyright (c) 2017-present, Facebook, Inc.
-//  *
-//  * This source code is licensed under the MIT license found in the
-//  * LICENSE file in the root directory of this source tree.
-//  */
-
 import React, { useState, useEffect } from "react";
 
 import CodeBlock from "@theme/CodeBlock";
@@ -25,30 +18,13 @@ import PinotQuery from '@site/static/img/ingest-query.svg';
 import styles from "./index.module.css";
 import "./index.css";
 
-import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
-import SwiftSlider from 'react-swift-slider'
-import withAutoplay from 'react-awesome-slider/dist/autoplay'
 import ReactPlayer from "react-player/youtube";
-import styled from 'styled-components'
 import Head from '@docusaurus/Head';
 
-const companiesData = require(`../data/companies-data.js`);
-const companiesList = companiesData.getCompaniesList();
 const AnchoredH2 = Heading("h2");
 
-const WhoUsesPinotSEO = () => (
-  <Head>
-    <meta property="og:description" content="Who used Apache Pinot?" />
-    <meta property="og:description" content="Who used Pinot?" />
-    <meta property="og:description" content="Companies using Pinot?" />
-    <meta property="og:description" content="Companies using Apache Pinot?" />
-    <meta charSet="utf-8" />
-    <title>Who used Apache Pinot?</title>
-    <link rel="canonical" href="http://mysite.com/example" />
-  </Head>
-);
 
 const features = [
     {
@@ -74,12 +50,7 @@ const features = [
         icon: "corner-down-right",
         description: (
             <>
-                Real-time ingest from
-                {" "}<Link to="https://kafka.apache.org/">Apache Kafka</Link>,
-                {" "}<Link to="https://pulsar.apache.org/">Apache Pulsar</Link>,
-                {" "}<Link to="https://aws.amazon.com/kinesis/">AWS Kinesis</Link>. 
-                Batch ingest from Hadoop, Spark, AWS S3, and more. 
-                Combine batch and streaming sources into a single table for querying.
+                Real-time ingest from <Link to="https://kafka.apache.org/">Apache Kafka</Link>, <Link to="https://pulsar.apache.org/">Apache Pulsar</Link>, <Link to="https://aws.amazon.com/kinesis/">AWS Kinesis</Link>. Batch ingest from Hadoop, Spark, AWS S3, and more. Combine batch and streaming sources into a single table for querying.
             </>
         ),
     },
@@ -88,8 +59,7 @@ const features = [
         icon: "arrow-up",
         description: (
             <>
-                Ingest the same record many times, but see only the latest value at query time.
-                Built-in and production-tested since version 0.6.
+                Ingest the same record many times, but see only the latest value at query time. Built-in and production-tested since version 0.6.
             </>
         ),
     },
@@ -117,7 +87,9 @@ const features = [
     {
         title: "Built for scale",
         icon: "cloud",
-        description: <>Horizontally scalable and fault-tolerant with built-in cluster management.</>,
+        description: <>
+            Horizontally scalable and fault-tolerant, adaptable to workloads across the storage and throughput spectrum.
+        </>,
     },
 
     {
@@ -129,6 +101,16 @@ const features = [
             </>
         ),
     },
+
+    {
+        title: "Built-in multitenancy",
+        icon: "grid",
+        description: (
+            <>
+                Manage and secure data in isolated logical namespaces for cloud-friendly resource management.
+            </>
+        ),
+    }
 ];
 
 function Features({ features }) {
