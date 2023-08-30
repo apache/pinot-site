@@ -28,12 +28,11 @@ module.exports = {
   themeConfig: {
     metadata: [
       {name: 'description', content: 'Apache Pinot'},
-      {name: 'description', content: 'real-time Analytics'},
-      {name: 'description', content: 'user-facing Analytics'},
-      {name: 'description', content: 'user facing analytics'},
+      {name: 'description', content: 'Real-time analytics'},
+      {name: 'description', content: 'User-facing analytics'},
       {name: 'description', content: 'OLAP'},
       {name: 'description', content: 'Consumer-facing analytics'},
-      {name: 'description', content: 'Fast Analytics'},
+      {name: 'description', content: 'Fast analytics'},
       {name: 'description', content: 'Who uses Apache Pinot?'}
     ],
     navbar: {

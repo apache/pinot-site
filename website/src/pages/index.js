@@ -32,7 +32,7 @@ const features = [
         icon: "zap",
         description: (
             <>
-                Pinot can filter and aggregate petabyte data sets with P90 latencies in the tens of milliseconds—fast enough to return live results interactively in the UI.
+                Pinot can filter and aggregate terabyte data sets with P99 latencies in the tens of milliseconds—fast enough to return live results interactively in the UI.
             </>
         ),
     },
