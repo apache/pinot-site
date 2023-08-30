@@ -41,7 +41,7 @@ const features = [
         icon: "cpu",
         description: (
             <>
-                With user-facing applications querying Pinot directly, it can serve 100,000s of concurrent queries per second.
+                With user-facing applications querying Pinot directly, it can serve hundreds of thousands of concurrent queries per second.
             </>
         ),
     },
