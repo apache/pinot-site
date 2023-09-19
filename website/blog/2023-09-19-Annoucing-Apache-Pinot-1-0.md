@@ -2,8 +2,8 @@
 title: Geospatial Indexing in Apache Pinot
 author: Hubert Dulay
 author_title: Hubert Dulay, Mayank Shrivastava, Neha Pawar
-author_url: 
-author_image_url: 
+author_url: ""
+author_image_url: ""
 description:
  Introducing Apache Pinot 1.0 Release
 
