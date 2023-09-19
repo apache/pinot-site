@@ -1,9 +1,9 @@
 ---
-title: Geospatial Indexing in Apache Pinot
+title: Announcing Apache Pinot 1.0™
 author: Hubert Dulay
 author_title: Hubert Dulay, Mayank Shrivastava, Neha Pawar
-author_url: ""
-author_image_url: ""
+author_url: https://pinot.apache.org/
+author_image_url: https://pinot.apache.org/authors/pinot_team.jpg
 description:
  Introducing Apache Pinot 1.0 Release
 
@@ -270,7 +270,7 @@ You can read the design [document](https://docs.google.com/document/d/1nHZb37re4
 ## Summary
 Apache Pinot’s evolution is expressly due to the humans behind the code, and in reaching 1.0 release status it is proper and fitting to give credit to the open source project’s key committers. Since its early days, over [three hundred contributors](https://github.com/apache/pinot/graphs/contributors) have produced more than 1.3 million source lines of code (SLOC).
 
-![alt](../static/blogs/announcing-apache-pinot-0-10/apache-pinot-1-0-name-cloud.png)
+![alt](https://pinot.apache.org/blogs/apache-pinot-1-0-name-cloud.png)
 
 The introduction of Apache Pinot 1.0 represents an exceptional stride forward in real-time online analytical processing (OLAP) capabilities, marking a watershed moment in the evolution of real-time analytics systems. This release redefines the limits of what can be achieved in the realm of instant data analysis, presenting a game-changing solution for organizations seeking high throughput and low latency in their OLAP queries. If you would like to get started with Apache Pinot 1.0, you can check out the documentation, and download it now.
 
