@@ -58,7 +58,7 @@ Apache Pinot 1.0 introduces native query-time JOIN support equipping Pinot to ha
 
 JOIN optimization strategies play a pivotal role in Apache Pinot 1.0. These include predicate push-down to individual tables and using indexing and pruning to reduce scanning which speeds up query processing, smart data layout considerations to minimize data shuffling, and query hints for fine-tuning JOIN operations. With support for all JOIN types and three JOIN algorithms, including broadcast join, shuffle distributed hash join, and lookup join, Apache Pinot delivers versatility and scalability. By significantly reducing query latency and simplifying architecture, Apache Pinot 1.0 is a game-changer for real-time OLAP systems. 
 
-<!-- For more detailed information on JOINs, please visit this blog post. -->
+For more detailed information on JOINs, please visit this blog [post](https://startree.ai/blog/query-time-joins-in-apache-pinot-1-0).
 
 Discover How Uber is using Joins in Apache Pinot
 For a real-world use case, Uber is already using the new join capabilities of Apache Pinot at scale in production. You can watch this video to learn more.
@@ -260,7 +260,7 @@ The fields to encode can be configured as shown:
 
 `<field-names-1 and 2>` are a comma-separated list of fields you wish to encode with CLP.
 
-<!-- You can read the design document for more details into why and how this feature was implemented. -->
+You can read the design [document](https://docs.google.com/document/d/1nHZb37re4mUwEA258x3a2pgX13EWLWMJ0uLEDk1dUyU/edit) for more details into why and how this feature was implemented.
 
 
 ## Summary
