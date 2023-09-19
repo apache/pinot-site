@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[8924],{3663:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"consumer-record-lag","name":"consumer record lag","count":1,"permalink":"/blog/tags/consumer-record-lag"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[9873],{2733:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"realtime","name":"realtime","count":28,"permalink":"/blog/tags/realtime"}')}}]);

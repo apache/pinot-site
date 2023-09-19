@@ -4,9 +4,79 @@
         <title>Apache Pinot: User-Facing Analytics</title>
         <link>https://pinot.apache.org/blog</link>
         <description>Apache Pinot™ Blog</description>
-        <lastBuildDate>Mon, 04 Apr 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 19 Sep 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Announcing Apache Pinot 1.0™]]></title>
+            <link>https://pinot.apache.org/blog/2023/09/19/Annoucing-Apache-Pinot-1-0</link>
+            <guid>Announcing Apache Pinot 1.0™</guid>
+            <pubDate>Tue, 19 Sep 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Introducing Apache Pinot 1.0 Release]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Geospatial Indexing in Apache Pinot]]></title>
+            <link>https://pinot.apache.org/blog/2023/05/11/Geospatial-Indexing-in-Apache-Pinot</link>
+            <guid>Geospatial Indexing in Apache Pinot</guid>
+            <pubDate>Thu, 11 May 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[This post will explore a new API endpoint that lets you check how much Pinot is lagging when ingesting from Apache Kafka.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Apache Pinot™ 0.12 - Consumer Record Lag]]></title>
+            <link>https://pinot.apache.org/blog/2023/03/30/Apache-Pinot-0-12-Consumer-Record-Lag</link>
+            <guid>Apache Pinot™ 0.12 - Consumer Record Lag</guid>
+            <pubDate>Thu, 30 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[This post will explore a new API endpoint that lets you check how much Pinot is lagging when ingesting from Apache Kafka.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Apache Pinot™ 0.12 - Configurable Time Boundary]]></title>
+            <link>https://pinot.apache.org/blog/2023/02/21/Apache-Pinot-0-12-Configurable-Time-Boundary</link>
+            <guid>Apache Pinot™ 0.12 - Configurable Time Boundary</guid>
+            <pubDate>Tue, 21 Feb 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[This post will explore the ability to configure the time boundary when working with hybrid tables.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Apache Pinot™ 0.11 - Deduplication on Real-Time Tables]]></title>
+            <link>https://pinot.apache.org/blog/2023/01/29/Apache-Pinot-Deduplication-on-Real-Time-Tables</link>
+            <guid>Apache Pinot™ 0.11 - Deduplication on Real-Time Tables</guid>
+            <pubDate>Sun, 29 Jan 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Learn about the deduplication for the real-time tables feature in Apache Pinot]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Apache Pinot™ 0.11 - Pausing Real-Time Ingestion]]></title>
+            <link>https://pinot.apache.org/blog/2022/11/28/Apache-Pinot-Pausing-Real-Time-Ingestion</link>
+            <guid>Apache Pinot™ 0.11 - Pausing Real-Time Ingestion</guid>
+            <pubDate>Mon, 28 Nov 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Learn about a feature that lets you pause and resume real-time data ingestion in Apache Pinot]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Apache Pinot™ 0.11 - Timestamp Indexes]]></title>
+            <link>https://pinot.apache.org/blog/2022/11/22/Apache-Pinot-Timestamp-Indexes</link>
+            <guid>Apache Pinot™ 0.11 - Timestamp Indexes</guid>
+            <pubDate>Tue, 22 Nov 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Users write queries that use the datetrunc function to filter at a coarser grain of functionality. Unfortunately, this approach results in scanning data and time value conversion work that takes a long time at large data volumes. The timestamp index solves that problem!]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Apache Pinot™ 0.11 - Inserts from SQL]]></title>
+            <link>https://pinot.apache.org/blog/2022/11/17/Apache Pinot-Inserts-from-SQL</link>
+            <guid>Apache Pinot™ 0.11 - Inserts from SQL</guid>
+            <pubDate>Thu, 17 Nov 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Explore the INSERT INTO clause, which makes ingesting batch data into Pinot as easy as writing a SQL query.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Apache Pinot™ 0.11 - How do I see my indexes?]]></title>
+            <link>https://pinot.apache.org/blog/2022/11/08/Apache Pinot-How-do-I-see-my-indexes</link>
+            <guid>Apache Pinot™ 0.11 - How do I see my indexes?</guid>
+            <pubDate>Tue, 08 Nov 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[How you can work out which indexes are currently defined on a Pinot table]]></description>
+        </item>
+        <item>
+            <title><![CDATA[GapFill Function For Time-Series Datasets In Pinot]]></title>
+            <link>https://pinot.apache.org/blog/2022/08/02/GapFill-Function-For-Time-Series-Datasets-In-Pinot</link>
+            <guid>GapFill Function For Time-Series Datasets In Pinot</guid>
+            <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Gapfilling functions in Pinot to provide the on-the-fly interpolation (filling the missing data) functionality to better handle time-series data.]]></description>
+        </item>
         <item>
             <title><![CDATA[Announcing Apache Pinot 0.10]]></title>
             <link>https://pinot.apache.org/blog/2022/04/04/Announcing-Apache-Pinot-0-10</link>

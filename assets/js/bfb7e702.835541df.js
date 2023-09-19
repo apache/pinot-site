@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[2663],{3006:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"time-boundary","name":"time boundary","count":1,"permalink":"/blog/tags/time-boundary"}')}}]);
