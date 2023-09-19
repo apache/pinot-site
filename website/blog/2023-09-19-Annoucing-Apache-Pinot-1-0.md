@@ -39,9 +39,9 @@ Features are also a key thing that makes a new release worthy of “1.0” statu
 
 This new engine also resolves bottlenecks by introducing an intermediary compute stage, and brings Apache Pinot closer to full ANSI SQL semantics. While this query engine has been available within Apache Pinot already (since release 0.11.0), with the release of Apache Pinot 1.0 this feature is functionally complete.
 
-(While you can read more below, check out the accompanying blog by Apache Pinot PMC Neha Pawar about using query-time JOINs here.)
+(While you can read more below, check out the accompanying blog by Apache Pinot PMC Neha Pawar about using query-time JOINs [here](https://startree.ai/blog/query-time-joins-in-apache-pinot-1-0)).
 
-This post is a summary of the high points, but you can find a full list of everything included in the release notes.
+<!-- This post is a summary of the high points, but you can find a full list of everything included in the release notes. -->
 
 Let’s have a look at some of the highlighted changes:
 
@@ -58,7 +58,7 @@ Apache Pinot 1.0 introduces native query-time JOIN support equipping Pinot to ha
 
 JOIN optimization strategies play a pivotal role in Apache Pinot 1.0. These include predicate push-down to individual tables and using indexing and pruning to reduce scanning which speeds up query processing, smart data layout considerations to minimize data shuffling, and query hints for fine-tuning JOIN operations. With support for all JOIN types and three JOIN algorithms, including broadcast join, shuffle distributed hash join, and lookup join, Apache Pinot delivers versatility and scalability. By significantly reducing query latency and simplifying architecture, Apache Pinot 1.0 is a game-changer for real-time OLAP systems. 
 
-For more detailed information on JOINs, please visit this blog post.
+<!-- For more detailed information on JOINs, please visit this blog post. -->
 
 Discover How Uber is using Joins in Apache Pinot
 For a real-world use case, Uber is already using the new join capabilities of Apache Pinot at scale in production. You can watch this video to learn more.
@@ -97,7 +97,7 @@ invalidRecordsThresholdCount is also a limit similar to the previous property, b
 ### DELETE Support for Upsert Tables
 Apache Pinot upsert tables now support deleting records. Supporting delete with upsert avoids the need for the user to explicitly filter out invalid records in the query. SELECT * FROM table WHERE deleted_column != true becomes as simple as SELECT * FROM table. Pinot will only return the latest non-deleted records from the table. This feature opens up the support to ingest Change Data Capture (CDC) data like Debezium where the changes from a source (typically, mutable) will contain DELETE events.
 
-Deletes itself is implemented as a soft-delete in Apache Pinot with a dedicated boolean column that serves as a delete marker for the record. Pinot automatically filters out records that are marked in this column. For more details, please see the documentation.
+Deletes itself is implemented as a soft-delete in Apache Pinot with a dedicated boolean column that serves as a delete marker for the record. Pinot automatically filters out records that are marked in this column. For more details, please see the [documentation](https://docs.pinot.apache.org/basics/data-import/upsert#delete-column).
 
 
 ## NULL Value Support
@@ -195,13 +195,13 @@ select col from table order by col
 ## Index Pluggability
 Today, Pinot supports multiple index types, like forward index, bloom filter, and range index. Before Pinot 1.0, index types were all statically defined, which means that in order to create a new index type, you’d need to rebuild Pinot from source. Ideally that shouldn’t be the case.
 
-To increase speed of development, [Index Service Provider Interface (SPI)]([https://](https://github.com/apache/pinot/issues/10183)), or index-spi, reduces friction by adding the ability to include new index types at runtime in Pinot. This opens the ability of adding third party indexes by including an external jar in the classpath and adding some configuration. This opens up Pinot indexing to lower-friction innovation from the community.
+To increase speed of development, [Index Service Provider Interface (SPI)](https://github.com/apache/pinot/issues/10183), or index-spi, reduces friction by adding the ability to include new index types at runtime in Pinot. This opens the ability of adding third party indexes by including an external jar in the classpath and adding some configuration. This opens up Pinot indexing to lower-friction innovation from the community.
 
 For now, SPI-accessible indexes are limited to single field index types. Features like the star-tree index or other multi-column approaches are not yet supported.
 
 
 ## Apache Pinot Spark 3 Connector and Passing Pinot Options
-Apache Spark users can now take advantage of Pinot’s ability to provide high scalability, low latency, and high concurrency within the context of a Spark 3 cluster using the [Apache Pinot Spark 3 Connector]([https://](https://github.com/apache/pinot/blob/master/pinot-connectors/pinot-spark-3-connector/README.md)).
+Apache Spark users can now take advantage of Pinot’s ability to provide high scalability, low latency, and high concurrency within the context of a Spark 3 cluster using the [Apache Pinot Spark 3 Connector](https://github.com/apache/pinot/blob/master/pinot-connectors/pinot-spark-3-connector/README.md).
 
 This connector supports Apache Spark (2.x and 3.x) as a processor to create and push segment files to the database and can read realtime, offline, and hybrid tables from Pinot.
 
@@ -216,9 +216,9 @@ Performance Features
 Usability Features
 - SQL support instead of PQL
 - Overlap between realtime and offline segments is queried exactly once for hybrid tables
-- Schema discovery - If schema is not specified, the [connector reads the table schema]([https://](https://github.com/apache/pinot/blob/master/pinot-connectors/pinot-spark-3-connector/documentation/read_model.md)) from the Pinot controller, and then converts to the Spark schema.
+- Schema discovery - If schema is not specified, the [connector reads the table schema](https://github.com/apache/pinot/blob/master/pinot-connectors/pinot-spark-3-connector/documentation/read_model.md) from the Pinot controller, and then converts to the Spark schema.
 
-Here is an example that reads a Pinot table, by setting the format to “pinot” spark will automatically load the Pinot connector and read the “airlinesStats” table. The queryOptions property allows you to provide [Pinot Query Options]([https://](https://docs.pinot.apache.org/users/user-guide-query/query-options)).
+Here is an example that reads a Pinot table, by setting the format to “pinot” spark will automatically load the Pinot connector and read the “airlinesStats” table. The queryOptions property allows you to provide [Pinot Query Options](https://docs.pinot.apache.org/users/user-guide-query/query-options).
 
 ```scala
 val data = spark.read
@@ -233,7 +233,7 @@ data.show(100)
 ```
 
 ## Petabyte-Scale Log Storage and Search in Pinot with CLP
-Compressed Log Processor (CLP) is a tool capable of losslessly compressing text logs and searching them in their compressed state. It achieves a better compression ratio than general purpose compressors alone, while retaining the ability to search the compressed log events without incurring the performance penalty of fully decompressing them. Part of CLP’s algorithm was deployed within [Uber]([https://](https://www.uber.com/blog/reducing-logging-cost-by-two-orders-of-magnitude-using-clp/)) to compress unstructured Spark logs, as they are generated, achieving an unprecedented compression of 169×.
+Compressed Log Processor (CLP) is a tool capable of losslessly compressing text logs and searching them in their compressed state. It achieves a better compression ratio than general purpose compressors alone, while retaining the ability to search the compressed log events without incurring the performance penalty of fully decompressing them. Part of CLP’s algorithm was deployed within [Uber](https://www.uber.com/blog/reducing-logging-cost-by-two-orders-of-magnitude-using-clp/) to compress unstructured Spark logs, as they are generated, achieving an unprecedented compression of 169×.
 
 Log events generated as JSON objects with user-defined schemas, meaning each event may have different keys. Such user-defined schemas make these events challenging to store in a table with a set schema.  With Log Storage and Search in Pinot with CLP, users would be able to:
 - Store their log events losslessly (without dropping fields)
@@ -264,7 +264,7 @@ The fields to encode can be configured as shown:
 
 
 ## Summary
-Apache Pinot’s evolution is expressly due to the humans behind the code, and in reaching 1.0 release status it is proper and fitting to give credit to the open source project’s key committers. Since its early days, over three hundred contributors have produced more than 1.3 million source lines of code (SLOC).
+Apache Pinot’s evolution is expressly due to the humans behind the code, and in reaching 1.0 release status it is proper and fitting to give credit to the open source project’s key committers. Since its early days, over [three hundred contributors](https://github.com/apache/pinot/graphs/contributors) have produced more than 1.3 million source lines of code (SLOC).
 
 ![alt](../static/blogs/announcing-apache-pinot-0-10/apache-pinot-1-0-name-cloud.png)
 
