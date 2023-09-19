@@ -37,11 +37,11 @@ First let’s look at what Apache Pinot 1.0 itself is delivering. The first foun
 
 Features are also a key thing that makes a new release worthy of “1.0” status. The most critical part of the 1.0 release is undoubtedly the [Multi-Stage Query Engine](https://docs.pinot.apache.org/developers/advanced/v2-multi-stage-query-engine), which permits Apache Pinot users to do [performant and scalable query-time JOINs](https://startree.ai/blog/apache-pinot-native-join-support).
 
-The original engine works very well for simpler filter-and-aggregate queries, but the broker could become a bottleneck for more complex queries. The new engine also resolves bottlenecks by introducing an intermediary compute stage, and brings Apache Pinot closer to full ANSI SQL semantics. While this query engine has been available within Apache Pinot already (since release 0.11.0), with the release of Apache Pinot 1.0 this feature is functionally complete.
+The original engine works very well for simpler filter-and-aggregate queries, but the broker could become a bottleneck for more complex queries. The new engine also resolves this by introducing intermediary compute stages on the query servers, and brings Apache Pinot closer to full ANSI SQL semantics. While this query engine has been available within Apache Pinot already (since release 0.11.0), with the release of Apache Pinot 1.0 this feature is functionally complete.
 
 (While you can read more below, check out the accompanying blog by Apache Pinot PMC Neha Pawar about using query-time JOINs [here](https://startree.ai/blog/query-time-joins-in-apache-pinot-1-0)).
 
-This post is a summary of the high points, but you can find a full list of everything included in the release notes.  And if you’d like a video treatment of many of the main features in 1.0, including some helpful animations, watch here:
+This post is a summary of the high points, but you can find a full list of everything included in the release notes.  And if you’d like a [video treatment of many of the main features in 1.0](https://youtu.be/2cwRHM4J7kI?si=hEtl6W2eNlMkWqag), including some helpful animations, watch here:
 
 [![Watch the video](https://i3.ytimg.com/vi/2cwRHM4J7kI/maxresdefault.jpg)](https://www.youtube.com/watch?v=2cwRHM4J7kI&ab_channel=StarTree)
 
