@@ -25,11 +25,11 @@ module.exports = {
   organizationName: 'apache',
   projectName: 'pinot',
   onBrokenLinks: 'ignore',
+  algolia: {
+    appId: 'CKRA00L2X9',
+    apiKey: '5be77fb97cc19ce48f35ab4a1a1fe170',
+  },
   themeConfig: {
-    algolia: {
-      appId: 'CKRA00L2X9',
-      apiKey: '5be77fb97cc19ce48f35ab4a1a1fe170',
-    },
     metadata: [
       {name: 'description', content: 'Apache Pinot'},
       {name: 'description', content: 'Real-time analytics'},
