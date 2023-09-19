@@ -16,7 +16,7 @@ keywords:
     - null support
     - pluggable index
     - spark integration
-tags: [Pinot, Data, Analytics, User-Facing Analytics, joins, compression, null, pluggable index, spark integration]
+tags: [Pinot, Data, Analytics, User-Facing Analytics, joins, compression, null support, pluggable index, spark integration]
 ---
 
 # Announcing Apache Pinot 1.0™
@@ -31,19 +31,23 @@ Apache Pinot has continuously evolved since the project’s inception within Lin
 - Handling Semi-Structured/Unstructured Data — Pinot can easily index JSON and text data types at scale.
 - Improving ANSI SQL Compliance — to that end, we’ve added better NULL handling, window functions, and as stated above, the capability for native JOINs.
 
-With all of these features and capabilities, Apache Pinot is now a platform that can tackle entire new classes of use cases than when it was first implemented.
+With all of these features and capabilities, Apache Pinot moves farther and farther from mere database status, and becomes more of a complete platform that can tackle entire new classes of use cases that were beyond its capabilities in earlier days.
 
 First let’s look at what Apache Pinot 1.0 itself is delivering. The first foundational pillar of what makes something worthy of a “1.0” release is software quality. Over the past year, since September 2022, engineers across the Apache Pinot community have closed over 300 issues to provide new features, optimize performance, expand test coverage, and squash bugs.
 
-Features are also a key thing that makes a new release worthy of “1.0” status. The most critical part of the 1.0 release is undoubtedly the Multi-Stage Query Engine, which permits Apache Pinot users to do performant and scalable query-time JOINs.
+Features are also a key thing that makes a new release worthy of “1.0” status. The most critical part of the 1.0 release is undoubtedly the [Multi-Stage Query Engine](https://docs.pinot.apache.org/developers/advanced/v2-multi-stage-query-engine), which permits Apache Pinot users to do [performant and scalable query-time JOINs](https://startree.ai/blog/apache-pinot-native-join-support).
 
-This new engine also resolves bottlenecks by introducing an intermediary compute stage, and brings Apache Pinot closer to full ANSI SQL semantics. While this query engine has been available within Apache Pinot already (since release 0.11.0), with the release of Apache Pinot 1.0 this feature is functionally complete.
+The original engine works very well for simpler filter-and-aggregate queries, but the broker could become a bottleneck for more complex queries. The new engine also resolves bottlenecks by introducing an intermediary compute stage, and brings Apache Pinot closer to full ANSI SQL semantics. While this query engine has been available within Apache Pinot already (since release 0.11.0), with the release of Apache Pinot 1.0 this feature is functionally complete.
 
 (While you can read more below, check out the accompanying blog by Apache Pinot PMC Neha Pawar about using query-time JOINs [here](https://startree.ai/blog/query-time-joins-in-apache-pinot-1-0)).
 
-<!-- This post is a summary of the high points, but you can find a full list of everything included in the release notes. -->
+This post is a summary of the high points, but you can find a full list of everything included in the release notes.  And if you’d like a video treatment of many of the main features in 1.0, including some helpful animations, watch here:
 
-Let’s have a look at some of the highlighted changes:
+[![Watch the video](https://i3.ytimg.com/vi/2cwRHM4J7kI/maxresdefault.jpg)](https://www.youtube.com/watch?v=2cwRHM4J7kI&ab_channel=StarTree)
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/2cwRHM4J7kI?si=BMVZanJIuXv9o0du" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+Otherwise, let’s have a look at some of the highlighted changes:
 
 - Join Support - Part of the Multi-Stage Query Engine 
 - Improved Upserts - Deletion and Compaction Support
