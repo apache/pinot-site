@@ -26,11 +26,6 @@ module.exports = {
   projectName: 'pinot',
   onBrokenLinks: 'ignore',
   themeConfig: {
-    algolia: {
-      appId: 'CKRA00L2X9',
-      apiKey: '5be77fb97cc19ce48f35ab4a1a1fe170',
-      indexName: 'prod_apache_pinot_docs'
-    },
     metadata: [
       {name: 'description', content: 'Apache Pinot'},
       {name: 'description', content: 'Real-time analytics'},
@@ -214,9 +209,9 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} The Apache Software Foundation.<br>Apache Pinot, Pinot, Apache, the Apache feather logo, and the Apache Pinot project logo are registered trademarks of The Apache Software Foundation.<br><br>This page has references to third party software - Presto, PrestoDB, ThirdEye, Trino, TrinoDB, that are not part of the Apache Software Foundation and are not covered under the Apache License.`,
     },
     algolia: {
-      apiKey: 'ef0051ce1fd0a5d07af57bffdbb46f87',
-      indexName: 'apache_pinot',
-      // algoliaOptions: {}, // Optional, if provided by Algolia
+      appId: 'CKRA00L2X9',
+      apiKey: '5be77fb97cc19ce48f35ab4a1a1fe170',
+      indexName: 'prod_apache_pinot_docs',
     },
   },
   plugins: [
