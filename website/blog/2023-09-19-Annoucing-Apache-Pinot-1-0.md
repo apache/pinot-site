@@ -43,9 +43,9 @@ The original engine works very well for simpler filter-and-aggregate queries, bu
 
 This post is a summary of the high points, but you can find a full list of everything included in the release notes.  And if you’d like a [video treatment of many of the main features in 1.0](https://youtu.be/2cwRHM4J7kI?si=hEtl6W2eNlMkWqag), including some helpful animations, watch here:
 
-[![Watch the video](https://i3.ytimg.com/vi/2cwRHM4J7kI/maxresdefault.jpg)](https://www.youtube.com/watch?v=2cwRHM4J7kI&ab_channel=StarTree)
+<!-- [![Watch the video](https://i3.ytimg.com/vi/2cwRHM4J7kI/maxresdefault.jpg)](https://www.youtube.com/watch?v=2cwRHM4J7kI&ab_channel=StarTree) -->
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/2cwRHM4J7kI?si=BMVZanJIuXv9o0du" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2cwRHM4J7kI?si=BMVZanJIuXv9o0du" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Otherwise, let’s have a look at some of the highlighted changes:
 
@@ -67,9 +67,9 @@ For more detailed information on JOINs, please visit this blog [post](https://st
 Discover How Uber is using Joins in Apache Pinot
 For a real-world use case, Uber is already using the new join capabilities of Apache Pinot at scale in production. You can watch this video to learn more.
 
-[![Watch the video](https://i3.ytimg.com/vi/z4Chhref1BM/maxresdefault.jpg)](https://www.youtube.com/embed/z4Chhref1BM?si=eCOfxuw8Y_ZP8ZHN)
+<!-- [![Watch the video](https://i3.ytimg.com/vi/z4Chhref1BM/maxresdefault.jpg)](https://www.youtube.com/embed/z4Chhref1BM?si=eCOfxuw8Y_ZP8ZHN) -->
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/z4Chhref1BM?si=eCOfxuw8Y_ZP8ZHN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z4Chhref1BM?si=eCOfxuw8Y_ZP8ZHN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Upsert Improvements
 Support for upserts is one of the key capabilities Apache Pinot offers that differentiates it from other real-time analytics databases. It is a vital feature when real-time streaming data is prone to frequent updates. While upserts have been available in Apache Pinot since 0.6.0, with 1.0 they include two major new enhancements: segment compaction and delete support for upsert tables.
