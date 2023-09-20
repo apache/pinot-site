@@ -2,7 +2,7 @@
 title: Apache Pinot™ 0.11 - Inserts from SQL
 author: Mark Needham
 author_title: Mark Needham
-author_url: https://www.linkedin.com/in/lakshmanan-velusamy-a778a517/
+author_url: https://www.linkedin.com/in/markhneedham/
 author_image_url: https://www.datocms-assets.com/75153/1661544338-mark-needham.png
 description:
  Explore the INSERT INTO clause, which makes ingesting batch data into Pinot as easy as writing a SQL query.
