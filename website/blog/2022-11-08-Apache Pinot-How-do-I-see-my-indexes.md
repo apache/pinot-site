@@ -2,7 +2,7 @@
 title: Apache Pinot™ 0.11 - How do I see my indexes?
 author: Mark Needham
 author_title: Mark Needham
-author_url: https://www.linkedin.com/in/lakshmanan-velusamy-a778a517/
+author_url: https://www.linkedin.com/in/markhneedham/
 author_image_url: https://www.datocms-assets.com/75153/1661544338-mark-needham.png
 description:
  How you can work out which indexes are currently defined on a Pinot table

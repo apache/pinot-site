@@ -2,7 +2,7 @@
 title: Apache Pinot™ 0.11 - Timestamp Indexes
 author: Mark Needham
 author_title: Mark Needham
-author_url: https://www.linkedin.com/in/lakshmanan-velusamy-a778a517/
+author_url: https://www.linkedin.com/in/markhneedham/
 author_image_url: https://www.datocms-assets.com/75153/1661544338-mark-needham.png
 description:
  Users write queries that use the datetrunc function to filter at a coarser grain of functionality. Unfortunately, this approach results in scanning data and time value conversion work that takes a long time at large data volumes. The timestamp index solves that problem!

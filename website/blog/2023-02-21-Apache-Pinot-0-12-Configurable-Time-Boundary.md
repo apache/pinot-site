@@ -2,7 +2,7 @@
 title: Apache Pinot™ 0.12 - Configurable Time Boundary
 author: Mark Needham
 author_title: Mark Needham
-author_url: https://www.linkedin.com/in/lakshmanan-velusamy-a778a517/
+author_url: https://www.linkedin.com/in/markhneedham/
 author_image_url: https://www.datocms-assets.com/75153/1661544338-mark-needham.png
 description:
  This post will explore the ability to configure the time boundary when working with hybrid tables.
