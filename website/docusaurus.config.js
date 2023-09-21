@@ -237,7 +237,7 @@ module.exports = {
         gtag: {
             trackingID: ['G-ZXG79NJEBY']
           }
-        }
+        },
         docs: {
           editUrl: 'https://github.com/apache/pinot/edit/master/website/',
           // Sidebars filepath relative to the website dir.
