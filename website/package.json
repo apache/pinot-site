@@ -16,11 +16,11 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/core": "2.4.1",
-    "@docusaurus/plugin-content-blog": "2.4.1",
-    "@docusaurus/plugin-ideal-image": "2.4.1",
-    "@docusaurus/preset-classic": "2.4.1",
-    "@docusaurus/utils": "2.4.1",
+    "@docusaurus/core": "2.4.3",
+    "@docusaurus/plugin-content-blog": "2.4.3",
+    "@docusaurus/plugin-ideal-image": "2.4.3",
+    "@docusaurus/preset-classic": "2.4.3",
+    "@docusaurus/utils": "2.4.3",
     "@farbenmeer/react-spring-slider": "1.5.2",
     "axios": "1.5.0",
     "cash-dom": "8.1.5",
@@ -32,38 +32,40 @@
     "humanize-string": "3.0.0",
     "now": "21.0.1",
     "pluralize": "8.0.0",
-    "postcss": "8.4.28",
+    "postcss": "8.4.30",
     "prismjs": "1.29.0",
     "qs": "6.11.2",
-    "react": "17.0.2",
+    "react": "18.2.0",
     "react-awesome-slider": "4.1.0",
-    "react-dom": "17.0.2",
+    "react-dom": "18.2.0",
     "react-github-btn": "1.4.0",
-    "react-inlinesvg": "4.0.3",
-    "react-player": "2.12.0",
+    "react-inlinesvg": "4.0.4",
+    "react-player": "2.13.0",
     "react-select": "5.7.4",
     "react-swift-slider": "7.2.0",
     "reading-time": "1.5.0",
+    "sharp": "0.32.6",
     "strftime": "0.10.2",
-    "svg.js": "2.7.1"
+    "svg.js": "2.7.1",
+    "yarm": "^0.4.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.4.1",
+    "@docusaurus/module-type-aliases": "2.4.3",
     "@nuxt/image": "^0.7.1",
-    "@tsconfig/docusaurus": "2.0.0",
-    "@types/react": "18.2.21",
+    "@tsconfig/docusaurus": "2.0.1",
+    "@types/react": "18.2.22",
     "@types/react-helmet": "6.1.6",
     "@types/react-router-dom": "5.3.3",
-    "@typescript-eslint/eslint-plugin": "6.5.0",
+    "@typescript-eslint/eslint-plugin": "6.7.2",
     "@typescript-eslint/parser": "6.5.0",
     "add": "2.0.6",
-    "eslint": "8.48.0",
-    "prettier": "3.0.2",
+    "eslint": "8.49.0",
+    "prettier": "3.0.3",
     "typescript": "5.2.2",
     "yarn": "^1.22.19"
   },
-  "resolutions": {
-    "**/sharp": "0.25.2"
+  "overrides": {
+    "mdx-loader": "3.0.2"
   },
   "prettier": {
     "tabWidth": 4
