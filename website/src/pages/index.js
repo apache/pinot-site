@@ -295,7 +295,7 @@ function Installation() {
                 >
                     <TabItem value="helm">
                         <CodeBlock className="language-bash">
-                            {`helm repo add pinot https://raw.githubusercontent.com/apache/pinot/master/kubernetes/helm\nkubectl create ns pinot\nhelm install pinot pinot/pinot -n pinot --set cluster.name=pinot`}
+                            {`helm repo add pinot https://raw.githubusercontent.com/apache/pinot/master/helm\nkubectl create ns pinot\nhelm install pinot pinot/pinot -n pinot --set cluster.name=pinot`}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="binary">
