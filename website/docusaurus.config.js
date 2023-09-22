@@ -26,6 +26,9 @@ module.exports = {
   projectName: 'pinot',
   onBrokenLinks: 'ignore',
   themeConfig: {
+    gtag: {
+      trackingID: 'G-ZXG79NJEBY',
+    },
     metadata: [
       {name: 'description', content: 'Apache Pinot'},
       {name: 'description', content: 'Real-time Analytics'},
@@ -209,9 +212,6 @@ module.exports = {
       },
       copyright: `Copyright © ${new Date().getFullYear()} The Apache Software Foundation.<br>Apache Pinot, Pinot, Apache, the Apache feather logo, and the Apache Pinot project logo are registered trademarks of The Apache Software Foundation.<br><br>This page has references to third party software - Presto, PrestoDB, ThirdEye, Trino, TrinoDB, that are not part of the Apache Software Foundation and are not covered under the Apache License.`,
     },
-    googleAnalytics: {
-      trackingID: 'UA-157446650-1'
-    },
     algolia: {
       apiKey: 'ef0051ce1fd0a5d07af57bffdbb46f87',
       indexName: 'apache_pinot',
@@ -221,7 +221,6 @@ module.exports = {
   plugins: [
     [
       '@docusaurus/plugin-ideal-image',
-      // '@docusaurus/plugin-content-blog',
       {
         quality: 70,
         max: 1030, // max resized image's size.
@@ -234,9 +233,6 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
-        gtag: {
-            trackingID: ['G-ZXG79NJEBY']
-        },
         docs: {
           editUrl: 'https://github.com/apache/pinot/edit/master/website/',
           // Sidebars filepath relative to the website dir.
