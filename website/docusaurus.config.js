@@ -26,6 +26,9 @@ module.exports = {
   projectName: 'pinot',
   onBrokenLinks: 'ignore',
   themeConfig: {
+    gtag: {
+      trackingID: 'G-ZXG79NJEBY',
+    },
     metadata: [
       {name: 'description', content: 'Apache Pinot'},
       {name: 'description', content: 'Real-time Analytics'},
@@ -217,12 +220,7 @@ module.exports = {
   },
   plugins: [
     [
-      '@docusaurus/plugin-google-gtag',
-      {
-        trackingID: 'G-ZXG79NJEBY',
-      },
       '@docusaurus/plugin-ideal-image',
-      // '@docusaurus/plugin-content-blog',
       {
         quality: 70,
         max: 1030, // max resized image's size.
