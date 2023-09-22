@@ -162,13 +162,6 @@
         <summary type="html"><![CDATA[Show you how to use Apache Pinot and Superset to analyze 3 million tweets by the Internet Research Agency (IRA) open-sourced by FiveThirtyEight.]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Leverage Plugins to Ingest Parquet Files from S3 in Pinot]]></title>
-        <id>Leverage Plugins to Ingest Parquet Files from S3 in Pinot</id>
-        <link href="https://pinot.apache.org/blog/2020/08/08/DevBlog-IngestPlugins"/>
-        <updated>2020-08-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Pinot is its pluggable architecture. The plugins make it easy to add support for any third-party system which can be an execution framework, a filesystem, or input format.]]></summary>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Monitoring Apache Pinot with JMX, Prometheus and Grafana]]></title>
         <id>Monitoring Apache Pinot with JMX, Prometheus and Grafana</id>
         <link href="https://pinot.apache.org/blog/2020/08/08/DevBlog-PinotMonitoring"/>
@@ -190,11 +183,11 @@
         <summary type="html"><![CDATA[Scalar Functions that allow users to write and add their functions as a plugin.]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Building a culture around metrics and anomaly detection]]></title>
-        <id>Building a culture around metrics and anomaly detection</id>
-        <link href="https://pinot.apache.org/blog/2020/07/28/DevBlog-AnomalyDetection"/>
-        <updated>2020-07-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ThirdEye as a system is a platform that allows you to integrate your metrics (quantitative information) with events (knowledge or qualitative information) and combine the two so you can distinguish between meaningless anomalies and those ones that matter.]]></summary>
+        <title type="html"><![CDATA[Leverage Plugins to Ingest Parquet Files from S3 in Pinot]]></title>
+        <id>Leverage Plugins to Ingest Parquet Files from S3 in Pinot</id>
+        <link href="https://pinot.apache.org/blog/2020/08/08/DevBlog-IngestPlugins"/>
+        <updated>2020-08-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pinot is its pluggable architecture. The plugins make it easy to add support for any third-party system which can be an execution framework, a filesystem, or input format.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Moving developers up the stack with Apache Pinot]]></title>
@@ -202,6 +195,13 @@
         <link href="https://pinot.apache.org/blog/2020/07/28/DevBlog-DevUpStack"/>
         <updated>2020-07-28T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Pinot enters into a storied legacy of innovations that have emerged from one of the world’s largest online social networks. Over a few decades, the Silicon Valley tech giant has helped hundreds of millions of people around the world navigate their careers.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building a culture around metrics and anomaly detection]]></title>
+        <id>Building a culture around metrics and anomaly detection</id>
+        <link href="https://pinot.apache.org/blog/2020/07/28/DevBlog-AnomalyDetection"/>
+        <updated>2020-07-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ThirdEye as a system is a platform that allows you to integrate your metrics (quantitative information) with events (knowledge or qualitative information) and combine the two so you can distinguish between meaningless anomalies and those ones that matter.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Bridging batch and stream processing for the Recruiter usage statistics dashboard]]></title>
