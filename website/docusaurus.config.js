@@ -232,7 +232,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         gtag: {
-            trackingID: ['G-ZXG79NJEBY']
+            trackingID: 'G-ZXG79NJEBY'
         },
         docs: {
           editUrl: 'https://github.com/apache/pinot/edit/master/website/',
