@@ -1,10 +1,3 @@
-// /**
-//  * Copyright (c) 2017-present, Facebook, Inc.
-//  *
-//  * This source code is licensed under the MIT license found in the
-//  * LICENSE file in the root directory of this source tree.
-//  */
-
 import React, { useState, useEffect } from "react";
 
 import CodeBlock from "@theme/CodeBlock";
@@ -25,136 +18,98 @@ import PinotQuery from '@site/static/img/ingest-query.svg';
 import styles from "./index.module.css";
 import "./index.css";
 
-import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
-import SwiftSlider from 'react-swift-slider'
-import withAutoplay from 'react-awesome-slider/dist/autoplay'
 import ReactPlayer from "react-player/youtube";
-import styled from 'styled-components'
-import Head from '@docusaurus/Head';
 
-const companiesData = require(`../data/companies-data.js`);
-const companiesList = companiesData.getCompaniesList();
 const AnchoredH2 = Heading("h2");
 
-const WhoUsesPinotSEO = () => (
-  <Head>
-    <meta property="og:description" content="Who used Apache Pinot?" />
-    <meta property="og:description" content="Who used Pinot?" />
-    <meta property="og:description" content="Companies using Pinot?" />
-    <meta property="og:description" content="Companies using Apache Pinot?" />
-    <meta charSet="utf-8" />
-    <title>Who used Apache Pinot?</title>
-    <link rel="canonical" href="http://mysite.com/example" />
-  </Head>
-);
 
 const features = [
     {
-        title: "Blazing Fast",
+        title: "Fast queries",
         icon: "zap",
         description: (
             <>
-                Pinot is designed to answer OLAP queries with low latency on
-                immutable data and mutable data(Upsert Support)
+                Pinot can filter and aggregate petabyte data sets with P90 latencies in the tens of milliseconds—fast enough to return live results interactively in the UI.
             </>
         ),
     },
     {
-        title: "Pluggable indexing",
-        icon: "unlock",
+        title: "High concurrency",
+        icon: "cpu",
         description: (
             <>
-                Pluggable indexing technologies - Sorted Index, Bitmap Index,
-                Inverted Index, StarTree Index, Bloom Filter, Range Index,
-                Text Search Index(Lucence/FST), Json Index, Geospatial Index
+                With user-facing applications querying Pinot directly, it can serve hundreds of thousands of concurrent queries per second.
             </>
         ),
     },
     {
-        title: "Near Real time ingestion",
-        icon: "rss",
+        title: "Batch and streaming ingest",
+        icon: "corner-down-right",
         description: (
             <>
-                Near Realtime ingestion with
-                {" "}<Link to="https://kafka.apache.org/">Apache Kafka</Link>,
-                {" "}<Link to="https://pulsar.apache.org/">Apache Pulsar</Link>,
-                {" "}<Link to="https://aws.amazon.com/kinesis/">Kinesis</Link>
-                supports {" "}<Link to="https://www.json.org/">JSON</Link>,
-                {" "}<Link to="https://avro.apache.org/">Avro</Link>,
-                {" "}<Link to="https://developers.google.com/protocol-buffers/">ProtoBuf</Link>,
-                {" "}<Link to="https://thrift.apache.org/">Thrift</Link> formats
+                Ingest from <Link to="https://kafka.apache.org/">Apache Kafka</Link>, <Link to="https://pulsar.apache.org/">Apache Pulsar</Link>, and <Link to="https://aws.amazon.com/kinesis/">AWS Kinesis</Link> in real time. Batch ingest from Hadoop, Spark, AWS S3, and more. Combine batch and streaming sources into a single table for querying.
             </>
         ),
     },
     {
-        title: "Horizontally scalable",
-        icon: "code",
-        description: <>Horizontally scalable and fault tolerant</>,
+        title: "Upserts",
+        icon: "arrow-up",
+        description: (
+            <>
+                Ingest the same record many times, but see only the latest value at query time. Upserts are built-in and production-tested since version 0.6.
+            </>
+        ),
     },
+
     {
-        title: "JOINS in Pinot",
+        title: "Versatile joins",
         icon: "shuffle",
         description: (
             <>
-                Apache Pinot supports dimension{" "}
-                <Link to="https://docs.pinot.apache.org/users/user-guide-query/lookup-udf-join">lookup joins</Link> currently.{" "}
-                <Link to="https://github.com/apache/pinot/issues/8260">Full SQL join</Link> support in Apache Pinot is{" "}
-                <Link to="https://startree.ai/blog/apache-pinot-native-join-support">coming soon.</Link>{" "}
-                In the interim, full SQL joins can be performed by querying Pinot via the{" "}
-                <Link to="https://trino.io/">Trino</Link> or{" "}
-                <Link to="https://prestodb.io/">PrestoDB</Link> connector.
+                Perform arbitrary fact/dimension and fact/fact joins on petabyte data sets.
             </>
         ),
     },
+
     {
-        title: "SQL Query Interface",
-        icon: "search",
+        title: "Rich indexing options",
+        icon: "layers",
         description: (
             <>
-                Apache Pinot provides <Link to="https://docs.pinot.apache.org/users/user-guide-query/querying-pinot">SQL interface</Link> for querying interactively, as well as programmatically via <Link to="https://docs.pinot.apache.org/users/api/querying-pinot-using-standard-sql">rest-api</Link>.
+                Choose from pluggable indexes including <Link to="https://docs.pinot.apache.org/basics/indexing/timestamp-index">timestamp</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/inverted-index">inverted</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/star-tree-index">star-tree</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/bloom-filter">Bloom filter</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/range-index">range</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/text-search-support">text</Link>, <Link to="https://docs.pinot.apache.org/basics/indexing/json-index">JSON</Link>, and <Link to="https://docs.pinot.apache.org/basics/indexing/geospatial-support">geospatial</Link> options.
             </>
         ),
     },
+
     {
-        title: "Hybrid tables",
-        icon: "list",
+        title: "Built for scale",
+        icon: "cloud",
+        description: <>
+            Pinot is horizontally scalable and fault-tolerant, adaptable to workloads across the storage and throughput spectrum.
+        </>,
+    },
+
+    {
+        title: "SQL query interface",
+        icon: "database",
         description: (
             <>
-                Consist of of{" "}
-                <Link to="http://pinot.apache.org/img/dynamic-table.png">
-                    both offline and realtime table
-                </Link>
-                . Use realtime table only to cover segments for which offline
-                data may not be available yet
+                The highly standard SQL query interface is accessible through a built-in query editor and a REST API.
             </>
         ),
     },
+
     {
-        title: "Anomaly Detection",
-        icon: "bar-chart",
+        title: "Built-in multitenancy",
+        icon: "grid",
         description: (
             <>
-                Run ML Algorithms to detect Anomalies on the data stored in
-                Pinot. Use{" "}
-                <Link to="https://docs.pinot.apache.org/integrations/thirdeye">
-                    ThirdEye
-                </Link>{" "}
-                with Pinot for Anomaly Detection and Root Cause Analysis
+                Manage and secure data in isolated logical namespaces for cloud-friendly resource management.
             </>
         ),
-    },
-    {
-        title: "Smart Alerts in ThirdEye",
-        icon: "bell",
-        description: (
-            <>
-                Detect the right anomalies by customizing anomaly detect flow
-                and notification flow
-            </>
-        ),
-    },
+    }
 ];
 
 function Features({ features }) {
