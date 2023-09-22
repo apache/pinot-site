@@ -2,7 +2,7 @@
 title: Install Pinot On Containers
 sidebar_label: hidden
 hide_pagination: true
-draft: true
+draft: false
 ---
 
 import Jump from '@site/src/components/Jump';

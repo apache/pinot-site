@@ -2,7 +2,7 @@
 id: features_of_pinot
 title: Features of Pinot
 sidebar_label: Features of Pinot
-draft: true
+draft: false
 ---
 
 # Features of Pinot

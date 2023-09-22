@@ -2,7 +2,7 @@
 title: Build Docker Images
 sidebar_label: build-docker
 description: Build Docker Images
-draft: true
+draft: false
 ---
 
 The scripts to build Pinot related docker images is located at [here](https://github.com/apache/pinot/tree/master/docker/images)

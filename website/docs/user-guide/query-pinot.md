@@ -2,7 +2,7 @@
 title: Querying Pinot
 sidebar_label: query-pinot
 description: Ways to query Pinot
-draft: true
+draft: false
 ---
 
 import Alert from '@site/src/components/Alert';

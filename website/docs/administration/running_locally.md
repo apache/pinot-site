@@ -2,7 +2,7 @@
 id: running_locally
 title: Running Pinot locally
 sidebar_label: Running Pinot locally
-draft: true
+draft: false
 ---
 
 ## Running Pinot locally

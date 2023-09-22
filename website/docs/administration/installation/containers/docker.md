@@ -3,7 +3,7 @@ title: Running Pinot in Docker
 sidebar_label: Docker
 description: Using Pinot on Docker
 source_url: https://github.com/
-draft: true
+draft: false
 ---
 
 Apache Pinot started maintaing the [`apachepinot/pinot`](https://hub.docker.com/r/apachepinot/pinot) Docker images

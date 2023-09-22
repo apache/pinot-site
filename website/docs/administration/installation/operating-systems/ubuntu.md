@@ -2,7 +2,7 @@
 title: Install Pinot On Ubuntu
 sidebar_label: Ubuntu
 description: Install Pinot on the Ubuntu operating system
-draft: true
+draft: false
 ---
 
 Pinot can be installed on the Ubuntu through the following methods:

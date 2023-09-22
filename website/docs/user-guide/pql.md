@@ -2,7 +2,7 @@
 title: PQL
 sidebar_label: PQL
 description: Pinot Query Language
-draft: true
+draft: false
 ---
 
 import Alert from '@site/src/components/Alert';

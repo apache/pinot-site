@@ -2,7 +2,7 @@
 title: Response Format
 sidebar_label: rest
 description: REST Response Format
-draft: true
+draft: false
 ---
 
 import Alert from '@site/src/components/Alert';

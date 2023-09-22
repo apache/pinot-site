@@ -2,7 +2,7 @@
 id: pinot-architecture
 title: Pinot Architecture
 sidebar_label: Pinot Architecture
-draft: true
+draft: false
 ---
 
 ![Arch](../../static/img/pinot-architecture.png)

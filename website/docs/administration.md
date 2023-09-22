@@ -3,7 +3,7 @@ title: Adminstration
 description: "Adminstration"
 sidebar_label: hidden
 hide_pagination: true
-draft: true
+draft: false
 ---
 
 Provide basic foundation of Pinot.

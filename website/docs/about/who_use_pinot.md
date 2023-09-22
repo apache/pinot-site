@@ -2,7 +2,7 @@
 id: who_use_pinot
 title: Companies using Pinot
 sidebar_label: Companies using Pinot
-draft: true
+draft: false
 ---
 
 ## Companies using Pinot

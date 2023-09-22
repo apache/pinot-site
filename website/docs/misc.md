@@ -3,7 +3,7 @@ title: Misc Content
 description: "Misc content"
 sidebar_label: hidden
 hide_pagination: true
-draft: true
+draft: false
 ---
 
 Provide basic foundation of Pinot.

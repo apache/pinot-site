@@ -2,7 +2,7 @@
 title: Java
 sidebar_label: java
 description: Pinot Java Client
-draft: true
+draft: false
 ---
 
 import Alert from '@site/src/components/Alert';

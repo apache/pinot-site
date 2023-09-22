@@ -2,7 +2,7 @@
 title: Running Pinot in Kubernetes
 sidebar_label: Kubernetes
 description: Running Pinot in Kubernetes
-draft: true
+draft: false
 ---
 
 This QuickStart assumes the existence of Kubernetes Cluster. Please follow below links to setup your Kubernetes cluster in local or major cloud vendors.
