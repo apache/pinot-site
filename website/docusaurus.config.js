@@ -217,6 +217,10 @@ module.exports = {
   },
   plugins: [
     [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-ZXG79NJEBY',
+      },
       '@docusaurus/plugin-ideal-image',
       // '@docusaurus/plugin-content-blog',
       {
@@ -231,9 +235,6 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
-        gtag: {
-            trackingID: 'G-ZXG79NJEBY'
-        },
         docs: {
           editUrl: 'https://github.com/apache/pinot/edit/master/website/',
           // Sidebars filepath relative to the website dir.
