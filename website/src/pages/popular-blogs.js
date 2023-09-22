@@ -19,31 +19,17 @@
 
 import React, { useState, useEffect } from "react";
 
-import CodeBlock from "@theme/CodeBlock";
 import Heading from "@theme/Heading";
-import Jump from "@site/src/components/Jump";
 import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
-import SVG from "react-inlinesvg";
-import TabItem from "@theme/TabItem";
-import Tabs from "@theme/Tabs";
 
-import classnames from "classnames";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import useThemeContext from "@theme/hooks/useThemeContext";
-import PinotOverview from '@site/static/img/pinot-overview-user.svg';
-import PinotQuery from '@site/static/img/ingest-query.svg';
 
-import styles from "./index.module.css";
 import "./index.css";
 
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
-import SwiftSlider from 'react-swift-slider'
 import withAutoplay from 'react-awesome-slider/dist/autoplay'
-import ReactPlayer from "react-player/youtube";
-import styled from 'styled-components'
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 

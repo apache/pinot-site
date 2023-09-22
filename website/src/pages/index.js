@@ -11,7 +11,6 @@ import Tabs from "@theme/Tabs";
 
 import classnames from "classnames";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import useThemeContext from "@theme/hooks/useThemeContext";
 import PinotOverview from '@site/static/img/pinot-overview-user.svg';
 import PinotQuery from '@site/static/img/ingest-query.svg';
 
@@ -21,7 +20,6 @@ import "./index.css";
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import ReactPlayer from "react-player/youtube";
-import Head from '@docusaurus/Head';
 
 const AnchoredH2 = Heading("h2");
 
