@@ -234,37 +234,43 @@ module.exports = {
           // Sidebars filepath relative to the website dir.
           sidebarPath: require.resolve('./sidebars.js'),
         },
+        
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+
         blog: {
-        path: 'blog',
-        editUrl: 'https://github.com/apache/pinot-site/edit/dev/website/',
-        blogTitle: 'Blog - Apache Pinot: User-Facing Analytics',
-        blogSidebarCount: 10,
-        blogSidebarTitle: 'All our posts',
-        /**
-         * URL route for the blog section of your site.
-         * *DO NOT* include a trailing slash.
-         */
-        routeBasePath: 'blog',
-        include: ['*.md', '*.mdx'],
-        postsPerPage: 10,
-        /**
-         * Theme components used by the blog pages.
-         */
-        blogListComponent: '@theme/BlogListPage',
-        blogPostComponent: '@theme/BlogPostPage',
-        blogTagsListComponent: '@theme/BlogTagsListPage',
-        blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
-          // remarkPlugins: [variable],
+          path: 'blog',
+          editUrl: 'https://github.com/apache/pinot-site/edit/dev/website/',
+          blogTitle: 'Blog - Apache Pinot: User-Facing Analytics',
+          blogSidebarCount: 10,
+          blogSidebarTitle: 'All our posts',
+
+          /**
+           * URL route for the blog section of your site.
+           * *DO NOT* include a trailing slash.
+           */
+          routeBasePath: 'blog',
+          include: ['*.md', '*.mdx'],
+          postsPerPage: 10,
+
+          /**
+           * Theme components used by the blog pages.
+           */
+          blogListComponent: '@theme/BlogListPage',
+          blogPostComponent: '@theme/BlogPostPage',
+          blogTagsListComponent: '@theme/BlogTagsListPage',
+          blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
+
           feedOptions: {
             type: "all",
             title: 'Apache Pinot: User-Facing Analytics',
             // copyright: customFields.copyright,
           },
+
           showReadingTime: true,
         },
+
         googleAnalytics: {
           trackingID: 'UA-157446650-1'
         },
