@@ -190,18 +190,18 @@
         <summary type="html"><![CDATA[Pinot is its pluggable architecture. The plugins make it easy to add support for any third-party system which can be an execution framework, a filesystem, or input format.]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Moving developers up the stack with Apache Pinot]]></title>
-        <id>Moving developers up the stack with Apache Pinot</id>
-        <link href="https://pinot.apache.org/blog/2020/07/28/DevBlog-DevUpStack"/>
-        <updated>2020-07-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Pinot enters into a storied legacy of innovations that have emerged from one of the world’s largest online social networks. Over a few decades, the Silicon Valley tech giant has helped hundreds of millions of people around the world navigate their careers.]]></summary>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Building a culture around metrics and anomaly detection]]></title>
         <id>Building a culture around metrics and anomaly detection</id>
         <link href="https://pinot.apache.org/blog/2020/07/28/DevBlog-AnomalyDetection"/>
         <updated>2020-07-28T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[ThirdEye as a system is a platform that allows you to integrate your metrics (quantitative information) with events (knowledge or qualitative information) and combine the two so you can distinguish between meaningless anomalies and those ones that matter.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Moving developers up the stack with Apache Pinot]]></title>
+        <id>Moving developers up the stack with Apache Pinot</id>
+        <link href="https://pinot.apache.org/blog/2020/07/28/DevBlog-DevUpStack"/>
+        <updated>2020-07-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pinot enters into a storied legacy of innovations that have emerged from one of the world’s largest online social networks. Over a few decades, the Silicon Valley tech giant has helped hundreds of millions of people around the world navigate their careers.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Bridging batch and stream processing for the Recruiter usage statistics dashboard]]></title>
