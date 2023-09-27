@@ -162,6 +162,13 @@
         <summary type="html"><![CDATA[Show you how to use Apache Pinot and Superset to analyze 3 million tweets by the Internet Research Agency (IRA) open-sourced by FiveThirtyEight.]]></summary>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Leverage Plugins to Ingest Parquet Files from S3 in Pinot]]></title>
+        <id>Leverage Plugins to Ingest Parquet Files from S3 in Pinot</id>
+        <link href="https://pinot.apache.org/blog/2020/08/08/DevBlog-IngestPlugins"/>
+        <updated>2020-08-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pinot is its pluggable architecture. The plugins make it easy to add support for any third-party system which can be an execution framework, a filesystem, or input format.]]></summary>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Monitoring Apache Pinot with JMX, Prometheus and Grafana]]></title>
         <id>Monitoring Apache Pinot with JMX, Prometheus and Grafana</id>
         <link href="https://pinot.apache.org/blog/2020/08/08/DevBlog-PinotMonitoring"/>
@@ -181,13 +188,6 @@
         <link href="https://pinot.apache.org/blog/2020/08/08/DevBlog-ScalarUDFs"/>
         <updated>2020-08-08T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Scalar Functions that allow users to write and add their functions as a plugin.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Leverage Plugins to Ingest Parquet Files from S3 in Pinot]]></title>
-        <id>Leverage Plugins to Ingest Parquet Files from S3 in Pinot</id>
-        <link href="https://pinot.apache.org/blog/2020/08/08/DevBlog-IngestPlugins"/>
-        <updated>2020-08-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Pinot is its pluggable architecture. The plugins make it easy to add support for any third-party system which can be an execution framework, a filesystem, or input format.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Building a culture around metrics and anomaly detection]]></title>

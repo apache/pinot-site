@@ -162,6 +162,13 @@
             <description><![CDATA[Show you how to use Apache Pinot and Superset to analyze 3 million tweets by the Internet Research Agency (IRA) open-sourced by FiveThirtyEight.]]></description>
         </item>
         <item>
+            <title><![CDATA[Leverage Plugins to Ingest Parquet Files from S3 in Pinot]]></title>
+            <link>https://pinot.apache.org/blog/2020/08/08/DevBlog-IngestPlugins</link>
+            <guid>Leverage Plugins to Ingest Parquet Files from S3 in Pinot</guid>
+            <pubDate>Sat, 08 Aug 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Pinot is its pluggable architecture. The plugins make it easy to add support for any third-party system which can be an execution framework, a filesystem, or input format.]]></description>
+        </item>
+        <item>
             <title><![CDATA[Monitoring Apache Pinot with JMX, Prometheus and Grafana]]></title>
             <link>https://pinot.apache.org/blog/2020/08/08/DevBlog-PinotMonitoring</link>
             <guid>Monitoring Apache Pinot with JMX, Prometheus and Grafana</guid>
@@ -181,13 +188,6 @@
             <guid>Utilize UDFs to Supercharge Queries in Apache Pinot</guid>
             <pubDate>Sat, 08 Aug 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Scalar Functions that allow users to write and add their functions as a plugin.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Leverage Plugins to Ingest Parquet Files from S3 in Pinot]]></title>
-            <link>https://pinot.apache.org/blog/2020/08/08/DevBlog-IngestPlugins</link>
-            <guid>Leverage Plugins to Ingest Parquet Files from S3 in Pinot</guid>
-            <pubDate>Sat, 08 Aug 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Pinot is its pluggable architecture. The plugins make it easy to add support for any third-party system which can be an execution framework, a filesystem, or input format.]]></description>
         </item>
         <item>
             <title><![CDATA[Building a culture around metrics and anomaly detection]]></title>
