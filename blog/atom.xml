@@ -15,6 +15,55 @@
         <summary type="html"><![CDATA[Introducing Apache Pinot 1.0 Release]]></summary>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Segment Compaction for Upsert Enabled Tables in Apache Pinot]]></title>
+        <id>Segment Compaction for Upsert Enabled Tables in Apache Pinot</id>
+        <link href="https://pinot.apache.org/blog/2023/08/04/segment-compaction-for-upsert-enabled-tables-in-apache-pinot-3f30657aa077"/>
+        <updated>2023-08-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The blog post discusses the feature contribution of segment compaction to Apache Pinot project, addressing the issue of older records consuming unnecessary storage space. It explains the configuration and impact of segment compaction in freeing up storage. The author expresses gratitude and offers support for questions or feedback on segment compaction.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Star-Tree Index in Apache Pinot - Part 3 - Understanding the Impact in Real Customer Scenarios]]></title>
+        <id>Star-Tree Index in Apache Pinot - Part 3 - Understanding the Impact in Real Customer Scenarios</id>
+        <link href="https://pinot.apache.org/blog/2023/07/12/star-tree-index-in-apache-pinot-part-3-understanding-the-impact-in-real-customer"/>
+        <updated>2023-07-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The blog post discusses how implementing a star-tree index significantly improved query performance for an AdTech platform by reducing latency. This index has also been successful in cybersecurity threat detection and multiplayer game leaderboard tracking, resulting in improved query performance and cost savings. Real production use cases showed a 95% to 99% improvement in query performance using StarTree Cloud for real-time analytics.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Real-Time Mastodon Usage with Apache Kafka, Apache Pinot, and Streamlit]]></title>
+        <id>Real-Time Mastodon Usage with Apache Kafka, Apache Pinot, and Streamlit</id>
+        <link href="https://pinot.apache.org/blog/2023/06/01/real-time-mastodon-usage-with-apache-kafka-apache-pinot-and-streamlit"/>
+        <updated>2023-06-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The blog post discusses analyzing user activity and server popularity on Mastodon using Kafka Connect, Parquet, Seaborn, and DuckDB. It explores the potential of using Apache Pinot for real-time data streaming and creating a dashboard. The post provides instructions on ingesting Apache Avro messages into Pinot, creating a Pinot table, and querying the data.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Ingest Streaming Data from Kafka to Apache Pinot™]]></title>
+        <id>How to Ingest Streaming Data from Kafka to Apache Pinot™</id>
+        <link href="https://pinot.apache.org/blog/2023/05/30/how-to-ingest-streaming-data-from-kafka-to-apache-pinot"/>
+        <updated>2023-05-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The blog post explains how to use Apache Kafka topics in Apache Pinot to ingest streaming data, with step-by-step instructions provided for installation and setup. It focuses on ingesting Wikipedia events into Kafka and connecting it to Pinot to create a real-time table. The post highlights Pinot's capabilities in ingesting and transforming JSON data into OLAP tables and encourages reader engagement through the community Slack.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Change Data Capture with Apache Pinot - How Does It Work?]]></title>
+        <id>Change Data Capture with Apache Pinot - How Does It Work?</id>
+        <link href="https://pinot.apache.org/blog/2023/05/23/change-data-capture-with-apache-pinot-how-does-it-work"/>
+        <updated>2023-05-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This blog post discusses the use of Change Data Capture (CDC) in Apache Pinot and the data format used in Debezium for efficient querying and analytics. It explains the elements of the format and its usage in indexing JSON fields. It also mentions the availability of CDC connectors in Debezium for various streaming systems.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Apache Pinot Tutorial for Getting Started - A Step-by-Step Guide]]></title>
+        <id>Apache Pinot Tutorial for Getting Started - A Step-by-Step Guide</id>
+        <link href="https://pinot.apache.org/blog/2023/05/18/apache-pinot-tutorial-for-getting-started-a-step-by-step-guide"/>
+        <updated>2023-05-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This blog post is a guide to getting started with Apache Pinot, including installing and running the necessary components of a Pinot cluster. It also explains how to set up schemas, tables, and load data into Pinot, as well as how to run queries using the Pinot Data Explorer. The next article in the series will cover consuming event streaming data with Apache Pinot and Apache Kafka.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[StarTree Indexes in Apache Pinot Part-1 - Understanding the Impact on Query Performance]]></title>
+        <id>StarTree Indexes in Apache Pinot Part-1 - Understanding the Impact on Query Performance</id>
+        <link href="https://pinot.apache.org/blog/2023/05/16/star-tree-indexes-in-apache-pinot-part-1-understanding-the-impact-on-query-performance"/>
+        <updated>2023-05-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The blog post explains the star-tree index in Apache Pinot and its benefits compared to traditional materialized views. By implementing a star-tree index, query performance significantly improved, reducing query latency from 1,513 ms to just 4 ms and drastically reducing disk reads by 99.999%.]]></summary>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Geospatial Indexing in Apache Pinot]]></title>
         <id>Geospatial Indexing in Apache Pinot</id>
         <link href="https://pinot.apache.org/blog/2023/05/11/Geospatial-Indexing-in-Apache-Pinot"/>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5829],{1534:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"realtime-data-streaming","name":"realtime data streaming","count":1,"permalink":"/blog/tags/realtime-data-streaming"}')}}]);

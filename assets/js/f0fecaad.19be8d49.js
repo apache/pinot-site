@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[9556],{5390:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"storage-space","name":"storage space","count":1,"permalink":"/blog/tags/storage-space"}')}}]);

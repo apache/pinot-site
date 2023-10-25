@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5520],{5580:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"star-tree-index","name":"star-tree index","count":1,"permalink":"/blog/tags/star-tree-index"}')}}]);

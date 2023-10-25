@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[6588],{257:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"improved-query-performance","name":"improved query performance","count":1,"permalink":"/blog/tags/improved-query-performance"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[9604],{1702:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"real-production-use-cases","name":"real production use cases","count":1,"permalink":"/blog/tags/real-production-use-cases"}')}}]);

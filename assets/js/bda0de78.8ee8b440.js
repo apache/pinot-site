@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[4888],{8582:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"older-records","name":"older records","count":1,"permalink":"/blog/tags/older-records"}')}}]);

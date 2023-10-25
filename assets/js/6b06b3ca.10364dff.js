@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[7506],{9177:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"kafka-connect","name":"kafka connect","count":1,"permalink":"/blog/tags/kafka-connect"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[736],{2076:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"segment-compaction","name":"segment compaction","count":1,"permalink":"/blog/tags/segment-compaction"}')}}]);

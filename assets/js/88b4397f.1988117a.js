@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[6896],{5533:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"pinot-table","name":"pinot table","count":1,"permalink":"/blog/tags/pinot-table"}')}}]);

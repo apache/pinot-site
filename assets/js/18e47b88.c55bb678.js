@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[962],{9398:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"apache-avro-messages","name":"apache avro messages","count":1,"permalink":"/blog/tags/apache-avro-messages"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[9901],{4524:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"freeing-up-storage","name":"freeing up storage","count":1,"permalink":"/blog/tags/freeing-up-storage"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[3750],{5806:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"ad-tech-platform","name":"adtech platform","count":1,"permalink":"/blog/tags/ad-tech-platform"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[8985],{1877:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"impact","name":"impact","count":1,"permalink":"/blog/tags/impact"}')}}]);
