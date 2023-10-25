@@ -58,7 +58,7 @@ Run each of the commands one at a time. The & allows you to continue using the s
 
 1.  Get the container ID by running docker ps
     
-2.  Run docker exec -it <containerid> bash
+2.  Run `docker exec -it DOCKER_CONTAINER_ID bash` where DOCKER_CONTAINER_ID is the ID received from step 1.
     
 3.  Run the pinot-admin.sh command to start the desired service
     
