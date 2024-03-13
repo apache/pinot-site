@@ -18,4 +18,4 @@ jobs:
                   node-version-file: '.nvmrc'
 
             - name: Deploy website
-              run: ./scripts/deploy-site.sh
+              run: ./scripts/publish-site.sh
