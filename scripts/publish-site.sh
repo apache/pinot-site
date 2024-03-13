@@ -1,47 +1,134 @@
+# #!/bin/bash
+
+# set -x -e
+
+# # Define variables
+# DEPLOY_BRANCH="new-static-prod"
+# ORIGIN_REPO="https://github.com/gio-startree/pinot-site" # The TEST repository to deploy to
+# ROOT_DIR=$(git rev-parse --show-toplevel)
+# DEV_BRANCH="new-site-dev"
+# BUILD_DIR="/tmp/pinot-new-site-build"
+# SITE_DIR="$ROOT_DIR/out" # Adjust if your build output directory is different
+
+# echo "Starting deployment process..."
+# echo "ORIGIN_REPO: $ORIGIN_REPO"
+
+# # Step 1: Cleanup any previous build artifacts
+# rm -rf $BUILD_DIR
+# mkdir -p $BUILD_DIR
+
+# # Step 2: Clone the repo and switch to the development branch
+# git clone "$ORIGIN_REPO" $BUILD_DIR
+# cd $BUILD_DIR
+# git checkout $DEV_BRANCH
+
+# # Step 3: Capture commit ID and message for use in the deployment commit
+# COMMIT_ID=$(git rev-parse HEAD)
+# GIT_MSG=$(git log -1 --pretty=format:"%s")
+
+# echo "Building the project..."
+# # Step 4: Build the website
+# # Ensure Yarn is installed or install it if needed
+# yarn install
+# yarn run build
+
+# # Debugging: List contents after build
+# echo "Listing contents of build output directory..."
+# ls -l $BUILD_DIR/out
+
+# # Ensure the directory exists and has content
+# if [ -d "$BUILD_DIR/out" ] && [ "$(ls -A $BUILD_DIR/out)" ]; then
+#     echo "Directory exists and is not empty, proceeding with copy..."
+#     # Use a more explicit approach to copy files
+#     # This changes into the directory to avoid globbing issues
+#     cd $BUILD_DIR/out
+#     # Now copy all files and directories to the target, using . to refer to the current directory context
+#     cp -r . $ROOT_DIR
+#     cd - # Go back to the previous directory
+# else
+#     echo "Build output directory does not exist or is empty, exiting..."
+#     exit 1
+# fi
+
+# # Step 5: Prepare the new-static-prod branch for the new build
+# git fetch origin $DEPLOY_BRANCH:$DEPLOY_BRANCH
+# git checkout $DEPLOY_BRANCH
+
+# # Step 6: Replace old files with new build
+# # Be careful with the following command; ensure you're only removing what you intend to
+# git rm -rf .
+# cp -r $SITE_DIR/* .
+
+# # Step 7: Commit and push changes
+# git add .
+# git config user.name "Pinot Site Updater"
+# git config user.email "dev@pinot.apache.org"
+# git commit -m "Update Pinot Site from dev branch ${COMMIT_ID}" -m "$GIT_MSG"
+# git push origin $DEPLOY_BRANCH
+
+# echo "Deployment to ${DEPLOY_BRANCH} completed successfully."
+
+
+
+
+
+
+
+
+
+
 #!/bin/bash
 
 set -x -e
 
 # Define variables
 DEPLOY_BRANCH="new-static-prod"
-ORIGIN_REPO="https://github.com/gio-startree/pinot-site" # The TEST repository to deploy to
-ROOT_DIR=$(git rev-parse --show-toplevel)
+ORIGIN_REPO="https://github.com/gio-startree/pinot-site"
 DEV_BRANCH="new-site-dev"
 BUILD_DIR="/tmp/pinot-new-site-build"
-SITE_DIR="$ROOT_DIR/out" # Adjust if your build output directory is different
 
 echo "Starting deployment process..."
 echo "ORIGIN_REPO: $ORIGIN_REPO"
 
-# Step 1: Cleanup any previous build artifacts
+# Cleanup any previous build artifacts and prepare build directory
 rm -rf $BUILD_DIR
 mkdir -p $BUILD_DIR
 
-# Step 2: Clone the repo and switch to the development branch
+# Clone the repo and switch to the development branch
 git clone "$ORIGIN_REPO" $BUILD_DIR
 cd $BUILD_DIR
 git checkout $DEV_BRANCH
 
-# Step 3: Capture commit ID and message for use in the deployment commit
+# Capture commit ID and message for use in the deployment commit
 COMMIT_ID=$(git rev-parse HEAD)
 GIT_MSG=$(git log -1 --pretty=format:"%s")
 
 echo "Building the project..."
-# Step 4: Build the website
-# Ensure Yarn is installed or install it if needed
+# Build the website
 yarn install
 yarn run build
 
-# Step 5: Prepare the new-static-prod branch for the new build
+# Debugging: List contents after build
+echo "Listing contents of build output directory..."
+ls -l $BUILD_DIR/out
+
+# Verify build directory exists and has content
+if [ -d "$BUILD_DIR/out" ] && [ "$(ls -A $BUILD_DIR/out)" ]; then
+    echo "Directory exists and is not empty, proceeding with copying..."
+else
+    echo "Build output directory does not exist or is empty, exiting..."
+    exit 1
+fi
+
+# Prepare the new-static-prod branch for the new build
 git fetch origin $DEPLOY_BRANCH:$DEPLOY_BRANCH
 git checkout $DEPLOY_BRANCH
 
-# Step 6: Replace old files with new build
-# Be careful with the following command; ensure you're only removing what you intend to
+# Replace old files with new build
 git rm -rf .
-cp -r $SITE_DIR/* .
+cp -r $BUILD_DIR/out/* .
 
-# Step 7: Commit and push changes
+# Commit and push changes
 git add .
 git config user.name "Pinot Site Updater"
 git config user.email "dev@pinot.apache.org"
@@ -49,6 +136,11 @@ git commit -m "Update Pinot Site from dev branch ${COMMIT_ID}" -m "$GIT_MSG"
 git push origin $DEPLOY_BRANCH
 
 echo "Deployment to ${DEPLOY_BRANCH} completed successfully."
+
+
+
+
+
 
 
 # set -x -e
