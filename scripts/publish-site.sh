@@ -60,7 +60,8 @@ SITE_DIR=${ROOT_DIR}
 git branch
 
 # Build website
-ORIGIN_REPO="https://github.com/apache/incubator-pinot-site"
+# ORIGIN_REPO="https://github.com/apache/incubator-pinot-site"
+ORIGIN_REPO="https://github.com/gio-startree/pinot-site" # The TEST repository to deploy to
 echo "ORIGIN_REPO: $ORIGIN_REPO"
 
 DEV_TMP=/tmp/pinot-new-site-dev
