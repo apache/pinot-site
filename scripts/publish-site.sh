@@ -73,8 +73,8 @@ git checkout new-site-dev
 COMMIT_ID=`git rev-parse HEAD`
 GIT_MSG=`git rev-list --pretty --max-count=2 ${COMMIT_ID}`
 cd ${DEV_TMP}
-npm install yarn
-yarn install
+# npm install yarn
+yarn
 yarn run build
 
 cd ${ROOT_DIR}
