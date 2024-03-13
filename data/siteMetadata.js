@@ -51,7 +51,8 @@ const siteMetadata = {
         //     posthogProjectApiKey: '' // e.g. 123e4567-e89b-12d3-a456-426614174000
         // },
         googleAnalytics: {
-            googleAnalyticsId: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS // e.g. G-XXXXXXX
+            // googleAnalyticsId: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS // e.g. G-XXXXXXX
+            googleAnalyticsId: 'G-ZXG79NJEBY'
         }
     },
     newsletter: {
@@ -132,7 +133,8 @@ const siteMetadata = {
         }
     ],
     shareStory: {
-        link: process.env.SHARE_STORY_LINK
+        // link: process.env.SHARE_STORY_LINK
+        link: 'https://forms.gle/75MbXyz7BztNQ78k9'
     }
 };
 

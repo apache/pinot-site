@@ -38,7 +38,9 @@ const CompanyTable: React.FC<CompanyTableProps> = ({ companies }) => {
             <div className="grid grid-cols-3 gap-6 py-6 lg:grid-cols-6">
                 {filteredCompanies.map((company, index) => (
                     <div key={index}>
-                        <img src={company.logo} alt={company.name} />
+                        <picture>
+                            <img src={company.logo} alt={company.name} />
+                        </picture>
                     </div>
                 ))}
             </div>
