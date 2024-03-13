@@ -54,7 +54,7 @@
 
 set -x -e
 ls -lrth
-DEPLOY_BRANCH="test-prod"
+DEPLOY_BRANCH="new-static-prod"
 ROOT_DIR=$(git rev-parse --show-toplevel)
 SITE_DIR=${ROOT_DIR}
 git branch
