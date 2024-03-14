@@ -5,7 +5,7 @@ set -x -e
 
 # Define variables
 DEPLOY_BRANCH="new-static-prod"
-ORIGIN_REPO="https://github.com/gio-startree/pinot-site"
+ORIGIN_REPO="https://github.com/apache/pinot-site"
 DEV_BRANCH="new-site-dev"
 BUILD_DIR="/tmp/pinot-new-site-build"
 TEMP_DIR="/tmp/pinot-temp"
