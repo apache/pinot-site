@@ -151,7 +151,8 @@ git config user.name "Pinot Site Updater"
 git config user.email "dev@pinot.apache.org"
 # git config user.name "Gio"
 # git config user.email "gio@startree.ai"
-git config http.https://github.com/.extraheader "AUTHORIZATION: bearer ${GITHUB_TOKEN}"
+# git config http.https://github.com/.extraheader "AUTHORIZATION: bearer ${GITHUB_TOKEN}"
+git config --global url.https://$GH_ACCESS_TOKEN@github.com/.insteadOf https://github.com/
 
 git commit -m "Update Pinot Site from dev branch ${COMMIT_ID}" -m "$GIT_MSG"
 git push origin $DEPLOY_BRANCH
