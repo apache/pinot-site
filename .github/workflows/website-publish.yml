@@ -24,4 +24,4 @@ jobs:
             - name: Deploy website
               run: ./scripts/publish-site.sh
               env:
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

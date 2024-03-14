@@ -143,13 +143,15 @@ fi
 
 cp -r $BUILD_DIR/out/* .
 
+echo "**** TOKEN *****: $secrets.GITHUB_TOKEN"
+echo "**** TOKEN *****: ${secrets.GITHUB_TOKEN}"
 # Commit and push changes
 git add .
 git config user.name "Pinot Site Updater"
 git config user.email "dev@pinot.apache.org"
 # git config user.name "Gio"
 # git config user.email "gio@startree.ai"
-git config http.https://github.com/.extraheader "AUTHORIZATION: bearer ${GITHUB_TOKEN}"
+git config http.https://github.com/.extraheader "AUTHORIZATION: bearer ${secrets.GITHUB_TOKEN}"
 
 git commit -m "Update Pinot Site from dev branch ${COMMIT_ID}" -m "$GIT_MSG"
 git push origin $DEPLOY_BRANCH
