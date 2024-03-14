@@ -52,7 +52,7 @@ else
 fi
 
 # Prepare the new-static-prod branch for the new build
-git fetch origin $DEPLOY_BRANCH:$DEPLOY_BRANCH
+git fetch origin $DEPLOY_BRANCH
 git checkout $DEPLOY_BRANCH
 
 # Replace old files with new build
