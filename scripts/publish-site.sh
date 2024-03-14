@@ -149,6 +149,8 @@ git add .
 # git config user.email "dev@pinot.apache.org"
 git config user.name "Gio"
 git config user.email "gio@startree.ai"
+git config --global http.https://github.com/.extraheader "AUTHORIZATION: bearer ${GITHUB_TOKEN}"
+
 git commit -m "Update Pinot Site from dev branch ${COMMIT_ID}" -m "$GIT_MSG"
 git push origin $DEPLOY_BRANCH
 
