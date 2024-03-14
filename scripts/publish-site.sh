@@ -86,6 +86,7 @@ DEPLOY_BRANCH="new-static-prod"
 ORIGIN_REPO="https://github.com/gio-startree/pinot-site"
 DEV_BRANCH="new-site-dev"
 BUILD_DIR="/tmp/pinot-new-site-build"
+TEMP_DIR="/tmp/pinot-temp"
 
 echo "Starting deployment process..."
 echo "ORIGIN_REPO: $ORIGIN_REPO"
@@ -94,10 +95,18 @@ echo "ORIGIN_REPO: $ORIGIN_REPO"
 rm -rf $BUILD_DIR
 mkdir -p $BUILD_DIR
 
+# Setup: Ensure temp directory exists
+mkdir -p $TEMP_DIR
+
 # Clone the repo and switch to the development branch
 git clone "$ORIGIN_REPO" $BUILD_DIR
 cd $BUILD_DIR
 git checkout $DEV_BRANCH
+
+# Preserve .gitignore and any other critical files
+if [ -f .gitignore ]; then
+    mv .gitignore $TEMP_DIR/
+fi
 
 # Capture commit ID and message for use in the deployment commit
 COMMIT_ID=$(git rev-parse HEAD)
@@ -126,6 +135,12 @@ git checkout $DEPLOY_BRANCH
 
 # Replace old files with new build
 git rm -rf .
+
+# Restore .gitignore
+if [ -f "$TEMP_DIR/.gitignore" ]; then
+    mv $TEMP_DIR/.gitignore .
+fi
+
 cp -r $BUILD_DIR/out/* .
 
 # Commit and push changes
@@ -136,6 +151,7 @@ git commit -m "Update Pinot Site from dev branch ${COMMIT_ID}" -m "$GIT_MSG"
 git push origin $DEPLOY_BRANCH
 
 echo "Deployment to ${DEPLOY_BRANCH} completed successfully."
+
 
 
 
