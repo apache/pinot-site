@@ -68,7 +68,6 @@ cp -r $BUILD_DIR/out/* .
 # Config git
 git config user.name "Pinot Site Updater"
 git config user.email "dev@pinot.apache.org"
-git config --global url.https://$GH_ACCESS_TOKEN@github.com/.insteadOf https://github.com/
 
 # Commit and push changes
 git add .
