@@ -5,7 +5,7 @@ set -x -e
 
 # Define variables
 DEPLOY_BRANCH="new-static-prod"
-ORIGIN_REPO="https://github.com/gio-startree/pinot-site"
+ORIGIN_REPO="https://github.com/apache/pinot-site"
 DEV_BRANCH="new-site-dev"
 BUILD_DIR="/tmp/pinot-new-site-build"
 TEMP_DIR="/tmp/pinot-temp"
@@ -68,7 +68,6 @@ cp -r $BUILD_DIR/out/* .
 # Config git
 git config user.name "Pinot Site Updater"
 git config user.email "dev@pinot.apache.org"
-git config --global url.https://$GH_ACCESS_TOKEN@github.com/.insteadOf https://github.com/
 
 # Commit and push changes
 git add .
