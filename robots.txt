@@ -1,5 +1,0 @@
-User-Agent: *
-Allow: /
-
-Host: https://pinot.apache.org
-Sitemap: https://pinot.apache.org/sitemap.xml
