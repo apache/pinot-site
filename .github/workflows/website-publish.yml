@@ -1,4 +1,4 @@
-name: Publish Website to Production
+name: Publish New Website to Production 
 
 on:
     push:
