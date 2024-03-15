@@ -22,8 +22,5 @@ jobs:
                 node-version: "${{ steps.nvm.outputs.NVMRC }}"
 
             - name: Deploy website
-              run: ./scripts/publish-site.sh
-              env:
-                GITHUB_TOKEN: ${{ github.token }}
-                REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                GH_ACCESS_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
+              run: |
+                .github/workflows/scripts/publish-site.sh
