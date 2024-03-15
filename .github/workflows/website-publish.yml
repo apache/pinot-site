@@ -31,7 +31,7 @@ jobs:
         steps:
             - uses: actions/checkout@v2
               with:
-                  ref: 'new-static-site'
+                  ref: 'new-static-prod'
 
             - name: Read .nvmrc
               run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
