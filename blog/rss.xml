@@ -218,18 +218,18 @@
             <description><![CDATA[Pinot is its pluggable architecture. The plugins make it easy to add support for any third-party system which can be an execution framework, a filesystem, or input format.]]></description>
         </item>
         <item>
-            <title><![CDATA[Monitoring Apache Pinot with JMX, Prometheus and Grafana]]></title>
-            <link>https://pinot.apache.org/blog/2020/08/08/DevBlog-PinotMonitoring</link>
-            <guid>Monitoring Apache Pinot with JMX, Prometheus and Grafana</guid>
-            <pubDate>Sat, 08 Aug 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Blog gives an overview of our use of Apache Pinot to solve some of biggest challenges around Data Analytics in Large Retail Chain]]></description>
-        </item>
-        <item>
             <title><![CDATA[Achieving 99th percentile latency SLA using Apache Pinot]]></title>
             <link>https://pinot.apache.org/blog/2020/08/08/DevBlog-SLAApps</link>
             <guid>Achieving 99th percentile latency SLA using Apache Pinot</guid>
             <pubDate>Sat, 08 Aug 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[How users can build critical site-facing analytical applications requiring high throughput and strict p99th query latency SLA]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Monitoring Apache Pinot with JMX, Prometheus and Grafana]]></title>
+            <link>https://pinot.apache.org/blog/2020/08/08/DevBlog-PinotMonitoring</link>
+            <guid>Monitoring Apache Pinot with JMX, Prometheus and Grafana</guid>
+            <pubDate>Sat, 08 Aug 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Blog gives an overview of our use of Apache Pinot to solve some of biggest challenges around Data Analytics in Large Retail Chain]]></description>
         </item>
         <item>
             <title><![CDATA[Utilize UDFs to Supercharge Queries in Apache Pinot]]></title>
