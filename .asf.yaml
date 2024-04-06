@@ -16,7 +16,7 @@ github:
     merge: false
     rebase: false
   protected_branches:
-    dev:
+    new-site-dev:
       required_status_checks:
         strict: false
       required_pull_request_reviews:
