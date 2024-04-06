@@ -17,153 +17,153 @@ type DownloadData = {
 
 const downloadData: DownloadData[] = [
     {
-        version: '1.0.0',
-        date: '9/20/2023',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
+        version: '1.1.0',
+        date: '3/25/2024',
+        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'
     },
     {
-        version: '1.0.0',
-        date: '9/20/2023',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
+        version: '1.1.0',
+        date: '3/25/2024',
+        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'
     },
     {
-        version: '1.0.0',
-        date: '9/20/2023',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
+        version: '1.1.0',
+        date: '3/25/2024',
+        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'
     },
     {
-        version: '1.0.0',
-        date: '9/20/2023',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
+        version: '1.1.0',
+        date: '3/25/2024',
+        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'
     },
     {
-        version: '1.0.0',
-        date: '9/20/2023',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
+        version: '1.1.0',
+        date: '3/25/2024',
+        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'
     },
     {
-        version: '1.0.0',
-        date: '9/20/2023',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
+        version: '1.1.0',
+        date: '3/25/2024',
+        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'
     },
     {
-        version: '1.0.0',
-        date: '9/20/2023',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
+        version: '1.1.0',
+        date: '3/25/2024',
+        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'
     },
     {
-        version: '1.0.0',
-        date: '9/20/2023',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
+        version: '1.1.0',
+        date: '3/25/2024',
+        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.asc'
+                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
+            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'

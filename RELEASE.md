@@ -4,7 +4,7 @@ This guide will walk you through the process of releasing a new version of Apach
 
 ## 1. Create the Release Note
 
-Create a new `.mdx` file for the release. The file should be named with the version it goes by, for example: `1.0.0.mdx`.
+Create a new `.mdx` file for the release. The file should be named with the version it goes by, for example: `1.1.0.mdx`.
 
 ## 2. Frontmatter Configuration
 
@@ -12,17 +12,17 @@ Each release note requires specific metadata in the frontmatter. Here's the stru
 
 ```yaml
     ---
-    version: '1.0.0' # Version of your release
-    date: '9/20/2023' # Date of the release
-    href: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz' # Example
+    version: '1.1.0' # Version of your release
+    date: '3/25/2024' # Date of the release
+    href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz' # Example
     officialSource:
-        download: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz' # Example
-        sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.sha512' # Example
-        asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-src.tar.gz.asc' # Example
+        download: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz' # Example
+        sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512' # Example
+        asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc' # Example
     binary:
-        download: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz' # Example
-        sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.sha512' # Example
-        asc: 'https://downloads.apache.org/pinot/apache-pinot-1.0.0/apache-pinot-1.0.0-bin.tar.gz.asc' # Example
+        download: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz' # Example
+        sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512' # Example
+        asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc' # Example
     releaseNotes: 'This release includes new multi-stage query engine features, enhancements, and bug fixes.' # Release Note Example
     ---
 ```
