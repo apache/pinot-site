@@ -17,7 +17,7 @@
 # under the License.
 # 
 
-name: Publish Website
+name: Publish Apache Pinot Website
 
 on:
     push:
