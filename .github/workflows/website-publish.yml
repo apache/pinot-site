@@ -29,7 +29,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v4
               with:
                   ref: 'new-static-prod'
 
@@ -38,7 +38,7 @@ jobs:
               id: nvm
 
             - name: Use Node.js (.nvmrc)
-              uses: actions/setup-node@v2
+              uses: actions/setup-node@v4
               with:
                 node-version: "${{ steps.nvm.outputs.NVMRC }}"
 
