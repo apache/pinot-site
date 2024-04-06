@@ -25,7 +25,7 @@ SITE_DIR=${ROOT_DIR}
 git branch
 
 # Build website
-ORIGIN_REPO="https://github.com/gio-startree/pinot-site"
+ORIGIN_REPO="https://github.com/apache/pinot-site"
 echo "ORIGIN_REPO: $ORIGIN_REPO"
 
 DEV_TMP=/tmp/pinot-site-dev
