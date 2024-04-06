@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[1535],{3399:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"mastodon","name":"mastodon","count":1,"permalink":"/blog/tags/mastodon"}')}}]);

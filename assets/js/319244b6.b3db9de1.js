@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[1221],{9742:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"compression","name":"compression","count":1,"permalink":"/blog/tags/compression"}')}}]);

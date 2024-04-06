@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[4815],{6820:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"cost-savings","name":"cost savings","count":1,"permalink":"/blog/tags/cost-savings"}')}}]);

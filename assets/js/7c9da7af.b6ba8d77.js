@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[7467],{7644:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"datetrunc","name":"datetrunc","count":1,"permalink":"/blog/tags/datetrunc"}')}}]);

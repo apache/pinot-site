@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[8240],{2655:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"querying-data","name":"querying data","count":1,"permalink":"/blog/tags/querying-data"}')}}]);

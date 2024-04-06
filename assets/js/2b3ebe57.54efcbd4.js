@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5241],{5711:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"feature-contribution","name":"feature contribution","count":1,"permalink":"/blog/tags/feature-contribution"}')}}]);

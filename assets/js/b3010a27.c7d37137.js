@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5493],{5249:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"reducing-latency","name":"reducing latency","count":1,"permalink":"/blog/tags/reducing-latency"}')}}]);

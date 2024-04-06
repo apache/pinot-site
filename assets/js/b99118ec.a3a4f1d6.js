@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5743],{2489:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"hybrid-tables","name":"hybrid tables","count":1,"permalink":"/blog/tags/hybrid-tables"}')}}]);

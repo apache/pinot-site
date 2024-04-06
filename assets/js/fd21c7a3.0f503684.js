@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[8712],{5114:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"95-to-99-improvement","name":"95% to 99% improvement","count":1,"permalink":"/blog/tags/95-to-99-improvement"}')}}]);

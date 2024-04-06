@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5148],{6798:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"real-time-ingestion","name":"real-time ingestion","count":1,"permalink":"/blog/tags/real-time-ingestion"}')}}]);

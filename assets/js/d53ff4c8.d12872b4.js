@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[8057],{2915:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"seaborn","name":"seaborn","count":1,"permalink":"/blog/tags/seaborn"}')}}]);
