@@ -16,6 +16,8 @@ const ContentSecurityPolicy = `
   frame-src giscus.app www.youtube.com
 `;
 
+//   frame-src 'giscus.app' 'www.youtube.com' 'https://www.youtube.com/'
+
 const securityHeaders = [
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
     {
