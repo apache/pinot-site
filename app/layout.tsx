@@ -88,6 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     href="/static/favicons/safari-pinned-tab.svg"
                     color="#5bbad5"
                 />
+
                 <meta
                     http-equiv="Content-Security-Policy"
                     content="frame-src 'self' https://www.youtube.com;"
