@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
@@ -12,6 +12,20 @@ interface TextVideoSplitSectionProps {
 }
 
 const TextVideoSplitSection: React.FC<TextVideoSplitSectionProps> = ({ videoUrl, title }) => {
+    const [iframeLoaded, setIframeLoaded] = useState(false);
+    const imagePlaceHolder = '/static/images/video_thumbnail.png';
+
+    const handlePlaceholderClick = () => {
+        setIframeLoaded(true);
+    };
+
+    const handleKeyPress = (event) => {
+        // Check if the key pressed is 'Enter' or 'Space'
+        if (event.key === 'Enter' || event.key === ' ') {
+            setIframeLoaded(true);
+        }
+    };
+
     return (
         <section className="bg-stone-100 dark:bg-gray-900">
             <div className="flex flex-col px-5 py-14 sm:flex-row sm:px-6 md:mx-auto md:max-w-screen-outerLiveArea md:gap-20 md:px-[5.5rem] md:py-[6.5rem]">
@@ -44,15 +58,27 @@ const TextVideoSplitSection: React.FC<TextVideoSplitSectionProps> = ({ videoUrl,
                     </Button>
                 </article>
                 <aside className="flex-1">
-                    {/* <div className=""> */}
-                    <iframe
-                        className="h-[197px] w-full md:h-full"
-                        src={videoUrl}
-                        title={title}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    ></iframe>
-                    {/* </div> */}
+                    {!iframeLoaded ? (
+                        <div
+                            className="video-placeholder flex h-full cursor-pointer items-center justify-center bg-cover bg-center"
+                            onClick={handlePlaceholderClick}
+                            onKeyPress={handleKeyPress}
+                            role="button"
+                            tabIndex={0}
+                            style={{
+                                cursor: 'pointer',
+                                backgroundImage: `url(${imagePlaceHolder})`
+                            }}
+                        />
+                    ) : (
+                        <iframe
+                            className="h-[197px] w-full md:h-full"
+                            src={videoUrl}
+                            title={title}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    )}
                 </aside>
             </div>
         </section>

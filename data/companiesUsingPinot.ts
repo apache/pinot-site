@@ -55,11 +55,6 @@ const companiesUsingPinot: Company[] = [
         type: 'media'
     },
     {
-        name: 'Uber',
-        logo: '/static/images/companies/food/uber.svg',
-        type: 'media'
-    },
-    {
         name: 'Constant Contact',
         logo: '/static/images/companies/media/constant_contact.svg',
         type: 'media'
