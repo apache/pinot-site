@@ -90,7 +90,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 />
                 <meta
                     http-equiv="Content-Security-Policy"
-                    content="frame-src youtube.com www.youtube.com;"
+                    content="frame-src 'self' youtu.be youtube.com *.youtube.com googlevideo.com *.googlevideo.com;"
                 />
                 <meta name="msapplication-TileColor" content="#000000" />
                 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
