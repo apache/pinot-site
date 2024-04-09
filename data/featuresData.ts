@@ -8,7 +8,7 @@ interface Feature {
 const featuresData: Feature[] = [
     {
         imageSrc: '/static/images/features/fast_queries.svg',
-        title: 'Fast Queries',
+        title: 'fast queries',
         description: [
             'Filter and aggregate petabyte data sets with P90 latencies in the tens of milliseconds—fast enough to return live results interactively in the UI.'
         ]
