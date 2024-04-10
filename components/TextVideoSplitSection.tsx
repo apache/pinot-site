@@ -13,16 +13,18 @@ interface TextVideoSplitSectionProps {
 
 const TextVideoSplitSection: React.FC<TextVideoSplitSectionProps> = ({ videoUrl, title }) => {
     const [iframeLoaded, setIframeLoaded] = useState(false);
-    const imagePlaceHolder = '/static/images/video_thumbnail.png';
+    const imagePlaceholder = '/static/images/video_thumbnail.png';
 
     const handlePlaceholderClick = () => {
         setIframeLoaded(true);
+        window.open(videoUrl, '_blank');
     };
 
     const handleKeyPress = (event) => {
         // Check if the key pressed is 'Enter' or 'Space'
         if (event.key === 'Enter' || event.key === ' ') {
             setIframeLoaded(true);
+            window.open(videoUrl, '_blank');
         }
     };
 
@@ -58,27 +60,15 @@ const TextVideoSplitSection: React.FC<TextVideoSplitSectionProps> = ({ videoUrl,
                     </Button>
                 </article>
                 <aside className="flex-1">
-                    {!iframeLoaded ? (
-                        <div
-                            className="video-placeholder flex h-full cursor-pointer items-center justify-center bg-cover bg-center"
-                            onClick={handlePlaceholderClick}
-                            onKeyPress={handleKeyPress}
-                            role="button"
-                            tabIndex={0}
-                            style={{
-                                cursor: 'pointer',
-                                backgroundImage: `url(${imagePlaceHolder})`
-                            }}
-                        />
-                    ) : (
-                        <iframe
-                            className="h-[197px] w-full md:h-full"
-                            src={videoUrl}
-                            title={title}
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
-                    )}
+                    <div
+                        className="video-placeholder flex h-[197px] w-full cursor-pointer items-center justify-center bg-cover bg-center md:h-full"
+                        onClick={handlePlaceholderClick}
+                        onKeyPress={handleKeyPress}
+                        role="button"
+                        tabIndex={0} // Make it focusable
+                        style={{ backgroundImage: `url(${imagePlaceholder})` }}
+                        aria-label={title || 'Open video in new tab'}
+                    />
                 </aside>
             </div>
         </section>
