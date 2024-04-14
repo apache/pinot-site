@@ -19,18 +19,18 @@ const downloadData: DownloadData[] = [
     {
         version: '1.1.0',
         date: '3/25/2024',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+        href: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc?action=download'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc?action=download'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'
@@ -38,18 +38,18 @@ const downloadData: DownloadData[] = [
     {
         version: '1.1.0',
         date: '3/25/2024',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+        href: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc?action=download'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc?action=download'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'
@@ -57,18 +57,18 @@ const downloadData: DownloadData[] = [
     {
         version: '1.1.0',
         date: '3/25/2024',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+        href: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc?action=download'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc?action=download'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'
@@ -76,18 +76,18 @@ const downloadData: DownloadData[] = [
     {
         version: '1.1.0',
         date: '3/25/2024',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+        href: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc?action=download'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc?action=download'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'
@@ -95,18 +95,18 @@ const downloadData: DownloadData[] = [
     {
         version: '1.1.0',
         date: '3/25/2024',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+        href: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc?action=download'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc?action=download'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'
@@ -114,18 +114,18 @@ const downloadData: DownloadData[] = [
     {
         version: '1.1.0',
         date: '3/25/2024',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+        href: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc?action=download'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc?action=download'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'
@@ -133,18 +133,18 @@ const downloadData: DownloadData[] = [
     {
         version: '1.1.0',
         date: '3/25/2024',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+        href: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc?action=download'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc?action=download'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'
@@ -152,18 +152,18 @@ const downloadData: DownloadData[] = [
     {
         version: '1.1.0',
         date: '3/25/2024',
-        href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
+        href: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
         officialSource: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc?action=download'
         },
         binary: {
             download:
-                'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz',
-            sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512',
-            asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc'
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc?action=download'
         },
         releaseNotes:
             'This release includes new multi-stage query engine features, enhancements, and bug fixes.'

@@ -29,7 +29,7 @@ const Download = () => {
                         </Link>{' '}
                         using these{' '}
                         <Link
-                            href="https://downloads.apache.org/pinot/KEYS"
+                            href="https://www.apache.org/dyn/closer.lua/pinot/KEYS"
                             className="custom-link"
                         >
                             KEYS

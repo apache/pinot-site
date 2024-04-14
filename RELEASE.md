@@ -14,15 +14,15 @@ Each release note requires specific metadata in the frontmatter. Here's the stru
     ---
     version: '1.1.0' # Version of your release
     date: '3/25/2024' # Date of the release
-    href: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz' # Example
+    href: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download' # Example
     officialSource:
-        download: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz' # Example
-        sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512' # Example
-        asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc' # Example
+        download: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz?action=download' # Example
+        sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.sha512?action=download' # Example
+        asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-src.tar.gz.asc?action=download' # Example
     binary:
-        download: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz' # Example
-        sha512: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512' # Example
-        asc: 'https://downloads.apache.org/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc' # Example
+        download: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download' # Example
+        sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.sha512?action=download' # Example
+        asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz.asc?action=download' # Example
     releaseNotes: 'This release includes new multi-stage query engine features, enhancements, and bug fixes.' # Release Note Example
     ---
 ```
