@@ -1,10 +1,12 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import siteMetadata from '@/data/siteMetadata';
+// import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/youtube';
 
 interface TextVideoSplitSectionProps {
     videoUrl: string;
@@ -13,7 +15,12 @@ interface TextVideoSplitSectionProps {
 
 const TextVideoSplitSection: React.FC<TextVideoSplitSectionProps> = ({ videoUrl, title }) => {
     const [iframeLoaded, setIframeLoaded] = useState(false);
+    const [isSSR, setIsSSR] = useState(true);
     const imagePlaceholder = '/static/images/video_thumbnail.png';
+
+    useEffect(() => {
+        setIsSSR(false);
+    }, []);
 
     const handlePlaceholderClick = () => {
         setIframeLoaded(true);
@@ -60,6 +67,23 @@ const TextVideoSplitSection: React.FC<TextVideoSplitSectionProps> = ({ videoUrl,
                     </Button>
                 </article>
                 <aside className="flex-1">
+                    {/* {isSSR ? null : (
+                        <ReactPlayer
+                            url={videoUrl}
+                            light={true}
+                            // width={'720px'}
+                            // height={'480px'}
+                            // style={{ border: '1px solid white' }}
+                            playing={true}
+                            volume={1}
+                            pip={true}
+                            controls={true}
+                            loop={false}
+                            stopOnUnmount={true}
+                            className="h-[197px] w-full"
+                        />
+                    )} */}
+                    {/* <video src="https://www.youtube.com/watch?v=LXb3EKWsInQ"></video> */}
                     <div
                         className="video-placeholder flex h-[197px] w-full cursor-pointer items-center justify-center bg-cover bg-center md:h-full"
                         onClick={handlePlaceholderClick}
