@@ -1,12 +1,10 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import siteMetadata from '@/data/siteMetadata';
-// import ReactPlayer from 'react-player';
-import ReactPlayer from 'react-player/youtube';
 
 interface TextVideoSplitSectionProps {
     videoUrl: string;
@@ -14,27 +12,6 @@ interface TextVideoSplitSectionProps {
 }
 
 const TextVideoSplitSection: React.FC<TextVideoSplitSectionProps> = ({ videoUrl, title }) => {
-    const [iframeLoaded, setIframeLoaded] = useState(false);
-    const [isSSR, setIsSSR] = useState(true);
-    const imagePlaceholder = '/static/images/video_thumbnail.png';
-
-    useEffect(() => {
-        setIsSSR(false);
-    }, []);
-
-    const handlePlaceholderClick = () => {
-        setIframeLoaded(true);
-        window.open(videoUrl, '_blank');
-    };
-
-    const handleKeyPress = (event) => {
-        // Check if the key pressed is 'Enter' or 'Space'
-        if (event.key === 'Enter' || event.key === ' ') {
-            setIframeLoaded(true);
-            window.open(videoUrl, '_blank');
-        }
-    };
-
     return (
         <section className="bg-stone-100 dark:bg-gray-900">
             <div className="flex flex-col px-5 py-14 sm:flex-row sm:px-6 md:mx-auto md:max-w-screen-outerLiveArea md:gap-20 md:px-[5.5rem] md:py-[6.5rem]">
@@ -67,32 +44,13 @@ const TextVideoSplitSection: React.FC<TextVideoSplitSectionProps> = ({ videoUrl,
                     </Button>
                 </article>
                 <aside className="flex-1">
-                    {/* {isSSR ? null : (
-                        <ReactPlayer
-                            url={videoUrl}
-                            light={true}
-                            // width={'720px'}
-                            // height={'480px'}
-                            // style={{ border: '1px solid white' }}
-                            playing={true}
-                            volume={1}
-                            pip={true}
-                            controls={true}
-                            loop={false}
-                            stopOnUnmount={true}
-                            className="h-[197px] w-full"
-                        />
-                    )} */}
-                    {/* <video src="https://www.youtube.com/watch?v=LXb3EKWsInQ"></video> */}
-                    <div
-                        className="video-placeholder flex h-[197px] w-full cursor-pointer items-center justify-center bg-cover bg-center md:h-full"
-                        onClick={handlePlaceholderClick}
-                        onKeyPress={handleKeyPress}
-                        role="button"
-                        tabIndex={0} // Make it focusable
-                        style={{ backgroundImage: `url(${imagePlaceholder})` }}
-                        aria-label={title || 'Open video in new tab'}
-                    />
+                    <iframe
+                        className="h-[197px] w-full md:h-full"
+                        src={videoUrl}
+                        title={title}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
                 </aside>
             </div>
         </section>
