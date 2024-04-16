@@ -1,4 +1,5 @@
 <IfModule mod_headers.c>
+    Header unset Content-Security-Policy
     Header always set Content-Security-Policy "default-src 'self'; \
 script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is www.youtube.com www.googletagmanager.com www.google-analytics.com; \
 style-src 'self' 'unsafe-inline'; \
