@@ -98,7 +98,7 @@ const CompanyStories: React.FC = () => {
                     className="justify-center p-0 pt-8 text-base font-semibold leading-tight text-vine-100 md:pt-12"
                 >
                     <Link href={'/powered-by'}>
-                        see company stories
+                        See Company Stories
                         <ArrowRight className="mr-2 h-5 w-5" />
                     </Link>
                 </Button>

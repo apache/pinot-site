@@ -17,13 +17,13 @@ const PoweredBy = () => {
         <section>
             <header className="p-8 pb-6 text-center md:p-0 md:pt-16">
                 <h1 className="mb-6 text-3xl font-bold md:pb-10 md:text-5xl">
-                    powered by Apache Pinot&trade;
+                    Powered by Apache Pinot&trade;
                 </h1>
-                <h3 className="pt-4 text-2xl font-semibold md:pb-10">company stories</h3>
+                <h3 className="pt-4 text-2xl font-semibold md:pb-10">Company Stories</h3>
             </header>
             <CompanyStoriesGrid />
             <h3 className="p-4 pt-14 text-center text-2xl font-semibold md:pb-10">
-                companies using Apache Pinot
+                Companies Using Apache Pinot
             </h3>
             <CompanyTable companies={companiesUsingPinot} />
             <footer className="mx-5 my-14 bg-green-50 py-12 text-center md:mx-28 md:my-24">
@@ -32,7 +32,7 @@ const PoweredBy = () => {
                 </h3>
                 <Button variant="default" size="lg" className="bg-vine-100 px-6 py-2 text-base">
                     <Link href={siteMetadata.shareStory.link} target="_blank">
-                        share now
+                        Share Now
                     </Link>
                 </Button>
             </footer>

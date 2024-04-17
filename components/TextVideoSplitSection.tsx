@@ -38,7 +38,7 @@ const TextVideoSplitSection: React.FC<TextVideoSplitSectionProps> = ({ videoUrl,
                         className="my-6 mr-2 justify-start p-0 text-lg font-semibold leading-tight text-vine-100"
                     >
                         <Link href={siteMetadata.cta.learnMore} target="_blank">
-                            learn more
+                            Learn More
                             <ArrowRight className="mr-2 h-5 w-5" />
                         </Link>
                     </Button>

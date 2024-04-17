@@ -20,7 +20,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ posts }) => {
                 id="blog-section-title"
                 className="m-12 text-center text-[2rem] font-bold leading-10 lg:mt-24"
             >
-                pinot blog
+                Pinot Blog
             </h4>
             <div className="grid grid-cols-1 gap-[1.875rem] md:grid-cols-3 lg:px-24">
                 {posts.slice(0, 3).map((post) => {
@@ -34,7 +34,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ posts }) => {
                     className="text-base font-semibold leading-tight text-vine-100"
                 >
                     <Link href={'/blog'}>
-                        browse all
+                        Browse All
                         <ArrowRight className="mr-2 h-5 w-5" />
                     </Link>
                 </Button>
