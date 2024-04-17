@@ -65,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             className={`${work_sans.variable} scroll-smooth`}
             suppressHydrationWarning
         >
-            <Head>
+            <head>
                 <meta
                     httpEquiv="Content-Security-Policy"
                     content="default-src 'self';script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is www.youtube.com www.googletagmanager.com www.google-analytics.com;style-src 'self' 'unsafe-inline';img-src * blob: data:;media-src *.s3.amazonaws.com;connect-src *;font-src 'self';frame-src www.youtube.com youtube.com giscus.app youtu.be https://www.youtube.com https://youtube.com;"
@@ -73,19 +73,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <link
                     rel="apple-touch-icon"
                     sizes="76x76"
-                    href="/static/favicons/apple-touch-icon.png"
+                    href="/static/favicons/apple-touch-icon.svg"
                 />
                 <link
                     rel="icon"
                     type="image/png"
                     sizes="32x32"
-                    href="/static/favicons/favicon-32x32.png"
+                    href="/static/favicons/favicon-32x32.svg"
                 />
                 <link
                     rel="icon"
                     type="image/png"
                     sizes="16x16"
-                    href="/static/favicons/favicon-16x16.png"
+                    href="/static/favicons/favicon-16x16.svg"
                 />
                 <link rel="manifest" href="/static/favicons/site.webmanifest" />
                 <link
@@ -97,7 +97,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
                 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
                 <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-            </Head>
+            </head>
             <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
                 <ThemeProviders>
                     <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
