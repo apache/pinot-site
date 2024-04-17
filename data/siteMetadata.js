@@ -33,7 +33,7 @@ const siteMetadata = {
             'https://apache-pinot.slack.com/join/shared_invite/zt-5z7pav2f-yYtjZdVA~EDmrGkho87Vzw#/shared-invite/email'
     },
     codeSection: {
-        header: 'Start your real-time analytics journey.'
+        header: 'Start Your Real-Time Analytics Journey.'
     },
     analytics: {
         // To use an analytics provider, add it to the

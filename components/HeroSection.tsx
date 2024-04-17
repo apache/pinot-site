@@ -11,7 +11,7 @@ const HeroSection = () => {
         <section className="md:mx-auto md:max-w-screen-outerLiveArea">
             <div className="p-8 text-center md:pb-12 md:pt-24">
                 <h1 className="mb-4 text-4xl font-bold leading-[45px] md:text-[3.5rem] md:leading-[70px]">
-                    Insights, unlocked in real time.
+                    Insights, Unlocked in Real Time.
                 </h1>
                 <p className="m-auto mb-8 max-w-4xl text-lg md:leading-[28.80px]">
                     Apache Pinot&trade;: The real-time analytics open source platform for
@@ -25,7 +25,7 @@ const HeroSection = () => {
                         className="rounded-lg bg-vine-100 px-8 py-3 text-xl"
                     >
                         <Link href={siteMetadata.cta.getStarted} target="_blank">
-                            get started
+                            Get Started
                         </Link>
                     </Button>
                     <Button
@@ -34,7 +34,7 @@ const HeroSection = () => {
                         className="rounded-lg border-2 border-vine-100 px-8 py-3 text-xl text-vine-100 hover:border-vine-120 hover:text-vine-120"
                     >
                         <Link href={siteMetadata.cta.slackInvite} target="_blank">
-                            join slack
+                            Join Slack
                         </Link>
                     </Button>
                 </div>

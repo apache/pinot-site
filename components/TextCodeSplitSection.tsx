@@ -28,7 +28,7 @@ const TextCodeSplitSection: React.FC<TextCodeSplitSectionProps> = ({ title }) =>
                             className="mr-2 rounded-lg bg-vine-100 px-8 py-3 text-xl"
                         >
                             <Link href={siteMetadata.cta.getStarted} target="_blank">
-                                get started
+                                Get Started
                             </Link>
                         </Button>
                     </div>

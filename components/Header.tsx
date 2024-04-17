@@ -73,7 +73,7 @@ const Header = () => {
                     </Button>
                     <Button variant="default" size="lg" className="bg-vine-100 px-6 py-2 text-base">
                         <Link href={siteMetadata.cta.getStarted} target="_blank">
-                            get started
+                            Get Started
                         </Link>
                     </Button>
                 </div>

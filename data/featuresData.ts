@@ -8,21 +8,21 @@ interface Feature {
 const featuresData: Feature[] = [
     {
         imageSrc: '/static/images/features/fast_queries.svg',
-        title: 'fast queries',
+        title: 'Fast Queries',
         description: [
             'Filter and aggregate petabyte data sets with P90 latencies in the tens of milliseconds—fast enough to return live results interactively in the UI.'
         ]
     },
     {
         imageSrc: '/static/images/features/high_concurrency.svg',
-        title: 'high concurrency',
+        title: 'High Concurrency',
         description: [
             'With user-facing applications querying Pinot directly, it can serve hundreds of thousands of concurrent queries per second.'
         ]
     },
     {
         imageSrc: '/static/images/features/batch_ingest.svg',
-        title: 'batch and streaming ingest',
+        title: 'Batch and Streaming Ingest',
         description: [
             'Ingest from ',
             { text: 'Apache Kafka', url: 'https://kafka.apache.org/' },
@@ -35,19 +35,19 @@ const featuresData: Feature[] = [
     },
     {
         imageSrc: '/static/images/features/upsert.svg',
-        title: 'upserts',
+        title: 'Upserts',
         description: [
             'Ingest the same record many times, but see only the latest value at query time. Upserts are built-in and production-tested since version 0.6.'
         ]
     },
     {
         imageSrc: '/static/images/features/versatile_joins.svg',
-        title: 'versatile joins',
+        title: 'Versatile Joins',
         description: ['Perform arbitrary fact/dimension and fact/fact joins on petabyte data sets.']
     },
     {
         imageSrc: '/static/images/features/options.svg',
-        title: 'rich indexing options',
+        title: 'Rich Indexing Options',
         description: [
             'Choose from pluggable indexes including ',
             {
@@ -88,21 +88,21 @@ const featuresData: Feature[] = [
     },
     {
         imageSrc: '/static/images/features/built_scale.svg',
-        title: 'built for scale',
+        title: 'Built for Scale',
         description: [
             'Pinot is horizontally scalable and fault-tolerant, adaptable to workloads across the storage and throughput spectrum.'
         ]
     },
     {
         imageSrc: '/static/images/features/sql_query.svg',
-        title: 'SQL query interface',
+        title: 'SQL Query Interface',
         description: [
             'The highly standard SQL query interface is accessible through a built-in query editor and a REST API.'
         ]
     },
     {
         imageSrc: '/static/images/features/multitenancy.svg',
-        title: 'built-in multitenancy',
+        title: 'Built-in Multitenancy',
         description: [
             'Manage and secure data in isolated logical namespaces for cloud-friendly resource management.'
         ]

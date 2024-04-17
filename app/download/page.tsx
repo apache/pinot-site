@@ -17,7 +17,7 @@ const Download = () => {
             <section>
                 <header className="p-8 text-center md:p-0 md:pt-16">
                     <h1 className="mb-6 text-3xl font-bold md:text-5xl">
-                        Apache Pinot&trade; download
+                        Apache Pinot&trade; Download
                     </h1>
                     <p className="text-lg md:mb-12">
                         Be sure to verify your downloads by these{' '}
