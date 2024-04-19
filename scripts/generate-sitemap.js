@@ -9,7 +9,7 @@ const siteMetadata = require('../data/siteMetadata');
         'pages/*.js',
         'data/**/*.mdx',
         'data/**/*.md',
-        'public/tags/**/*.xml',
+        // 'public/tags/**/*.xml',
         '!pages/_*.js',
         '!pages/api'
     ]);
