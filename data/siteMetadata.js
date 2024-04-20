@@ -14,7 +14,7 @@ const siteMetadata = {
     siteLogo: '/static/images/logo.png',
     socialBanner: '/static/images/twitter-card.png',
     mastodon: 'https://mastodon.social/explore',
-    email: 'address@example.com',
+    email: '',
     github: 'https://github.com/apache/pinot',
     twitter: 'https://twitter.com/Twitter',
     facebook: 'https://facebook.com',
