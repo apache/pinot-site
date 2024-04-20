@@ -2,19 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://pinot.apache.org/</loc>
-<lastmod>2024-04-17</lastmod>
+<lastmod>2024-04-20</lastmod>
 </url>
 <url>
 <loc>https://pinot.apache.org/blog</loc>
-<lastmod>2024-04-17</lastmod>
-</url>
-<url>
-<loc>https://pinot.apache.org/projects</loc>
-<lastmod>2024-04-17</lastmod>
-</url>
-<url>
-<loc>https://pinot.apache.org/tags</loc>
-<lastmod>2024-04-17</lastmod>
+<lastmod>2024-04-20</lastmod>
 </url>
 <url>
 <loc>https://pinot.apache.org/blog/2015/05/16/LinkedIn-Scaling</loc>
