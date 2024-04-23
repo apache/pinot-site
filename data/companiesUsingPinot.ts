@@ -43,6 +43,11 @@ const companiesUsingPinot: Company[] = [
         logo: '/static/images/companies/retail/walmart.svg',
         type: 'retail'
     },
+    {
+        name: 'Cora',
+        logo: '/static/images/companies/retail/cora.svg',
+        type: 'retail'
+    },
     // Media
     {
         name: 'AdBeat',
@@ -119,6 +124,16 @@ const companiesUsingPinot: Company[] = [
         logo: '/static/images/companies/media/roku.svg',
         type: 'media'
     },
+    {
+        name: 'PromotedAI',
+        logo: '/static/images/companies/media/promoted_ai.svg',
+        type: 'media'
+    },
+    {
+        name: 'MediaNet',
+        logo: '/static/images/companies/media/media_net.svg',
+        type: 'media'
+    },
     // Fintech
     {
         name: 'Citi',
@@ -153,6 +168,31 @@ const companiesUsingPinot: Company[] = [
     {
         name: 'Tradeweb',
         logo: '/static/images/companies/fintech/tradeweb.svg',
+        type: 'fintech'
+    },
+    {
+        name: 'Goldman Sachs',
+        logo: '/static/images/companies/fintech/goldman_sachs.svg',
+        type: 'fintech'
+    },
+    {
+        name: 'PhonePe',
+        logo: '/static/images/companies/fintech/phone_pe.svg',
+        type: 'fintech'
+    },
+    {
+        name: '10x Banking',
+        logo: '/static/images/companies/fintech/10x_banking.svg',
+        type: 'fintech'
+    },
+    {
+        name: 'Robinhood',
+        logo: '/static/images/companies/fintech/robinhood.svg',
+        type: 'fintech'
+    },
+    {
+        name: 'Pine Labs',
+        logo: '/static/images/companies/fintech/pine_labs.svg',
         type: 'fintech'
     },
     // Cloud
@@ -191,6 +231,26 @@ const companiesUsingPinot: Company[] = [
         logo: '/static/images/companies/cloud/hrt.svg',
         type: 'cloud'
     },
+    {
+        name: 'Momentive',
+        logo: '/static/images/companies/cloud/momentive.svg',
+        type: 'cloud'
+    },
+    {
+        name: 'Hubspot',
+        logo: '/static/images/companies/cloud/hubspot.svg',
+        type: 'cloud'
+    },
+    {
+        name: 'Phenom',
+        logo: '/static/images/companies/cloud/phenom.svg',
+        type: 'cloud'
+    },
+    {
+        name: 'Zuora',
+        logo: '/static/images/companies/cloud/zuora.svg',
+        type: 'cloud'
+    },
     // Food
     {
         name: 'Uber',
@@ -220,6 +280,16 @@ const companiesUsingPinot: Company[] = [
     {
         name: 'DoorDash',
         logo: '/static/images/companies/food/door_dash.svg',
+        type: 'food'
+    },
+    {
+        name: 'Careem',
+        logo: '/static/images/companies/food/careem.svg',
+        type: 'food'
+    },
+    {
+        name: 'Ola',
+        logo: '/static/images/companies/food/ola.svg',
         type: 'food'
     },
     // Other
@@ -286,6 +356,61 @@ const companiesUsingPinot: Company[] = [
     {
         name: 'TuoAgente',
         logo: '/static/images/companies/other/tuoagente.svg',
+        type: 'other'
+    },
+    {
+        name: 'Link Labs',
+        logo: '/static/images/companies/other/link_labs.svg',
+        type: 'other'
+    },
+    {
+        name: 'Vedantu',
+        logo: '/static/images/companies/other/vedantu.svg',
+        type: 'other'
+    },
+    {
+        name: 'Boond Manager',
+        logo: '/static/images/companies/other/boond_manager.svg',
+        type: 'other'
+    },
+    {
+        name: 'YouGov',
+        logo: '/static/images/companies/other/you_gov.svg',
+        type: 'other'
+    },
+    {
+        name: 'Mobileum',
+        logo: '/static/images/companies/other/mobileum.svg',
+        type: 'other'
+    },
+    {
+        name: 'HireEZ',
+        logo: '/static/images/companies/other/hire_ez.svg',
+        type: 'other'
+    },
+    {
+        name: 'Broadcom',
+        logo: '/static/images/companies/other/broadcom.svg',
+        type: 'other'
+    },
+    {
+        name: 'Rapid1',
+        logo: '/static/images/companies/other/rapid_1.svg',
+        type: 'other'
+    },
+    {
+        name: 'Factual',
+        logo: '/static/images/companies/other/factual.svg',
+        type: 'other'
+    },
+    {
+        name: 'SimSoft',
+        logo: '/static/images/companies/other/sim_soft.svg',
+        type: 'other'
+    },
+    {
+        name: 'Palmyra Solutions',
+        logo: '/static/images/companies/other/palmyra_solutions.svg',
         type: 'other'
     }
 ];
