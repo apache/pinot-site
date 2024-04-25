@@ -1,7 +1,7 @@
 import { permanentRedirect } from 'next/navigation';
 
-const PoweredBy = () => {
+const RedirectPage = () => {
     permanentRedirect('/powered-by');
 };
 
-export default PoweredBy;
+export default RedirectPage;
