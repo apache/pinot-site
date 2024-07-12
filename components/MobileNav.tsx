@@ -9,7 +9,11 @@ import Menu from '@/data/assets/menu.svg';
 import { Button } from './ui/button';
 import Link from './Link';
 
-const MobileNav = () => {
+interface MobileNavProps {
+    stars: string | null;
+}
+
+const MobileNav = ({ stars }: MobileNavProps) => {
     const [navShow, setNavShow] = useState(false);
     const navRef = useRef<HTMLDivElement>(null);
 
@@ -109,7 +113,7 @@ const MobileNav = () => {
                                 >
                                     <Link href={siteMetadata.github} target="_blank">
                                         <GitHub className="mr-2" />
-                                        3.5k
+                                        {stars ? stars : 'Loading...'}
                                     </Link>
                                 </Button>
                             </div>
