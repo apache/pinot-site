@@ -1,20 +1,48 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
+import Link from './Link';
 import siteMetadata from '@/data/siteMetadata';
 import headerNavLinks from '@/data/headerNavLinks';
 import Logo from '@/data/logo.svg';
 import GitHub from '@/data/github.svg';
-import Link from './Link';
+import { formatNumber, getStars, isLessThanOneHourAgo } from '@/app/lib/stars.utils';
+import { Button } from '@/components/ui/button';
 import MobileNav from './MobileNav';
-import ThemeSwitch from './ThemeSwitch';
+// import ThemeSwitch from './ThemeSwitch';
 import SearchButton from './SearchButton';
 import AnnouncementBar from './AnnouncementBar';
-import { Button } from '@/components/ui/button';
 
 const Header = () => {
-    const router = useRouter();
+    const [stars, setStars] = useState<string | null>(null);
+    // const router = useRouter();
     const pathname = usePathname();
+
+    useEffect(() => {
+        const fetchStars = async () => {
+            const cacheKey = 'githubStars';
+            const cachedStars = localStorage.getItem(cacheKey);
+            const storedDate = localStorage.getItem(`${cacheKey}_time`);
+            const lastRunDate = storedDate ? new Date(storedDate) : new Date(0);
+
+            // Use cached data if it's less than an hour old
+            if (cachedStars && storedDate && isLessThanOneHourAgo(lastRunDate)) {
+                setStars(cachedStars);
+            } else {
+                try {
+                    const starCount = await getStars('apache', 'pinot');
+                    const formattedStars = formatNumber(starCount);
+                    setStars(formattedStars);
+                    localStorage.setItem(cacheKey, formattedStars);
+                    localStorage.setItem(`${cacheKey}_time`, new Date().toISOString());
+                } catch (error) {
+                    setStars(null);
+                }
+            }
+        };
+        fetchStars();
+    }, []);
 
     return (
         <>
@@ -62,13 +90,13 @@ const Header = () => {
                         {/* <ThemeSwitch /> */}
                     </div>
                 </div>
-                <MobileNav />
+                <MobileNav stars={stars} />
                 <div className="hidden gap-3 sm:flex">
                     <SearchButton />
                     <Button variant="outline" size="lg" asChild className="px-3 py-2 text-base">
                         <Link href={siteMetadata.github} target="_blank">
-                            <GitHub className="mr-2" />
-                            3.5k
+                            <GitHub className={`${stars && 'mr-2'}`} />
+                            {stars && stars}
                         </Link>
                     </Button>
                     <Button variant="default" size="lg" className="bg-vine-100 px-6 py-2 text-base">
