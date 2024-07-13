@@ -5,6 +5,14 @@ export function formatNumber(num: number): string {
     return num.toString();
 }
 
+export function isLessThanOneHourAgo(date: Date): boolean {
+    const oneHourInMillis = 60 * 60 * 1000; // Number of milliseconds in one hour
+    const currentTime = new Date().getTime();
+    const inputTime = date.getTime();
+
+    return currentTime - inputTime < oneHourInMillis;
+}
+
 export async function getStars(owner: string, repo: string): Promise<number> {
     const url = `https://api.github.com/repos/${owner}/${repo}`;
 
@@ -25,19 +33,5 @@ export async function getStars(owner: string, repo: string): Promise<number> {
     } catch (error) {
         console.error(error);
         throw error;
-    }
-}
-
-export async function getFallbackStars(): Promise<string> {
-    try {
-        const response = await fetch('/stars.json');
-        if (!response.ok) {
-            throw new Error(`Error fetching fallback data: ${response.statusText}`);
-        }
-        const data = await response.json();
-        return data.stars;
-    } catch (error) {
-        console.error(error);
-        return ''; // default value in case of an error
     }
 }

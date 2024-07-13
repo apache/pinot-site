@@ -1,26 +1,18 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
+import Link from './Link';
 import siteMetadata from '@/data/siteMetadata';
 import headerNavLinks from '@/data/headerNavLinks';
 import Logo from '@/data/logo.svg';
 import GitHub from '@/data/github.svg';
-import Link from './Link';
+import { formatNumber, getStars, isLessThanOneHourAgo } from '@/app/lib/stars.utils';
+import { Button } from '@/components/ui/button';
 import MobileNav from './MobileNav';
 // import ThemeSwitch from './ThemeSwitch';
 import SearchButton from './SearchButton';
 import AnnouncementBar from './AnnouncementBar';
-import { Button } from '@/components/ui/button';
-import { formatNumber, getFallbackStars, getStars } from '@/app/lib/stars.utils';
-import { useEffect, useState } from 'react';
-
-export function isLessThanOneHourAgo(date: Date): boolean {
-    const oneHourInMillis = 60 * 60 * 1000; // Number of milliseconds in one hour
-    const currentTime = new Date().getTime();
-    const inputTime = date.getTime();
-
-    return currentTime - inputTime < oneHourInMillis;
-}
 
 const Header = () => {
     const [stars, setStars] = useState<string | null>(null);
@@ -45,8 +37,7 @@ const Header = () => {
                     localStorage.setItem(cacheKey, formattedStars);
                     localStorage.setItem(`${cacheKey}_time`, new Date().toISOString());
                 } catch (error) {
-                    const fallbackStars = await getFallbackStars();
-                    setStars(fallbackStars);
+                    setStars(null);
                 }
             }
         };
@@ -104,8 +95,8 @@ const Header = () => {
                     <SearchButton />
                     <Button variant="outline" size="lg" asChild className="px-3 py-2 text-base">
                         <Link href={siteMetadata.github} target="_blank">
-                            <GitHub className="mr-2" />
-                            {stars ? stars : 'Loading...'}
+                            <GitHub className={`${stars && 'mr-2'}`} />
+                            {stars && stars}
                         </Link>
                     </Button>
                     <Button variant="default" size="lg" className="bg-vine-100 px-6 py-2 text-base">
