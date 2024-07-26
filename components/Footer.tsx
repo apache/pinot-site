@@ -57,7 +57,7 @@ const links = [
             },
             {
                 label: 'Events',
-                to: 'https://www.apache.org/events/current-event'
+                to: 'https://www.meetup.com/apache-pinot/'
             },
             {
                 label: 'Thanks',
