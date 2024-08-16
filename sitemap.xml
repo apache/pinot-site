@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://pinot.apache.org/</loc>
-<lastmod>2024-07-26</lastmod>
+<lastmod>2024-08-16</lastmod>
 </url>
 <url>
 <loc>https://pinot.apache.org/blog</loc>
-<lastmod>2024-07-26</lastmod>
+<lastmod>2024-08-16</lastmod>
 </url>
 <url>
 <loc>https://pinot.apache.org/blog/2015/05/16/LinkedIn-Scaling</loc>
@@ -195,5 +195,9 @@
 <url>
 <loc>https://pinot.apache.org/blog/2023/09/19/Annoucing-Apache-Pinot-1-0</loc>
 <lastmod>2023-09-19T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://pinot.apache.org/blog/2024/08/07/AWSxPinot</loc>
+<lastmod>2024-08-07T00:00:00.000Z</lastmod>
 </url>
 </urlset>
