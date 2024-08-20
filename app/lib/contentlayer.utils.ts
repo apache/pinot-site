@@ -15,7 +15,7 @@ const generateStandardSlug = (doc: LocalDocument) => {
     return slug;
 };
 
-const generateStandardPath = (doc: LocalDocument) => {
+const geenrateStandardPath = (doc: LocalDocument) => {
     return doc._raw.flattenedPath;
 };
 
@@ -28,4 +28,4 @@ const generateCustomPath = (doc: LocalDocument) => {
     return path;
 };
 
-export { generateCustomSlug, generateStandardSlug, generateStandardPath, generateCustomPath };
+export { generateCustomSlug, generateStandardSlug, geenrateStandardPath, generateCustomPath };
