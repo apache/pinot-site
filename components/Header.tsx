@@ -50,7 +50,7 @@ const Header = () => {
                 buttonText={siteMetadata.announcement.buttonText as string}
                 link={siteMetadata.announcement.link as string}
             >
-                🎉🎉🎉 Announcing the release of Apache Pinot 1.1.0
+                🎉🎉🎉 Announcing the release of Apache Pinot 1.2.0
             </AnnouncementBar>
             <header className="border-b-1 flex items-center justify-between border-b px-5 py-3 md:px-[4rem] md:py-4">
                 <div className="flex">

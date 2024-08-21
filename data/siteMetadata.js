@@ -107,7 +107,7 @@ const siteMetadata = {
     },
     announcement: {
         buttonText: 'learn more',
-        link: 'https://github.com/apache/pinot/releases/tag/release-1.1.0'
+        link: 'https://github.com/apache/pinot/releases/tag/release-1.2.0'
     },
     communityLinks: [
         {
