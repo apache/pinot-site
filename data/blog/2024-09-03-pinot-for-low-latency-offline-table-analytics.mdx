@@ -1,0 +1,24 @@
+---
+title: 'Pinot for Low-Latency Offline Table Analytics'
+date: 2024-09-03
+authors: ['sultana', 'balci', 'uber']
+summary: Apache Pinot™ is a real-time OLAP database capable of ingesting data from streams like Apache Kafka® and offline data sources like Apache Hive™. At Uber, Pinot has proven to be really versatile in handling a wide spectrum of use cases: from real-time use cases with over one million writes per second, 100+ QPS, and <500 ms latency, to use cases which require low-latency analytics on offline data. Pinot tables fall in three broad categories: real-time, offline and hybrid. Real-time tables support ingesting data from streams like Kafka, offline tables allow uploading pre-built “segments” via Pinot Controller’s HTTP APIs, and hybrid tables have both real-time and offline parts. Hybrid tables allow a single logical table (same name and schema) to ingest data from real-time streams as well as batch sources. This article shares how Uber uses Pinot’s offline tables to serve 100+ low-latency analytics use cases spanning all lines of businesses.
+
+tags:
+    [
+        Pinot,
+        Uber,
+        real-time data platform,
+        Realtime,
+        Analytics,
+        User-Facing Analytics,
+        Elasticsearch,
+        Kafka
+    ]
+---
+
+![Pinot for Low-Latency Offline Table Analytics](https://blog.uber-cdn.com/cdn-cgi/image/width=2560,quality=80,onerror=redirect,format=auto/wp-content/uploads/2024/08/cover-photo-17247492663623-scaled.jpg)
+
+Discover how Uber is using Apache Pinot for analysis of offline (batch) data. With 100+ offline table use cases, and 500+ offline tables, Uber uses an Apache Spark connector, which supports gRPC streaming, to fetch data from Pinot into their Hive clusters for an end-to-end streaming architecture.
+
+Read more at [Uber Engineering Blog](https://www.uber.com/en-PT/blog/pinot-for-low-latency/)
