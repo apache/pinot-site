@@ -1,9 +1,8 @@
 import Link from './Link';
-import siteMetadata from '@/data/siteMetadata';
-import SocialIcon from '@/components/social-icons';
 import Logo from '@/data/logo.svg';
 import GitHub from '@/data/github.svg';
-import { Rocket, ArrowRight, GithubIcon, Github, Slack } from 'lucide-react';
+import { Slack } from 'lucide-react';
+import Newsletter from './Newsletter';
 
 // Links to be used in the footer
 const links = [
@@ -107,7 +106,8 @@ export default function Footer() {
                         </div>
                     ))}
                 </div>
-                <div className="mt-4 flex justify-center md:mt-0">
+
+                <div className="mt-4 flex justify-center py-8 md:mt-0">
                     <Link
                         href="https://join.slack.com/t/apache-pinot/shared_invite/zt-5z7pav2f-yYtjZdVA~EDmrGkho87Vzw"
                         className="mr-4"
@@ -119,6 +119,9 @@ export default function Footer() {
                     </Link>
                 </div>
             </div>
+            <div className="flex justify-center md:justify-end">
+                <Newsletter />
+            </div>
             <div className="mt-8 border-t border-neutral-300 pt-4 text-left text-sm text-gray-600">
                 Copyright © {new Date().getFullYear()} The Apache Software Foundation. Apache
                 Pinot, Pinot, Apache, the Apache feather logo, and the Apache Pinot project logo are
@@ -128,14 +131,4 @@ export default function Footer() {
             </div>
         </footer>
     );
-}
-
-{
-    /* <div className="m-auto mt-8 border-t border-neutral-300 py-4 text-center text-sm text-gray-600 md:mt-0 md:text-left">
-    Copyright © {new Date().getFullYear()} The Apache Software Foundation. Apache Pinot, Pinot,
-    Apache, the Apache feather logo, and the Apache Pinot project logo are registered trademarks of
-    The Apache Software Foundation. This page has references to third party software - Presto,
-    PrestoDB, ThirdEye, Trino, TrinoDB, that are not part of the Apache Software Foundation and are
-    not covered under the Apache License.
-</div>; */
 }
