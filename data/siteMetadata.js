@@ -30,7 +30,7 @@ const siteMetadata = {
         getStarted: 'https://docs.pinot.apache.org/basics/getting-started',
         learnMore: 'https://docs.pinot.apache.org/',
         slackInvite:
-            'https://apache-pinot.slack.com/join/shared_invite/zt-5z7pav2f-yYtjZdVA~EDmrGkho87Vzw#/shared-invite/email'
+            'https://join.slack.com/t/apache-pinot/shared_invite/zt-2t4m15dl2-SnVmZenainX_bq1_dY6XYg'
     },
     codeSection: {
         header: 'Start Your Real-Time Analytics Journey.'
@@ -113,7 +113,7 @@ const siteMetadata = {
         {
             name: 'Slack',
             icon: '/static/images/socials/slack.svg',
-            link: 'https://join.slack.com/t/apache-pinot/shared_invite/zt-5z7pav2f-yYtjZdVA~EDmrGkho87Vzw'
+            link: 'https://join.slack.com/t/apache-pinot/shared_invite/zt-2t4m15dl2-SnVmZenainX_bq1_dY6XYg'
         },
         {
             name: 'GitHub',
