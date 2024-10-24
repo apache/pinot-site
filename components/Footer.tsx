@@ -109,7 +109,7 @@ export default function Footer() {
 
                 <div className="mt-4 flex justify-center py-8 md:mt-0">
                     <Link
-                        href="https://join.slack.com/t/apache-pinot/shared_invite/zt-5z7pav2f-yYtjZdVA~EDmrGkho87Vzw"
+                        href="https://join.slack.com/t/apache-pinot/shared_invite/zt-2t4m15dl2-SnVmZenainX_bq1_dY6XYg"
                         className="mr-4"
                     >
                         <Slack size={24} className="fill-gray-900" />
