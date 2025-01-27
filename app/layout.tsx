@@ -68,7 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <head>
                 <meta
                     httpEquiv="Content-Security-Policy"
-                    content="default-src 'self';script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is www.youtube.com www.googletagmanager.com www.google-analytics.com;style-src 'self' 'unsafe-inline';img-src * blob: data:;media-src *.s3.amazonaws.com;connect-src *;font-src 'self';frame-src www.youtube.com youtube.com giscus.app youtu.be https://www.youtube.com https://youtube.com;"
+                    content="default-src 'self';script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is www.youtube.com;style-src 'self' 'unsafe-inline';img-src * blob: data:;media-src *.s3.amazonaws.com;connect-src *;font-src 'self';frame-src www.youtube.com youtube.com giscus.app youtu.be https://www.youtube.com https://youtube.com;"
                 />
                 <link
                     rel="apple-touch-icon"
