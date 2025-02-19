@@ -17,6 +17,25 @@ type DownloadData = {
 
 const downloadData: DownloadData[] = [
     {
+        version: '1.3.0',
+        date: '2/17/2025',
+        href: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.3.0/apache-pinot-1.3.0-bin.tar.gz?action=download',
+        officialSource: {
+            download:
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.3.0/apache-pinot-1.3.0-src.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.3.0/apache-pinot-1.3.0-src.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.3.0/apache-pinot-1.3.0-src.tar.gz.asc?action=download'
+        },
+        binary: {
+            download:
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.3.0/apache-pinot-1.3.0-bin.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.3.0/apache-pinot-1.3.0-bin.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.3.0/apache-pinot-1.3.0-bin.tar.gz.asc?action=download'
+        },
+        releaseNotes:
+            'This release brings significant improvements, including enhancements to the multistage query engine and the introduction of an experimental time series query engine for efficient analysis. Key features include database query quotas, cursor-based pagination for large result sets, multi-stream ingestion, and new function support for URL and GeoJson. Security vulnerabilities and several bug fixes and performance enhancements have been addressed, ensuring a more robust and versatile platform.'
+    },
+    {
         version: '1.1.0',
         date: '3/25/2024',
         href: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.1.0/apache-pinot-1.1.0-bin.tar.gz?action=download',
