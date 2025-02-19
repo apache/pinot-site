@@ -51,8 +51,8 @@ const siteMetadata = {
         //     posthogProjectApiKey: '' // e.g. 123e4567-e89b-12d3-a456-426614174000
         // },
         // googleAnalytics: {
-            // googleAnalyticsId: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS // e.g. G-XXXXXXX
-            // googleAnalyticsId: 'G-ZXG79NJEBY'
+        // googleAnalyticsId: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS // e.g. G-XXXXXXX
+        // googleAnalyticsId: 'G-ZXG79NJEBY'
         // }
     },
     newsletter: {
@@ -107,7 +107,7 @@ const siteMetadata = {
     },
     announcement: {
         buttonText: 'learn more',
-        link: 'https://github.com/apache/pinot/releases/tag/release-1.2.0'
+        link: 'https://github.com/apache/pinot/releases/tag/release-1.3.0'
     },
     communityLinks: [
         {
