@@ -130,6 +130,11 @@ const siteMetadata = {
             icon: '/static/images/socials/rta.svg',
             link: 'https://rtasummit.com',
             isWide: true
+        },
+        {
+            name: 'Meetup in a Box',
+            icon: '/static/images/socials/miab.svg',
+            link: 'https://startree.ai/meetupinabox'
         }
     ],
     shareStory: {
