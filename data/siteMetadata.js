@@ -24,7 +24,12 @@ const siteMetadata = {
     video: {
         videoUrl: 'https://www.youtube.com/embed/_lqdfq2c9cQ',
         title: 'What is Apache Pinot?',
-        description: 'Apache Pinot'
+        description: 'Apache Pinot',
+        heading: 'What is Apache Pinot?',
+        paragraphs: [
+            'Originally developed at LinkedIn, Apache PinotTM is a real-time distributed OLAP datastore, purpose-built to provide ultra low-latency analytics at extremely high throughput.',
+            'With its distributed architecture and columnar storage, Apache Pinot empowers businesses to gain valuable insights from real-time data, supporting data-driven decision-making and applications.'
+        ]
     },
     cta: {
         getStarted: 'https://docs.pinot.apache.org/basics/getting-started',
@@ -109,6 +114,57 @@ const siteMetadata = {
         buttonText: 'learn more',
         link: 'https://github.com/apache/pinot/releases/tag/release-1.3.0'
     },
+    youtubeShare: {
+        heading: 'Share Your Knowledge on Apache Pinot YouTube channel!',
+        buttonText: 'Share your expertise on the new Apache Pinot YouTube Channel!',
+        link: '/share',
+        buttonColor: 'text-white',
+        backgroundColor: 'bg-[#C7154A]',
+        messageColor: 'text-white',
+        ctaText: 'Share your video',
+        ctaHref: '/share/',
+        imageUrl: '/static/images/youtube_hero.png',
+        imageAlt: 'YouTube Hero',
+        paragraphs: [
+            'Apache Pinot OSS YouTube Channel is a dedicated video hub for all things Pinot. Our goal is to bring together meetup talks, tutorials, and real-world use cases in one place, making it easier for the community to learn and share.'
+        ],
+        mainPage: {
+            title: 'Apache Pinot OSS YouTube Channel Share Your Expertise',
+            description: 'Share your video on Apache Pinot OSS YouTube Channel',
+            images: [
+                {
+                    src: '/static/images/share/image1.png',
+                    alt: 'Presenter speaking at meetup 1',
+                    priority: 1
+                },
+                {
+                    src: '/static/images/share/image2.png',
+                    alt: 'Presenter speaking at meetup 2',
+                    priority: 5
+                },
+                {
+                    src: '/static/images/share/image3.png',
+                    alt: 'Slide deck screenshot',
+                    priority: 2
+                },
+                {
+                    src: '/static/images/share/image4.png',
+                    alt: 'Apache Pinot Meetup banner',
+                    priority: 3
+                },
+                {
+                    src: '/static/images/share/image55.png',
+                    alt: 'Presenter with YouTube icon overlay',
+                    priority: 4
+                },
+                {
+                    src: '/static/images/share/image6.png',
+                    alt: 'Another presenter speaking',
+                    priority: 6
+                }
+            ]
+        }
+    },
     communityLinks: [
         {
             name: 'Slack',
@@ -130,11 +186,18 @@ const siteMetadata = {
             icon: '/static/images/socials/rta.svg',
             link: 'https://rtasummit.com',
             isWide: true
+        },
+        {
+            name: 'YouTube',
+            icon: '/static/images/socials/youtube.svg',
+            // link: 'https://www.youtube.com/@Apache_Pinot',
+            link: '/share/',
+            isWide: true
         }
     ],
     shareStory: {
         // link: process.env.SHARE_STORY_LINK
-        link: 'https://forms.gle/75MbXyz7BztNQ78k9'
+        link: '/share/'
     }
 };
 
