@@ -42,9 +42,11 @@ const CommunityBox: React.FC<CommunityBoxProps> = ({ name, icon, link, isWide = 
 // The main section component
 const CommunitySection: React.FC = () => {
     return (
-        <section className="px-6 py-14 md:mx-auto md:max-w-screen-outerLiveArea md:px-[13.5rem] md:py-[6.5rem]">
-            <h3 className="pb-8 text-center text-[2rem] font-bold md:pb-14">Join our Community</h3>
-            <div className="flex flex-wrap justify-center gap-x-[1.375rem] gap-y-6 lg:gap-[6.75rem]">
+        <section className="px-6 py-14 md:mx-auto md:max-w-5xl md:px-[13.5rem] md:py-[6.5rem]">
+            <h3 id="join-community" className="pb-8 text-center text-[2rem] font-bold md:pb-14">
+                Join our Community
+            </h3>
+            <div className="grid w-[21.5rem] grid-cols-2 justify-center gap-6 md:w-full md:grid-cols-3 lg:gap-14">
                 {siteMetadata.communityLinks.map((community: CommunityLink) => (
                     <CommunityBox
                         key={community.name}
