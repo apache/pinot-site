@@ -192,7 +192,8 @@ const siteMetadata = {
             icon: '/static/images/socials/youtube.svg',
             // link: 'https://www.youtube.com/@Apache_Pinot',
             link: '/share/',
-            isWide: true
+            isWide: true,
+            target: '_self'
         },
         {
             name: 'Meetup in a Box',
