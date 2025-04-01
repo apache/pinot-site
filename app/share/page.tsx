@@ -28,7 +28,18 @@ const YouTubeShare = () => {
                 <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3">
                     {displayedImages.map((img, idx) => (
                         <div key={idx}>
-                            <img src={img.src} alt={img.alt} className="h-auto w-full rounded-md" />
+                            <Link
+                                href="https://www.youtube.com/@Apache_Pinot"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="custom-link"
+                            >
+                                <img
+                                    src={img.src}
+                                    alt={img.alt}
+                                    className="h-auto w-full rounded-md"
+                                />
+                            </Link>
                         </div>
                     ))}
                 </div>
@@ -97,12 +108,12 @@ const YouTubeShare = () => {
                     <img src="/static/images/youtube_default.svg" alt="youtube" className="mr-3" />
                     <span className="">
                         <Link
-                            href="https://www.youtube.com/@ApachePinot"
+                            href="https://www.youtube.com/@Apache_Pinot"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="custom-link"
                         >
-                            Apache Pinot OSS YouTube Channel
+                            Subscribe
                         </Link>
                     </span>
                 </div>

@@ -108,7 +108,7 @@ export default function Footer() {
                 </div>
 
                 <div className="mt-4 flex justify-center py-8 md:mt-0">
-                    <Link href="https://www.youtube.com/@ApachePinot" className="mr-4">
+                    <Link href="https://www.youtube.com/@Apache_Pinot" className="mr-4">
                         <Youtube />
                     </Link>
                     <Link
