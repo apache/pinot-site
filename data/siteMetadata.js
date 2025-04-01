@@ -193,6 +193,11 @@ const siteMetadata = {
             // link: 'https://www.youtube.com/@Apache_Pinot',
             link: '/share/',
             isWide: true
+        },
+        {
+            name: 'Meetup in a Box',
+            icon: '/static/images/socials/miab.svg',
+            link: 'https://startree.ai/meetupinabox'
         }
     ],
     shareStory: {
