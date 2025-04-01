@@ -1,10 +1,10 @@
 import Link from './Link';
 import Logo from '@/data/logo.svg';
 import GitHub from '@/data/github.svg';
+import Youtube from '@/data/youtube.svg';
 import { Slack } from 'lucide-react';
 import Newsletter from './Newsletter';
 
-// Links to be used in the footer
 const links = [
     {
         title: 'Resources',
@@ -108,6 +108,9 @@ export default function Footer() {
                 </div>
 
                 <div className="mt-4 flex justify-center py-8 md:mt-0">
+                    <Link href="https://www.youtube.com/@Apache_Pinot" className="mr-4">
+                        <Youtube />
+                    </Link>
                     <Link
                         href="https://join.slack.com/t/apache-pinot/shared_invite/zt-2t4m15dl2-SnVmZenainX_bq1_dY6XYg"
                         className="mr-4"

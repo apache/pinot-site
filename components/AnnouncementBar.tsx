@@ -1,42 +1,64 @@
+import clsx from 'clsx';
+import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import { Button } from './ui/button';
 
-export type AnnouncementBarProps =
-    | {
-          children: React.ReactNode;
-          buttonText: string;
-          link: string;
-      }
-    | {
-          children: React.ReactNode;
-          buttonText?: never;
-          link?: never;
-      };
+export interface AnnouncementBarProps {
+    text: string;
+    iconSrc?: string;
+    textColor?: string;
+    backgroundColor?: string;
+    buttonText?: string;
+    buttonHref?: string;
+    buttonColor?: string;
+    buttonTarget?: string;
+    showArrowIcon?: boolean;
+    className?: string;
+}
 
-const AnnouncementBar = ({ children, buttonText, link }: AnnouncementBarProps) => {
+export default function AnnouncementBar({
+    text,
+    iconSrc,
+    textColor = 'text-black',
+    backgroundColor = 'bg-slate-100',
+    buttonText,
+    buttonHref,
+    buttonColor = 'text-blue-600',
+    buttonTarget = '_self',
+    showArrowIcon = true,
+    className = ''
+}: AnnouncementBarProps) {
     return (
-        <div className="inset-x-0 top-0 z-50 flex text-center text-base sm:text-left">
-            <div className="flex w-full flex-col items-center justify-center bg-sky-200 pt-1 md:flex-row md:pt-0">
-                <div className="flex flex-wrap items-center justify-center md:justify-start">
-                    {children}
-                </div>
-                <div className="flex items-center justify-center">
-                    {buttonText && (
-                        <Button
-                            variant="link"
-                            asChild
-                            className="mr-2 text-base font-semibold leading-tight text-vine-100"
-                        >
-                            <a href={link} target="_blank">
-                                {buttonText}
-                                <ArrowRight className="mr-2 h-5 w-5" />
-                            </a>
-                        </Button>
+        <div className={clsx('z-50', backgroundColor, className)}>
+            <div
+                className={clsx(
+                    'flex items-center justify-center gap-2 p-4 md:gap-4 md:p-2',
+                    className
+                )}
+            >
+                <div className="ml-5 flex items-center text-left">
+                    {iconSrc && (
+                        <img
+                            src={iconSrc}
+                            alt=""
+                            className="mb-2 mr-3 h-6 w-auto md:mb-0 md:mr-6"
+                        />
                     )}
+                    <span className={`text-base font-semibold md:text-lg ${textColor}`}>
+                        {text}
+                    </span>
                 </div>
+
+                {buttonHref && (
+                    <Link
+                        href={buttonHref}
+                        target={buttonTarget}
+                        className={`inline-flex items-center whitespace-nowrap text-base font-semibold hover:opacity-80 md:text-base ${buttonColor}`}
+                    >
+                        {buttonText}
+                        {showArrowIcon && <ArrowRight className="ml-1 inline-block h-5 w-5" />}
+                    </Link>
+                )}
             </div>
         </div>
     );
-};
-
-export default AnnouncementBar;
+}

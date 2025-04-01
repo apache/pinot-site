@@ -5,7 +5,7 @@ import { CoreContent } from 'pliny/utils/contentlayer';
 import { Blog } from '@/.contentlayer/generated';
 import siteMetadata from '@/data/siteMetadata';
 import HeroSection from '@/components/HeroSection';
-import TextVideoSplitSection from '@/components/TextVideoSplitSection';
+import TextMediaSplitSection from '@/components/TextMediaSplitSection';
 import SectionContainer from '@/components/SectionContainer';
 import Features from '@/components/Features';
 import CompanyStories from '@/components/CompanyCarousel';
@@ -19,18 +19,31 @@ interface HomeProps {
 
 const Home: FC<HomeProps> = ({ posts }) => {
     return (
-        <div>
+        <>
             <HeroSection />
-            <TextVideoSplitSection
+            <TextMediaSplitSection
                 videoUrl={siteMetadata.video.videoUrl}
-                title={siteMetadata.video.title}
+                videoTitle={siteMetadata.video.title}
+                heading={siteMetadata.video.heading}
+                paragraphs={siteMetadata.video.paragraphs}
+                ctaText="Learn More"
+                ctaHref={siteMetadata.cta.learnMore}
             />
             <Features />
             <CompanyStories />
             <CommunitySection />
             <TextCodeSplitSection title={siteMetadata.codeSection.header} />
             <BlogSection posts={posts} />
-        </div>
+            <TextMediaSplitSection
+                heading={siteMetadata.youtubeShare.heading}
+                paragraphs={siteMetadata.youtubeShare.paragraphs}
+                ctaText={siteMetadata.youtubeShare.ctaText}
+                ctaHref={siteMetadata.youtubeShare.link}
+                imageUrl={siteMetadata.youtubeShare.imageUrl}
+                imageAlt={siteMetadata.youtubeShare.imageAlt}
+                target="_self"
+            />
+        </>
     );
 };
 

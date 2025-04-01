@@ -27,12 +27,12 @@ const PoweredBy = () => {
             </h3>
             <CompanyTable companies={companiesUsingPinot} />
             <footer className="mx-5 my-14 bg-green-50 py-12 text-center md:mx-28 md:my-24">
-                <h3 className="mb-6 px-16 text-2xl font-semibold md:mb-8">
-                    Share your Apache Pinot story.
+                <h3 className="mb-6 px-9 text-2xl font-semibold md:mb-8">
+                    Feature your Pinot video on Apache Pinot OSS YouTube Channel!
                 </h3>
                 <Button variant="default" size="lg" className="bg-vine-100 px-6 py-2 text-base">
-                    <Link href={siteMetadata.shareStory.link} target="_blank">
-                        Share Now
+                    <Link href={siteMetadata.shareStory.link} target="_self">
+                        Share your video
                     </Link>
                 </Button>
             </footer>
@@ -41,3 +41,5 @@ const PoweredBy = () => {
 };
 
 export default PoweredBy;
+
+// test

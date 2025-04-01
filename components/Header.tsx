@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter, usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import Link from './Link';
 import siteMetadata from '@/data/siteMetadata';
 import headerNavLinks from '@/data/headerNavLinks';
@@ -12,12 +12,13 @@ import { Button } from '@/components/ui/button';
 import MobileNav from './MobileNav';
 // import ThemeSwitch from './ThemeSwitch';
 import SearchButton from './SearchButton';
-import AnnouncementBar from './AnnouncementBar';
+import YouTubeBanner from './YouTubeBanner';
 
 const Header = () => {
     const [stars, setStars] = useState<string | null>(null);
-    // const router = useRouter();
     const pathname = usePathname();
+
+    const isSharePage = pathname === '/share/';
 
     useEffect(() => {
         const fetchStars = async () => {
@@ -46,12 +47,8 @@ const Header = () => {
 
     return (
         <>
-            <AnnouncementBar
-                buttonText={siteMetadata.announcement.buttonText as string}
-                link={siteMetadata.announcement.link as string}
-            >
-                🎉🎉🎉 Announcing the release of Apache Pinot 1.3.0
-            </AnnouncementBar>
+            {/* <ReleaseBanner /> */}
+            {!isSharePage && <YouTubeBanner />}
             <header className="border-b-1 flex items-center justify-between border-b px-5 py-3 md:px-[4rem] md:py-4">
                 <div className="flex">
                     <Link href="/" aria-label={siteMetadata.headerTitle}>
