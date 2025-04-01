@@ -4,7 +4,7 @@ const headerNavLinks = [
     { href: '/download/', title: 'Download' },
     { href: '/powered-by/', title: 'Powered by' },
     { href: '/blog/', title: 'Blog' },
-    { href: '#join-community', title: 'Community' }
+    { href: '/#join-community', title: 'Community' }
 ];
 
 export default headerNavLinks;

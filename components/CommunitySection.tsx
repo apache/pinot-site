@@ -6,6 +6,7 @@ type CommunityBoxProps = {
     icon: string;
     link: string;
     isWide?: boolean;
+    target?: string;
 };
 
 type CommunityLink = {
@@ -13,17 +14,23 @@ type CommunityLink = {
     icon: string;
     link: string;
     isWide?: boolean;
+    target?: string;
 };
 
-// Create a single box component
-const CommunityBox: React.FC<CommunityBoxProps> = ({ name, icon, link, isWide = false }) => {
+const CommunityBox: React.FC<CommunityBoxProps> = ({
+    name,
+    icon,
+    link,
+    isWide = false,
+    target = '_blank'
+}) => {
     const iconContainerClass = isWide ? 'w-auto h-16 flex' : 'w-16 h-16 flex';
 
     return (
         <a
             href={link}
             className="flex h-36 w-40 flex-col items-center justify-center rounded-lg border-2 border-amber-800 transition-colors hover:bg-gray-100 focus:bg-gray-100 dark:border-gray-800 dark:hover:bg-gray-800 dark:focus:bg-gray-800"
-            target="_blank"
+            target={target}
         >
             <div className={`${iconContainerClass} relative mb-2 items-center justify-center`}>
                 <Image
@@ -39,7 +46,6 @@ const CommunityBox: React.FC<CommunityBoxProps> = ({ name, icon, link, isWide = 
     );
 };
 
-// The main section component
 const CommunitySection: React.FC = () => {
     return (
         <section className="px-6 py-14 md:mx-auto md:max-w-5xl md:px-[13.5rem] md:py-[6.5rem]">
@@ -54,6 +60,7 @@ const CommunitySection: React.FC = () => {
                         icon={community.icon}
                         link={community.link}
                         isWide={community.isWide}
+                        target={community.target ? community.target : '_blank'}
                     />
                 ))}
             </div>
