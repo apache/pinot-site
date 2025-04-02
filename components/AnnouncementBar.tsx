@@ -30,16 +30,16 @@ export default function AnnouncementBar({
 }: AnnouncementBarProps) {
     return (
         <div className={clsx('z-50', backgroundColor, className)}>
-            <Link
-                href={buttonHref ? buttonHref : '#'}
-                target={buttonTarget}
-                className={`inline-flex items-center whitespace-nowrap text-base font-semibold hover:opacity-80 md:text-base ${buttonColor}`}
+            <div
+                className={clsx(
+                    'flex items-center justify-center gap-2 p-4 md:gap-4 md:p-2',
+                    className
+                )}
             >
-                <div
-                    className={clsx(
-                        'flex items-center justify-center gap-2 p-4 md:gap-4 md:p-2',
-                        className
-                    )}
+                <Link
+                    href={buttonHref || '#'}
+                    target={buttonTarget}
+                    className={`inline-flex items-center whitespace-nowrap text-base font-semibold hover:opacity-80 md:text-base ${buttonColor}`}
                 >
                     <div className="ml-5 flex items-center text-left">
                         {iconSrc && (
@@ -53,13 +53,10 @@ export default function AnnouncementBar({
                             {text}
                         </span>
                     </div>
-
-                    <>
-                        {buttonText}
-                        {showArrowIcon && <ArrowRight className="ml-1 inline-block h-5 w-5" />}
-                    </>
-                </div>
-            </Link>
+                    {buttonText}
+                    {showArrowIcon && <ArrowRight className="ml-1 inline-block h-5 w-5" />}
+                </Link>
+            </div>
         </div>
     );
 }
