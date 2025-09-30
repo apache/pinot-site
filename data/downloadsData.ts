@@ -17,6 +17,25 @@ type DownloadData = {
 
 const downloadData: DownloadData[] = [
     {
+        version: '1.4.0',
+        date: '9/30/2025',
+        href: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.4.0/apache-pinot-1.4.0-bin.tar.gz?action=download',
+        officialSource: {
+            download:
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.4.0/apache-pinot-1.4.0-src.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.4.0/apache-pinot-1.4.0-src.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.4.0/apache-pinot-1.4.0-src.tar.gz.asc?action=download'
+        },
+        binary: {
+            download:
+                'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.4.0/apache-pinot-1.4.0-bin.tar.gz?action=download',
+            sha512: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.4.0/apache-pinot-1.4.0-bin.tar.gz.sha512?action=download',
+            asc: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.4.0/apache-pinot-1.4.0-bin.tar.gz.asc?action=download'
+        },
+        releaseNotes:
+            'This release delivers significant improvements to the Multistage Engine, Pauseless Consumption, Time Series Engine, Logical Table support, Upsert and Deduplication Enhancement, Minion Jobs (including smallSegmentMerger), and Rebalancing capabilities. It also includes numerous smaller features and general bug fixes.'
+    },
+    {
         version: '1.3.0',
         date: '2/17/2025',
         href: 'https://www.apache.org/dyn/closer.lua/pinot/apache-pinot-1.3.0/apache-pinot-1.3.0-bin.tar.gz?action=download',
