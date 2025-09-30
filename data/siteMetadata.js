@@ -112,7 +112,7 @@ const siteMetadata = {
     },
     announcement: {
         buttonText: 'learn more',
-        link: 'https://github.com/apache/pinot/releases/tag/release-1.3.0'
+        link: 'https://github.com/apache/pinot/releases/tag/release-1.4.0'
     },
     youtubeShare: {
         heading: 'Share Your Knowledge on Apache Pinot YouTube channel!',
