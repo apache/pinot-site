@@ -55,10 +55,10 @@ const siteMetadata = {
         // posthogAnalytics: {
         //     posthogProjectApiKey: '' // e.g. 123e4567-e89b-12d3-a456-426614174000
         // },
-        // googleAnalytics: {
-        // googleAnalyticsId: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS // e.g. G-XXXXXXX
-        // googleAnalyticsId: 'G-ZXG79NJEBY'
-        // }
+        googleAnalytics: {
+            // googleAnalyticsId: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS // e.g. G-XXXXXXX
+            googleAnalyticsId: 'G-ZXG79NJEBY'
+        }
     },
     newsletter: {
         // It supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
