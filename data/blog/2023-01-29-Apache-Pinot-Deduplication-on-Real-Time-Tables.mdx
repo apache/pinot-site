@@ -68,7 +68,7 @@ services:
         networks:
             - dedup_blog
     pinot-controller:
-        image: apachepinot/pinot:0.11.0-arm64
+        image: apachepinot.docker.scarf.sh/apachepinot/pinot:0.11.0-arm64
         command: 'QuickStart -type EMPTY'
         container_name: 'pinot-controller-dedup-blog'
         volumes:
@@ -226,7 +226,7 @@ Let’s create the table using the following command:
 docker run \
    --network dedup_blog \
    -v $PWD/pinot/config:/config \
-   apachepinot/pinot:0.11.0-arm64 AddTable \
+   apachepinot.docker.scarf.sh/apachepinot/pinot:0.11.0-arm64 AddTable \
      -schemaFile /config/schema.json \
      -tableConfigFile /config/table.json \
      -controllerHost "pinot-controller-dedup-blog" \
@@ -318,7 +318,7 @@ The changes to notice here are:
     docker run \
     --network dedup_blog \
     -v $PWD/pinot/config:/config \
-    apachepinot/pinot:0.11.0-arm64 AddTable \
+    apachepinot.docker.scarf.sh/apachepinot/pinot:0.11.0-arm64 AddTable \
         -schemaFile /config/schema-dedup.json \
         -tableConfigFile /config/table-dedup.json \
         -controllerHost "pinot-controller-dedup-blog" \

@@ -20,7 +20,7 @@ We’re going to spin up the Batch [QuickStart](https://docs.pinot.apache.org/ba
 docker run \
   -p 8000:8000 \
   -p 9000:9000 \
-  apachepinot/pinot:0.11.0 \
+  apachepinot.docker.scarf.sh/apachepinot/pinot:0.11.0 \
   QuickStart -type BATCH
 ```
 
@@ -30,7 +30,7 @@ Or if you’re on a Mac M1, change the name of the image to have the arm-64 suff
 docker run \
   -p 8000:8000 \
   -p 9000:9000 \
-  apachepinot/pinot:0.11.0-arm64 \
+  apachepinot.docker.scarf.sh/apachepinot/pinot:0.11.0-arm64 \
   QuickStart -type BATCH
 ```
 

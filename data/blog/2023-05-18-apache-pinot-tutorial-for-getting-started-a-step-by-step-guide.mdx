@@ -58,13 +58,13 @@ Now, let’s download the Docker image. On a Windows machine, start a new PowerS
 Use the following command to get (pull) the image we are looking for:
 
 ```bash
-docker pull apachepinot/pinot:0.12.0
+docker pull apachepinot.docker.scarf.sh/apachepinot/pinot:0.12.0
 ```
 
 You can also download the latest version like so:
 
 ```bash
-docker pull apachepinot/pinot:latest
+docker pull apachepinot.docker.scarf.sh/apachepinot/pinot:latest
 ```
 
 Here, apachepinot is the name of the repository in Docker Hub, pinot is the name of the image, and :latest or :0.12.0 is the version for the image.  Note that we will be using the 0.12.0 version for this blog post.
@@ -86,12 +86,12 @@ It should show you the image like so:
 Let’s run a container using the Docker image that we downloaded:
 
 ```bash
-docker run -it --entrypoint /bin/bash -p 9000:9000 apachepinot/pinot:0.12.0
+docker run -it --entrypoint /bin/bash -p 9000:9000 apachepinot.docker.scarf.sh/apachepinot/pinot:0.12.0
 ```
 
 ![Running a container with downloaded Docker image](https://www.datocms-assets.com/75153/1684420103-image4.png 'Running a container with downloaded Docker image')
 
-The docker run command runs the image. The \-p 9000:00 option maps the docker container port 9000 to the local machine port 9000. This allows us to access the Pinot UI, which defaults to port 9000 to be accessible from the localhost. We are using the –entrypoint to override the default entrypoint and replace it with Bash. We want to override the default behavior so that we can start each component one at a time. The next parameter apachepinot/pinot:0.12.0 is the Docker image we pulled above.
+The docker run command runs the image. The \-p 9000:00 option maps the docker container port 9000 to the local machine port 9000. This allows us to access the Pinot UI, which defaults to port 9000 to be accessible from the localhost. We are using the –entrypoint to override the default entrypoint and replace it with Bash. We want to override the default behavior so that we can start each component one at a time. The next parameter apachepinot.docker.scarf.sh/apachepinot/pinot:0.12.0 is the Docker image we pulled above.
 
 After running the command, we’ll find ourselves in the Docker container instance running Bash shell. We can use ls to list the contents of the Docker container as shown above.
 
@@ -99,7 +99,7 @@ If you’re using VS Code, with the Docker extension installed, you can click on
 
 ![VS Code Docker extension open to see container and content](https://www.datocms-assets.com/75153/1684421493-image11.png 'VS Code Docker extension open to see container and content')
 
-Click on the Docker icon in the left menu, and apachepinot/pinot:0.12.0. This should take a few seconds to connect to the running container. Now, you can navigate to the files and see what we have under the opt folder.
+Click on the Docker icon in the left menu, and apachepinot.docker.scarf.sh/apachepinot/pinot:0.12.0. This should take a few seconds to connect to the running container. Now, you can navigate to the files and see what we have under the opt folder.
 
 ### Step 4:
 

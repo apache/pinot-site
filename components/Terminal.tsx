@@ -9,12 +9,12 @@ const Terminal: FC = () => {
     const commands = {
         x86: [
             'docker run -p 9000:9000 \\',
-            'apachepinot/pinot:1.4.0 \\',
+            'apachepinot.docker.scarf.sh/apachepinot/pinot:1.4.0 \\',
             'QuickStart -type hybrid'
         ],
         ARM64: [
             'docker run -p 9000:9000 \\',
-            'apachepinot/pinot:1.4.0-arm64 \\',
+            'apachepinot.docker.scarf.sh/apachepinot/pinot:1.4.0-arm64 \\',
             'QuickStart -type hybrid'
         ]
     };

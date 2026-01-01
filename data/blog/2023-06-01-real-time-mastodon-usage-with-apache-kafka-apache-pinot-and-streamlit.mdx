@@ -178,7 +178,7 @@ We can create the Pinot table by running the following command:
 docker run \
    --network mastodon \
    -v $PWD/pinot:/config \
-   apachepinot/pinot:0.12.0-arm64 AddTable \
+   apachepinot.docker.scarf.sh/apachepinot/pinot:0.12.0-arm64 AddTable \
      -schemaFile /config/schema.json \
      -tableConfigFile /config/table.json \
      -controllerHost "pinot-controller" \

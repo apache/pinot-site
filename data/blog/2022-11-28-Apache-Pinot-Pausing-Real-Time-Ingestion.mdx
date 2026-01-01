@@ -173,7 +173,7 @@ If we create the table using the following command:
 docker run \
    --network  pause-resume \
    -v $PWD/pinot/config:/config \
-   apachepinot/pinot:0.11.0-arm64 AddTable \
+   apachepinot.docker.scarf.sh/apachepinot/pinot:0.11.0-arm64 AddTable \
      -schemaFile /config/schema.json \
      -tableConfigFile /config/table.json \
      -controllerHost pinot-controller-pause-resume \

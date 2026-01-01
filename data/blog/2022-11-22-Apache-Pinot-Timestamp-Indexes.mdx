@@ -36,7 +36,7 @@ docker run \
   -p 9000:9000 \
  --name pinot-timestamp-blog \
   --network timestamp_blog \
-  apachepinot/pinot:0.11.0 \
+  apachepinot.docker.scarf.sh/apachepinot/pinot:0.11.0 \
   QuickStart -type EMPTY
 ```
 
@@ -48,7 +48,7 @@ docker run \
   -p 9000:9000 \
     --network timestamp_blog \
  --name pinot-timestamp-blog \
-  apachepinot/pinot:0.11.0-arm64 \
+  apachepinot.docker.scarf.sh/apachepinot/pinot:0.11.0-arm64 \
   QuickStart -type EMPTY
 ```
 
@@ -70,7 +70,7 @@ We’re going to create a schema and table named crimes by running the following
 docker run \
    --network timestamp_blog \
    -v $PWD/config:/config \
-   apachepinot/pinot:0.11.0-arm64 AddTable \
+   apachepinot.docker.scarf.sh/apachepinot/pinot:0.11.0-arm64 AddTable \
      -schemaFile /config/schema.json \
      -tableConfigFile /config/table.json \
      -controllerHost pinot-timestamp-blog \
@@ -97,7 +97,7 @@ docker run \
    --network timestamp_blog \
    -v $PWD/config:/config \
    -v $PWD/data:/data \
-   apachepinot/pinot:0.11.0-arm64 LaunchDataIngestionJob \
+   apachepinot.docker.scarf.sh/apachepinot/pinot:0.11.0-arm64 LaunchDataIngestionJob \
     -jobSpecFile /config/job-spec.yml \
      -values controllerHost=pinot-timestamp-blog
 ```
@@ -164,7 +164,7 @@ We can create the schema and table by running the following command:
 docker run \
    --network timestamp_blog \
    -v $PWD/config:/config \
-   apachepinot/pinot:0.11.0-arm64 AddTable \
+   apachepinot.docker.scarf.sh/apachepinot/pinot:0.11.0-arm64 AddTable \
      -schemaFile /config/schema-index.json \
      -tableConfigFile /config/table-index.json \
      -controllerHost pinot-timestamp-blog \
@@ -178,7 +178,7 @@ docker run \
    --network timestamp_blog \
    -v $PWD/config:/config \
    -v $PWD/data:/data \
-   apachepinot/pinot:0.11.0-arm64 LaunchDataIngestionJob \
+   apachepinot.docker.scarf.sh/apachepinot/pinot:0.11.0-arm64 LaunchDataIngestionJob \
     -jobSpecFile /config/job-spec-download.yml \
      -values controllerHost=pinot-timestamp-blog
 ```

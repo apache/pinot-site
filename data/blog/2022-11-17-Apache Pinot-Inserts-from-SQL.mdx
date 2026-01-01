@@ -65,7 +65,7 @@ docker run \
   -v $PWD/config:/config \
   -e AWS_ACCESS_KEY_ID=AKIARCOCT6DWLUB7F77Z \
   -e AWS_SECRET_ACCESS_KEY=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 \
-  apachepinot/pinot:0.11.0 LaunchDataIngestionJob \
+  apachepinot.docker.scarf.sh/apachepinot/pinot:0.11.0 LaunchDataIngestionJob \
   -jobSpecFile /config/job-spec.yml \
   -values PINOT_CONTROLLER=pinot-controller
 ```
