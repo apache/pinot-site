@@ -76,6 +76,7 @@ module.exports = () => {
                 }
             ]
         },
+        // Headers are set via vercel.json for static export deployments.
         // async headers() {
         //     return [
         //         {
