@@ -68,7 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <head>
                 <meta
                     httpEquiv="Content-Security-Policy"
-                    content="default-src 'self';script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is www.youtube.com;style-src 'self' 'unsafe-inline';img-src * blob: data:;media-src *.s3.amazonaws.com;connect-src *;font-src 'self';frame-src www.youtube.com youtube.com giscus.app youtu.be https://www.youtube.com https://youtube.com;"
+                    content="default-src 'self';script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is analytics.apache.org www.youtube.com;style-src 'self' 'unsafe-inline';img-src * blob: data:;media-src *.s3.amazonaws.com;connect-src *;font-src 'self';frame-src www.youtube.com youtube.com giscus.app youtu.be https://www.youtube.com https://youtube.com;"
                 />
                 <link
                     rel="apple-touch-icon"
@@ -97,6 +97,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
                 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
                 <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+                {/* Matomo */}
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `var _paq = window._paq = window._paq || [];
+/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+_paq.push(["setDoNotTrack", true]);
+_paq.push(["disableCookies"]);
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+  var u="https://analytics.apache.org/";
+  _paq.push(['setTrackerUrl', u+'matomo.php']);
+  _paq.push(['setSiteId', '88']);
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+})();`
+                    }}
+                />
+                {/* End Matomo Code */}
             </head>
             <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
                 <ThemeProviders>
