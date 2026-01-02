@@ -13,7 +13,7 @@
         "check": "npx prettier --check .",
         "format": "npx prettier --write .",
         "postinstall": "husky install",
-        "test": "echo \"Error: No test set up\""
+        "test": "node --test tests/matomo.test.cjs"
     },
     "dependencies": {
         "@next/bundle-analyzer": "14.0.3",
