@@ -1,19 +1,23 @@
 import 'css/tailwind.css';
 import 'pliny/search/algolia.css';
 
-import { Work_Sans } from 'next/font/google';
+import localFont from 'next/font/local';
 import { Analytics, AnalyticsConfig } from 'pliny/analytics';
 import { SearchProvider, SearchConfig } from 'pliny/search';
 import Header from '@/components/Header';
-import SectionContainer from '@/components/SectionContainer';
 import Footer from '@/components/Footer';
 import siteMetadata from '@/data/siteMetadata';
 import { ThemeProviders } from './theme-providers';
 import { Metadata } from 'next';
-import Head from 'next/head';
 
-const work_sans = Work_Sans({
-    subsets: ['latin'],
+const work_sans = localFont({
+    src: [
+        {
+            path: '../public/static/fonts/WorkSans-Variable.woff2',
+            weight: '100 900',
+            style: 'normal'
+        }
+    ],
     display: 'swap',
     variable: '--custom-font-work-sans'
 });
@@ -66,10 +70,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             suppressHydrationWarning
         >
             <head>
-                <meta
-                    httpEquiv="Content-Security-Policy"
-                    content="default-src 'self';script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is analytics.apache.org www.youtube.com;script-src-elem 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is analytics.apache.org www.youtube.com;style-src 'self' 'unsafe-inline';img-src * blob: data:;media-src *.s3.amazonaws.com;connect-src *;font-src 'self';frame-src www.youtube.com youtube.com giscus.app youtu.be https://www.youtube.com https://youtube.com;"
-                />
                 <link
                     rel="apple-touch-icon"
                     sizes="76x76"

@@ -235,6 +235,17 @@ Husky runs ESLint and Prettier on staged files before commits.
 -   Static export (Next.js static site generation)
 -   Build process includes post-build scripts for optimization
 
+### Apache Configuration (.htaccess)
+
+-   The `.htaccess` file is located on the `new-static-prod` branch
+-   This file configures Content-Security-Policy (CSP) headers for the Apache-hosted website
+-   **IMPORTANT**: When modifying CSP permissions, follow the [Apache Infrastructure CSP builder guidelines](https://infra.apache.org/tools/csp.html)
+-   Key requirements:
+    -   All additional domains/URLs must be pre-approved by VP Data Privacy (privacy@apache.org)
+    -   Include a comment explaining why the CSP is changed and where permission was obtained
+    -   Use the format: `SetEnv CSP_PROJECT_DOMAINS "host1 host2 host3"`
+    -   **DO NOT EDIT CSP HEADERS WITHOUT ASKING FIRST** - contact users@infra.apache.org for assistance
+
 ## Common Patterns
 
 ### Data Fetching
