@@ -1,12 +1,2 @@
-<IfModule mod_headers.c>
-    Header unset Content-Security-Policy
-    Header always set Content-Security-Policy "default-src 'self'; \
-script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is analytics.apache.org www.youtube.com; \
-script-src-elem 'self' 'unsafe-eval' 'unsafe-inline' giscus.app analytics.umami.is analytics.apache.org www.youtube.com; \
-style-src 'self' 'unsafe-inline'; \
-img-src * blob: data:; \
-media-src *.s3.amazonaws.com; \
-connect-src *; \
-font-src 'self'; \
-frame-src www.youtube.com youtube.com giscus.app youtu.be;"
-</IfModule>
+# CSP permissions for pinot.apache.org - Matomo analytics. Approved by VP Data Privacy.
+SetEnv CSP_PROJECT_DOMAINS "https://analytics.apache.org/"
