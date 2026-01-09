@@ -1,1 +1,4 @@
 ErrorDocument 404 /404.html
+
+# CSP update: allow YouTube no-cookie embeds and GitHub API fetches
+SetEnv CSP_PROJECT_DOMAINS "www.youtube-nocookie.com youtube-nocookie.com api.github.com"
