@@ -4,6 +4,7 @@ import React from 'react';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import VideoEmbed from './VideoEmbed';
 
 interface TextMediaSplitSectionProps {
     heading: string;
@@ -59,13 +60,12 @@ const TextMediaSplitSection: React.FC<TextMediaSplitSectionProps> = ({
                 </article>
                 <aside className="flex-1">
                     {videoUrl ? (
-                        <iframe
-                            className="h-[197px] w-full md:h-full"
+                        <VideoEmbed
                             src={videoUrl}
                             title={videoTitle}
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
+                            className="h-[197px] w-full md:h-full"
+                            aspectRatioClassName=""
+                        />
                     ) : imageUrl ? (
                         <img src={imageUrl} alt={imageAlt} />
                     ) : null}
