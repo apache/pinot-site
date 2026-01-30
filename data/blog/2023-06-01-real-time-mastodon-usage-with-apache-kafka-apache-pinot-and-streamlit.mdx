@@ -39,7 +39,7 @@ To start, Simon wrote a listener to collect the messages, which he then publishe
 
 Finally, he queried those Parquet files using DuckDB and created some charts using the Seaborn library, as reflected in the architecture diagram below:
 
-![Flowchart of data collection to data processing](https://www.datocms-assets.com/75153/1685637607-image1.png 'Flowchart of data collection to data processing')
+![Flowchart of data collection to data processing](https://startree.ai/wp-content/uploads/2024/08/1685637607-image1.png 'Flowchart of data collection to data processing')
 
 Fig: [Data Collection Architecture](https://simonaubury.com/posts/202302_mastodon_duckdb/)
 
@@ -49,7 +49,7 @@ The awesome visualizations that Simon created make me wonder whether we can chan
 
 Now [Apache Pinot](https://startree.ai/resources/what-is-apache-pinot) comes into the picture. Instead of using Kafka Connect to batch Mastodon toots into groups of 1,000 messages to generate Parquet files, we can stream the data immediately and directly, toot-by-toot into Pinot and then build a real-time dashboard using Streamlit:
 
-![Data collection in Mastodon, followed by processing in Apache Kafka, Apache Pinot, and Streamlit](https://www.datocms-assets.com/75153/1685637507-image4.png 'Data collection in Mastodon, followed by processing in Apache Kafka, Apache Pinot, and Streamlit')
+![Data collection in Mastodon, followed by processing in Apache Kafka, Apache Pinot, and Streamlit](https://startree.ai/wp-content/uploads/2024/08/1685637507-image4.png 'Data collection in Mastodon, followed by processing in Apache Kafka, Apache Pinot, and Streamlit')
 
 ## Setup
 
@@ -191,7 +191,7 @@ We can then navigate to the table page of the Pinot UI:
 
 Here, we’ll see the following:
 
-![Apache Pinot table config and schema](https://www.datocms-assets.com/75153/1685637837-image6.png 'Apache Pinot table config and schema')
+![Apache Pinot table config and schema](https://startree.ai/wp-content/uploads/2024/08/1685637837-image6.png 'Apache Pinot table config and schema')
 
 ## Ingest Data into Kafka
 
@@ -221,7 +221,7 @@ Now, let’s go to the Pinot UI to see what data we’ve got to play with:
 
 We’ll see the following preview of the data in the mastodon table:
 
-![SQL Editor, query response stats, and query result in Apache Pinot](https://www.datocms-assets.com/75153/1685637772-image5.png 'SQL Editor, query response stats, and query result in Apache Pinot')
+![SQL Editor, query response stats, and query result in Apache Pinot](https://startree.ai/wp-content/uploads/2024/08/1685637772-image5.png 'SQL Editor, query response stats, and query result in Apache Pinot')
 
 We can then write a query to find the number of messages posted in the last five minutes:
 
@@ -234,7 +234,7 @@ where created_at*1000 > ago('PT1M')
 order by 1 DESC;
 ```
 
-![Query results for toots, users, and urls](https://www.datocms-assets.com/75153/1685637909-image8.png 'Query results for toots, users, and urls')
+![Query results for toots, users, and urls](https://startree.ai/wp-content/uploads/2024/08/1685637909-image8.png 'Query results for toots, users, and urls')
 
 We can also query Pinot via the Python client, which we can install by running the following:
 
@@ -283,19 +283,19 @@ I’ve created a Streamlit app in the file [app.py](https://github.com/mneedham/
 
 First, we’ll create metrics to show the number of toots, users, and URLs in the last _n_ minutes. _n_ will be configurable from the app as shown in the screenshot below:
 
-![Chart of real-time Mastodon usage](https://www.datocms-assets.com/75153/1685637876-image7.png 'Chart of real-time Mastodon usage')
+![Chart of real-time Mastodon usage](https://startree.ai/wp-content/uploads/2024/08/1685637876-image7.png 'Chart of real-time Mastodon usage')
 
 From the screenshot, we can identify mastodon.cloud as the most active server, though it produces only 1,800 messages in 10 minutes or three messages per second. The values in green indicate the change in values compared to the previous 10 minutes.
 
 We can also create a chart showing the number of messages per minute for the last 10 minutes:
 
-![Time of day Mastodon usage](https://www.datocms-assets.com/75153/1685637945-image9.png 'Time of day Mastodon usage')
+![Time of day Mastodon usage](https://startree.ai/wp-content/uploads/2024/08/1685637945-image9.png 'Time of day Mastodon usage')
 
 Based on this chart, we can see that we’re creating anywhere from 200–900 messages per second. Part of the reason lies in the fact that the Mastodon servers sometimes disconnect our listener, and at the moment, I have to manually reconnect.
 
 Finally, we can look at the toot length by language:
 
-![Chart of toot length by language usage](https://www.datocms-assets.com/75153/1685637644-image2.png 'Chart of toot length by language usage')
+![Chart of toot length by language usage](https://startree.ai/wp-content/uploads/2024/08/1685637644-image2.png 'Chart of toot length by language usage')
 
 We see much bigger ranges here than Simon saw in his analysis. He saw a maximum length of 200 characters, whereas we see some messages of up to 4,200 characters.
 

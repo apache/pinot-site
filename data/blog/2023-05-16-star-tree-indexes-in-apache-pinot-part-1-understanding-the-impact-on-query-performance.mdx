@@ -16,31 +16,31 @@ _Star-Tree Index: Pinot’s Intelligent Materialized View:_
 
 _The star-tree index provides an intelligent way to build materialized views within Pinot. Traditional MVs work by fully materializing the computation for each source record that matches the specified predicates. Although useful, this can result in non-trivial storage overhead. On the other hand, the star-tree index allows us to partially materialize the computations and provide the ability to tune the space-time tradeoff by providing a configurable threshold between pre-aggregation and data scans._
 
-![](https://www.datocms-assets.com/75153/1684246698-image5.png)
+![](https://startree.ai/wp-content/uploads/2024/08/1684246698-image5.png)
 
 In this three-part blog series, we will compare and contrast query performance of a star-tree index with an inverted index, something that most of the OLAP databases end up using for such queries.
 
 In this first part, we will showcase how a star-tree index brought down standalone query latency on a sizable dataset of ~633M records from 1,513ms to 4ms! — nearly 380x faster.
 
-![](https://www.datocms-assets.com/75153/1684246806-image7.png)
+![](https://startree.ai/wp-content/uploads/2024/08/1684246806-image7.png)
 
 ## 1\. The Dataset:
 
 We used New York City Taxi Data for this comparison. Original source: [here](https://www.kaggle.com/c/nyc-taxi-trip-duration). Below are the high level details about this dataset.
 
-![](https://www.datocms-assets.com/75153/1684246816-image6.png)
+![](https://startree.ai/wp-content/uploads/2024/08/1684246816-image6.png)
 
 ### Schema:
 
 The dataset has 8 dimension fields and 11 metric columns as listed below.
 
-![](https://www.datocms-assets.com/75153/1684246732-image2.png)
+![](https://startree.ai/wp-content/uploads/2024/08/1684246732-image2.png)
 
 ## 2\. Query Pattern
 
 The query pattern involved slicing and dicing the data (GROUPING) BY various dimensions (Date, Month and Year), aggregating different metrics (total trips, distance and passengers count) and FILTERING BY a time range that could go as wide as 1 year.
 
-![](https://www.datocms-assets.com/75153/1684246872-image10.png)
+![](https://startree.ai/wp-content/uploads/2024/08/1684246872-image10.png)
 
 Note: A key thing to note is that a single star-tree index covers a wide range of OLAP queries that comprise the dimensions, metrics and aggregate functions specified in it.
 
@@ -92,7 +92,7 @@ We will use one such variant query for this illustration:
 
 We used a very small infrastructure footprint for this comparison test.
 
-![](https://www.datocms-assets.com/75153/1687549350-screen-shot-2023-06-22-at-1-32-51-pm.png)
+![](https://startree.ai/wp-content/uploads/2024/08/1687549350-screen-shot-2023-06-22-at-1-32-51-pm.png)
 
 ## 4\. Query Results and Stats
 
@@ -148,7 +148,7 @@ limit 1000
 option(useStarTree=false, timeoutMs=20000)
 ```
 
-![](https://www.datocms-assets.com/75153/1684246716-image1.png)
+![](https://startree.ai/wp-content/uploads/2024/08/1684246716-image1.png)
 
 Result: The query completed in 1,513 milliseconds. (~1.5s); from ~131s to ~1.5s was a BIG improvement. However, results still took more than a second — which is a relatively long time for an OLAP database, especially if it is faced with multiple concurrent queries.
 
@@ -176,7 +176,7 @@ limit 1000
 option(useStarTree=true)
 ```
 
-![](https://www.datocms-assets.com/75153/1684246852-image9.png)
+![](https://startree.ai/wp-content/uploads/2024/08/1684246852-image9.png)
 
 Result: The query completed in 4 milliseconds! Notice in particular that the numDocsScanned came down from ~146M to 409!
 
@@ -184,7 +184,7 @@ Result: The query completed in 4 milliseconds! Notice in particular that the num
 
 Let’s take a closer look at the [query response stats](https://docs.pinot.apache.org/users/api/querying-pinot-using-standard-sql/response-format) across all three iterations to understand the “how” part of this magic of indexing in Apache Pinot.
 
-![](https://www.datocms-assets.com/75153/1684246748-image3.png)
+![](https://startree.ai/wp-content/uploads/2024/08/1684246748-image3.png)
 
 1.  The dataset has 633,694,594 records (documents) spread across 130 segments.
 2.  Query Stats:
@@ -195,7 +195,7 @@ Let’s take a closer look at the [query response stats](https://docs.pinot.apac
 
 ## 5\. Impact Summary:
 
-![](https://www.datocms-assets.com/75153/1684246766-image4.png)
+![](https://startree.ai/wp-content/uploads/2024/08/1684246766-image4.png)
 
 1.  356,968x improvement (or 99.999% drop) in num docs scanned from ~146M to 409.
 2.  378.5x improvement (~99.736% drop) in query latency from 1,513 ms to 4 ms.

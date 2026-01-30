@@ -28,7 +28,7 @@ We can index points using [H3](https://h3geo.org/), an open source library that 
 
 For example, if the central hexagon covers the Westminster area of central London, neighbors at distance 1 are colored blue, those at distance 2 are in green, and those at distance 3 are in red.
 
-![Geospatial Indexing In Apache Pinot](https://www.datocms-assets.com/75153/1683813508-image5.png 'Geospatial Indexing In Apache Pinot')
+![Geospatial Indexing In Apache Pinot](https://startree.ai/wp-content/uploads/2024/08/1683813508-image5.png 'Geospatial Indexing In Apache Pinot')
 
 Let’s learn how to use geospatial indexing with help from a dataset that captures the latest location of trains moving around the UK. We’re streaming this data into a `trains` topic in Apache Kafka®. Here’s one message from this stream:
 
@@ -146,13 +146,13 @@ limit 10
 
 These results from running the query would follow:
 
-![Sample Geospatial Indexing In Apache Pinot Query Result](https://www.datocms-assets.com/75153/1683813581-image1.png 'Sample Geospatial Indexing In Apache Pinot Query Result')
+![Sample Geospatial Indexing In Apache Pinot Query Result](https://startree.ai/wp-content/uploads/2024/08/1683813581-image1.png 'Sample Geospatial Indexing In Apache Pinot Query Result')
 
 Let’s now go into a bit more detail about what happens when we run the query.
 
 The 10 km radius covers the area inside the white circle on the diagram below:
 
-![Geospatial Indexing In Apache Pinot Circle](https://www.datocms-assets.com/75153/1683813641-image7.png 'Geospatial Indexing In Apache Pinot Circle')
+![Geospatial Indexing In Apache Pinot Circle](https://startree.ai/wp-content/uploads/2024/08/1683813641-image7.png 'Geospatial Indexing In Apache Pinot Circle')
 
 Pinot’s query planner will first translate the distance of 10 km into a number of rings, in this case, two. It will then find all the hexagons located two rings away from the white one. Some of these hexagons will fit completely inside the white circle, and some will overlap with the circle.
 
@@ -182,17 +182,17 @@ limit 10
 
 The results from running the query are shown below:
 
-![Sample Geospatial Indexing In Apache Pinot Query Result](https://www.datocms-assets.com/75153/1683813749-image4.png 'Sample Geospatial Indexing In Apache Pinot Query Result')
+![Sample Geospatial Indexing In Apache Pinot Query Result](https://startree.ai/wp-content/uploads/2024/08/1683813749-image4.png 'Sample Geospatial Indexing In Apache Pinot Query Result')
 
 If we change the query to show trains outside of a central London polygon, we’d see the following results:
 
-![Sample Geospatial Indexing In Apache Pinot Query Result](https://www.datocms-assets.com/75153/1683813705-image3.png 'Sample Geospatial Indexing In Apache Pinot Query Result')
+![Sample Geospatial Indexing In Apache Pinot Query Result](https://startree.ai/wp-content/uploads/2024/08/1683813705-image3.png 'Sample Geospatial Indexing In Apache Pinot Query Result')
 
 So what’s actually happening when we run this query?
 
 The polygon covers the area inside the white shape as shown below:
 
-![Geospatial Indexing In Apache Pinot Polygon](https://www.datocms-assets.com/75153/1683813802-image2.png 'Geospatial Indexing In Apache Pinot Polygon')
+![Geospatial Indexing In Apache Pinot Polygon](https://startree.ai/wp-content/uploads/2024/08/1683813802-image2.png 'Geospatial Indexing In Apache Pinot Polygon')
 
 Pinot’s query planner will first find all the coordinates on the exterior of the polygon. It will then find the hexagons that fit within that geofence. Those hexagons get added to the potential cells list.
 
@@ -231,7 +231,7 @@ If our query uses `STDistance`, we should expect to see the ​`​FILTER\_H3\_I
 
 See this example query plan:
 
-![Apache Pinot Geospatial Indexing Query Plan](https://www.datocms-assets.com/75153/1683813851-image6.png 'Apache Pinot Geospatial Indexing Query Plan')
+![Apache Pinot Geospatial Indexing Query Plan](https://startree.ai/wp-content/uploads/2024/08/1683813851-image6.png 'Apache Pinot Geospatial Indexing Query Plan')
 
 The [StarTree Developer Hub](https://dev.startree.ai/) contains a [geospatial indexing guide](https://dev.startree.ai/docs/pinot/recipes/geospatial-indexing#how-do-i-check-that-the-geospatial-index-is-being-used) that goes through this in more detail.
 

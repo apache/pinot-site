@@ -211,7 +211,7 @@ Let’s call the function:
 
 We’ll see the following output:
 
-![Consumer record lag output](https://www.datocms-assets.com/75153/1680190272-image2.png 'Consumer record lag output')
+![Consumer record lag output](https://startree.ai/wp-content/uploads/2024/08/1680190272-image2.png 'Consumer record lag output')
 
 Now let’s put it in a script and call the watch command so that it will be refreshed every couple of seconds:
 
@@ -253,7 +253,7 @@ kcat -P -b localhost:9092 -t events -Kø
 
 And now if we look at the watch output:
 
-![Apache Pinot Consumer Record Lag](https://www.datocms-assets.com/75153/1680190286-image1.png 'Apache Pinot Consumer Record Lag')
+![Apache Pinot Consumer Record Lag](https://startree.ai/wp-content/uploads/2024/08/1680190286-image1.png 'Apache Pinot Consumer Record Lag')
 
 We get some transitory lag, but it generally goes away by the next time the command is run.
 
