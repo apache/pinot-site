@@ -122,6 +122,11 @@ _paq.push(['enableLinkTracking']);
                         </SearchProvider>
                     </div>
                 </ThemeProviders>
+                {/* Scarf Pixel */}
+                <img
+                    referrerPolicy="no-referrer-when-downgrade"
+                    src="https://static.scarf.sh/a.png?x-pxid=3dd7caad-22f5-40d7-bc2e-20c8eaf91659"
+                />
             </body>
         </html>
     );
