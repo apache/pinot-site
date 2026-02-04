@@ -1,0 +1,28 @@
+---
+title: 'Announcing Apache Pinot 1.4'
+date: 2025-09-30
+authors: ['qiaochu']
+summary: 'Another packed release with more improvements for real-time analytics with Apache Pinot.'
+
+tags: [Apache Pinot, releases, real-time analytics, open source, community updates]
+---
+
+We are pleased to announce that Apache Pinot 1.4.0 has been released!
+
+Apache Pinot is a realtime distributed OLAP datastore, designed to answer OLAP queries with low latency use-cases.
+
+This release(1.4.0) delivers significant improvements including:
+
+-   There's an all new query mode added for running Multistage Engine queries against Pinot, heavily inspired from Uber's Presto over Pinot query architecture. A new query optimizer for the Multistage Engine can automatically eliminate or simplify redundant Exchanges. We aim to make this query optimizer the default in future versions. Plus several other significant improvements to the engine.
+-   Pauseless Consumption is introduced in Pinot 1.4.0, it enhances real-time analytics by minimizing ingestion delays and improving data freshness in Apache Pinot.
+-   Time Series Engine - Introduced support for ASOF JOIN, allowing time-aligned joins commonly used in time-series analytics. This unlocks use cases where approximate matches based on time proximity are required.
+-   Logical Table support,
+-   Upsert and Deduplication Enhancement
+-   Minion Jobs (including smallSegmentMerger)
+-   Rebalancing capabilities
+
+This release also includes numerous smaller features and general bug fixes.
+
+The release can be downloaded at https://pinot.apache.org/download
+
+The release notes are available at https://github.com/apache/pinot/releases
