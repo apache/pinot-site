@@ -18,11 +18,11 @@ NOTE: NoSQL databases also have the ability to perform CDC but may use other mec
 
 The WAL is an append-only, immutable stream of events designed to replicate its data to another instance of the data store for high availability in disaster recovery scenarios (see diagram below). The transactions occurring on the left data store (primary) get replicated to the data store to the right (secondary). The applications connect to the primary data store and replicate its data to the secondary data store. If the primary data store goes down, the application switches to the secondary data store.
 
-![Primary data store transactions being replicated to a secondary data store](https://startree.ai/wp-content/uploads/2024/08/1684857872-image3.png 'Primary data store transactions being replicated to a secondary data store')
+![Primary data store transactions being replicated to a secondary data store](/static/images/blogs/external/1684857872-image3.png 'Primary data store transactions being replicated to a secondary data store')
 
 The following diagram shows an example of a WAL in a data store. New transactions get appended to the end of the WAL. The old transactions are on the left, and the newer transactions are on the right.
 
-![WAL in a data store with new transactions appended to the end of the WAL](https://startree.ai/wp-content/uploads/2024/08/1684857250-image5.png 'WAL in a data store with new transactions appended to the end of the WAL')
+![WAL in a data store with new transactions appended to the end of the WAL](/static/images/blogs/external/1684857250-image5.png 'WAL in a data store with new transactions appended to the end of the WAL')
 
 Change data capture enables you to listen to this WAL by capturing these transactions and sending them downstream for processing. The data processing occurs in a different system where we can view the latest version of each record in other applications. Because of the real-time nature of the data, the subscribing applications to the stream of transactions receive real-time transaction events.
 
@@ -38,7 +38,7 @@ Capturing change events requires specific knowledge of the database from which t
 
 Kafka connectors must run in a Kafka Connect cluster, a highly available and distributed system for running connectors. Kafka connectors cannot run on their own and require a server. The Debezium project provides a Debezium server that can also run Debezium connectors capable of writing to other event streaming platforms besides Kafka, for instance, Amazon Kinesis. The diagram below shows a Debezium connector reading the WAL and writing to a Debezium server. The Debezium server can then write to either Kafka or Kinesis.
 
-![Diagram showing a Debezium connector reading the WAL and writing to a Debezium server](https://startree.ai/wp-content/uploads/2024/08/1684857201-image4.png 'Diagram showing a Debezium connector reading the WAL and writing to a Debezium server')
+![Diagram showing a Debezium connector reading the WAL and writing to a Debezium server](/static/images/blogs/external/1684857201-image4.png 'Diagram showing a Debezium connector reading the WAL and writing to a Debezium server')
 
 ## Debezium Data Format
 
@@ -180,7 +180,7 @@ A FULL upsert means that a new record will replace the older record completely i
 
 PARTIAL only allows updates to specific columns and employs additional strategies.
 
-![Table describing the strategy and descriptions of stream ingestion with upsert](https://startree.ai/wp-content/uploads/2024/08/1684857317-image6.png 'Table describing the strategy and descriptions of stream ingestion with upsert')
+![Table describing the strategy and descriptions of stream ingestion with upsert](/static/images/blogs/external/1684857317-image6.png 'Table describing the strategy and descriptions of stream ingestion with upsert')
 
 Source: [Stream Ingestion with Upsert](https://docs.pinot.apache.org/basics/data-import/upsert)
 

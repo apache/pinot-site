@@ -20,7 +20,7 @@ Instead, users write queries that use the datetrunc function to filter at a coar
 
 The [timestamp index](https://docs.pinot.apache.org/basics/indexing/timestamp-index) solves that problem! In this blog post, we’ll use it to get an almost 5x query speed improvement on a relatively small dataset of only 7m rows.
 
-![Time in milliseconds with and without timestamp indexes bar chart](https://startree.ai/wp-content/uploads/2024/08/1669133004-image1.png 'Time in milliseconds with and without timestamp indexes bar chart')
+![Time in milliseconds with and without timestamp indexes bar chart](/static/images/blogs/external/1669133004-image1.png 'Time in milliseconds with and without timestamp indexes bar chart')
 
 ## Spinning up Pinot
 
@@ -86,7 +86,7 @@ We should see the following output:
 
 A screenshot of the schema is shown below:
 
-![Chicago crime dataset table schema](https://startree.ai/wp-content/uploads/2024/08/1669132979-image3.png 'Chicago crime dataset table schema')
+![Chicago crime dataset table schema](/static/images/blogs/external/1669132979-image3.png 'Chicago crime dataset table schema')
 
 We won’t go through the table config and schema files in this blog post because we did that in the last post, but you can find them in the [config](https://github.com/startreedata/pinot-recipes/tree/main/recipes/analyzing-chicago-crimes/config) directory on GitHub.
 
@@ -119,11 +119,11 @@ limit 10
 
 If we run that query, we’ll see the following results:
 
-![Chicago crime dataset query result](https://startree.ai/wp-content/uploads/2024/08/1669133027-image6.png 'Chicago crime dataset query result')
+![Chicago crime dataset query result](/static/images/blogs/external/1669133027-image6.png 'Chicago crime dataset query result')
 
 And, if we look above the query result, there’s metadata about the query, including the time that it took to run.
 
-![Chicago crime dataset metadata about the query, including the time that it took to run](https://startree.ai/wp-content/uploads/2024/08/1669133059-image5.png 'Chicago crime dataset metadata about the query, including the time that it took to run')
+![Chicago crime dataset metadata about the query, including the time that it took to run](/static/images/blogs/external/1669133059-image5.png 'Chicago crime dataset metadata about the query, including the time that it took to run')
 
 The query took 141 ms to execute, so that’s our baseline.
 
@@ -222,7 +222,7 @@ In our case, that means we’ll have these extra columns: $DateEpoch$DAY, $DateE
 
 We can check if the extra columns and indexes have been added by navigating to the [segment_page](http://localhost:9000/#/tenants/table/crimes_indexed_OFFLINE/crimes_OFFLINE_0) and typing $Date$Epoch in the search box.  You should see the following:
 
-![Apache Pinot timestamp index on a column](https://startree.ai/wp-content/uploads/2024/08/1669133112-image2.png 'Apache Pinot timestamp index on a column')
+![Apache Pinot timestamp index on a column](/static/images/blogs/external/1669133112-image2.png 'Apache Pinot timestamp index on a column')
 
 These columns will be assigned the following values:
 
@@ -276,7 +276,7 @@ limit 10
 
 Let’s now run our initial query against the _crimes_indexed_ table. We’ll get exactly the same results as before, but let’s take a look at the query stats:
 
-![Chicago crime dataset updated query stats](https://startree.ai/wp-content/uploads/2024/08/1669133083-image4.png 'Chicago crime dataset updated query stats')
+![Chicago crime dataset updated query stats](/static/images/blogs/external/1669133083-image4.png 'Chicago crime dataset updated query stats')
 
 This time the query takes 36 milliseconds rather than 140 milliseconds. That’s an almost 5x improvement, thanks to the timestamp index.
 

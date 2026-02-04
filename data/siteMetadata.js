@@ -111,8 +111,10 @@ const siteMetadata = {
         }
     },
     announcement: {
-        buttonText: 'learn more',
-        link: 'https://github.com/apache/pinot/releases/tag/release-1.4.0'
+        text: 'Feb 11 - Online Meetup: Query, Ingestion, and Apache Pinot Core:  ',
+        buttonText: 'RSVP Here',
+        link: 'https://www.meetup.com/apache-pinot/events/313131111/',
+        expiresAfter: '2026-02-12'
     },
     youtubeShare: {
         heading: 'Share Your Knowledge on Apache Pinot YouTube channel!',

@@ -53,7 +53,7 @@ _Docker is a set of platform as a service (PaaS) products that use OS-level virt
 
 Now, let’s download the Docker image. On a Windows machine, start a new PowerShell command window. Note that this is not the same as a Windows PowerShell command window, as shown below.
 
-![Download Docker image on Windows with PowerShell command window](https://startree.ai/wp-content/uploads/2024/08/1684419409-image7.png 'Download Docker image on Windows with PowerShell command window')
+![Download Docker image on Windows with PowerShell command window](/static/images/blogs/external/1684419409-image7.png 'Download Docker image on Windows with PowerShell command window')
 
 Use the following command to get (pull) the image we are looking for:
 
@@ -79,7 +79,7 @@ docker images
 
 It should show you the image like so:
 
-![Docker images command](https://startree.ai/wp-content/uploads/2024/08/1684420004-image3.png 'Docker images command')
+![Docker images command](/static/images/blogs/external/1684420004-image3.png 'Docker images command')
 
 ### Step 3:
 
@@ -89,7 +89,7 @@ Let’s run a container using the Docker image that we downloaded:
 docker run -it --entrypoint /bin/bash -p 9000:9000 apachepinot.docker.scarf.sh/apachepinot/pinot:0.12.0
 ```
 
-![Running a container with downloaded Docker image](https://startree.ai/wp-content/uploads/2024/08/1684420103-image4.png 'Running a container with downloaded Docker image')
+![Running a container with downloaded Docker image](/static/images/blogs/external/1684420103-image4.png 'Running a container with downloaded Docker image')
 
 The docker run command runs the image. The \-p 9000:00 option maps the docker container port 9000 to the local machine port 9000. This allows us to access the Pinot UI, which defaults to port 9000 to be accessible from the localhost. We are using the –entrypoint to override the default entrypoint and replace it with Bash. We want to override the default behavior so that we can start each component one at a time. The next parameter apachepinot.docker.scarf.sh/apachepinot/pinot:0.12.0 is the Docker image we pulled above.
 
@@ -97,7 +97,7 @@ After running the command, we’ll find ourselves in the Docker container instan
 
 If you’re using VS Code, with the Docker extension installed, you can click on the Docker extension and see our container and its content:
 
-![VS Code Docker extension open to see container and content](https://startree.ai/wp-content/uploads/2024/08/1684421493-image11.png 'VS Code Docker extension open to see container and content')
+![VS Code Docker extension open to see container and content](/static/images/blogs/external/1684421493-image11.png 'VS Code Docker extension open to see container and content')
 
 Click on the Docker icon in the left menu, and apachepinot.docker.scarf.sh/apachepinot/pinot:0.12.0. This should take a few seconds to connect to the running container. Now, you can navigate to the files and see what we have under the opt folder.
 
@@ -105,7 +105,7 @@ Click on the Docker icon in the left menu, and apachepinot.docker.scarf.sh/apach
 
 Let’s run the components that are essential to running a Pinot cluster. Change directory to the bin folder and list the contents like so:
 
-![Running components, directory changed to bin folder and contents listed](https://startree.ai/wp-content/uploads/2024/08/1684421611-image10.png 'Running components, directory changed to bin folder and contents listed')
+![Running components, directory changed to bin folder and contents listed](/static/images/blogs/external/1684421611-image10.png 'Running components, directory changed to bin folder and contents listed')
 
 In order to start the Pinot cluster, we will need to run the following essential components:
 
@@ -134,7 +134,7 @@ The controller controls the cluster health and coordinates with ZooKeeper for co
 
 At this time, we should have a running Pinot cluster. We can verify via the Pinot Data Explorer by browsing to localhost:9000. You should see something like this:
 
-![Pinot data explorer](https://startree.ai/wp-content/uploads/2024/08/1684419932-image2.png 'Pinot data explorer')
+![Pinot data explorer](/static/images/blogs/external/1684419932-image2.png 'Pinot data explorer')
 
 What just happened?
 
@@ -206,7 +206,7 @@ To create a schema and table for the baseball stats file, run the following comm
 
 You should now see the schema and table created:
 
-![Apache Pinot tables created](https://startree.ai/wp-content/uploads/2024/08/1684421406-image12.png 'Apache Pinot tables created')
+![Apache Pinot tables created](/static/images/blogs/external/1684421406-image12.png 'Apache Pinot tables created')
 
 Next, we’ll want to load some data into the table that we created. We have some sample data in the folder rawdata that we can use to load. We will need a YAML file to perform the actual ingestion job and can use the following command to import data:
 
@@ -217,11 +217,11 @@ Next, we’ll want to load some data into the table that we created. We have som
 
 If you run into trouble on this step like I did, edit the ingestJobSpec.yaml file using Docker Desktop to change the inputDirURI from relative to absolute path. Then rerun the above command.
 
-![Editing the .yaml file with Docker Desktop](https://startree.ai/wp-content/uploads/2024/08/1684419802-image1.png 'Editing the .yaml file with Docker Desktop')
+![Editing the .yaml file with Docker Desktop](/static/images/blogs/external/1684419802-image1.png 'Editing the .yaml file with Docker Desktop')
 
 You should now be able to see the table has been populated like so:
 
-![Apache Pinot table populated](https://startree.ai/wp-content/uploads/2024/08/1684421215-image8.png 'Apache Pinot table populated')
+![Apache Pinot table populated](/static/images/blogs/external/1684421215-image8.png 'Apache Pinot table populated')
 
 Now, let’s run some queries. From localhost:9000, select the Query Console in the left-hand menu. Then type in some of these queries:
 
@@ -232,7 +232,7 @@ select sum(runs), playerName from baseballStats group by playerName order by sum
 
 You should see results like so:
 
-![Apache Pinot query console](https://startree.ai/wp-content/uploads/2024/08/1684421163-image6.png 'Apache Pinot query console')
+![Apache Pinot query console](/static/images/blogs/external/1684421163-image6.png 'Apache Pinot query console')
 
 And there you have it!
 
@@ -240,11 +240,11 @@ And there you have it!
 
 If you’re curious to go a step further and see what the segments look like and what the actual data on disk looks like, keep reading! In the Tables section of localhost:9000, you can scroll down to find a segment:
 
-![Apache Pinot data on disk segment](https://startree.ai/wp-content/uploads/2024/08/1684421358-image9.png 'Apache Pinot data on disk segment')
+![Apache Pinot data on disk segment](/static/images/blogs/external/1684421358-image9.png 'Apache Pinot data on disk segment')
 
 Clicking on this gives the specifics of the segment:
 
-![Segment specifics in Pinot UI](https://startree.ai/wp-content/uploads/2024/08/1684420155-image5.png 'Segment specifics in Pinot UI')
+![Segment specifics in Pinot UI](/static/images/blogs/external/1684420155-image5.png 'Segment specifics in Pinot UI')
 
 Pinot allows you to easily inspect your segments and tables in one easy-to-use UI. You can find what’s where and keep an eye on size, location, number of documents, etc.
 

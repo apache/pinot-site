@@ -20,11 +20,11 @@ In the [Batch Import JSON from Amazon S3 into Apache Pinot | StarTree Recipes](h
 
 The contents of that bucket are shown in the screenshot below:
 
-![Sample data ingested into Apache Pinot from a S3 bucket](https://startree.ai/wp-content/uploads/2024/08/1668701275-image4.png 'Sample data ingested into Apache Pinot from a S3 bucket')
+![Sample data ingested into Apache Pinot from a S3 bucket](/static/images/blogs/external/1668701275-image4.png 'Sample data ingested into Apache Pinot from a S3 bucket')
 
 Let’s quickly recap the steps that we had to do to import those files into Pinot. We have a table called events, which has the following schema:
 
-![Events schema table](https://startree.ai/wp-content/uploads/2024/08/1668701353-image1.png 'Events schema table')
+![Events schema table](/static/images/blogs/external/1668701353-image1.png 'Events schema table')
 
 We first created a job specification file, which contains a description of our import job. The job file is shown below:
 
@@ -74,7 +74,7 @@ And don’t worry, those credentials have already been deleted; I find it easier
 
 Once we’ve run this command, if we go to the Pinot UI at [http://localhost:9000](http://localhost:9000/) and click through to the events table from the Query Console menu, we’ll see that the records have been imported, as shown in the screenshot below:
 
-![Sample imported records shown in the Apache Pinot Query Console menu](https://startree.ai/wp-content/uploads/2024/08/1668701512-image3.png 'Sample imported records shown in the Apache Pinot Query Console menu')
+![Sample imported records shown in the Apache Pinot Query Console menu](/static/images/blogs/external/1668701512-image3.png 'Sample imported records shown in the Apache Pinot Query Console menu')
 
 This approach works, and we may still prefer to use it when we need fine-grained control over the ingestion parameters, but it is a bit heavyweight for your everyday data import!
 
@@ -111,11 +111,11 @@ OPTION(
 
 If we run this query, we’ll see the following output:
 
-![Sample events_OFFLINE query result](https://startree.ai/wp-content/uploads/2024/08/1668701654-image5.png 'Sample events_OFFLINE query result')
+![Sample events_OFFLINE query result](/static/images/blogs/external/1668701654-image5.png 'Sample events_OFFLINE query result')
 
 We can check on the state of the ingestion job via the Swagger REST API. If we navigate to [http://localhost:9000/help#/Task/getTaskState](http://localhost:9000/help#/Task/getTaskState), paste Task_SegmentGenerationAndPushTask_events-task as our task name, and then click Execute, we’ll see the following:
 
-![Checking the state of an ingestion job screen](https://startree.ai/wp-content/uploads/2024/08/1668701727-image2.png 'Checking the state of an ingestion job screen')
+![Checking the state of an ingestion job screen](/static/images/blogs/external/1668701727-image2.png 'Checking the state of an ingestion job screen')
 
 If we see the state COMPLETED, this means the data has been ingested, which we can check by going back to the Query console and clicking on the events table.
 

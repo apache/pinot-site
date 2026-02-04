@@ -12,7 +12,8 @@ import { Button } from '@/components/ui/button';
 import MobileNav from './MobileNav';
 // import ThemeSwitch from './ThemeSwitch';
 import SearchButton from './SearchButton';
-import YouTubeBanner from './YouTubeBanner';
+// import YouTubeBanner from './YouTubeBanner';
+import AnnouncementBar from './AnnouncementBar';
 
 const Header = () => {
     const [stars, setStars] = useState<string | null>(null);
@@ -48,7 +49,16 @@ const Header = () => {
     return (
         <>
             {/* <ReleaseBanner /> */}
-            {!isSharePage && <YouTubeBanner />}
+            {/* !isSharePage && <YouTubeBanner /> */}
+            <AnnouncementBar
+                text={siteMetadata.announcement.text}
+                buttonText={siteMetadata.announcement.buttonText}
+                backgroundColor="bg-[#C7154A]"
+                textColor="text-white"
+                buttonHref={siteMetadata.announcement.link}
+                buttonColor="text-white"
+                expiresAfter={siteMetadata.announcement.expiresAfter}
+            />
             <header className="border-b-1 flex items-center justify-between border-b px-5 py-3 md:px-[4rem] md:py-4">
                 <div className="flex">
                     <Link href="/" aria-label={siteMetadata.headerTitle}>
