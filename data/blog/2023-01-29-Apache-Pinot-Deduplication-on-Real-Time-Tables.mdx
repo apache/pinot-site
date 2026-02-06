@@ -245,7 +245,7 @@ limit 10
 
 The results of this query are shown below:
 
-![Sample Apache Pinot real-time query response stats including duplicates](https://startree.ai/wp-content/uploads/2024/08/1673273173-image4.png 'Sample Apache Pinot real-time query response stats including duplicates')
+![Sample Apache Pinot real-time query response stats including duplicates](/static/images/blogs/external/1673273173-image4.png 'Sample Apache Pinot real-time query response stats including duplicates')
 
 We can see loads of duplicates!
 
@@ -331,7 +331,7 @@ The changes to notice here are:
     limit 10
 ```
 
-![Sample Apache Pinot real-time query response stats deduplicated](https://startree.ai/wp-content/uploads/2024/08/1673273248-image3.png 'Sample Apache Pinot real-time query response stats deduplicated')
+![Sample Apache Pinot real-time query response stats deduplicated](/static/images/blogs/external/1673273248-image3.png 'Sample Apache Pinot real-time query response stats deduplicated')
 
 We have every combination of hex values (16^3=4096) and no duplicates! Pinot’s de-duplication feature has done its job.
 
@@ -339,11 +339,11 @@ We have every combination of hex values (16^3=4096) and no duplicates! Pinot’s
 
 When we’re not using the deduplication feature, events are ingested from our streaming platform into Pinot, as shown in the diagram below:
 
-![Events ingested from a streaming platform into Apache Pinot without using the deduplication feature](https://startree.ai/wp-content/uploads/2024/08/1673273272-pinot_0-11-de-duplication-diagram_1-v2.png 'Events ingested from a streaming platform into Apache Pinot without using the deduplication feature')
+![Events ingested from a streaming platform into Apache Pinot without using the deduplication feature](/static/images/blogs/external/1673273272-pinot_0-11-de-duplication-diagram_1-v2.png 'Events ingested from a streaming platform into Apache Pinot without using the deduplication feature')
 
 When de-dup is enabled, we have to check whether records can be ingested, as shown in the diagram below:
 
-![Events ingested from a streaming platform into Apache Pinot using the deduplication feature](https://startree.ai/wp-content/uploads/2024/08/1673273289-pinot_0-11-de-duplication-diagram_2-v3.png 'Events ingested from a streaming platform into Apache Pinot using the deduplication feature')
+![Events ingested from a streaming platform into Apache Pinot using the deduplication feature](/static/images/blogs/external/1673273289-pinot_0-11-de-duplication-diagram_2-v3.png 'Events ingested from a streaming platform into Apache Pinot using the deduplication feature')
 
 De-dup works out whether a primary key has already been ingested by using an in memory map of (primary key -> corresponding segment reference).
 

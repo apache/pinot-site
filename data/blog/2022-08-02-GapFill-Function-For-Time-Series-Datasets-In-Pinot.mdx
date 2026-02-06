@@ -18,7 +18,7 @@ Many real-world datasets are time-series in nature, tracking the value or state 
 
 Let us use an IOT dataset tracking the occupancy status of the individual parking slots in a parking garage using automated sensors in this post. The granularity of recorded data points might be sparse or the events could be missing due to network and other device issues in the IOT environment. The following figure demonstrates entities emitting values at irregular intervals as the value changes. Polling and recording values of all entities regularly at a lower granularity would consume more resources, take up more space on disk and during processing and incur high costs. But analytics applications that are operating on these datasets, might be querying for values at a lower granularity than the data recording interval (Ex: A dashboard showing the total no of occupied parking slots at 15 min granularity in the past week when the sensors are not recording status as frequent).
 
-![Entities emitting data over time at irregular intervals](https://startree.ai/wp-content/uploads/2024/08/1661700264-entities-emitting-data.png 'Entities emitting data over time at irregular intervals')
+![Entities emitting data over time at irregular intervals](/static/images/blogs/external/1661700264-entities-emitting-data.png 'Entities emitting data over time at irregular intervals')
 
 It is important for Pinot to provide the on-the-fly interpolation (filling the missing data) functionality to better handle time-series data.
 
@@ -32,7 +32,7 @@ Let us use the following sample data set tracking the status of parking lots in 
 
 ### Sample Dataset:
 
-![Sample parking lot dataset](https://startree.ai/wp-content/uploads/2024/08/1661700333-parking-data-table.png 'Sample parking lot dataset')
+![Sample parking lot dataset](/static/images/blogs/external/1661700333-parking-data-table.png 'Sample parking lot dataset')
 
 parking_data table
 
@@ -40,7 +40,7 @@ Use case: We want to find out the total number of parking lots that are occupie
 
 Let us take 30 minutes time bucket as an example:
 
-![Sample parking lot dataset with 30 minute time bucket](https://startree.ai/wp-content/uploads/2024/08/1661700377-30-min-bucket-example.png 'Sample parking lot dataset with 30 minute time bucket')
+![Sample parking lot dataset with 30 minute time bucket](/static/images/blogs/external/1661700377-30-min-bucket-example.png 'Sample parking lot dataset with 30 minute time bucket')
 
 In the 30 mins aggregation results table above, we can see a lot of missing data as many lots didn't have anything recorded in those 30-minute windows. To calculate the number of occupied parking lots per time bucket, we need to gap-fill the missing data for each of these 30-minute windows.
 
@@ -100,15 +100,15 @@ The following concepts were added to interpolate and handle time-series data.
 
 The innermost sql will convert the raw event table to the following table.
 
-![Sample parking lot query workflow innermost SQL](https://startree.ai/wp-content/uploads/2024/08/1661700439-innermost-sql.png 'Sample parking lot query workflow innermost SQL')
+![Sample parking lot query workflow innermost SQL](/static/images/blogs/external/1661700439-innermost-sql.png 'Sample parking lot query workflow innermost SQL')
 
 The second most nested sql will gap fill the returned data as below:
 
-![Sample parking lot query workflow second most SQL](https://startree.ai/wp-content/uploads/2024/08/1661700473-second-most.png 'Sample parking lot query workflow second most SQL')
+![Sample parking lot query workflow second most SQL](/static/images/blogs/external/1661700473-second-most.png 'Sample parking lot query workflow second most SQL')
 
 The outermost query will aggregate the gapfilled data as follows:
 
-![Sample parking lot query workflow outermost SQL](https://startree.ai/wp-content/uploads/2024/08/1661700517-outermost.png 'Sample parking lot query workflow outermost SQL')
+![Sample parking lot query workflow outermost SQL](/static/images/blogs/external/1661700517-outermost.png 'Sample parking lot query workflow outermost SQL')
 
 ### Other Supported Query Scenarios:
 
@@ -139,7 +139,7 @@ There are two gapfill-specific steps:
 1.  When Pinot Broker Server receives the gapfill SQL query, it will strip out gapfill related information and send out the stripped SQL query to the pinot server
 2.  GapfillProcessor will process the result from BrokerReducerService. The gapfill logic will be applied to the reduced result.
 
-![Gapfill steps](https://startree.ai/wp-content/uploads/2024/08/1661700601-gapfill-steps.png 'Gapfill steps')
+![Gapfill steps](/static/images/blogs/external/1661700601-gapfill-steps.png 'Gapfill steps')
 
 Here is the stripped version of the sql query sent to servers for the query shared above:
 
@@ -158,7 +158,7 @@ SELECT DATETIMECONVERT(event_time,'1:MILLISECONDS:EPOCH',
 
 The sample execution plan for this query is as shown in the figure below:
 
-![Sample query execution plan](https://startree.ai/wp-content/uploads/2024/08/1661700642-execution-plan.png 'Sample query execution plan')
+![Sample query execution plan](/static/images/blogs/external/1661700642-execution-plan.png 'Sample query execution plan')
 
 ### Time and Space complexity:
 
@@ -166,7 +166,7 @@ Let us say there are M entities, R rows returned from servers, and N time bucket
 
 ### Challenges
 
-![Sample server challenges graph](https://startree.ai/wp-content/uploads/2024/08/1661700716-challenges.png 'Sample server challenges graph')
+![Sample server challenges graph](/static/images/blogs/external/1661700716-challenges.png 'Sample server challenges graph')
 
 As the time-series datasets are enormous and partitioned, it's hard to get answers to the following questions:
 

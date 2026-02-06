@@ -13,6 +13,7 @@ export interface AnnouncementBarProps {
     buttonColor?: string;
     buttonTarget?: string;
     showArrowIcon?: boolean;
+    expiresAfter?: string;
     className?: string;
 }
 
@@ -26,8 +27,20 @@ export default function AnnouncementBar({
     buttonColor = 'text-blue-600',
     buttonTarget = '_self',
     showArrowIcon = true,
+    expiresAfter,
     className = ''
 }: AnnouncementBarProps) {
+    if (expiresAfter) {
+        const expiryDate = new Date(expiresAfter);
+        if (Number.isNaN(expiryDate.getTime())) {
+            throw new Error(`Invalid AnnouncementBar expiry date: ${expiresAfter}`);
+        }
+
+        if (new Date() > expiryDate) {
+            return null;
+        }
+    }
+
     return (
         <div className={clsx('z-50', backgroundColor, className)}>
             <div
@@ -53,7 +66,7 @@ export default function AnnouncementBar({
                             {text}
                         </span>
                     </div>
-                    {buttonText}
+                    <span className="ml-2">{buttonText}</span>
                     {showArrowIcon && <ArrowRight className="ml-1 inline-block h-5 w-5" />}
                 </Link>
             </div>

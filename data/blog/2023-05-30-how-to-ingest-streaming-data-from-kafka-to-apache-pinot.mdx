@@ -32,7 +32,7 @@ We will be installing Apache Kafka onto our already existing Pinot docker image.
 
 docker run -it --entrypoint /bin/bash -p 9000:9000 apachepinot.docker.scarf.sh/apachepinot/pinot:0.12.0
 
-![PowerShell 7.3.4 docker run Apache Pinot](https://startree.ai/wp-content/uploads/2024/08/1685462020-image1.png 'PowerShell 7.3.4 docker run Apache Pinot')
+![PowerShell 7.3.4 docker run Apache Pinot](/static/images/blogs/external/1685462020-image1.png 'PowerShell 7.3.4 docker run Apache Pinot')
 
 We want to override the ENTRYPOINT and run Bash script within the Docker image. If you already have a container running, you can skip this step. I tend to tear down containers after use, so in my case, I created a brand new container.
 
@@ -54,11 +54,11 @@ Run each of the commands one at a time. The & allows you to continue using the s
 
 It should look like this:
 
-![Docker with container ID, Image, Command, and Created](https://startree.ai/wp-content/uploads/2024/08/1685462274-image7.png 'Docker with container ID, Image, Command, and Created')
+![Docker with container ID, Image, Command, and Created](/static/images/blogs/external/1685462274-image7.png 'Docker with container ID, Image, Command, and Created')
 
 You can now browse to [http://localhost:9000/#/zookeeper](http://localhost:9000/#/zookeeper) to see the running cluster:
 
-![Empty Zookeeper Browser](https://startree.ai/wp-content/uploads/2024/08/1685462203-image5.png 'Empty Zookeeper Browser')
+![Empty Zookeeper Browser](/static/images/blogs/external/1685462203-image5.png 'Empty Zookeeper Browser')
 
 ### Step 2: Install Kafka on the Docker container
 
@@ -75,7 +75,7 @@ curl https://downloads.apache.org/kafka/3.4.0/kafka_2.12-3.4.0.tgz --output kafk
 
 It should look this:
 
-![Code with Apache Pinot speed results](https://startree.ai/wp-content/uploads/2024/08/1685462322-image8.png 'Code with Apache Pinot speed results')
+![Code with Apache Pinot speed results](/static/images/blogs/external/1685462322-image8.png 'Code with Apache Pinot speed results')
 
 Note that we’ve changed the directory to keep the Kafka folder separate from the Pinot folder.
 
@@ -89,9 +89,9 @@ rm -rf kafka.tgz
 
 It should look like this:
 
-![Code with Apache Kafka](https://startree.ai/wp-content/uploads/2024/08/1685462061-image2.png 'Code with Apache Kafka')
+![Code with Apache Kafka](/static/images/blogs/external/1685462061-image2.png 'Code with Apache Kafka')
 
-![Code with kafka version](https://startree.ai/wp-content/uploads/2024/08/1685462480-image12.png 'Code with kafka version')
+![Code with kafka version](/static/images/blogs/external/1685462480-image12.png 'Code with kafka version')
 
 Now, Kafka and Pinot reside locally on our Docker container with Pinot up and running. Let’s run the Kafka service. Kafka will use the existing ZooKeeper for configuration management.
 
@@ -104,11 +104,11 @@ cd kafka
 
 It should look like this:
 
-![Code with cd kafka](https://startree.ai/wp-content/uploads/2024/08/1685462400-image10.png 'Code with cd kafka')
+![Code with cd kafka](/static/images/blogs/external/1685462400-image10.png 'Code with cd kafka')
 
 To verify that Kafka is running, let’s look at our ZooKeeper configs by browsing to [http://localhost:9000/#/zookeeper:](http://localhost:9000/#/zookeeper)
 
-![Zookeeper Browser](https://startree.ai/wp-content/uploads/2024/08/1685462099-image3.png 'Zookeeper Browser')
+![Zookeeper Browser](/static/images/blogs/external/1685462099-image3.png 'Zookeeper Browser')
 
 You may have to refresh the page and find many more configuration items appear thanexpectedt. These are Kafka configurations.
 
@@ -128,7 +128,7 @@ mkdir events
 
 It should look like this:
 
-![Code with realtime](https://startree.ai/wp-content/uploads/2024/08/1685462150-image4.png 'Code with realtime')
+![Code with realtime](/static/images/blogs/external/1685462150-image4.png 'Code with realtime')
 
 You may have to start a new PowerShell window and connect to Docker for this. Now, let’s install Node.js and any dependencies we might need for the event consumption script:
 
@@ -207,15 +207,15 @@ node wikievents.js
 
 Use Ctrl-C to stop the program. Navigate to the events folder to see some new folders created with the various language events downloaded from Wikipedia.
 
-![Wikievents node in code](https://startree.ai/wp-content/uploads/2024/08/1685462366-image9.png 'Wikievents node in code')
+![Wikievents node in code](/static/images/blogs/external/1685462366-image9.png 'Wikievents node in code')
 
 Navigate to the enwiki folder and review some of the downloaded JSON files.
 
-![Code with realtime wikievents](https://startree.ai/wp-content/uploads/2024/08/1685462441-image11.png 'Code with realtime wikievents')
+![Code with realtime wikievents](/static/images/blogs/external/1685462441-image11.png 'Code with realtime wikievents')
 
 At http://localhost:9000/#/zookeeper, you can find the Kafka topic by locating the ZooKeeper config and expanding config > topics. You may have to refresh your browser.
 
-![Zookeeper browser in Apache Pinot topics](https://startree.ai/wp-content/uploads/2024/08/1685462510-image13.png 'Zookeeper browser in Apache Pinot topics')
+![Zookeeper browser in Apache Pinot topics](/static/images/blogs/external/1685462510-image13.png 'Zookeeper browser in Apache Pinot topics')
 
 Here, you should see the wikipedia-events topic that we created using the Node.js script. So far, so good.
 
@@ -374,7 +374,7 @@ Now, browse to the following location [http://localhost:9000/#/tables,](http://l
 
 Run the node wikievents.js command, then query the newly created wikievents table to see the totalDocs increase in real time:
 
-![Apache Pinot query console](https://startree.ai/wp-content/uploads/2024/08/1685462248-image6.png 'Apache Pinot query console')
+![Apache Pinot query console](/static/images/blogs/external/1685462248-image6.png 'Apache Pinot query console')
 
 To avoid running out of space on your computer, make sure to stop the wikievents.js script when you’re done :-D
 
