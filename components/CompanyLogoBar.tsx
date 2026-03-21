@@ -20,7 +20,7 @@ const CompanyLogoBar: React.FC = () => {
                                 alt={company.alt}
                                 width={120}
                                 height={40}
-                                className="h-auto w-auto max-w-[100px] grayscale dark:invert md:max-w-[120px]"
+                                className="h-auto w-auto max-w-[100px] dark:invert md:max-w-[120px]"
                                 priority={false}
                             />
                         </div>
