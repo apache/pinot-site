@@ -10,6 +10,7 @@
         "serve": "next start",
         "analyze": "cross-env ANALYZE=true next build",
         "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts",
+        "lint:check": "next lint --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts",
         "check": "npx prettier --check .",
         "format": "npx prettier --write .",
         "postinstall": "husky install && node ./scripts/patch-contentlayer.mjs",

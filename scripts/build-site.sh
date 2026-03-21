@@ -9,8 +9,8 @@ set -x
 # Install dependencies
 yarn install
 
-# Run lint checks
-yarn lint
+# Run lint checks (without --fix so CI catches errors instead of silently fixing them)
+yarn lint:check
 
 # Run tests
 yarn test
