@@ -11,6 +11,7 @@ import SectionContainer from '@/components/SectionContainer';
 import Features from '@/components/Features';
 import ArchitectureSection from '@/components/ArchitectureSection';
 import CompanyStories from '@/components/CompanyCarousel';
+import BenchmarkSection from '@/components/BenchmarkSection';
 import CommunitySection from '@/components/CommunitySection';
 import TextCodeSplitSection from '@/components/TextCodeSplitSection';
 import BlogSection from '@/components/BlogSection';
@@ -35,6 +36,7 @@ const Home: FC<HomeProps> = ({ posts }) => {
             <Features />
             <ArchitectureSection />
             <CompanyStories />
+            <BenchmarkSection />
             <CommunitySection />
             <TextCodeSplitSection title={siteMetadata.codeSection.header} />
             <BlogSection posts={posts} />
