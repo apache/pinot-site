@@ -70,8 +70,12 @@ const CompanyStories: React.FC = () => {
                                             {quote.metric && (
                                                 <div className="flex justify-center py-4">
                                                     <div className="rounded-lg bg-vine-100/10 px-6 py-3 text-center">
-                                                        <span className="text-2xl font-bold text-vine-100">{quote.metric.value}</span>
-                                                        <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">{quote.metric.label}</span>
+                                                        <span className="text-2xl font-bold text-vine-100">
+                                                            {quote.metric.value}
+                                                        </span>
+                                                        <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">
+                                                            {quote.metric.label}
+                                                        </span>
                                                     </div>
                                                 </div>
                                             )}

@@ -13,7 +13,7 @@ const BenchmarkSection: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 md:gap-8">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-4">
                     {benchmarkData.map((metric, index) => (
                         <div
                             key={index}
@@ -34,8 +34,9 @@ const BenchmarkSection: React.FC = () => {
 
                 <div className="mt-12 rounded-lg bg-gray-50 px-6 py-6 text-center dark:bg-gray-900">
                     <p className="text-sm text-gray-700 dark:text-gray-300">
-                        Based on production deployments at LinkedIn, Stripe, Uber, and other Pinot users.
-                        Your results will vary based on hardware, schema design, and query complexity.
+                        Based on production deployments at LinkedIn, Stripe, Uber, and other Pinot
+                        users. Your results will vary based on hardware, schema design, and query
+                        complexity.
                     </p>
                 </div>
             </div>

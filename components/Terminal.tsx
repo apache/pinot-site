@@ -17,17 +17,18 @@ const Terminal: FC = () => {
         {
             id: 'step-1',
             title: 'Start Pinot',
-            content: activeArch === 'x86'
-                ? [
-                    'docker run -p 9000:9000 \\',
-                    'apachepinot.docker.scarf.sh/apachepinot/pinot:1.4.0 \\',
-                    'QuickStart -type hybrid'
-                ]
-                : [
-                    'docker run -p 9000:9000 \\',
-                    'apachepinot.docker.scarf.sh/apachepinot/pinot:1.4.0-arm64 \\',
-                    'QuickStart -type hybrid'
-                ]
+            content:
+                activeArch === 'x86'
+                    ? [
+                          'docker run -p 9000:9000 \\',
+                          'apachepinot.docker.scarf.sh/apachepinot/pinot:1.4.0 \\',
+                          'QuickStart -type hybrid'
+                      ]
+                    : [
+                          'docker run -p 9000:9000 \\',
+                          'apachepinot.docker.scarf.sh/apachepinot/pinot:1.4.0-arm64 \\',
+                          'QuickStart -type hybrid'
+                      ]
         },
         {
             id: 'step-2',
@@ -64,7 +65,7 @@ const Terminal: FC = () => {
         }
     ];
 
-    const currentStep = steps.find(s => s.id === activeStep) || steps[0];
+    const currentStep = steps.find((s) => s.id === activeStep) || steps[0];
 
     const handleCopy = async () => {
         try {
@@ -107,7 +108,7 @@ const Terminal: FC = () => {
                     {steps.map((step) => (
                         <button
                             key={step.id}
-                            className={`border-b-4 px-4 py-2 pt-5 font-[Source_Code_Pro] text-sm transition-all
+                            className={`border-b-4 px-4 py-2 pt-5 text-sm font-[Source_Code_Pro] transition-all
                             ${
                                 activeStep === step.id
                                     ? 'border-rose-700 text-base font-semibold'
