@@ -9,6 +9,7 @@ import CompanyLogoBar from '@/components/CompanyLogoBar';
 import TextMediaSplitSection from '@/components/TextMediaSplitSection';
 import SectionContainer from '@/components/SectionContainer';
 import Features from '@/components/Features';
+import BenchmarkSection from '@/components/BenchmarkSection';
 import CompanyStories from '@/components/CompanyCarousel';
 import CommunitySection from '@/components/CommunitySection';
 import TextCodeSplitSection from '@/components/TextCodeSplitSection';
@@ -33,6 +34,7 @@ const Home: FC<HomeProps> = ({ posts }) => {
             />
             <Features />
             <CompanyStories />
+            <BenchmarkSection />
             <CommunitySection />
             <TextCodeSplitSection title={siteMetadata.codeSection.header} />
             <BlogSection posts={posts} />
