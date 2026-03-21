@@ -130,6 +130,16 @@ const siteMetadata = {
         paragraphs: [
             'Apache Pinot OSS YouTube Channel is a dedicated video hub for all things Pinot. Our goal is to bring together meetup talks, tutorials, and real-world use cases in one place, making it easier for the community to learn and share.'
         ],
+        exampleVideos: [
+            {
+                url: 'https://www.youtube.com/embed/bwO0HSXguFA',
+                title: 'Apache Pinot Talk'
+            },
+            {
+                url: 'https://www.youtube.com/embed/yRMhAL_6f4o',
+                title: 'Apache Pinot Talk'
+            }
+        ],
         mainPage: {
             title: 'Apache Pinot OSS YouTube Channel Share Your Expertise',
             description: 'Share your video on Apache Pinot OSS YouTube Channel',
