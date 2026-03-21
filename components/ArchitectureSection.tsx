@@ -41,12 +41,31 @@ const ArchitectureSection: React.FC = () => {
                                         </div>
                                         <div className="grid gap-4">
                                             {[
-                                                { icon: '⚙️', name: 'Controller', desc: 'Manages cluster' },
-                                                { icon: '🔀', name: 'Broker', desc: 'Routes queries' },
-                                                { icon: '💾', name: 'Server', desc: 'Stores segments' },
-                                                { icon: '🔧', name: 'Minion', desc: 'Optimization tasks' }
+                                                {
+                                                    icon: '⚙️',
+                                                    name: 'Controller',
+                                                    desc: 'Manages cluster'
+                                                },
+                                                {
+                                                    icon: '🔀',
+                                                    name: 'Broker',
+                                                    desc: 'Routes queries'
+                                                },
+                                                {
+                                                    icon: '💾',
+                                                    name: 'Server',
+                                                    desc: 'Stores segments'
+                                                },
+                                                {
+                                                    icon: '🔧',
+                                                    name: 'Minion',
+                                                    desc: 'Optimization tasks'
+                                                }
                                             ].map((comp) => (
-                                                <div key={comp.name} className="flex items-center gap-3 rounded bg-white p-3 dark:bg-gray-800">
+                                                <div
+                                                    key={comp.name}
+                                                    className="flex items-center gap-3 rounded bg-white p-3 dark:bg-gray-800"
+                                                >
                                                     <div className="text-xl">{comp.icon}</div>
                                                     <div className="flex-1">
                                                         <div className="text-xs font-semibold text-gray-900 dark:text-gray-100">
@@ -140,7 +159,9 @@ const ArchitectureSection: React.FC = () => {
                                         >
                                             <span>{comp.icon}</span>
                                             <div className="flex-1 text-left">
-                                                <div className="text-xs font-semibold">{comp.name}</div>
+                                                <div className="text-xs font-semibold">
+                                                    {comp.name}
+                                                </div>
                                                 <div className="text-xs text-gray-600 dark:text-gray-400">
                                                     {comp.desc}
                                                 </div>

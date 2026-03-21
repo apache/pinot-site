@@ -9,9 +9,8 @@ const UseCases: React.FC = () => {
                     Use Cases Powered by Apache Pinot
                 </h2>
                 <p className="mb-12 text-center text-lg text-gray-600 md:mb-16">
-                    From real-time dashboards to personalized recommendations, Pinot powers
-                    modern applications that need fast, scalable analytics on petabyte-scale
-                    data.
+                    From real-time dashboards to personalized recommendations, Pinot powers modern
+                    applications that need fast, scalable analytics on petabyte-scale data.
                 </p>
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {useCasesData.map((useCase) => (

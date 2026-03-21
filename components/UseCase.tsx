@@ -4,16 +4,10 @@ import { UseCase as UseCaseType } from '@/data/useCasesData';
 
 interface UseCaseProps extends UseCaseType {}
 
-const UseCase: React.FC<UseCaseProps> = ({
-    icon,
-    title,
-    description,
-    details,
-    learnMoreLink
-}) => {
+const UseCase: React.FC<UseCaseProps> = ({ icon, title, description, details, learnMoreLink }) => {
     return (
-        <div className="flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
-            <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-md bg-vine-50">
+        <div className="flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+            <div className="bg-vine-50 mb-4 flex h-16 w-16 items-center justify-center rounded-md">
                 <Image src={icon} alt={title} width={40} height={40} />
             </div>
             <h3 className="mb-3 text-xl font-semibold text-gray-900">{title}</h3>
@@ -28,7 +22,7 @@ const UseCase: React.FC<UseCaseProps> = ({
             </ul>
             <Link
                 href={learnMoreLink}
-                className="inline-flex text-base font-semibold text-vine-100 hover:text-vine-200 transition-colors"
+                className="hover:text-vine-200 inline-flex text-base font-semibold text-vine-100 transition-colors"
             >
                 Learn more →
             </Link>

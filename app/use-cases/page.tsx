@@ -10,12 +10,10 @@ const UseCasesPage = () => {
     return (
         <section>
             <header className="p-8 text-center md:p-0 md:pt-16">
-                <h1 className="mb-6 text-3xl font-bold md:text-5xl">
-                    Apache Pinot Use Cases
-                </h1>
+                <h1 className="mb-6 text-3xl font-bold md:text-5xl">Apache Pinot Use Cases</h1>
                 <p className="mx-auto max-w-2xl text-lg text-gray-600 md:mb-12">
-                    Discover how teams at leading companies use Apache Pinot to power
-                    real-time analytics, dashboards, and intelligent applications at scale.
+                    Discover how teams at leading companies use Apache Pinot to power real-time
+                    analytics, dashboards, and intelligent applications at scale.
                 </p>
             </header>
             <UseCases />
