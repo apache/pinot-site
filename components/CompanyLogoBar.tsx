@@ -20,9 +20,9 @@ const CompanyLogoBar: React.FC = () => {
                                 <Image
                                     src={company.logo}
                                     alt={company.alt}
-                                    width={120}
-                                    height={40}
-                                    className="h-auto w-auto max-w-[100px] dark:invert md:max-w-[120px]"
+                                    width={240}
+                                    height={80}
+                                    className="h-auto w-auto max-w-[200px] dark:invert md:max-w-[240px]"
                                     priority={false}
                                 />
                             </div>
