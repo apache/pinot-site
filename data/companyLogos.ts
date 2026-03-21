@@ -38,6 +38,7 @@ const companyLogos = [
     },
     { name: 'Sovrn', logo: '/static/images/companies/media/sorvn.svg', alt: 'Sovrn' },
     // Fintech
+    { name: 'Visa', logo: '/static/images/companies/fintech/visa.svg', alt: 'Visa' },
     { name: 'Stripe', logo: '/static/images/companies/fintech/stripe.svg', alt: 'Stripe' },
     {
         name: 'Goldman Sachs',
