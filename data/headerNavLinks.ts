@@ -2,7 +2,7 @@ const headerNavLinks = [
     { href: '/', title: 'Home' },
     { href: 'https://docs.pinot.apache.org', title: 'Docs' },
     { href: '/download/', title: 'Download' },
-    { href: '/powered-by/', title: 'Powered by' },
+    { href: '/powered-by/', title: 'Who Uses Pinot' },
     { href: '/blog/', title: 'Blog' },
     { href: '/#join-community', title: 'Community' }
 ];

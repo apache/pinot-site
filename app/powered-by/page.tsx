@@ -8,7 +8,7 @@ import { genPageMetadata } from '../seo';
 import siteMetadata from '@/data/siteMetadata';
 
 export const metadata = genPageMetadata({
-    title: 'Powered By',
+    title: 'Who Uses Pinot',
     description: 'Companies using Apache Pinot'
 });
 
@@ -17,7 +17,7 @@ const PoweredBy = () => {
         <section>
             <header className="p-8 pb-6 text-center md:p-0 md:pt-16">
                 <h1 className="mb-6 text-3xl font-bold md:pb-10 md:text-5xl">
-                    Powered by Apache Pinot&trade;
+                    Who Uses Apache Pinot&trade;
                 </h1>
                 <h3 className="pt-4 text-2xl font-semibold md:pb-10">Company Stories</h3>
             </header>
