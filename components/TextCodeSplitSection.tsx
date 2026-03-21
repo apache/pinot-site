@@ -20,6 +20,9 @@ const TextCodeSplitSection: React.FC<TextCodeSplitSectionProps> = ({ title }) =>
                         <h2 className=" text-[2rem] font-bold leading-10 text-gray-900 dark:text-white md:text-5xl md:leading-[4rem]">
                             {title}
                         </h2>
+                        <p className="mt-2 text-lg text-gray-600 dark:text-gray-300">
+                            From install to first query in under 5 minutes.
+                        </p>
                     </header>
                     <div className="flex justify-start pb-6">
                         <Button
