@@ -1,9 +1,16 @@
+export interface UseCaseExample {
+    company: string;
+    description: string;
+    link: string;
+}
+
 export interface UseCase {
     id: string;
     icon: string;
     title: string;
     description: string;
     details: string[];
+    example: UseCaseExample;
     learnMoreLink: string;
 }
 
@@ -19,7 +26,14 @@ const useCasesData: UseCase[] = [
             'Fresh data ingested in real-time from streaming sources',
             'Support for complex aggregations and filters'
         ],
-        learnMoreLink: 'https://docs.pinot.apache.org/basics/getting-started'
+        example: {
+            company: 'Stripe',
+            description:
+                'Stripe uses Pinot to power real-time billing dashboards, serving 10K+ queries/sec with sub-second latency while tracking $18.6B in transactions during Black Friday-Cyber Monday.',
+            link: 'https://startree.ai/user-stories/stripe-journey-to-18-b-of-transactions-with-apache-pinot/'
+        },
+        learnMoreLink:
+            'https://startree.ai/user-stories/stripe-journey-to-18-b-of-transactions-with-apache-pinot/'
     },
     {
         id: 'user-facing-analytics',
@@ -32,7 +46,14 @@ const useCasesData: UseCase[] = [
             'Horizontally scalable architecture for growing demand',
             'Built-in multitenancy for product isolation'
         ],
-        learnMoreLink: 'https://docs.pinot.apache.org/basics/architecture'
+        example: {
+            company: 'LinkedIn',
+            description:
+                'LinkedIn built Pinot to power "Who Viewed Your Profile" and 50+ other user-facing apps, serving 250K+ queries/sec across 700M+ members.',
+            link: 'https://engineering.linkedin.com/analytics/real-time-analytics-massive-scale-pinot'
+        },
+        learnMoreLink:
+            'https://engineering.linkedin.com/analytics/real-time-analytics-massive-scale-pinot'
     },
     {
         id: 'anomaly-detection',
@@ -45,7 +66,14 @@ const useCasesData: UseCase[] = [
             'Query freshly ingested data immediately for anomaly detection',
             'High-concurrency support for continuous monitoring systems'
         ],
-        learnMoreLink: 'https://docs.pinot.apache.org/basics/data-ingestion'
+        example: {
+            company: 'Cisco Webex',
+            description:
+                'Webex processes 100+ TB of telemetry data daily through Pinot for real-time observability and anomaly detection, replacing Elasticsearch and eliminating 500+ nodes.',
+            link: 'https://startree.ai/resources/full-meetup-uber-webex-beaconstac-startree'
+        },
+        learnMoreLink:
+            'https://startree.ai/resources/full-meetup-uber-webex-beaconstac-startree'
     },
     {
         id: 'adhoc-olap',
@@ -58,7 +86,13 @@ const useCasesData: UseCase[] = [
             'SQL interface for flexible analytical queries',
             'Rich indexing options for optimized query performance'
         ],
-        learnMoreLink: 'https://docs.pinot.apache.org/basics/indexing'
+        example: {
+            company: 'Uber',
+            description:
+                'Uber runs 100+ offline analytics use cases with 500+ production tables in Pinot, serving sub-second queries for inventory, catalog, and business intelligence workloads.',
+            link: 'https://www.uber.com/blog/pinot-for-low-latency/'
+        },
+        learnMoreLink: 'https://www.uber.com/blog/pinot-for-low-latency/'
     },
     {
         id: 'event-analytics',
@@ -71,7 +105,14 @@ const useCasesData: UseCase[] = [
             'Efficient storage and querying of high-volume events',
             'Support for time-series analysis and windowing'
         ],
-        learnMoreLink: 'https://docs.pinot.apache.org/basics/getting-started'
+        example: {
+            company: 'DoorDash',
+            description:
+                'DoorDash tracks ad impressions, clicks, and orders across 500+ dimensions in real time using Pinot, reducing query latency from 30-second timeouts to under 100ms.',
+            link: 'https://startree.ai/resources/doordash-supporting-multiple-pinot-use-cases-at-scale/'
+        },
+        learnMoreLink:
+            'https://startree.ai/resources/doordash-supporting-multiple-pinot-use-cases-at-scale/'
     },
     {
         id: 'personalization',
@@ -84,7 +125,14 @@ const useCasesData: UseCase[] = [
             'Support for complex joins between user and behavioral data',
             'Upserts for real-time profile updates'
         ],
-        learnMoreLink: 'https://docs.pinot.apache.org/basics/getting-started'
+        example: {
+            company: 'LinkedIn',
+            description:
+                'LinkedIn uses Pinot to compute near-real-time features for feed personalization, retrieving member actions with attributes in under 50ms at 20,000+ queries/sec.',
+            link: 'https://startree.ai/resources/how-apache-pinot-serves-up-real-time-personalization-at-scale'
+        },
+        learnMoreLink:
+            'https://startree.ai/resources/how-apache-pinot-serves-up-real-time-personalization-at-scale'
     }
 ];
 
