@@ -1,0 +1,79 @@
+---
+title: 'Announcing Apache Pinot 1.3'
+date: 2025-02-17
+authors: ['qiaochu']
+summary: 'Apache Pinot 1.3.0 brings an experimental time-series engine, cursor-based pagination, database query quotas, multi-stream ingestion, and major Multistage Engine performance improvements.'
+
+tags: [Apache Pinot, releases, real-time analytics, open source, time-series, multistage engine]
+---
+
+We are pleased to announce that Apache Pinot 1.3.0 has been released!
+
+Apache Pinot is a realtime distributed OLAP datastore, designed to answer OLAP queries with low latency. This release delivers significant new capabilities and performance improvements across the board, with 2,166 commits since the last release.
+
+## Highlights
+
+### Experimental Time-Series Engine
+
+Pinot 1.3 introduces a pluggable time-series query engine with native support for multiple time-series query languages like **PromQL** and **M3QL**. This is designed for observability use cases with high-cardinality metrics:
+
+-   Pluggable query language support via plugins
+-   Custom operators specific to each language (e.g., `nonNegativeDerivative`, `holt_winters`)
+-   Optimized for time-series data, processing data in series rather than rows
+-   Reuses existing components like the Multi-Stage Engine query scheduler and dispatcher
+
+This makes Pinot a compelling option for teams looking to consolidate real-time analytics and time-series observability into a single platform.
+
+### Cursor-Based Pagination
+
+Clients can now consume query results incrementally in smaller chunks, reducing memory requirements and simplifying application logic. New REST APIs allow iterating through large result sets without fetching everything at once, making it easier to build applications that query across large datasets.
+
+### Database Query Quotas
+
+Pinot 1.3 adds rate-limiting at the database level, covering all queries made to tables within a database. This includes:
+
+-   A configurable database-level rate limiter with default and override settings
+-   APIs for dynamic quota management
+-   Per-broker quotas that adjust dynamically based on the number of live brokers
+
+This is especially useful for multi-tenant environments where teams share a Pinot cluster.
+
+### Multi-Stream Ingestion
+
+Tables can now ingest from **multiple data sources simultaneously**. This uses the existing `TableConfig` interface to define multiple streams, with no changes to existing interfaces. It is fully compatible with existing transformations, stream partition auto-expansion, and instance assignment strategies.
+
+### Multistage Engine Improvements
+
+The Multistage Engine received significant enhancements:
+
+-   **Expression Reuse (SPOOL)**: Stages can now share data across multiple downstream stages, transforming stage connections into a DAG for greater efficiency.
+-   **DataBlock Serde Performance**: 1x to 3x throughput gains by reducing memory allocation and copies, significantly reducing GC-related latency.
+-   **Segment-Level Execution Plans**: New `ExplainedPlanNode` enriches query plans with physical operator details for better transparency and debugging.
+-   **OOM Protection**: Per-block row tracking for CROSS JOINs prevents out-of-memory errors while still allowing large joins.
+
+### Binary Workload Scheduler
+
+A new scheduler categorizes queries into **Primary** (production traffic, FCFS) and **Secondary** (ad-hoc, debugging) workloads. Secondary workloads have constrained concurrent queries and thread usage, preventing them from impacting production query performance.
+
+## Other Notable Improvements
+
+-   **URL Functions**: Comprehensive URL processing functions for extraction, encoding/decoding, and manipulation
+-   **TLS/SSL Improvements**: TLS support for mailboxes used in the multi-stage engine and configurable TLS between brokers and servers
+-   **Timestamp Index Support**: Native indexing on timestamp columns
+-   **Window Function Enhancements**: `IGNORE NULLS` for `FIRST_VALUE`/`LAST_VALUE`, custom window frame bounds, and `COALESCE` as a variadic scalar function
+-   **Lookup Join Support**: New join strategy for enrichment-style queries
+-   **Lucene Analyzer Configurability**: Customize text search analysis per use case
+
+## Getting Started
+
+The release can be downloaded at [https://pinot.apache.org/download](https://pinot.apache.org/download)
+
+The full release notes are available at [https://github.com/apache/pinot/releases/tag/release-1.3.0](https://github.com/apache/pinot/releases/tag/release-1.3.0)
+
+## Resources
+
+-   [Download page](https://pinot.apache.org/download/)
+-   [Getting started](https://docs.pinot.apache.org/getting-started)
+-   [Join our Slack channel](https://communityinviter.com/apps/apache-pinot/apache-pinot)
+-   [See our upcoming events](https://www.meetup.com/apache-pinot)
+-   [Follow us on social media](https://twitter.com/ApachePinot)
