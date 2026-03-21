@@ -11,12 +11,13 @@ const HeroSection = () => {
         <section className="md:mx-auto md:max-w-screen-outerLiveArea">
             <div className="p-8 text-center md:pb-12 md:pt-24">
                 <h1 className="mb-4 text-4xl font-bold leading-[45px] md:text-[3.5rem] md:leading-[70px]">
-                    Insights, Unlocked in Real Time.
+                    Real-Time Analytics at Extreme Scale
                 </h1>
                 <p className="m-auto mb-8 max-w-4xl text-lg md:leading-[28.80px]">
-                    Apache Pinot&trade;: The real-time analytics open source platform for
-                    lightning-fast insights, effortless scaling, and cost-effective data-driven
-                    decisions.
+                    Apache Pinot&trade; is a real-time distributed OLAP datastore that delivers
+                    sub-second queries over streaming and batch data. Purpose-built for user-facing
+                    analytics, it handles hundreds of thousands of queries per second with
+                    millisecond latency at petabyte scale.
                 </p>
                 <div className="flex justify-center gap-4">
                     <Button
