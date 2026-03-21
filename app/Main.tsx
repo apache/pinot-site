@@ -5,6 +5,7 @@ import { CoreContent } from 'pliny/utils/contentlayer';
 import { Blog } from '@/.contentlayer/generated';
 import siteMetadata from '@/data/siteMetadata';
 import HeroSection from '@/components/HeroSection';
+import CompanyLogoBar from '@/components/CompanyLogoBar';
 import TextMediaSplitSection from '@/components/TextMediaSplitSection';
 import SectionContainer from '@/components/SectionContainer';
 import Features from '@/components/Features';
@@ -21,6 +22,7 @@ const Home: FC<HomeProps> = ({ posts }) => {
     return (
         <>
             <HeroSection />
+            <CompanyLogoBar />
             <TextMediaSplitSection
                 videoUrl={siteMetadata.video.videoUrl}
                 videoTitle={siteMetadata.video.title}
