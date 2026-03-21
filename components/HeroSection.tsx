@@ -22,7 +22,7 @@ const HeroSection = () => {
                     <Button
                         variant="default"
                         size="xl"
-                        className="rounded-lg bg-vine-100 px-8 py-3 text-xl"
+                        className="rounded-lg bg-vine-100 px-5 py-3 text-xl sm:px-8"
                     >
                         <Link href={siteMetadata.cta.getStarted} target="_blank">
                             Get Started
@@ -31,7 +31,7 @@ const HeroSection = () => {
                     <Button
                         variant="outline"
                         size="xl"
-                        className="rounded-lg border-2 border-vine-100 px-8 py-3 text-xl text-vine-100 hover:border-vine-120 hover:text-vine-120"
+                        className="rounded-lg border-2 border-vine-100 px-5 py-3 text-xl text-vine-100 hover:border-vine-120 hover:text-vine-120 sm:px-8"
                     >
                         <Link href={siteMetadata.cta.slackInvite} target="_blank">
                             Join Slack

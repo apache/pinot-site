@@ -42,19 +42,19 @@ export default function AnnouncementBar({
     }
 
     return (
-        <div className={clsx('z-50', backgroundColor, className)}>
+        <div className={clsx('z-50 w-full', backgroundColor, className)}>
             <div
                 className={clsx(
-                    'flex items-center justify-center gap-2 p-4 md:gap-4 md:p-2',
+                    'flex w-full items-center justify-center gap-2 p-4 md:gap-4 md:p-2',
                     className
                 )}
             >
                 <Link
                     href={buttonHref || '#'}
                     target={buttonTarget}
-                    className={`inline-flex items-center whitespace-nowrap text-base font-semibold hover:opacity-80 md:text-base ${buttonColor}`}
+                    className={`inline-flex max-w-full flex-wrap items-center justify-center text-sm font-semibold hover:opacity-80 sm:text-base ${buttonColor}`}
                 >
-                    <div className="ml-5 flex items-center text-left">
+                    <div className="ml-5 flex max-w-full items-center text-center">
                         {iconSrc && (
                             <img
                                 src={iconSrc}
@@ -62,7 +62,9 @@ export default function AnnouncementBar({
                                 className="mb-2 mr-3 h-6 w-auto md:mb-0 md:mr-6"
                             />
                         )}
-                        <span className={`text-base font-semibold md:text-lg ${textColor}`}>
+                        <span
+                            className={`text-sm font-semibold sm:text-base md:text-lg ${textColor}`}
+                        >
                             {text}
                         </span>
                     </div>
