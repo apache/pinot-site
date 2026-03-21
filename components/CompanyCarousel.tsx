@@ -62,12 +62,21 @@ const CompanyStories: React.FC = () => {
                                         height={28}
                                     />
                                     {quote.text && (
-                                        <span className=" max-w-[52rem]">
-                                            <p className="text-center text-lg text-gray-900 dark:text-white md:text-xl">
+                                        <span className=” max-w-[52rem]”>
+                                            <p className=”text-center text-lg text-gray-900 dark:text-white md:text-xl”>
                                                 “{quote.text}”
                                             </p>
 
-                                            <p className="pb-1 pt-4 text-center text-gray-500 dark:text-gray-300 md:text-base">
+                                            {quote.metric && (
+                                                <div className=”flex justify-center py-4”>
+                                                    <div className=”rounded-lg bg-vine-100/10 px-6 py-3 text-center”>
+                                                        <span className=”text-2xl font-bold text-vine-100”>{quote.metric.value}</span>
+                                                        <span className=”ml-2 text-sm text-gray-600 dark:text-gray-400”>{quote.metric.label}</span>
+                                                    </div>
+                                                </div>
+                                            )}
+
+                                            <p className=”pb-1 pt-4 text-center text-gray-500 dark:text-gray-300 md:text-base”>
                                                 - {quote.author}
                                             </p>
                                         </span>
