@@ -11,59 +11,73 @@ export interface CompanyQuote {
 
 const quotes: CompanyQuote[] = [
     {
-        logo: '/static/images/carousel/razorpay.svg',
-        company: 'Razopay',
-        text: "Apache Pinot has truly played a fundamental role in Razorpay's monitoring journey!",
-        author: 'Prashant Pandey'
+        logo: '/static/images/stories/linkedin.svg',
+        company: 'LinkedIn',
+        text: 'Apache Pinot powers over 50 user-facing applications at LinkedIn, serving 250,000+ queries per second with millisecond latency across hundreds of billions of records.',
+        author: 'LinkedIn Engineering',
+        metric: {
+            value: '250K+ QPS',
+            label: 'across 50+ user-facing applications'
+        }
     },
     {
         logo: '/static/images/carousel/stripe.svg',
         company: 'Stripe',
-        text: 'Pinot enables us to execute sub-second, petabyte-scale aggregation queries over fresh financial events in our internal ledger. We chose Pinot because of its rich feature set and scalability, which has enabled better performance than our previous solution — at a lower cost.',
-        author: 'Peter Bakkum',
+        text: 'Pinot enables us to execute sub-second, petabyte-scale aggregation queries over fresh financial events. During Black Friday-Cyber Monday, Pinot helped us track over $18.6B in transaction volume across 300M+ transactions with P99 latency of 70ms.',
+        author: 'Peter Bakkum, Stripe',
         metric: {
-            value: 'Petabyte-scale',
-            label: 'aggregation queries with sub-second latency'
+            value: '200K QPS',
+            label: 'at P99 latency of 70ms across 3PB'
+        }
+    },
+    {
+        logo: '/static/images/stories/uber.svg',
+        company: 'Uber',
+        text: 'Uber relies on Apache Pinot for 100+ real-time analytics use cases across the marketplace. Our Neutrino service alone serves 500+ million Pinot queries daily, powering everything from ride tracking to catalog search over 10 billion+ row tables.',
+        author: 'Uber Engineering',
+        metric: {
+            value: '500M+',
+            label: 'queries served daily via Neutrino'
         }
     },
     {
         logo: '/static/images/carousel/webex.svg',
-        company: 'Webex',
-        text: 'Forget sluggish queries!! Apache Pinot whipped our runtime aggregates, with sub-second latencies on all but the most complex queries. On top of the speed boost, Pinot slashed our storage footprint by 10x, letting us shrink the cluster by a whopping 500 nodes',
-        author: 'WEBEX',
+        company: 'Cisco Webex',
+        text: 'Apache Pinot replaced Elasticsearch for our real-time observability, delivering 5x to 150x better query performance. We shrank our cluster by 500+ nodes while handling 100+ TB of telemetry data per day with sub-second latency.',
+        author: 'Cisco Webex Engineering',
         metric: {
-            value: '10x',
-            label: 'storage reduction, 500 nodes eliminated'
+            value: '500 nodes',
+            label: 'eliminated vs. Elasticsearch'
         }
     },
     {
-        logo: '/static/images/companies/media/linkedin.svg',
-        company: 'LinkedIn',
-        text: 'Apache Pinot powers over 50+ user-facing applications at LinkedIn, serving hundreds of thousands of queries per second with millisecond latency across our analytics products.',
-        author: 'LinkedIn Engineering',
+        logo: '/static/images/companies/food/door_dash.svg',
+        company: 'DoorDash',
+        text: 'We migrated our metrics and alerting platform to Apache Pinot, reducing query latency from 30-second timeouts down to under 100ms. Pinot now powers real-time analytics across 500+ dimensions for our risk and ads platforms.',
+        author: 'DoorDash Engineering',
         metric: {
-            value: '50+',
-            label: 'user-facing apps powered by Pinot'
+            value: '<100ms',
+            label: 'latency, down from 30s timeouts'
         }
     },
     {
-        logo: '/static/images/companies/food/uber.svg',
-        company: 'Uber',
-        text: 'We use Apache Pinot to power real-time analytics across our marketplace, enabling data-driven decisions for millions of trips every day.',
-        author: 'Uber Engineering',
-        metric: {
-            value: 'Millions',
-            label: 'of trips analyzed daily in real time'
-        }
-    },
-    {
-        logo: '/static/images/companies/retail/walmart.svg',
+        logo: '/static/images/stories/walmart.svg',
         company: 'Walmart',
-        text: "Apache Pinot helps us deliver real-time insights across Walmart's e-commerce and retail operations at massive scale.",
+        text: 'Every order on walmart.com flows through Apache Pinot. We ingest 14 million events per minute from Kafka with under 900ms lag, enabling real-time order monitoring and dramatically reducing our Mean Time to Detect and Recover.',
         author: 'Walmart Global Tech',
         metric: {
-            value: 'Massive scale',
-            label: 'real-time retail analytics'
+            value: '14M',
+            label: 'events/min ingested with <900ms lag'
+        }
+    },
+    {
+        logo: '/static/images/carousel/razorpay.svg',
+        company: 'Razorpay',
+        text: 'Apache Pinot transformed our payment monitoring from 15-20 minute batch delays to under 1 second data freshness. At peak, we ingest 1 million events per second while tracking 60 billion transactions per year across our platform.',
+        author: 'Razorpay Engineering',
+        metric: {
+            value: '1M events/sec',
+            label: 'at peak, 60B transactions/year'
         }
     }
 ];
