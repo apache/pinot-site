@@ -136,6 +136,11 @@ const companiesUsingPinot: Company[] = [
     },
     // Fintech
     {
+        name: 'Visa',
+        logo: '/static/images/companies/fintech/visa.svg',
+        type: 'fintech'
+    },
+    {
         name: 'Citi',
         logo: '/static/images/companies/fintech/citibank.svg',
         type: 'fintech'
