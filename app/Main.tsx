@@ -9,7 +9,6 @@ import CompanyLogoBar from '@/components/CompanyLogoBar';
 import TextMediaSplitSection from '@/components/TextMediaSplitSection';
 import SectionContainer from '@/components/SectionContainer';
 import Features from '@/components/Features';
-import ArchitectureSection from '@/components/ArchitectureSection';
 import CompanyStories from '@/components/CompanyCarousel';
 import CommunitySection from '@/components/CommunitySection';
 import TextCodeSplitSection from '@/components/TextCodeSplitSection';
@@ -33,7 +32,6 @@ const Home: FC<HomeProps> = ({ posts }) => {
                 ctaHref={siteMetadata.cta.learnMore}
             />
             <Features />
-            <ArchitectureSection />
             <CompanyStories />
             <CommunitySection />
             <TextCodeSplitSection title={siteMetadata.codeSection.header} />
