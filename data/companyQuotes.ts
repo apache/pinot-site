@@ -7,6 +7,8 @@ export interface CompanyQuote {
         value: string;
         label: string;
     };
+    sourceLabel: string;
+    sourceUrl: string;
 }
 
 const quotes: CompanyQuote[] = [
@@ -18,7 +20,10 @@ const quotes: CompanyQuote[] = [
         metric: {
             value: '250K+ QPS',
             label: 'across 50+ user-facing applications'
-        }
+        },
+        sourceLabel: 'Engineering post',
+        sourceUrl:
+            'https://engineering.linkedin.com/blog/2021/real-time-analytics-at-scale-with-pinot'
     },
     {
         logo: '/static/images/carousel/stripe.svg',
@@ -28,7 +33,9 @@ const quotes: CompanyQuote[] = [
         metric: {
             value: '200K QPS',
             label: 'at P99 latency of 70ms across 3PB'
-        }
+        },
+        sourceLabel: 'Talk',
+        sourceUrl: 'https://www.youtube.com/watch?v=Rmxo9VB3TaU'
     },
     {
         logo: '/static/images/stories/uber.svg',
@@ -38,7 +45,9 @@ const quotes: CompanyQuote[] = [
         metric: {
             value: '500M+',
             label: 'queries served daily via Neutrino'
-        }
+        },
+        sourceLabel: 'Engineering post',
+        sourceUrl: 'https://www.uber.com/blog/engineering/real-time-analytics/'
     },
     {
         logo: '/static/images/carousel/webex.svg',
@@ -48,7 +57,9 @@ const quotes: CompanyQuote[] = [
         metric: {
             value: '500 nodes',
             label: 'eliminated vs. Elasticsearch'
-        }
+        },
+        sourceLabel: 'Case study',
+        sourceUrl: 'https://pinot.apache.org/powered-by/'
     },
     {
         logo: '/static/images/companies/food/door_dash.svg',
@@ -58,7 +69,10 @@ const quotes: CompanyQuote[] = [
         metric: {
             value: '<100ms',
             label: 'latency, down from 30s timeouts'
-        }
+        },
+        sourceLabel: 'Engineering post',
+        sourceUrl:
+            'https://doordash.engineering/2024/01/09/from-elasticsearch-to-apache-pinot-at-doordash/'
     },
     {
         logo: '/static/images/stories/walmart.svg',
@@ -68,7 +82,10 @@ const quotes: CompanyQuote[] = [
         metric: {
             value: '14M',
             label: 'events/min ingested with <900ms lag'
-        }
+        },
+        sourceLabel: 'Engineering post',
+        sourceUrl:
+            'https://medium.com/walmartglobaltech/walmarts-real-time-analytics-with-apache-pinot-a9ecf4d76ee'
     },
     {
         logo: '/static/images/carousel/razorpay.svg',
@@ -78,7 +95,10 @@ const quotes: CompanyQuote[] = [
         metric: {
             value: '1M events/sec',
             label: 'at peak, 60B transactions/year'
-        }
+        },
+        sourceLabel: 'Engineering post',
+        sourceUrl:
+            'https://engineering.razorpay.com/building-real-time-analytics-at-razorpay-with-apache-pinot-b44ad1e2f244'
     }
 ];
 

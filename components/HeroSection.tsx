@@ -32,9 +32,7 @@ const HeroSection = () => {
                         size="xl"
                         className="rounded-lg border-2 border-vine-100 px-5 py-3 text-xl text-vine-100 hover:border-vine-120 hover:text-vine-120 sm:px-8"
                     >
-                        <Link href={siteMetadata.cta.slackInvite} target="_blank">
-                            Join Slack
-                        </Link>
+                        <Link href="/use-cases/">Explore Use Cases</Link>
                     </Button>
                 </div>
             </div>

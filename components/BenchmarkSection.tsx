@@ -29,6 +29,14 @@ const BenchmarkSection: React.FC = () => {
                             <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
                                 {metric.description}
                             </p>
+                            <a
+                                href={metric.sourceUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="mt-3 inline-block rounded-full border border-gray-300 px-3 py-0.5 text-xs text-gray-500 transition-colors hover:border-amber-700 hover:text-amber-800 dark:border-gray-600 dark:text-gray-400 dark:hover:border-amber-600 dark:hover:text-amber-500"
+                            >
+                                {metric.source} &#8599;
+                            </a>
                         </div>
                     ))}
                 </div>

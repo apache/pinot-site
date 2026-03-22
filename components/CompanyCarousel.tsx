@@ -83,6 +83,16 @@ const CompanyStories: React.FC = () => {
                                             <p className="pb-1 pt-4 text-center text-gray-500 dark:text-gray-300 md:text-base">
                                                 - {quote.author}
                                             </p>
+                                            <div className="flex justify-center pb-2 pt-1">
+                                                <a
+                                                    href={quote.sourceUrl}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="inline-block rounded-full border border-gray-300 px-3 py-0.5 text-xs text-gray-500 transition-colors hover:border-amber-700 hover:text-amber-800 dark:border-gray-600 dark:text-gray-400 dark:hover:border-amber-600 dark:hover:text-amber-500"
+                                                >
+                                                    {quote.sourceLabel} &#8599;
+                                                </a>
+                                            </div>
                                         </span>
                                     )}
                                 </CarouselItem>
