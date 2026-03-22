@@ -8,6 +8,7 @@ import {
     TableRow
 } from '@/components/ui/table';
 import { type DownloadData } from '@/data/downloadsData';
+import pinotMeta from '@/data/pinot-meta.json';
 import Link from '../Link';
 
 interface DownloadTableProps {
@@ -39,7 +40,14 @@ const DesktopDownloadTable: React.FC<DownloadTableProps> = ({ data }) => {
             <TableBody>
                 {data.map((download) => (
                     <TableRow key={download.version} className="border-t border-neutral-400">
-                        <TableCell className="align-top text-lg">{download.version}</TableCell>
+                        <TableCell className="align-top text-lg">
+                            {download.version}
+                            {download.version === pinotMeta.latestVersion && (
+                                <span className="ml-2 inline-block rounded bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-800">
+                                    Latest
+                                </span>
+                            )}
+                        </TableCell>
                         <TableCell className="align-top text-lg">{download.date}</TableCell>
                         <TableCell className="align-top">
                             <div className="flex space-x-2 text-lg font-semibold">

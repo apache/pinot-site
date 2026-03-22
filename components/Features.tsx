@@ -1,5 +1,6 @@
 import Feature from './Feature';
 import featuresData from '@/data/featuresData';
+import pinotMeta from '@/data/pinot-meta.json';
 
 const Features: React.FC = () => {
     return (
@@ -18,6 +19,10 @@ const Features: React.FC = () => {
                         />
                     ))}
                 </div>
+                <p className="mt-12 text-center text-xs text-gray-500 dark:text-gray-500">
+                    Last verified against Apache Pinot {pinotMeta.lastVerifiedVersion} on{' '}
+                    {pinotMeta.lastVerified}
+                </p>
             </div>
         </section>
     );

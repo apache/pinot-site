@@ -1,3 +1,5 @@
+const pinotMeta = require('./pinot-meta.json');
+
 /** @type {import("pliny/config").PlinyConfig } */
 // create type
 // type SiteMetadata = typeof siteMetadata;
@@ -5,7 +7,7 @@ const siteMetadata = {
     title: 'Apache Pinot™',
     author: 'Apache Pinot™',
     headerTitle: '',
-    description: 'Realtime distributed OLAP datastore',
+    description: pinotMeta.shortDescription,
     language: 'en-us',
     // theme: 'system', // system, dark or light
     theme: 'light', // system, dark or light
@@ -27,7 +29,7 @@ const siteMetadata = {
         description: 'Apache Pinot',
         heading: 'What is Apache Pinot?',
         paragraphs: [
-            'Originally developed at LinkedIn, Apache PinotTM is a real-time distributed OLAP datastore, purpose-built to provide ultra low-latency analytics at extremely high throughput.',
+            `Originally developed at LinkedIn, ${pinotMeta.tagline}`,
             'With its distributed architecture and columnar storage, Apache Pinot empowers businesses to gain valuable insights from real-time data, supporting data-driven decision-making and applications.'
         ]
     },

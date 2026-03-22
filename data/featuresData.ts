@@ -8,9 +8,9 @@ interface Feature {
 const featuresData: Feature[] = [
     {
         imageSrc: '/static/images/features/fast_queries.svg',
-        title: 'Fast Queries',
+        title: 'Sub-Second Queries',
         description: [
-            'Filter and aggregate petabyte data sets with P90 latencies in the tens of milliseconds—fast enough to return live results interactively in the UI.'
+            'Filter and aggregate petabyte data sets with P90 latencies in the tens of milliseconds — fast enough to return live results interactively in the UI.'
         ]
     },
     {
@@ -22,7 +22,7 @@ const featuresData: Feature[] = [
     },
     {
         imageSrc: '/static/images/features/batch_ingest.svg',
-        title: 'Batch and Streaming Ingest',
+        title: 'Real-Time Streaming Ingestion',
         description: [
             'Ingest from ',
             { text: 'Apache Kafka', url: 'https://kafka.apache.org/' },
@@ -37,13 +37,25 @@ const featuresData: Feature[] = [
         imageSrc: '/static/images/features/upsert.svg',
         title: 'Upserts',
         description: [
-            'Ingest the same record many times, but see only the latest value at query time. Upserts are built-in and production-tested since version 0.6.'
+            'Ingest the same record many times, but see only the latest value at query time. ',
+            {
+                text: 'Upserts',
+                url: 'https://docs.pinot.apache.org/basics/data-import/upsert'
+            },
+            ' are built-in and production-tested since version 0.6.'
         ]
     },
     {
         imageSrc: '/static/images/features/versatile_joins.svg',
         title: 'Versatile Joins',
-        description: ['Perform arbitrary fact/dimension and fact/fact joins on petabyte data sets.']
+        description: [
+            'Perform arbitrary ',
+            {
+                text: 'fact/dimension and fact/fact joins',
+                url: 'https://docs.pinot.apache.org/users/user-guide-query/querying-pinot#joins'
+            },
+            ' on petabyte data sets.'
+        ]
     },
     {
         imageSrc: '/static/images/features/options.svg',
@@ -97,14 +109,24 @@ const featuresData: Feature[] = [
         imageSrc: '/static/images/features/sql_query.svg',
         title: 'SQL Query Interface',
         description: [
-            'The highly standard SQL query interface is accessible through a built-in query editor and a REST API.'
+            'The highly standard ',
+            {
+                text: 'SQL query interface',
+                url: 'https://docs.pinot.apache.org/users/user-guide-query/querying-pinot'
+            },
+            ' is accessible through a built-in query editor and a REST API.'
         ]
     },
     {
         imageSrc: '/static/images/features/multitenancy.svg',
         title: 'Built-in Multitenancy',
         description: [
-            'Manage and secure data in isolated logical namespaces for cloud-friendly resource management.'
+            'Manage and secure data in isolated logical namespaces for cloud-friendly resource management. ',
+            {
+                text: 'Learn more about multitenancy',
+                url: 'https://docs.pinot.apache.org/basics/concepts/tenant'
+            },
+            '.'
         ]
     }
 ];
