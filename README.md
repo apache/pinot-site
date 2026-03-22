@@ -4,7 +4,7 @@
 
 This is the private repository for the Apache Pinot blog and documentation website. It contains all the source code and materials required for the development and deployment of the site. The website serves as a central platform for the Apache Pinot community to access the blog posts, tutorials, and comprehensive documentation.
 
-Apache Pinot is an open-source real-time analytics database for user-facing and agent-facing applications, delivering sub-second queries on fresh data at very high concurrency. The goal of this website is to provide an informative, responsive, and engaging user experience to all community members.
+Apache Pinot is an open-source distributed OLAP database for user-facing and agent-facing real-time analytics, delivering sub-second queries on fresh data at very high concurrency. The goal of this website is to provide an informative, responsive, and engaging user experience to all community members.
 
 ## Getting Started
 
