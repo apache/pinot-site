@@ -30,7 +30,7 @@ const siteMetadata = {
         heading: 'What is Apache Pinot?',
         paragraphs: [
             `Originally developed at LinkedIn, ${pinotMeta.tagline}`,
-            'With its distributed architecture and columnar storage, Apache Pinot empowers businesses to gain valuable insights from real-time data, supporting data-driven decision-making and applications.'
+            'With its distributed architecture and columnar storage, Apache Pinot empowers businesses to gain valuable insights from real-time data — powering both customer-facing applications and AI-driven decision systems.'
         ]
     },
     cta: {
