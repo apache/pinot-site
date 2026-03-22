@@ -6,7 +6,7 @@ const headerNavLinks = [
     { href: '/download/', title: 'Download' },
     { href: '/powered-by/', title: 'Who Uses Pinot' },
     { href: '/blog/', title: 'Blog' },
-    { href: '/#join-community', title: 'Community' }
+    { href: '/community/', title: 'Community' }
 ];
 
 export default headerNavLinks;
