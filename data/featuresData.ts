@@ -17,7 +17,7 @@ const featuresData: Feature[] = [
         imageSrc: '/static/images/features/high_concurrency.svg',
         title: 'High Concurrency',
         description: [
-            'With user-facing applications querying Pinot directly, it can serve hundreds of thousands of concurrent queries per second.'
+            'With applications and AI agents querying Pinot directly, it can serve hundreds of thousands of concurrent queries per second.'
         ]
     },
     {

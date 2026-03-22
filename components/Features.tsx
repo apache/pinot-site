@@ -1,4 +1,5 @@
 import Feature from './Feature';
+import AgentStrip from './AgentStrip';
 import featuresData from '@/data/featuresData';
 import pinotMeta from '@/data/pinot-meta.json';
 
@@ -6,6 +7,7 @@ const Features: React.FC = () => {
     return (
         <section className="flex px-6 py-14 md:mx-auto md:max-w-screen-outerLiveArea md:px-[6.75rem] md:py-[6.5rem]">
             <div className="mx-auto max-w-7xl">
+                <AgentStrip />
                 <h3 className="pb-8 text-center text-[1.75rem] font-semibold md:pb-16 md:text-[2rem]">
                     Features
                 </h3>
