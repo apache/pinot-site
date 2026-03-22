@@ -16,16 +16,20 @@ const work_sans = Work_Sans({
     variable: '--custom-font-work-sans'
 });
 
+const homepageTitle = 'Apache Pinot | Real-Time Analytics Database for Users and AI Agents';
+const homepageDescription =
+    'Apache Pinot is an open-source real-time analytics database delivering sub-second queries on fresh data at 100K+ QPS. Built for user-facing dashboards and agent-facing AI applications at petabyte scale.';
+
 export const metadata: Metadata = {
     metadataBase: new URL(siteMetadata.siteUrl),
     title: {
-        default: siteMetadata.title,
+        default: homepageTitle,
         template: `%s | ${siteMetadata.title}`
     },
-    description: siteMetadata.description,
+    description: homepageDescription,
     openGraph: {
-        title: siteMetadata.title,
-        description: siteMetadata.description,
+        title: homepageTitle,
+        description: homepageDescription,
         url: './',
         siteName: siteMetadata.title,
         images: [siteMetadata.socialBanner],
@@ -50,7 +54,7 @@ export const metadata: Metadata = {
         }
     },
     twitter: {
-        title: siteMetadata.title,
+        title: homepageTitle,
         card: 'summary_large_image',
         images: [siteMetadata.socialBanner]
     }
