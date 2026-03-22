@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import pinotMeta from '@/data/pinot-meta.json';
 
 type Tab = 'docker' | 'k8s';
-type Arch = 'x86' | 'ARM64';
 
 const CopyButton: React.FC<{ text: string }> = ({ text }) => {
     const [copied, setCopied] = useState(false);
@@ -43,31 +42,17 @@ const CodeBlock: React.FC<{ lines: string[] }> = ({ lines }) => {
 
 const version = pinotMeta.latestVersion;
 
-const dockerCommands: Record<Arch, string[]> = {
-    x86: [
-        `# Pull and run Apache Pinot ${version}`,
-        `docker run -p 2123:2123 -p 9000:9000 -p 8000:8000 \\`,
-        `  apachepinot.docker.scarf.sh/apachepinot/pinot:${version} \\`,
-        `  QuickStart -type hybrid`
-    ],
-    ARM64: [
-        `# Pull and run Apache Pinot ${version} (ARM64)`,
-        `docker run -p 2123:2123 -p 9000:9000 -p 8000:8000 \\`,
-        `  apachepinot.docker.scarf.sh/apachepinot/pinot:${version}-arm64 \\`,
-        `  QuickStart -type hybrid`
-    ]
-};
+const dockerCommands = [
+    `# Pull and run Apache Pinot ${version}`,
+    `docker run -p 2123:2123 -p 9000:9000 -p 8000:8000 \\`,
+    `  apachepinot.docker.scarf.sh/apachepinot/pinot:${version} \\`,
+    `  QuickStart -type hybrid`
+];
 
-const nightlyCommands: Record<Arch, string[]> = {
-    x86: [
-        `# Pull the latest nightly build`,
-        `docker pull apachepinot.docker.scarf.sh/apachepinot/pinot:latest`
-    ],
-    ARM64: [
-        `# Pull the latest nightly build (ARM64)`,
-        `docker pull apachepinot.docker.scarf.sh/apachepinot/pinot:latest-arm64`
-    ]
-};
+const nightlyCommands = [
+    `# Pull the latest nightly build`,
+    `docker pull apachepinot.docker.scarf.sh/apachepinot/pinot:latest`
+];
 
 const k8sCommands = [
     `# Add the Pinot Helm repository`,
@@ -81,7 +66,6 @@ const k8sCommands = [
 
 const DownloadInstall: React.FC = () => {
     const [activeTab, setActiveTab] = useState<Tab>('docker');
-    const [arch, setArch] = useState<Arch>('x86');
 
     return (
         <section className="mx-auto max-w-5xl px-4 py-10 md:px-8 md:py-16">
@@ -114,28 +98,12 @@ const DownloadInstall: React.FC = () => {
 
             {activeTab === 'docker' && (
                 <div>
-                    {/* Arch toggle */}
-                    <div className="mb-4 flex space-x-2">
-                        {(['x86', 'ARM64'] as const).map((a) => (
-                            <button
-                                key={a}
-                                className={`rounded-md px-3 py-1 text-sm font-medium transition-colors ${
-                                    arch === a
-                                        ? 'bg-vine-100 text-white'
-                                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                                }`}
-                                onClick={() => setArch(a)}
-                            >
-                                {a}
-                            </button>
-                        ))}
-                    </div>
-
                     {/* Stable release */}
                     <h3 className="mb-3 text-lg font-semibold">Stable Release ({version})</h3>
-                    <CodeBlock lines={dockerCommands[arch]} />
+                    <CodeBlock lines={dockerCommands} />
                     <p className="mt-3 text-sm text-gray-500">
-                        This starts a standalone Pinot cluster with the controller UI at{' '}
+                        Multi-arch image — works on both x86 and ARM64. This starts a standalone
+                        Pinot cluster with the controller UI at{' '}
                         <code className="rounded bg-gray-100 px-1 py-0.5 text-xs">
                             http://localhost:9000
                         </code>
@@ -149,7 +117,7 @@ const DownloadInstall: React.FC = () => {
                         tag points to the most recent nightly build from the main branch. Use it to
                         test unreleased features — not recommended for production.
                     </p>
-                    <CodeBlock lines={nightlyCommands[arch]} />
+                    <CodeBlock lines={nightlyCommands} />
                 </div>
             )}
 

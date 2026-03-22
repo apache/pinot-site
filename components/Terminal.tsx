@@ -3,27 +3,19 @@ import React, { FC, useState } from 'react';
 import { Button } from './ui/button';
 
 const Terminal: FC = () => {
-    const [activeTab, setActiveTab] = useState<'x86' | 'ARM64'>('x86');
     const [copied, setCopied] = useState(false);
 
-    const commands = {
-        x86: [
-            'docker run -p 9000:9000 \\',
-            'apachepinot.docker.scarf.sh/apachepinot/pinot:1.4.0 \\',
-            'QuickStart -type hybrid'
-        ],
-        ARM64: [
-            'docker run -p 9000:9000 \\',
-            'apachepinot.docker.scarf.sh/apachepinot/pinot:1.4.0-arm64 \\',
-            'QuickStart -type hybrid'
-        ]
-    };
+    const commands = [
+        'docker run -p 9000:9000 \\',
+        'apachepinot.docker.scarf.sh/apachepinot/pinot:1.4.0 \\',
+        'QuickStart -type hybrid'
+    ];
 
     const handleCopy = async () => {
         try {
-            await navigator.clipboard.writeText(commands[activeTab].join('\n'));
+            await navigator.clipboard.writeText(commands.join('\n'));
             setCopied(true);
-            setTimeout(() => setCopied(false), 2000); // Show copied status for 2 seconds
+            setTimeout(() => setCopied(false), 2000);
         } catch (err) {
             console.error('Failed to copy text: ', err);
         }
@@ -49,25 +41,8 @@ const Terminal: FC = () => {
                         <div className="h-3 w-3 rounded-full bg-green-500"></div>
                     </div>
                 </div>
-                {/* Tab buttons */}
-                <div className="mb-2 ml-8 flex space-x-1 border-b-2">
-                    {(['x86', 'ARM64'] as const).map((arch) => (
-                        <button
-                            key={arch}
-                            className={`border-b-4 px-4 py-2 pt-5 font-[Source_Code_Pro]
-                            ${
-                                activeTab === arch
-                                    ? 'border-rose-700 text-base font-semibold'
-                                    : 'border-transparent opacity-30'
-                            }`}
-                            onClick={() => setActiveTab(arch)}
-                        >
-                            {arch}
-                        </button>
-                    ))}
-                </div>
-                <div className="table w-full whitespace-pre-wrap p-4 font-[Source_Code_Pro] leading-loose">
-                    {renderCommandWithNumbers(commands[activeTab])}
+                <div className="table w-full whitespace-pre-wrap p-4 pt-6 font-[Source_Code_Pro] leading-loose">
+                    {renderCommandWithNumbers(commands)}
                 </div>
             </div>
 
