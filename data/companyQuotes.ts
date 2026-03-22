@@ -34,8 +34,9 @@ const quotes: CompanyQuote[] = [
             value: '200K QPS',
             label: 'at P99 latency of 70ms across 3PB'
         },
-        sourceLabel: 'Talk',
-        sourceUrl: 'https://www.youtube.com/watch?v=Rmxo9VB3TaU'
+        sourceLabel: 'Case study',
+        sourceUrl:
+            'https://startree.ai/user-stories/stripe-journey-to-18-b-of-transactions-with-apache-pinot'
     },
     {
         logo: '/static/images/stories/uber.svg',
