@@ -16,9 +16,9 @@ const work_sans = Work_Sans({
     variable: '--custom-font-work-sans'
 });
 
-const homepageTitle = 'Apache Pinot | Real-Time Analytics Database for Users and AI Agents';
+const homepageTitle = 'Apache Pinot | Distributed OLAP Database for Real-Time Analytics';
 const homepageDescription =
-    'Apache Pinot is an open-source real-time analytics database delivering sub-second queries on fresh data at 100K+ QPS. Built for user-facing dashboards and agent-facing AI applications at petabyte scale.';
+    'Apache Pinot is an open-source distributed OLAP database delivering sub-second queries on fresh data at 100K+ QPS. Built for user-facing and agent-facing real-time analytics at petabyte scale.';
 
 export const metadata: Metadata = {
     metadataBase: new URL(siteMetadata.siteUrl),
