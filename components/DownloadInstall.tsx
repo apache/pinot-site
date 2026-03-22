@@ -59,8 +59,14 @@ const dockerCommands: Record<Arch, string[]> = {
 };
 
 const nightlyCommands: Record<Arch, string[]> = {
-    x86: [`# Pull the latest nightly build`, `docker pull apachepinot/pinot:latest`],
-    ARM64: [`# Pull the latest nightly build (ARM64)`, `docker pull apachepinot/pinot:latest-arm64`]
+    x86: [
+        `# Pull the latest nightly build`,
+        `docker pull apachepinot.docker.scarf.sh/apachepinot/pinot:latest`
+    ],
+    ARM64: [
+        `# Pull the latest nightly build (ARM64)`,
+        `docker pull apachepinot.docker.scarf.sh/apachepinot/pinot:latest-arm64`
+    ]
 };
 
 const k8sCommands = [
