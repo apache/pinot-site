@@ -1,4 +1,5 @@
 import benchmarkData from '@/data/benchmarkData';
+import pinotMeta from '@/data/pinot-meta.json';
 
 const BenchmarkSection: React.FC = () => {
     return (
@@ -37,6 +38,10 @@ const BenchmarkSection: React.FC = () => {
                         Based on production deployments at LinkedIn, Stripe, Uber, and other Pinot
                         users. Your results will vary based on hardware, schema design, and query
                         complexity.
+                    </p>
+                    <p className="mt-2 text-xs text-gray-500 dark:text-gray-500">
+                        Last verified against Apache Pinot {pinotMeta.lastVerifiedVersion} on{' '}
+                        {pinotMeta.lastVerified}
                     </p>
                 </div>
             </div>

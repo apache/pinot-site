@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '../Link';
 import { type DownloadData } from '@/data/downloadsData';
+import pinotMeta from '@/data/pinot-meta.json';
 
 interface DownloadTableProps {
     data: DownloadData[];
@@ -15,7 +16,14 @@ const MobileDownloadTable: React.FC<DownloadTableProps> = ({ data }) => {
                     <div className="flex w-72 justify-between">
                         <div className="flex flex-col">
                             <div className="font-semibold">Version</div>
-                            <div>{download.version}</div>
+                            <div>
+                                {download.version}
+                                {download.version === pinotMeta.latestVersion && (
+                                    <span className="ml-2 inline-block rounded bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-800">
+                                        Latest
+                                    </span>
+                                )}
+                            </div>
                         </div>
                         <div className="flex flex-col">
                             <div className="font-semibold">Date</div>

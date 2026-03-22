@@ -1,5 +1,6 @@
 import UseCase from './UseCase';
 import useCasesData from '@/data/useCasesData';
+import pinotMeta from '@/data/pinot-meta.json';
 
 const UseCases: React.FC = () => {
     return (
@@ -17,6 +18,10 @@ const UseCases: React.FC = () => {
                         <UseCase key={useCase.id} {...useCase} />
                     ))}
                 </div>
+                <p className="mt-12 text-center text-xs text-gray-500 dark:text-gray-500">
+                    Last verified against Apache Pinot {pinotMeta.lastVerifiedVersion} on{' '}
+                    {pinotMeta.lastVerified}
+                </p>
             </div>
         </section>
     );

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Button } from './ui/button';
 import Link from 'next/link';
 import siteMetadata from '@/data/siteMetadata';
+import pinotMeta from '@/data/pinot-meta.json';
 import ResponsiveImage from './ResponsiveImage';
 
 const HeroSection = () => {
@@ -11,13 +12,10 @@ const HeroSection = () => {
         <section className="md:mx-auto md:max-w-screen-outerLiveArea">
             <div className="p-8 text-center md:pb-12 md:pt-24">
                 <h1 className="mb-4 text-4xl font-bold leading-[45px] md:text-[3.5rem] md:leading-[70px]">
-                    Real-Time Analytics at Extreme Scale
+                    {pinotMeta.heroHeadline}
                 </h1>
                 <p className="m-auto mb-8 max-w-4xl text-lg md:leading-[28.80px]">
-                    Apache Pinot&trade; is a real-time distributed OLAP datastore that delivers
-                    sub-second queries over streaming and batch data. Purpose-built for user-facing
-                    analytics, it handles hundreds of thousands of queries per second with
-                    millisecond latency at petabyte scale.
+                    {pinotMeta.heroDescription}
                 </p>
                 <div className="flex justify-center gap-4">
                     <Button
