@@ -20,7 +20,8 @@ yarn test             # Run tests
 ## Git & PR Rules
 
 -   **Development branch:** `new-site-dev` — all PRs must target this branch
--   **Published branch:** `asf-site` — Apache infrastructure output, never target PRs here
+-   **Release/production branch:** `new-static-prod` — production deployments
+-   **Site config branch:** `asf-site` — Apache infrastructure site configuration
 -   Always branch from `origin/new-site-dev`
 
 ## Architecture
