@@ -3,6 +3,7 @@ import { allDownloads } from 'contentlayer/generated';
 import { genPageMetadata } from '../seo';
 import { transformAndSortDownloads } from '../lib/download.utils';
 import Downloads from '@/components/DownloadTable/Downloads';
+import DownloadInstall from '@/components/DownloadInstall';
 import pinotMeta from '@/data/pinot-meta.json';
 
 export const metadata = genPageMetadata({
@@ -41,6 +42,7 @@ const Download = () => {
                         for any Apache release.
                     </p>
                 </header>
+                <DownloadInstall />
                 <Downloads data={downloads} />
             </section>
         </>
