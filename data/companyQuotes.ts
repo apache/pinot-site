@@ -21,7 +21,7 @@ const quotes: CompanyQuote[] = [
             value: '250K+ QPS',
             label: 'across 50+ user-facing applications'
         },
-        sourceLabel: 'Engineering post',
+        sourceLabel: 'LinkedIn engineering post',
         sourceUrl:
             'https://engineering.linkedin.com/blog/2021/real-time-analytics-at-scale-with-pinot'
     },
@@ -34,7 +34,7 @@ const quotes: CompanyQuote[] = [
             value: '200K QPS',
             label: 'at P99 latency of 70ms across 3PB'
         },
-        sourceLabel: 'Case study',
+        sourceLabel: 'Stripe case study',
         sourceUrl:
             'https://startree.ai/user-stories/stripe-journey-to-18-b-of-transactions-with-apache-pinot'
     },
@@ -47,8 +47,9 @@ const quotes: CompanyQuote[] = [
             value: '500M+',
             label: 'queries served daily via Neutrino'
         },
-        sourceLabel: 'Engineering post',
-        sourceUrl: 'https://www.uber.com/blog/engineering/real-time-analytics/'
+        sourceLabel: 'Uber engineering post',
+        sourceUrl:
+            'https://www.uber.com/en-EG/blog/blazing-fast-olap-on-ubers-inventory-and-catalog-data-with-apache-pinot/'
     },
     {
         logo: '/static/images/carousel/webex.svg',
@@ -59,8 +60,9 @@ const quotes: CompanyQuote[] = [
             value: '500 nodes',
             label: 'eliminated vs. Elasticsearch'
         },
-        sourceLabel: 'Case study',
-        sourceUrl: 'https://pinot.apache.org/powered-by/'
+        sourceLabel: 'Webex case study',
+        sourceUrl:
+            'https://startree.ai/user-stories/cisco-webex-real-time-observability-using-apache-pinot-and-grafana/'
     },
     {
         logo: '/static/images/companies/food/door_dash.svg',
@@ -71,9 +73,9 @@ const quotes: CompanyQuote[] = [
             value: '<100ms',
             label: 'latency, down from 30s timeouts'
         },
-        sourceLabel: 'Engineering post',
+        sourceLabel: 'DoorDash engineering post',
         sourceUrl:
-            'https://doordash.engineering/2024/01/09/from-elasticsearch-to-apache-pinot-at-doordash/'
+            'https://startree.ai/user-stories/doordash-managing-on-time-meal-delivery-with-startree-thirdeye/'
     },
     {
         logo: '/static/images/stories/walmart.svg',
@@ -84,9 +86,9 @@ const quotes: CompanyQuote[] = [
             value: '14M',
             label: 'events/min ingested with <900ms lag'
         },
-        sourceLabel: 'Engineering post',
+        sourceLabel: 'Walmart engineering post',
         sourceUrl:
-            'https://medium.com/walmartglobaltech/walmarts-real-time-analytics-with-apache-pinot-a9ecf4d76ee'
+            'https://startree.ai/resources/walmart-and-razorpay-power-real-time-analytics-with-apache-pinot/'
     },
     {
         logo: '/static/images/carousel/razorpay.svg',
@@ -97,9 +99,9 @@ const quotes: CompanyQuote[] = [
             value: '1M events/sec',
             label: 'at peak, 60B transactions/year'
         },
-        sourceLabel: 'Engineering post',
+        sourceLabel: 'Razorpay engineering post',
         sourceUrl:
-            'https://engineering.razorpay.com/building-real-time-analytics-at-razorpay-with-apache-pinot-b44ad1e2f244'
+            'https://startree.ai/resources/walmart-and-razorpay-power-real-time-analytics-with-apache-pinot/'
     }
 ];
 

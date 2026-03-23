@@ -5,6 +5,7 @@ import { CoreContent } from 'pliny/utils/contentlayer';
 import { Blog } from '@/.contentlayer/generated';
 import siteMetadata from '@/data/siteMetadata';
 import HeroSection from '@/components/HeroSection';
+import DualWorkloadStrip from '@/components/DualWorkloadStrip';
 import CompanyLogoBar from '@/components/CompanyLogoBar';
 import TextMediaSplitSection from '@/components/TextMediaSplitSection';
 import SectionContainer from '@/components/SectionContainer';
@@ -13,6 +14,7 @@ import CompanyStories from '@/components/CompanyCarousel';
 import BenchmarkSection from '@/components/BenchmarkSection';
 import CommunitySection from '@/components/CommunitySection';
 import TextCodeSplitSection from '@/components/TextCodeSplitSection';
+import QuickstartCTA from '@/components/QuickstartCTA';
 import BlogSection from '@/components/BlogSection';
 
 interface HomeProps {
@@ -23,6 +25,7 @@ const Home: FC<HomeProps> = ({ posts }) => {
     return (
         <>
             <HeroSection />
+            <DualWorkloadStrip />
             <CompanyLogoBar />
             <TextMediaSplitSection
                 videoUrl={siteMetadata.video.videoUrl}
@@ -33,6 +36,7 @@ const Home: FC<HomeProps> = ({ posts }) => {
                 ctaHref={siteMetadata.cta.learnMore}
             />
             <Features />
+            <QuickstartCTA />
             <CompanyStories />
             <BenchmarkSection />
             <CommunitySection />
