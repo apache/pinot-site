@@ -13,7 +13,7 @@ import Features from '@/components/Features';
 import CompanyStories from '@/components/CompanyCarousel';
 import BenchmarkSection from '@/components/BenchmarkSection';
 import CommunitySection from '@/components/CommunitySection';
-import TextCodeSplitSection from '@/components/TextCodeSplitSection';
+
 import QuickstartCTA from '@/components/QuickstartCTA';
 import BlogSection from '@/components/BlogSection';
 
@@ -40,7 +40,7 @@ const Home: FC<HomeProps> = ({ posts }) => {
             <CompanyStories />
             <BenchmarkSection />
             <CommunitySection />
-            <TextCodeSplitSection title={siteMetadata.codeSection.header} />
+
             <BlogSection posts={posts} />
             <TextMediaSplitSection
                 heading={siteMetadata.youtubeShare.heading}
