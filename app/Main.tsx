@@ -14,7 +14,6 @@ import BenchmarkSection from '@/components/BenchmarkSection';
 import CommunitySection from '@/components/CommunitySection';
 import TextCodeSplitSection from '@/components/TextCodeSplitSection';
 import BlogSection from '@/components/BlogSection';
-import VideoEmbed from '@/components/VideoEmbed';
 
 interface HomeProps {
     posts: CoreContent<Blog>[];
@@ -48,15 +47,6 @@ const Home: FC<HomeProps> = ({ posts }) => {
                 imageAlt={siteMetadata.youtubeShare.imageAlt}
                 target="_self"
             />
-            {siteMetadata.youtubeShare.exampleVideos && (
-                <section className="bg-stone-100 pb-14 dark:bg-gray-900 md:pb-[6.5rem]">
-                    <div className="mx-auto grid max-w-screen-outerLiveArea grid-cols-1 gap-6 px-5 sm:px-6 md:grid-cols-2 md:px-[5.5rem]">
-                        {siteMetadata.youtubeShare.exampleVideos.map((video, index) => (
-                            <VideoEmbed key={index} src={video.url} title={video.title} />
-                        ))}
-                    </div>
-                </section>
-            )}
         </>
     );
 };
