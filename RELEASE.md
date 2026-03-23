@@ -42,4 +42,3 @@ Each release note requires specific metadata in the frontmatter. Here's the stru
 ## Suggesting Improvements
 
 If you have suggestions for improving the blog contribution process or the guide itself, please feel free to raise an issue or submit a PR with your proposed changes.
-
