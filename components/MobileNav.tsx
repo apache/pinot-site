@@ -51,7 +51,7 @@ const MobileNav = ({ stars }: MobileNavProps) => {
 
     return (
         <>
-            <button aria-label="Toggle Menu" onClick={onToggleNav} className="sm:hidden">
+            <button aria-label="Toggle Menu" onClick={onToggleNav} className="xl:hidden">
                 <Menu />
             </button>
 
