@@ -59,10 +59,10 @@ const Header = () => {
                 buttonColor="text-white"
                 expiresAfter={siteMetadata.announcement.expiresAfter}
             />
-            <header className="border-b-1 flex items-center justify-between border-b px-5 py-3 md:px-[4rem] md:py-4">
-                <div className="flex">
+            <header className="border-b-1 flex items-center justify-between gap-4 border-b px-5 py-3 md:px-6 md:py-4 lg:px-8 xl:px-[4rem]">
+                <div className="flex min-w-0 flex-1 items-center">
                     <Link href="/" aria-label={siteMetadata.headerTitle}>
-                        <div className="flex items-center justify-between">
+                        <div className="flex shrink-0 items-center justify-between">
                             <div className="">
                                 <Logo />
                             </div>
@@ -76,14 +76,14 @@ const Header = () => {
                         </div>
                     </Link>
 
-                    <div className="ml-[4.5rem] flex items-center gap-12 text-lg leading-5">
+                    <div className="ml-5 hidden min-w-0 flex-1 items-center gap-4 text-[15px] leading-5 xl:ml-10 xl:flex xl:gap-8 xl:text-lg">
                         {headerNavLinks
                             .filter((link) => link.href !== '/')
                             .map((link) => (
                                 <Link
                                     key={link.title}
                                     href={link.href}
-                                    className={`hidden sm:block ${
+                                    className={`whitespace-nowrap ${
                                         pathname === link.href
                                             ? 'font-bold text-crimson-100'
                                             : 'font-medium text-gray-900 dark:text-gray-100'
@@ -97,21 +97,31 @@ const Header = () => {
                         {/* <ThemeSwitch /> */}
                     </div>
                 </div>
-                <MobileNav stars={stars} />
-                <div className="hidden gap-3 sm:flex">
+                <div className="hidden shrink-0 items-center gap-2 sm:flex lg:gap-3">
                     <SearchButton />
-                    <Button variant="outline" size="lg" asChild className="px-3 py-2 text-base">
+                    <Button
+                        variant="outline"
+                        size="lg"
+                        asChild
+                        className="px-2.5 py-2 text-sm lg:px-3 lg:text-base"
+                    >
                         <Link href={siteMetadata.github} target="_blank">
                             <GitHub className={`${stars && 'mr-2'}`} />
                             {stars && stars}
                         </Link>
                     </Button>
-                    <Button variant="default" size="lg" className="bg-vine-100 px-6 py-2 text-base">
+                    <Button
+                        variant="default"
+                        size="lg"
+                        asChild
+                        className="bg-vine-100 px-4 py-2 text-sm lg:px-5 lg:text-base xl:px-6"
+                    >
                         <Link href={siteMetadata.cta.getStarted} target="_blank">
                             Get Started
                         </Link>
                     </Button>
                 </div>
+                <MobileNav stars={stars} />
             </header>
         </>
     );
