@@ -1,10 +1,11 @@
 import siteMetadata from '@/data/siteMetadata';
+import pinotMeta from '@/data/pinot-meta.json';
 import AnnouncementBar from './AnnouncementBar';
 
 export default function ReleaseBanner() {
     return (
         <AnnouncementBar
-            text="🎉🎉🎉 Announcing the release of Apache Pinot 1.3.0"
+            text={`Announcing the release of Apache Pinot ${pinotMeta.latestVersion}`}
             backgroundColor="bg-sky-200"
             textColor="text-black"
             buttonText={siteMetadata.announcement.buttonText}
