@@ -17,6 +17,44 @@ type DownloadData = {
 
 const downloadData: DownloadData[] = [
     {
+        version: '1.5.1',
+        date: '6/5/2026',
+        href: 'https://apachepinot.gateway.scarf.sh/pinot/1.5.1/apache-pinot-1.5.1-bin.tar.gz',
+        officialSource: {
+            download:
+                'https://apachepinot.gateway.scarf.sh/pinot/1.5.1/apache-pinot-1.5.1-src.tar.gz',
+            sha512: 'https://apachepinot.gateway.scarf.sh/pinot/1.5.1/apache-pinot-1.5.1-src.tar.gz.sha512',
+            asc: 'https://apachepinot.gateway.scarf.sh/pinot/1.5.1/apache-pinot-1.5.1-src.tar.gz.asc'
+        },
+        binary: {
+            download:
+                'https://apachepinot.gateway.scarf.sh/pinot/1.5.1/apache-pinot-1.5.1-bin.tar.gz',
+            sha512: 'https://apachepinot.gateway.scarf.sh/pinot/1.5.1/apache-pinot-1.5.1-bin.tar.gz.sha512',
+            asc: 'https://apachepinot.gateway.scarf.sh/pinot/1.5.1/apache-pinot-1.5.1-bin.tar.gz.asc'
+        },
+        releaseNotes:
+            'Apache Pinot 1.5.1 is a security patch release based on 1.5.0, with dependency updates and dependency-exclusion changes to resolve reported CVEs and no functional, API, configuration, or wire-format changes.'
+    },
+    {
+        version: '1.5.0',
+        date: '4/15/2026',
+        href: 'https://apachepinot.gateway.scarf.sh/pinot/1.5.0/apache-pinot-1.5.0-bin.tar.gz',
+        officialSource: {
+            download:
+                'https://apachepinot.gateway.scarf.sh/pinot/1.5.0/apache-pinot-1.5.0-src.tar.gz',
+            sha512: 'https://apachepinot.gateway.scarf.sh/pinot/1.5.0/apache-pinot-1.5.0-src.tar.gz.sha512',
+            asc: 'https://apachepinot.gateway.scarf.sh/pinot/1.5.0/apache-pinot-1.5.0-src.tar.gz.asc'
+        },
+        binary: {
+            download:
+                'https://apachepinot.gateway.scarf.sh/pinot/1.5.0/apache-pinot-1.5.0-bin.tar.gz',
+            sha512: 'https://apachepinot.gateway.scarf.sh/pinot/1.5.0/apache-pinot-1.5.0-bin.tar.gz.sha512',
+            asc: 'https://apachepinot.gateway.scarf.sh/pinot/1.5.0/apache-pinot-1.5.0-bin.tar.gz.asc'
+        },
+        releaseNotes:
+            'This release delivers significant improvements across the Multi-stage Query Engine (new UNNEST support, enriched joins, aggregation rewrites), Upsert (offline table support, commit-time compaction, xxhash compression), a new Federation / Multi-Cluster Routing framework, Kafka 4.x support, real-time auto-reset, Time Series Engine enhancements, new indexing capabilities (N-gram, IFST, combined Lucene), Query Resource Isolation, and numerous performance optimizations, security hardening, and bug fixes. It includes over 1100 commits from the community.'
+    },
+    {
         version: '1.4.0',
         date: '9/30/2025',
         href: 'https://apachepinot.gateway.scarf.sh/pinot/1.4.0/apache-pinot-1.4.0-bin.tar.gz',

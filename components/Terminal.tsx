@@ -7,7 +7,7 @@ const Terminal: FC = () => {
 
     const commands = [
         'docker run -p 9000:9000 \\',
-        'apachepinot.docker.scarf.sh/apachepinot/pinot:1.4.0 \\',
+        'apachepinot.docker.scarf.sh/apachepinot/pinot:1.5.1 \\',
         'QuickStart -type hybrid'
     ];
 

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import siteMetadata from '@/data/siteMetadata';
 
 const dockerCommand =
-    'docker run -p 9000:9000 apachepinot.docker.scarf.sh/apachepinot/pinot:1.4.0 QuickStart -type hybrid';
+    'docker run -p 9000:9000 apachepinot.docker.scarf.sh/apachepinot/pinot:1.5.1 QuickStart -type hybrid';
 
 const QuickstartCTA: React.FC = () => {
     const [copied, setCopied] = useState(false);

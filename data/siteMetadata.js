@@ -113,10 +113,10 @@ const siteMetadata = {
         }
     },
     announcement: {
-        text: 'Feb 11 - Online Meetup: Query, Ingestion, and Apache Pinot Core:  ',
-        buttonText: 'RSVP Here',
-        link: 'https://www.meetup.com/apache-pinot/events/313131111/',
-        expiresAfter: '2026-02-12'
+        text: `Apache Pinot ${pinotMeta.latestVersion} is available now.`,
+        buttonText: 'Download Now',
+        link: '/download/',
+        expiresAfter: '2026-09-05'
     },
     youtubeShare: {
         heading: 'Share Your Knowledge on Apache Pinot YouTube channel!',
