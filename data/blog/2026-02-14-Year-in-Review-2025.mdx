@@ -1,0 +1,140 @@
+---
+title: '2025 Year in Review'
+date: 2026-02-15
+authors: ['raghav']
+summary: 'Unleashing Real-Time Analytics: Insights from the "Apache Pinot Year in Review 2025 and Look Ahead'
+
+tags: [Apache Pinot, releases, real-time analytics, open source, community updates]
+---
+
+The "Apache Pinot Year in Review 2025 and Look Ahead" session offered highlights from the Apache Pinot community, showcasing technical improvements, community growth, and the transformative adoption of Pinot’s capabilities across industries. Here's a summary of the key takeaways, with a professional breakdown of features, organizational use cases, and collaborative endeavors from contributors that make this video a must-watch for data innovators.
+
+<YouTube
+    id="14GezNkbq3E"
+    title="Apache Pinot in 2025:  What’s Advancing Across Query, Ingestion, and the Core Engine"
+/>
+
+## Community Growth and Adoption
+
+Hosted by Raghav Yadav, an Apache Pinot contributor and Staff Software Engineer at StarTree, the session began with an overview of the community's accomplishments. Pinot experienced more growth last year, including:
+
+-   5,800 members actively engaging on Slack
+-   120 contributors delivering approximately 2,000 commits
+-   Achieving 6,000 stars on GitHub and impressive numbers for Docker pulls
+
+Raghav highlighted this widespread adoption, including by well-known companies like Nvidia, Goldman Sachs, DoorDash, Grab, Wix, Slack, and Walmart. He praised the new committers added to Pinot, Chris Peck (Uber) and Sonam Mandal (LinkedIn), alongside the new PMC member, Gunjalo.
+
+Key Quote:
+
+> "Adoption across all sectors has been amazing, with new use cases helping us to evolve and innovate as a community."
+
+## Real-Time Insights from Slack
+
+Sai Tarun Tadakamalla and Zebin Kang from Slack, shared an inspiring success story about Slack’s migration from batch-based data processing to real-time analytics using Pinot. This shift improved enterprise dashboards, allowing customers to monitor message and file exports with exceptional speed.
+
+Slack reduced ingestion latency below 1 second and query latency to 10 seconds for massive data loads of over 400-500M records at scale. They leveraged Pinot’s native functions like [[DistinctCountHLL]](https://docs.pinot.apache.org/functions-1/distinctcounthll) for hyper log log approximations. And they implemented sorted and inverted indexes to optimize scale and efficiency.
+
+<YouTube id="o_OYtkxkEMQ" title="Enhanced visibility and dashboards with Apache Pinot at Slack" />
+
+In 2026, Slack is planning on onboarding Flink alongside Kafka and Pinot for more comprehensive real-time analytics across their infrastructure. Sai emphasized collaboration, inviting broader participation from engineers on the open-source Pinot Slack channel.
+
+Key Quote:
+
+> "With Kafka, Flink, and Pinot, we'll address more real-time analytics needs in the coming year, opening new opportunities for user monitoring and engagement."
+
+## AngelOne: Scaling Real-Time Analytics Across Verticals
+
+Milan Chaudi revealed how AngelOne uses Apache Pinot to manage high-capacity loads for stock trading, anomaly detection, and user onboarding. Alongside this, custom dashboards provide personalized views for individual users at peak TPS ingestion rates of 100k and 2M queries/day with P99 latency under 100 milliseconds. Milan highlighted the following enhancements Apache Pinot brought to AngelOne
+
+-   Personalized customer experience
+-   Grip - a notification system enables swift decisions and campaign automation.
+-   Prism - a system for user onboarding: Powered by NiFi workflows leveraging Pinot databases, Prism self-heals and addresses bottlenecks without manual input.
+-   Scalable performance: Codebase contributions improved group-by query correctness, multi-tenant support, and integration with external libraries like Roaring Bitmaps.
+
+Milan emphasized the cost and time savings benefits of using Pinot, and AngelOne's plans to expand Pinot’s role in their business across additional verticals in the next year.
+
+Key Quote:
+
+> "Pinot’s speed and scalability have driven business transformation, enabling personalized user workflows and data-driven decision-making across verticals."
+
+<YouTube
+    id="bRyMHHqx4_Y"
+    title="How AngelOne scales real-time analytics across verticals with Apache Pinot"
+/>
+
+## Walmart: AI-Powered Analytics
+
+Arsheena, representing Walmart, discussed how Pinot is revolutionizing their last mile delivery system. AI integrations, real-time state tracking, and reduced resolution time by 50% allow Walmart teams to pinpoint gaps instantly. Their deployment on GCP supports 50+ tables and plans are underway to expand this infrastructure to international markets such as Canada and Mexico. Real-time ingestion via Kafka and Cosmos with visualization and alerting managed through Apache Superset and Airflow.
+
+<YouTube id="aNllv8rBIWU" title="Enhancing last mile delivery with Apache Pinot at Walmart" />
+
+Key Quote:
+
+> "Pinot is our one-stop solution for lifecycle tracking, helping reduce resolution times and enabling intelligent decision-making in real time."
+
+## Enterprise Features and Technical Advancements
+
+Yash Mayya from StarTree introduced advancements to the query engine including:
+
+-   Performance: Hundreds of commits added, including improvements for ORDER BY descending performance and memory safeguards for high-cardinality GROUP BY queries.
+-   Observability: Enhanced query stats visualization with flame graphs and stage-specific metrics for error reporting and debugging.
+-   Join Improvements: Smarter IO reduction through hints for distribution type, replicated joins, and parallel processing.
+-   Various aggregation and window improvements
+
+Key Quote:
+
+> "Lite mode is perfect for dashboards and top queries where the results need to be bounded but performance is non-negotiable."
+
+### MSE Physical Optimizer:
+
+Shaurya Chatruvedi of Uber, shared how Pinot’s MSE Physical Optimizer reshapes query plans based on partition metadata, segment placement, and worker topology, optimizing distributed execution. Key updates include data shuffle elimination for co-located tables, and intelligent worker assignment through Helix-based metadata. Another improvement is Lite Mode which follows the scatter-gather principles of the single-stage engine, but still supports JOIN and WINDOW functions with limited datasets.
+
+Key Quote:
+
+> "By optimizing physical plans, we reduce IO bottlenecks and streamline resource allocation. The result is a significantly faster query execution cycle."
+
+## Real-Time Enhancements: Disaster Recovery
+
+Aman and Hanul revealed updates that boost Pinot’s real-time ingestion. These include pause-less ingestion for ultra-fresh data pipelines and innovative disaster recovery for failed segment builds.
+
+Other impactful changes include:
+
+-   Byte-based throttling for better memory management.
+-   Coordination mechanisms to ensure deduplication accuracy.
+-   Real-time segment validation reducing manual intervention.
+
+Byte-based throttling for better memory management.
+
+Coordination mechanisms to ensure deduplication accuracy.
+
+Real-time segment validation reducing manual intervention.
+
+Key Quote:
+
+> "Pause-less ingestion helped us consistently ingest at rates of 300k events per second while maintaining freshness within 5 seconds."
+
+## Looking Ahead
+
+The final segment featured Chinmay, who unveiled collaborative plans for Pinot’s roadmap:
+
+-   Arrow integration: Deeper in-memory format enhancements.
+-   Query isolation: SLA adherence for mixed query workloads.
+-   Cost-based optimizer: Cutting-edge improvements for query planning efficiency.
+
+Arrow integration: Deeper in-memory format enhancements.
+
+Query isolation: SLA adherence for mixed query workloads.
+
+Cost-based optimizer: Cutting-edge improvements for query planning efficiency.
+
+Chinmay invited both feedback and participation, fostering open collaboration as Pinot evolves.
+
+Key Quote:
+
+> "The roadmap reflects our mission to build a scalable, cutting-edge system that aligns with the needs of developers and contributors alike."
+
+## Conclusion
+
+This session underscored Apache Pinot’s leadership in real-time analytics, driven by user stories, community contributions, and technical advancements. From Slack's latency breakthroughs to Walmart's AI integrations and AngelOne’s anomaly detection, the ingenuity and collaboration within the Pinot community promise even greater delivery in 2026\.
+
+If you’re working with real-time analytics or large-scale data processing, this video will leave you inspired and equipped to leverage Apache Pinot’s best-in-class offerings.
