@@ -6,6 +6,7 @@ import Image from './Image';
 import CustomLink from './Link';
 import TableWrapper from './TableWrapper';
 import VideoEmbed from './VideoEmbed';
+import YouTube from './YouTube';
 
 export const components: MDXComponents = {
     Image,
@@ -14,5 +15,6 @@ export const components: MDXComponents = {
     pre: Pre,
     table: TableWrapper,
     VideoEmbed,
+    YouTube,
     BlogNewsletterForm
 };
