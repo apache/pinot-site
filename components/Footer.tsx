@@ -1,3 +1,4 @@
+import siteMetadata from '@/data/siteMetadata';
 import Link from './Link';
 import Logo from '@/data/logo.svg';
 import GitHub from '@/data/github.svg';
@@ -67,6 +68,10 @@ const links = [
 ];
 
 export default function Footer() {
+    const slackCommunityLink =
+        siteMetadata.communityLinks.find((communityLink) => communityLink.name === 'Slack')?.link ||
+        '/community';
+
     return (
         <footer className="border-t bg-sky-100 px-5 py-10 md:px-[6.75rem] md:pb-10 md:pt-16">
             <div className="mx-auto flex max-w-7xl flex-wrap justify-between">
@@ -111,10 +116,7 @@ export default function Footer() {
                     <Link href="https://www.youtube.com/@Apache_Pinot" className="mr-4">
                         <Youtube />
                     </Link>
-                    <Link
-                        href="https://join.slack.com/t/apache-pinot/shared_invite/zt-2t4m15dl2-SnVmZenainX_bq1_dY6XYg"
-                        className="mr-4"
-                    >
+                    <Link href={slackCommunityLink} className="mr-4">
                         <Slack size={24} className="fill-gray-900" />
                     </Link>
                     <Link href="https://github.com/apache/pinot">

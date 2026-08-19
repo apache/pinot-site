@@ -22,7 +22,7 @@ export const communityChannels: CommunityResource[] = [
     {
         name: 'Slack',
         icon: '/static/images/socials/slack.svg',
-        link: 'https://join.slack.com/t/apache-pinot/shared_invite/zt-2t4m15dl2-SnVmZenainX_bq1_dY6XYg',
+        link: 'https://inviter.co/apache-pinot',
         description: 'Chat with the community in real time'
     },
     {

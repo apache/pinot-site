@@ -179,11 +179,12 @@ const siteMetadata = {
             ]
         }
     },
+    // duplicated in data/communityData.ts, but used here for the CommunityPage component
     communityLinks: [
         {
             name: 'Slack',
             icon: '/static/images/socials/slack.svg',
-            link: 'https://join.slack.com/t/apache-pinot/shared_invite/zt-2t4m15dl2-SnVmZenainX_bq1_dY6XYg'
+            link: 'https://inviter.co/apache-pinot'
         },
         {
             name: 'GitHub',
