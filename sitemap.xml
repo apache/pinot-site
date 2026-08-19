@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://pinot.apache.org/</loc>
-<lastmod>2026-07-01</lastmod>
+<lastmod>2026-08-19</lastmod>
 </url>
 <url>
 <loc>https://pinot.apache.org/blog</loc>
-<lastmod>2026-07-01</lastmod>
+<lastmod>2026-08-19</lastmod>
 </url>
 <url>
 <loc>https://pinot.apache.org/blog/2015/05/16/LinkedIn-Scaling</loc>
@@ -219,5 +219,13 @@
 <url>
 <loc>https://pinot.apache.org/blog/2025/09/30/Announce-Pinot-1-4</loc>
 <lastmod>2025-09-30T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://pinot.apache.org/blog/2026/02/14/Year-in-Review-2025</loc>
+<lastmod>2026-02-15T00:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://pinot.apache.org/blog/2026/07/15/Materialized-Views</loc>
+<lastmod>2026-07-01T00:00:00.000Z</lastmod>
 </url>
 </urlset>
