@@ -17,6 +17,25 @@ type DownloadData = {
 
 const downloadData: DownloadData[] = [
     {
+        version: '1.6.0',
+        date: '10/28/2026',
+        href: 'https://apachepinot.gateway.scarf.sh/pinot/1.6.0/apache-pinot-1.6.0-bin.tar.gz',
+        officialSource: {
+            download:
+                'https://apachepinot.gateway.scarf.sh/pinot/1.6.0/apache-pinot-1.6.0-src.tar.gz',
+            sha512: 'https://apachepinot.gateway.scarf.sh/pinot/1.6.0/apache-pinot-1.6.0-src.tar.gz.sha512',
+            asc: 'https://apachepinot.gateway.scarf.sh/pinot/1.6.0/apache-pinot-1.6.0-src.tar.gz.asc'
+        },
+        binary: {
+            download:
+                'https://apachepinot.gateway.scarf.sh/pinot/1.6.0/apache-pinot-1.6.0-bin.tar.gz',
+            sha512: 'https://apachepinot.gateway.scarf.sh/pinot/1.6.0/apache-pinot-1.6.0-bin.tar.gz.sha512',
+            asc: 'https://apachepinot.gateway.scarf.sh/pinot/1.6.0/apache-pinot-1.6.0-bin.tar.gz.asc'
+        },
+        releaseNotes:
+            'Apache Pinot 1.6.0 adds SQL DDL, GROUPING SETS, ROLLUP and CUBE, new vector-search backends, and ingestion and query reliability improvements. Services require Java 25 or newer; Java/JDBC clients and explicitly pinned SPI/common artifacts remain Java 11-compatible. Read the upgrade notes before upgrading.'
+    },
+    {
         version: '1.5.1',
         date: '6/5/2026',
         href: 'https://apachepinot.gateway.scarf.sh/pinot/1.5.1/apache-pinot-1.5.1-bin.tar.gz',
