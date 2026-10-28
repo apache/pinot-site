@@ -84,10 +84,10 @@ const MobileDownloadTable: React.FC<DownloadTableProps> = ({ data }) => {
                         <div className="font-semibold">Release notes</div>
                         <p className="leading-relaxed">{download.releaseNotes}</p>
                         <Link
-                            href={'#releaseNotes'}
+                            href={`https://github.com/apache/pinot/releases/tag/release-${download.version}`}
                             className="align-top font-semibold text-green-700 hover:text-green-900"
                         >
-                            See all notes
+                            Release notes and upgrade guidance
                         </Link>
                     </div>
                     <hr className="my-4 border-neutral-400" />
