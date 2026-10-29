@@ -256,6 +256,11 @@ const companiesUsingPinot: Company[] = [
         logo: '/static/images/companies/cloud/zuora.svg',
         type: 'cloud'
     },
+    {
+        name: 'Wordfully',
+        logo: '/static/images/companies/cloud/wordfully.svg',
+        type: 'cloud'
+    },
     // Food
     {
         name: 'Uber',
