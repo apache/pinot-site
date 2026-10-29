@@ -1,8 +1,8 @@
 {
-    "latestVersion": "1.5.1",
-    "latestReleaseDate": "2026-06-05",
-    "previousVersion": "1.5.0",
-    "previousReleaseDate": "2026-04-15",
+    "latestVersion": "1.6.0",
+    "latestReleaseDate": "2026-10-28",
+    "previousVersion": "1.5.1",
+    "previousReleaseDate": "2026-06-05",
     "tagline": "Apache Pinot is an open-source distributed OLAP database for user-facing and agent-facing real-time analytics, delivering sub-second queries on fresh data at very high concurrency.",
     "heroHeadline": "Real-Time Analytics for Users and AI Agents",
     "heroDescription": "Apache Pinot\u2122 is an open-source distributed OLAP database for user-facing and agent-facing real-time analytics. From interactive dashboards to LLM-powered decision engines, Pinot delivers sub-second queries on fresh data at petabyte scale.",

@@ -100,10 +100,10 @@ const DesktopDownloadTable: React.FC<DownloadTableProps> = ({ data }) => {
                         <TableCell>
                             <p className="text-lg">{download.releaseNotes}</p>
                             <Link
-                                href="https://github.com/apache/pinot/releases"
+                                href={`https://github.com/apache/pinot/releases/tag/release-${download.version}`}
                                 className="align-top text-lg font-semibold text-green-700 hover:text-green-900"
                             >
-                                See all notes
+                                Release notes and upgrade guidance
                             </Link>
                         </TableCell>
                     </TableRow>
