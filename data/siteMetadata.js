@@ -113,10 +113,10 @@ const siteMetadata = {
         }
     },
     announcement: {
-        text: `Apache Pinot ${pinotMeta.latestVersion} is available now.`,
-        buttonText: 'Download Now',
-        link: '/download/',
-        expiresAfter: '2026-09-05'
+        text: `Pinot 2026 - Year in Review — Dec 10 @ 10AM PT.`,
+        buttonText: 'Register Now',
+        link: 'https://www.meetup.com/apache-pinot/events/317305919/',
+        expiresAfter: '2026-12-11'
     },
     youtubeShare: {
         heading: 'Share Your Knowledge on Apache Pinot YouTube channel!',
