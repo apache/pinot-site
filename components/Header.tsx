@@ -56,6 +56,7 @@ const Header = () => {
                 backgroundColor="bg-[#C7154A]"
                 textColor="text-white"
                 buttonHref={siteMetadata.announcement.link}
+                buttonTarget="_blank"
                 buttonColor="text-white"
                 expiresAfter={siteMetadata.announcement.expiresAfter}
             />
